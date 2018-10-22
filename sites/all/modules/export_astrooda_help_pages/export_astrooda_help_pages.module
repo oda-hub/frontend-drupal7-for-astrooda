@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Export astrooda help pages feature.
+ */
+
+include_once 'export_astrooda_help_pages.features.inc';
