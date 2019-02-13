@@ -118,3 +118,36 @@ function bootstrap_astrooda_form_element_label($variables) {
       '!required' => $required,
   )) . "</label>\n";
 }
+
+function bootstrap_astrooda_preprocess_page(&$variables) {
+  if (isset($variables['node']->type)) {
+    // If the content type's machine name is "my_machine_name" the file
+    // name will be "page--my-machine-name.tpl.php".
+    $variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
+  }
+}
+
+/*
+function bootstrap_astrooda_button($variables) {
+  $element = $variables['element'];
+  $type = strtolower($element['#button_type']);
+  switch($type){
+    case 'submit':
+    case 'reset':
+    case 'button':
+      break;
+    default:
+      $type = 'submit';
+      break;
+  }
+  $element['#attributes']['type'] = $type;
+
+  element_set_attributes($element, array('id', 'name', 'value'));
+
+  $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+  if (!empty($element['#attributes']['disabled'])) {
+    $element['#attributes']['class'][] = 'form-button-disabled';
+  }
+  return '<input' . drupal_attributes($element['#attributes']) . ' />';
+}
+*/
