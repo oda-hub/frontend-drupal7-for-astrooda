@@ -1,0 +1,11 @@
+span#resolve-src-name.form-group:after {
+  padding-bottom: 15px;
+}
+
+input#edit-src-name {
+  border-radius: 4px 0 0 4px;
+}
+
+.clearfix {
+  display: inline;
+}
