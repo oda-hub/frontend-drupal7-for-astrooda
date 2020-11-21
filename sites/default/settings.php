@@ -245,13 +245,13 @@
  * @endcode
  */
 $databases = array (
-  'default' => 
+  'default' =>
   array (
-    'default' => 
+    'default' =>
     array (
-      'database' => 'astrooda',
+      'database' => 'astrooda02',
       'username' => 'astrooda',
-      'password' => 'qtIkJS6WuFUyA5FO',
+      'password' => 'qtIkJS6#WuFUyA5FO',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
