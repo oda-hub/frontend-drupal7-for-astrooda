@@ -356,7 +356,6 @@
 
       $(window).bind('scroll', scrollHandler);
     }
-    console.log('In oldus');
     $('.find-more-button').not('.find-more-button-processed').addClass('find-more-button-processed').click(Drupal.eu_cookie_compliance.moreInfoAction);
   };
 
