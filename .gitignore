@@ -1,14 +1,6 @@
-# Ignore the module astrooda as it is in a different component
-sites/all/modules/astrooda
-
-# Ignore the theme bootstrap_astrooda as it is in a different component
-sites/all/themes/bootstrap_astrooda
-
-# Ignore generated files
-sites/default/files/ctools
-sites/default/files/styles
+# Ignore configuration files that may contain sensitive information.
+#sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
-/.settings/
-/.buildpath
-/.project
+#sites/*/files
+#sites/*/private

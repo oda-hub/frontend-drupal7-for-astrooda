@@ -356,6 +356,7 @@
 
       $(window).bind('scroll', scrollHandler);
     }
+
     $('.find-more-button').not('.find-more-button-processed').addClass('find-more-button-processed').click(Drupal.eu_cookie_compliance.moreInfoAction);
   };
 
@@ -507,7 +508,6 @@
       }
       else {
         window.location.href = Drupal.settings.eu_cookie_compliance.popup_link;
-        console.log('OLDUS HREF='+Drupal.settings.eu_cookie_compliance.popup_link);
       }
     }
   };
