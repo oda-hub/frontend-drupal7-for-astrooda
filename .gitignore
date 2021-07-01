@@ -1,6 +1,14 @@
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
-
-# Ignore paths that contain user-generated content.
-sites/*/files
-sites/*/private
+sites/all/themes/bootstrap_astrooda
+sites/all/modules/astrooda
+sites/all/libraries/datatables/Select
+sites/all/libraries/datatables/Editor
+sites/all/libraries/datatables/Responsive
+sites/all/libraries/datatables/Buttons
+sites/all/libraries/mpld3/mpld3.js
+sites/all/libraries/bokeh/bokeh-widgets.min.js
+sites/all/libraries/bokeh/bokeh.min.js
+sites/all/libraries/bokeh/bokeh.min.css
+sites/all/libraries/bokeh/bokeh-widgets.min.css
+sites/all/libraries/d3/d3.js

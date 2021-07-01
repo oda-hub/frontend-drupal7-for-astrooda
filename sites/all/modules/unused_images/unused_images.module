@@ -1,0 +1,142 @@
+<?php
+
+/**
+ * Implements hook_permission().
+ */
+function unused_images_permission() {
+  return array(
+    'use unused images' => array(
+      'title' => t('Use the unused images module'),
+      'description' => t('Run the find and move unused images forms.'),
+      'restrict access' => TRUE,
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function unused_images_menu() {
+  $items = array();
+  $items['admin/config/media/unused-images'] = array(
+    'title' => 'Unused Images',
+    'description' => 'Status overview for unused images',
+    'page callback' => 'unused_images_overview',
+    'access arguments' => array('use unused images'),
+    'file' => 'unused_images.admin.inc',
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['admin/config/media/unused-images/status'] = array(
+    'title' => 'Status',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => 10,
+  );
+  $items['admin/config/media/unused-images/settings'] = array(
+    'title' => 'Settings',
+    'description' => 'Settings for Unused Images',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('unused_images_settings'),
+    'access arguments' => array('use unused images'),
+    'file' => 'unused_images.admin.inc',
+    'type' => MENU_LOCAL_TASK,
+    'weight' => 20,
+  );
+  $items['admin/config/media/unused-images/run'] = array(
+    'title' => 'Run an action',
+    'description' => 'Runs an action',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('unused_images_run'),
+    'access arguments' => array('use unused images'),
+    'file' => 'unused_images.admin.inc',
+    'type' => MENU_IS_LOCAL_TASK,
+    'context' => MENU_CONTEXT_PAGE,
+    'tab_parent' => 'admin/config/media/unused-images/status',
+  );
+  $items['admin/config/media/unused-images/delete'] = array(
+    'title' => 'Delete results',
+    'description' => 'Delete results of an earlier run',
+    'page callback' => 'unused_images_delete_results',
+    'access arguments' => array('use unused images'),
+    'file' => 'unused_images.admin.inc',
+    'type' => MENU_IS_LOCAL_TASK,
+    'context' => MENU_CONTEXT_PAGE,
+    'tab_parent' => 'admin/config/media/unused-images/status',
+  );
+  $items['admin/config/media/unused-images/move'] = array(
+    'title' => 'Move images',
+    'description' => 'Moves or deletes unused images',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('unused_images_move'),
+    'access arguments' => array('use unused images'),
+    'file' => 'unused_images.admin.inc',
+    'type' => MENU_IS_LOCAL_TASK,
+    'context' => MENU_CONTEXT_PAGE,
+    'tab_parent' => 'admin/config/media/unused-images/status',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter.
+ */
+function unused_images_menu_local_tasks_alter(&$data, $router_item, $root_path) {
+  if (substr($root_path, 0, strlen('admin/config/media/unused-images')) === 'admin/config/media/unused-images') {
+    if (isset($data['tabs'][1])) {
+      unset($data['tabs'][1]);
+    }
+  }
+}
+
+/**
+ * Returns a list of all image usage finder classes.
+ *
+ * Other modules may extend this list by implementing
+ * hook_unused_images_usage_finder that should return a list of arrays with each
+ * entry array having the following keys:
+ * - class: name of PHP class to instantiate, should extend
+ *   UnusedImagesUsageFinder.
+ * - argument (optional): argument (sting) to pass to the constructor. The list
+ *   of extensions to filter on will always be passed as next argument.
+ *
+ * @return array[]
+ *   A list of info-arrays about class instances that can find usages of images.
+ */
+function unused_images_get_usage_finders() {
+  $finders = array(
+    array('class' => 'UnusedImagesUsageFinderManagedFiles'),
+  );
+
+  $textFields = (new UnusedImagesUtilities())->getFieldsThatMayBeSearched();
+  foreach ($textFields as $fieldName => $textField) {
+    $finders[] = array(
+      'class' => 'UnusedImagesUsageFinderTextField',
+      'argument' => $fieldName,
+    );
+  }
+
+  // We will check here if the modules that create the tables are enabled. If
+  // you disable and uninstall a module further on in the process after having
+  // selected that you want to search its table(s), you may get a fatal error.
+  if (module_exists('block')) {
+    $finders[] = array('class' => 'UnusedImagesUsageFinderBlocks');
+  }
+  $finders[] = array('class' => 'UnusedImagesUsageFinderVariables');
+  if (module_exists('locale')) {
+    $finders[] = array('class' => 'UnusedImagesUsageFinderLocales');
+  }
+
+  $finders = array_merge($finders, module_invoke_all('unused_images_usage_finders'));
+
+  // Add keys.
+  $result = array();
+  foreach ($finders as $finder) {
+    $key = 'unused_images|';
+    $key .= $finder['class'];
+    if (!empty($finder['argument'])) {
+      $key .= '|' . $finder['argument'];
+    }
+    $result[$key] = $finder;
+  }
+
+  return $result;
+}
