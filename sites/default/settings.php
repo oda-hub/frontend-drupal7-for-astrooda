@@ -340,6 +340,7 @@ ini_set('session.gc_divisor', 100);
  * a session is deleted, authenticated users are logged out, and the contents
  * of the user's $_SESSION variable is discarded.
  */
+# ~2.3 days : 2.3 x 86400
 ini_set('session.gc_maxlifetime', 200000);
 
 /**
@@ -347,7 +348,8 @@ ini_set('session.gc_maxlifetime', 200000);
  * created to the cookie expires, i.e. when the browser is expected to discard
  * the cookie. The value 0 means "until the browser is closed".
  */
-ini_set('session.cookie_lifetime', 2000000);
+# 3 days : 3 x 86400 seconds
+ini_set('session.cookie_lifetime', 3 * 86400);
 
 /**
  * If you encounter a situation where users post a large amount of text, and

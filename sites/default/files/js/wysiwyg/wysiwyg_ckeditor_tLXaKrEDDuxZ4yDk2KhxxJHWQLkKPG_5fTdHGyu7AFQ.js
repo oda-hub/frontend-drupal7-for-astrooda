@@ -1,1 +1,0 @@
-window.CKEDITOR_BASEPATH = '/mmoda/sites/all/libraries/ckeditor/';
