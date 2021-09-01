@@ -1,9 +1,6 @@
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
-sites/all/themes/bootstrap_astrooda
-sites/all/modules/astrooda
-sites/default/files/js
-sites/default/files/styles
-sites/default/files/bootstrap
-sites/default/files/ctools
-sites/default/files/media-icons
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
