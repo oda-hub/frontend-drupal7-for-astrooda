@@ -16,6 +16,11 @@ define('USERNAME_MAX_LENGTH', 60);
 define('EMAIL_MAX_LENGTH', 254);
 
 /**
+ * Maximum length of description text field.
+ */
+define('DESCRIPTION_MAX_LENGTH', 255);
+
+/**
  * Only administrators can create user accounts.
  */
 define('USER_REGISTER_ADMINISTRATORS_ONLY', 0);
@@ -1057,6 +1062,8 @@ function user_account_form(&$form, &$form_state) {
     '#type'   => 'container',
     '#weight' => -10,
   );
+
+  
   // Only show name field on registration form or user can change own username.
   $form['account']['name'] = array(
     '#type' => 'textfield',
@@ -1069,16 +1076,31 @@ function user_account_form(&$form, &$form_state) {
     '#access' => ($register || ($user->uid == $account->uid && user_access('change own username')) || $admin),
     '#weight' => -10,
   );
-
+  
   $form['account']['mail'] = array(
     '#type' => 'textfield',
     '#title' => t('E-mail address'),
     '#maxlength' => EMAIL_MAX_LENGTH,
-    '#description' => t('A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.'),
+    '#description' => t('Please une an institutional email addrress to subscribe to the service. A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.'),
     '#required' => TRUE,
     '#default_value' => (!$register ? $account->mail : ''),
   );
-
+  
+  $form['account']['description'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Description of your case'),
+    '#resizable' => false,
+    '#rows' => 4,
+    '#maxlength' => DESCRIPTION_MAX_LENGTH,
+    '#required' => TRUE,
+    '#description' => t('We would like you to provide us with a small overview of your activities, in particular:
+    <ul>
+      <li>An estimation of the amount of resources needed </li>
+      <li>Purpose of your work</li>
+    </ul>'),
+    
+  );
+  
   // Display password field only for existing users or when user is allowed to
   // assign a password during registration.
   if (!$register) {
