@@ -1094,11 +1094,13 @@ function user_account_form(&$form, &$form_state) {
     '#attributes' => array('class' => array('description_use_case_textarea'),
                           'maxlength' => DESCRIPTION_USE_CASE_MAX_LENGTH),
     '#required' => TRUE,
-    '#description' => t('We would like you to provide us with a small overview of your activities, in particular:
+    '#description' => t('Note that the computing resources are provided by the University of Geneva. For their fair use, we need to know: We would like you to provide us with a small overview of your activities, in particular:
     <ul>
-      <li>An estimation of the amount of resources needed </li>
-      <li>Purpose of your work</li>
-    </ul>'),
+      <li>The purpose of your work(s) in broad terms</li>
+      <li>Possible collaborators in or outside of the University of Geneva</li>
+      <li>An estimation of the amount of resources needed for your project(s)</li>
+    </ul>
+    We will contact you back in case we need additional information.'),
     
   );
   
