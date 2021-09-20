@@ -1081,7 +1081,7 @@ function user_account_form(&$form, &$form_state) {
     '#type' => 'textfield',
     '#title' => t('E-mail address'),
     '#maxlength' => EMAIL_MAX_LENGTH,
-    '#description' => t('Please une an institutional email addrress to subscribe to the service. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.'),
+    '#description' => t('Please use an institutional email addrress to subscribe to the service. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.'),
     '#required' => TRUE,
     '#default_value' => (!$register ? $account->mail : ''),
   );
