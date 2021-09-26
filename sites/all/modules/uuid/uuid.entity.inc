@@ -453,7 +453,9 @@ function entity_uuid_id_cache($entity_type, $ids, $revision) {
     $cache[$entity_type][(int) $revision] = array();
   }
   $cached_ids = $cache[$entity_type][(int) $revision];
-  return array_intersect_key($cached_ids, array_flip($ids));
+  // MTM modify 2021-09-14
+  //return array_intersect_key($cached_ids, array_flip($ids));
+  return array_intersect_key($cached_ids, array_flip(array_filter($ids)));
 }
 
 /**

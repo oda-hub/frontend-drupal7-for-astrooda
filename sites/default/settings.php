@@ -249,8 +249,8 @@ $databases = array (
   array (
     'default' =>
     array (
-      'database' => 'astrooda02',
-      'username' => 'astrooda',
+      'database' => 'mmoda_01',
+      'username' => 'mmoda',
       'password' => 'qtIkJS6#WuFUyA5FO',
       'host' => 'localhost',
       'port' => '',
@@ -646,4 +646,7 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 # $conf['allow_css_double_underscores'] = TRUE;
 
 $conf['x_frame_options'] = '';
+
+#$conf['image_suppress_itok_output'] = TRUE;
+
 
