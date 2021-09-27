@@ -1,4 +1,8 @@
 # Ignore configuration files that may contain sensitive information.
+.buildpath
+.editorconfig
+.project
+.settings
 sites/*/settings*.php
 sites/all/themes/bootstrap_astrooda
 sites/all/modules/astrooda
