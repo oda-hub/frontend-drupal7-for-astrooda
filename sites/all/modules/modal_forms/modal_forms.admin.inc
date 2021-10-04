@@ -86,6 +86,18 @@ function modal_forms_admin_settings() {
     '#description' => t('Automatically activate Modal forms for links to contact.'),
   );
 
+  // Profile settings.
+  $form['modal_forms_profile_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Profile links settings'),
+  );
+  $form['modal_forms_profile_settings']['modal_forms_profile'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Enable for edit user profile links'),
+    '#default_value' => variable_get('modal_forms_profile', 0),
+    '#description' => t('Automatically activate Modal forms for links to user/[uid]/edit.'),
+  );
+
   // Styles and options settings.
   $form['modal_forms_custom_settings'] = array(
       '#type' => 'fieldset',

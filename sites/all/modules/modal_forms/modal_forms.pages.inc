@@ -263,6 +263,43 @@ function modal_forms_view_webform($js = NULL, $node)
 }
 
 /**
+ * A modal user profile callback.
+ */
+function modal_forms_profile($js = NULL, $user,$profile =null) {
+ 
+  ctools_include('user.pages', 'user', '');
+
+  // Fall back if $js is not set.
+  if (!$js) {
+    return drupal_get_form('Å', $user);
+  }
+
+  ctools_include('modal');
+  ctools_include('ajax');
+
+  $form_state = array(
+    // 'title' => t('Edit user'),
+    'ajax' => TRUE,
+    'build_info' => array(
+      'args' => empty($profile) ? array($user):array($user,$profile),
+    ),
+  );
+  $output = ctools_modal_form_wrapper('user_profile_form', $form_state);
+  if (!empty($form_state['executed'])) {
+    // We'll just overwrite the form output if it was successful.
+    $output = array();
+    ctools_add_js('ajax-responder');
+    if (isset($_GET['destination'])) {
+      $output[] = ctools_ajax_command_redirect($_GET['destination']);
+    }
+    else {
+      $output[] = ctools_ajax_command_reload();
+    }
+  }
+  print ajax_render($output);
+}
+
+/**
  * Closes modal windows.
  */
 function modal_forms_dismiss($js = NULL)

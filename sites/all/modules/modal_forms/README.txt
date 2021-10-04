@@ -21,6 +21,8 @@ Modal forms can automatically rewrite links to the following forms and place the
 * Create new account (modal_forms/nojs/register)
 * Comment (modal_forms/nojs/modal_forms/nojs/comment/reply/[nid])
 * Contact (modal_forms/nojs/contact)
+* User profile edit (modal_forms/nojs/user/%user/edit)
+
 
 
 Webforms:
