@@ -1,3 +1,6 @@
 [submodule "sites/all/modules/astrooda"]
 	path = sites/all/modules/astrooda
 	url = git@gitlab.astro.unige.ch:cdci/frontend/astrooda.git
+[submodule "sites/all/libraries/swiftmailer"]
+	path = sites/all/libraries/swiftmailer
+	url = https://github.com/swiftmailer/swiftmailer.git
