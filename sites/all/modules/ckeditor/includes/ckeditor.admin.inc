@@ -1030,7 +1030,8 @@ function ckeditor_admin_profile_form($form, $form_state, $task, $profile = NULL)
     '#title' => t('Auto-detect language'),
     '#default_value' => !empty($profile->settings['auto_lang']) ? $profile->settings['auto_lang'] : 't',
     '#options' => array(
-      't' => t('Enabled'),
+      't' => t('Enabled (browser language)'),
+      'd' => t('Enabled (Drupal language)'),
       'f' => t('Disabled')
     ),
     '#description' => t('Automatically detect the user language.')
@@ -2019,6 +2020,7 @@ function ckeditor_skinframe() {
   if ($editor_path == '<URL>')
     $editor_path = ckeditor_path('url');
   $module_drupal_path = ckeditor_module_path('relative');
+  $skins_path = ckeditor_skins_path('relative');
 
   $html = "<!DOCTYPE html>";
   $html .= "<html>";
@@ -2030,7 +2032,8 @@ function ckeditor_skinframe() {
   $html .= "<input type=\"hidden\" name=\"uicolor_user\"/>";
   $html .= "<div id=\"editor\" style=\"height: 200px;\">Click the <strong>UI Color Picker</strong> button to set your color preferences.</div>";
   $html .= "<script type=\"text/javascript\">
-var skin = window.location.search.match(/skin=([^&]*)/)[1];
+var skin_name = window.location.search.match(/skin=([^&]*)/)[1];
+var skin = skin_name + ',{$skins_path}/' + skin_name + '/';
 var uicolor = window.location.search.match(/uicolor=([^&]*)/)[1];
 var ckeditorUiColorOnChange = function() {
   var color = CKEDITOR.instances['editor'].getUiColor();

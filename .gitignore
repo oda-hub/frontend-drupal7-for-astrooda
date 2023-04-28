@@ -1,18 +1,10 @@
 # Ignore configuration files that may contain sensitive information.
-.buildpath
-.editorconfig
-.project
-.settings
 sites/*/settings*.php
-sites/all/themes/bootstrap_mmoda
-sites/all/modules/mmoda
 
 # Ignore paths that contain user-generated content.
-sites/default/files/styles
-sites/default/files/bootstrap
-sites/default/files/ctools
-sites/default/files/media-icons
-sites/default/files/webform
-sites/default/files/js
-
+sites/*/files
 sites/*/private
+/.buildpath
+/.editorconfig
+/.project
+/.settings/

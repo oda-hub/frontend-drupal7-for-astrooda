@@ -737,6 +737,9 @@ function ckeditor_profile_settings_compile($global_profile, $profile) {
     $settings['language'] = $conf['lang'];
     //[#1473010]
     $settings['scayt_sLang'] = ckeditor_scayt_langcode($conf['lang']);
+  } else if ($conf['auto_lang'] == "d") {
+      $settings['language'] = $language->language;
+      $settings['scayt_sLang'] = ckeditor_scayt_langcode($language->language);
   }
 
   if (isset($conf['forcePasteAsPlainText']) && $conf['forcePasteAsPlainText'] == 't') {
@@ -1296,12 +1299,14 @@ function ckeditor_load_by_field($field, $format, $show_toggle = TRUE, $add_field
 
   if ($profile === FALSE) {
     $ckeditor_in_default_format = FALSE;
-    foreach ((array) $format_arr['#options'] as $key => $val) {
-      if ($key == $format)
-        continue;
-      if ($profile = ckeditor_get_profile($key)) {
-        $use_ckeditor = $key;
-        break;
+    if (isset($format_arr['#options'])) {
+      foreach ((array) $format_arr['#options'] as $key => $val) {
+        if ($key == $format)
+          continue;
+        if ($profile = ckeditor_get_profile($key)) {
+          $use_ckeditor = $key;
+          break;
+        }
       }
     }
     if ($use_ckeditor === FALSE) {
