@@ -391,14 +391,53 @@ function openid_connect_generate_username($sub, $userinfo, $client_name) {
   $candidates = array('preferred_username', 'name');
   foreach ($candidates as $candidate) {
     if (!empty($userinfo[$candidate])) {
-      $name = trim($userinfo[$candidate]);
+      $name = $userinfo[$candidate];
       break;
     }
   }
 
-  // Ensure there are no duplicates.
+  drupal_alter('openid_connect_new_username', $name, $userinfo, $client_name);
+
+  return openid_connect_sanitize_new_username($name);
+}
+
+/**
+ * Sanitize a username for a new account. The account must not be saved already.
+ *
+ * @param string $name
+ *   The new account's proposed username.
+ *
+ * @return string
+ *   The sanitized username.
+ */
+function openid_connect_sanitize_new_username($name) {
+  // Remove leading, trailing, and duplicate whitespace.
+  $name = preg_replace('/ +/', ' ', trim($name));
+
+  // Remove illegal characters. These patterns are copied from the core function
+  // user_validate_name().
+  $illegal1 = '/[^\x{80}-\x{F7} a-z0-9@_.\'-]/i';
+  $illegal2 = '/[\x{80}-\x{A0}'
+    . '\x{AD}'
+    . '\x{2000}-\x{200F}'
+    . '\x{2028}-\x{202F}'
+    . '\x{205F}-\x{206F}'
+    . '\x{FEFF}'
+    . '\x{FF01}-\x{FF60}'
+    . '\x{FFF9}-\x{FFFD}'
+    . '\x{0}-\x{1F}]'
+    . '/u';
+  $name = preg_replace($illegal1, '-', $name);
+  $name = preg_replace($illegal2, '-', $name);
+
+  // Ensure the name will fit within the maximum length.
+  $name = truncate_utf8($name, USERNAME_MAX_LENGTH, TRUE, FALSE, 20);
+
+  // Ensure there are no duplicates, by checking for the existence of the name,
+  // and adding some random digits at the end if necessary.
   for ($original = $name, $i = 1; openid_connect_username_exists($name); $i++) {
-    $name = $original . '_' . $i;
+    $suffix = '_' . $i;
+    $name = truncate_utf8($original, USERNAME_MAX_LENGTH - strlen($suffix)) . $suffix;
   }
 
   return $name;
@@ -474,7 +513,13 @@ function openid_connect_form_user_profile_form_alter(&$form, &$form_state) {
     $account_form = &$form;
   }
 
-  if (!empty($account_form['pass']['#access']) && !openid_connect_set_password_access($form['#user'])) {
+  // Do nothing if the user does not have access to password field.
+  if (isset($account_form['pass']['#access']) 
+      && !$account_form['pass']['#access']) {
+      return;
+  }
+
+  if (!openid_connect_set_password_access($form['#user'])) {
     $account_form['current_pass']['#access'] = FALSE;
     $account_form['current_pass_required_values']['#value'] = array();
     $account_form['pass']['#access'] = FALSE;
@@ -810,6 +855,13 @@ function openid_connect_complete_authorization($client, $tokens, &$destination) 
     return FALSE;
   }
 
+  // Check whether the e-mail address is valid.
+  if (!filter_var($userinfo['email'], FILTER_VALIDATE_EMAIL)) {
+    drupal_set_message(t('The e-mail address %mail is not valid.', array('%mail' => $userinfo['email'])), 'error');
+
+    return FALSE;
+  }
+
   $account = openid_connect_user_load_by_sub($sub, $client->getName());
   $results = module_invoke_all('openid_connect_pre_authorize', $tokens, $account, $userinfo, $client->getName());
 
@@ -826,20 +878,19 @@ function openid_connect_complete_authorization($client, $tokens, &$destination) 
     }
     $account_is_new = FALSE;
   }
-  else {
-    // Check whether the e-mail address is valid.
-    if (!filter_var($userinfo['email'], FILTER_VALIDATE_EMAIL)) {
-      drupal_set_message(t('The e-mail address %mail is not valid.', array('%mail' => $userinfo['email'])), 'error');
-
-      return FALSE;
-    }
+  elseif ($account = user_load_by_mail($userinfo['email'])) {
     // Check whether there is an e-mail address conflict.
-    if (user_load_by_mail($userinfo['email'])) {
+    if (variable_get('openid_connect_connect_existing_users', FALSE)) {
+      openid_connect_connect_account($account, $client->getName(), $sub);
+      $account_is_new = FALSE;
+    }
+    else {
       drupal_set_message(t('The e-mail address %email is already taken.', array('%email' => $userinfo['email'])), 'error');
 
       return FALSE;
     }
-
+  }
+  else {
     // Create a new account.
     $account = openid_connect_create_user($sub, $userinfo, $client->getName());
     // Reload $account in case it has been altered in a user hook elsewhere.

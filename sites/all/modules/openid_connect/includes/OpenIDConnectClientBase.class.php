@@ -119,7 +119,10 @@ abstract class OpenIDConnectClientBase implements OpenIDConnectClientInterface {
         'client_id' => $this->getSetting('client_id'),
         'response_type' => 'code',
         'scope' => $scope,
-        'redirect_uri' => url($redirect_uri, array('absolute' => TRUE)),
+        'redirect_uri' => url($redirect_uri, array(
+          'absolute' => TRUE,
+          'language' => LANGUAGE_NONE,
+        )),
         'state' => openid_connect_create_state_token(),
       ),
     );
@@ -139,7 +142,10 @@ abstract class OpenIDConnectClientBase implements OpenIDConnectClientInterface {
       'code' => $authorization_code,
       'client_id' => $this->getSetting('client_id'),
       'client_secret' => $this->getSetting('client_secret'),
-      'redirect_uri' => url($redirect_uri, array('absolute' => TRUE)),
+      'redirect_uri' => url($redirect_uri, array(
+        'absolute' => TRUE,
+        'language' => LANGUAGE_NONE,
+      )),
       'grant_type' => 'authorization_code',
     );
     $request_options = array(

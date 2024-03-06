@@ -1,0 +1,14 @@
+name = OpenID Connect Example
+description = A example client implementation for the OpenID Connect protocol.
+core = 7.x
+package = OAuth2
+
+hidden = true
+
+dependencies[] = openid_connect
+
+; Information added by Drupal.org packaging script on 2024-03-06
+version = "7.x-1.3"
+core = "7.x"
+project = "openid_connect"
+datestamp = "1709723348"

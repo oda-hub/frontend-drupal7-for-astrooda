@@ -55,6 +55,16 @@ function openid_connect_admin_form($form, &$form_state) {
     );
   }
 
+  $form['openid_connect_connect_existing_users'] = array(
+    '#title' => t('Automatically connect existing users'),
+    '#description' => t('If disabled, authentication will fail for existing email addresses. Enabling this option will allow logging into existing accounts, which may be a security risk if the identity provider does not have in place adequate procedures to guarantee that users really own the e-mail addresses used.'),
+    '#type' => 'checkbox',
+    // This is FALSE to reflect the default behaviour of historical installs.
+    // Given the install base there is a high likelyhood that existing sites
+    // are using the module as the single account creation process.
+    '#default_value' => variable_get('openid_connect_connect_existing_users', FALSE),
+  );
+
   $form['userinfo_mapping'] = array(
     '#title' => t('User claims mapping'),
     '#type' => 'fieldset',
@@ -149,6 +159,7 @@ function openid_connect_admin_form_submit($form, &$form_state) {
   $default_enabled = array(
     'openid_connect_always_save_userinfo',
     'openid_connect_user_pictures',
+    'openid_connect_connect_existing_users',
   );
   foreach ($default_enabled as $variable) {
     if (isset($form_state['values'][$variable])) {

@@ -71,5 +71,21 @@ function hook_openid_connect_claims_alter(array &$claims) {
 }
 
 /**
+ * Alter the username for a new account created via OpenID Connect.
+ *
+ * @param string $name
+ *   The new username.
+ * @param array $userinfo
+ *   The user claims returned by the OpenID Connect provider.
+ * @param string $client_name
+ *   The machine name of the OpenID Connect client plugin.
+ */
+function hook_openid_connect_new_username_alter(&$name, array $userinfo, $client_name) {
+  if ($client_name === 'my-service') {
+    $name = $userinfo['user-name'];
+  }
+}
+
+/**
  * @} End of "addtogroup hooks".
  */

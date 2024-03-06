@@ -411,7 +411,7 @@ function node_export_prepare_node(&$original_node) {
     node_save($original_node);
   }
 
-  $node = clone($original_node);
+  $node = clone $original_node;
 
   // Fix taxonomy array
   if (isset($node->taxonomy) && count($node->taxonomy)) {
@@ -801,7 +801,7 @@ function node_export_save(&$node) {
 function node_export_node_clone($original_node) {
   global $user;
 
-  $node = clone($original_node);
+  $node = clone $original_node;
 
   $node->nid = NULL;
   $node->vid = NULL;
@@ -1069,10 +1069,10 @@ function node_export_format_handlers() {
 /**
  * Get entity type and bundle of the given entity. Works for nodes and field
  * collection items.
- *
+ * 
  * @param $entity
  *   Entity to get information of.
- *
+ * 
  * @return
  *   Associative array with the 'type' and 'bundle' fields.
  */
@@ -1096,7 +1096,7 @@ function _node_export_entity_info($entity) {
 
 /**
  * Handle exporting file fields.
- *
+ * 
  * @param $entity
  *   Node or field_collection_item object.
  * @param $original_entity
@@ -1212,7 +1212,7 @@ function node_export_file_field_export(&$entity, $original_entity) {
 
 /**
  * Handle importing file fields.
- *
+ * 
  * @param $entity
  *   Node or field_collection_item object.
  * @param $original_entity
