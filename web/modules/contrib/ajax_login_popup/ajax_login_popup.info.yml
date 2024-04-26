@@ -1,0 +1,11 @@
+name: 'Ajax Login Popup'
+description: 'Module For adding redirection link and button name after the user login'
+package: 'Login'
+type: module
+configure: ajax_login_popup.config
+core_version_requirement: ^8.8 || ^9 || ^10
+
+# Information added by Drupal.org packaging script on 2024-01-19
+version: '2.0.2'
+project: 'ajax_login_popup'
+datestamp: 1705627855

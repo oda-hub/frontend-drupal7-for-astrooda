@@ -1,0 +1,8 @@
+services:
+  entity_content_export.build:
+    class: Drupal\entity_content_export\EntityContentExportBuild
+    arguments: [ "@renderer", "@entity_type.manager" ]
+
+  plugin.manager.entity_content_export_type:
+    class: \Drupal\entity_content_export\EntityContentExportTypeManager
+    parent: default_plugin_manager

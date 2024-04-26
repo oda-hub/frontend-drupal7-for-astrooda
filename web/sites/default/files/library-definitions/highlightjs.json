@@ -1,0 +1,14 @@
+{
+    "name": "JS Syntaxe Highlighter",
+    "type": "asset",
+    "vendor url": "https://highlightjs.org",
+    "download url": "https://highlightjs.org/download",
+    "css": {
+        "base": [
+            "default.min.css"
+        ]
+    },
+    "js": {
+        "highlight.min.js": {}
+    }
+}

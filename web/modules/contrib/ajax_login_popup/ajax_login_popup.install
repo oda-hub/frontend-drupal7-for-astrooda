@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the ajax_login_popup module.
+ */
+
+/**
+ * Rename wrong name of the config from redirection_config_form to ajax_login_popup.
+ */
+function ajax_login_popup_update_8003() {
+  $old_config = \Drupal::config('redirection_config_form.settings');
+  $old_link_config = $old_config->get('link');
+  $old_ajax_button_config = $old_config->get('ajax_button');
+
+  $config = \Drupal::configFactory()->getEditable('ajax_login_popup.settings');
+  $config->set('link', $old_link_config);
+  $config->set('ajax_button', $old_ajax_button_config);
+  $config->save();
+}

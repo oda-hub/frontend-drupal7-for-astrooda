@@ -1,0 +1,344 @@
+<?php
+
+/**
+ * @file
+ * The hook implementation for the entity content export module.
+ */
+
+use Drupal\Component\Utility\NestedArray;
+use Drupal\Core\Entity\Display\EntityDisplayInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Field\Entity\BaseFieldOverride;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Implements hook_form_BASE_FORM_alter().
+ *
+ * @param array $form
+ *   The form elements.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The form state instance.
+ */
+function entity_content_export_form_entity_view_display_form_alter(
+  array &$form,
+  FormStateInterface $form_state
+) {
+  $display = $form_state->getFormObject()->getEntity();
+
+  if (! $display instanceof EntityViewDisplayInterface) {
+    return;
+  }
+  $bundle_type = $display->getTargetBundle();
+  $entity_type = $display->getTargetEntityTypeId();
+
+  if (!entity_content_export_has_bundle_config_display_mode(
+    $entity_type,
+    $bundle_type,
+    $display->getMode())
+  ) {
+    return;
+  }
+  /** @var \Drupal\Core\Entity\EntityFieldManager $field_manager */
+  $field_manager = \Drupal::service('entity_field.manager');
+  $field_definitions = $field_manager
+    ->getFieldDefinitions($entity_type, $bundle_type);
+
+  $form['entity_content_export'] = [
+    '#type' => 'details',
+    '#title' => new TranslatableMarkup('Entity content export'),
+    '#tree' => TRUE,
+    '#open' => FALSE,
+  ];
+
+  $base_fields = entity_content_export_get_form_state_value(
+    ['entity_content_export', 'base_fields'],
+    $form_state,
+    []
+  );
+
+  $components = entity_content_export_get_form_state_value(
+    ['entity_content_export', 'components'],
+    $form_state,
+    []
+  );
+
+  $form['entity_content_export']['base_fields'] = [
+    '#type' => 'select',
+    '#title' => new TranslatableMarkup('Base Field'),
+    '#options' => entity_content_export_get_entity_base_field_options(
+      $entity_type
+    ),
+    '#multiple' => TRUE,
+    '#description' => new TranslatableMarkup(
+      'Select multiple entity base fields that should be included in the export.'
+    ),
+    '#default_value' => $base_fields,
+    '#ajax' => [
+      'event' => 'change',
+      'method' => 'replace',
+      'wrapper' => 'entity-content-export-components',
+      'callback' => 'entity_content_export_components_ajax',
+    ]
+  ];
+  $form['entity_content_export']['components'] = [
+    '#type' => 'table',
+    '#header' => [
+      new TranslatableMarkup('Field'),
+      new TranslatableMarkup('Machine Name'),
+      new TranslatableMarkup('Property Name'),
+      new TranslatableMarkup('Render')
+    ],
+    '#empty' => new TranslatableMarkup(
+      'No fields have been selected to be exported.'
+    ),
+    '#prefix' => '<div id="entity-content-export-components">',
+    '#suffix' => '</div>'
+  ];
+
+  foreach ($field_definitions as $field_name => $definition) {
+    $is_base_field = $definition instanceof BaseFieldDefinition
+      || $definition instanceof BaseFieldOverride;
+
+    if (($is_base_field && !isset($base_fields[$field_name]))
+     || (!$is_base_field && $display->getComponent($field_name) === NULL)) {
+      continue;
+    }
+
+    $component_settings = isset($components[$field_name])
+      ? $components[$field_name]
+      : [];
+
+    $form['entity_content_export']['components'][$field_name]['label'] = [
+      '#plain_text' => $definition->getLabel()
+    ];
+    $form['entity_content_export']['components'][$field_name]['machine_name'] = [
+      '#plain_text' => $field_name
+    ];
+    $form['entity_content_export']['components'][$field_name]['name'] = [
+      '#type' => 'textfield',
+      '#description' => new TranslatableMarkup(
+        'Input the name that is used when exporting.'
+      ),
+      '#required' => TRUE,
+      '#default_value' => isset($component_settings['name'])
+        ? $component_settings['name']
+        : $field_name
+    ];
+    $form['entity_content_export']['components'][$field_name]['render'] = [
+      '#type' => 'select',
+      '#options' => [
+        'field' => new TranslatableMarkup('Field'),
+        'value' => new TranslatableMarkup('Value'),
+      ],
+      '#required' => TRUE,
+      '#default_value' => isset($component_settings['render'])
+        ? $component_settings['render']
+        : 'value'
+    ];
+  }
+
+  $form['#entity_builders'][] = 'entity_content_export_entity_view_display_builder';
+}
+
+/**
+ * Ajax entity content export components.
+ *
+ * @param array $form
+ *   An array of form elements.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The format state instance.
+ *
+ * @return array
+ *   The entity content export components form elements.
+ */
+function entity_content_export_components_ajax(array $form, FormStateInterface $form_state) {
+  return $form['entity_content_export']['components'] ;
+}
+
+/**
+ * Entity view display builder callback.
+ *
+ * @param $entity_type
+ *   The entity type.
+ * @param \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display
+ *   The entity view display.
+ * @param array $form
+ *   An array of form elements.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The form states.
+ */
+function entity_content_export_entity_view_display_builder(
+  $entity_type,
+  EntityViewDisplayInterface $display,
+  array &$form,
+  FormStateInterface $form_state
+) {
+  $module = 'entity_content_export';
+
+  if (!$form_state->hasValue($module)) {
+    return;
+  }
+
+  // Set all the entity content export settings.
+  foreach ($form_state->getValue($module) as $key => $value) {
+    $display->setThirdPartySetting($module, $key, $value);
+  }
+}
+
+/**
+ * Get value from the form state.
+ *
+ * @param $property
+ *   The property name, or array of nested properties.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The form state instance.
+ * @param null $default_value
+ *   The default value if the property isn't found.
+ *
+ * @return mixed|null
+ *   The property value.
+ */
+function entity_content_export_get_form_state_value(
+  $property,
+  FormStateInterface $form_state,
+  $default_value = NULL
+) {
+  if (!is_array($property)) {
+    $property = [$property];
+  }
+  $inputs = [
+    $form_state->getValues(),
+    $form_state->getUserInput(),
+  ];
+  $display = $form_state->getFormObject()->getEntity();
+
+  if ($display instanceof EntityDisplayInterface) {
+    $inputs[] = [
+      'entity_content_export' => $display->getThirdPartySettings('entity_content_export')
+    ];
+  }
+
+  foreach ($inputs as $values) {
+    if (empty($values)) {
+      continue;
+    }
+    $key_exists = FALSE;
+    $value = NestedArray::getValue($values, $property, $key_exists);
+
+    if (isset($value) && $key_exists) {
+      return $value;
+    }
+  }
+
+  return $default_value;
+}
+
+/**
+ * Get bundle configuration display mode.
+ *
+ * @param $entity_type
+ *   The entity type.
+ * @param $bundle_type
+ *   The entity bundle type.
+ *
+ * @return string
+ *   The fully defined entity bundle display mode.
+ */
+function entity_content_export_get_bundle_config_display_mode(
+  $entity_type,
+  $bundle_type
+) {
+  $settings = entity_content_export_settings();
+  $configuration = $settings->get('entity_bundle_configuration');
+
+  if (!isset($configuration[$entity_type][$bundle_type])) {
+    return NULL;
+  }
+  $bundle = $configuration[$entity_type][$bundle_type];
+
+  return isset($bundle['display_mode']) && !empty($bundle['display_mode'])
+    ? $bundle['display_mode']
+    : 'default';
+}
+
+/**
+ * Entity content export has bundle config display mode.
+ *
+ * @param $entity_type
+ *   The entity type.
+ * @param $bundle_type
+ *   The entity bundle.
+ * @param $current_mode
+ *   The current view mode.
+ *
+ * @return bool
+ *   Determine if export has bundle config display mode selected.
+ */
+function entity_content_export_has_bundle_config_display_mode(
+  $entity_type,
+  $bundle_type,
+  $current_mode
+) {
+  $bundle_display_mode = entity_content_export_get_bundle_config_display_mode(
+    $entity_type,
+    $bundle_type
+  );
+
+  if ($bundle_display_mode === $current_mode) {
+    return TRUE;
+  }
+
+  return FALSE;
+}
+
+/**
+ * Get entity base field options.
+ *
+ * @param $entity_type_id
+ *   The entity type identifier.
+ *
+ * @return array
+ *   An array of base field options.
+ */
+function entity_content_export_get_entity_base_field_options($entity_type_id) {
+  $options = [];
+  $base_fields = \Drupal::service('entity_field.manager')
+    ->getBaseFieldDefinitions($entity_type_id);
+
+  /** @var \Drupal\Core\Field\BaseFieldDefinition $field */
+  foreach ($base_fields as $name => $field) {
+    if ($field->isComputed()) {
+      continue;
+    }
+    $options[$name] = $field->getLabel();
+  }
+
+  return $options;
+}
+
+/**
+ * Get entity content export settings.
+ *
+ * @return mixed
+ *   The configuration instance for the entity content export settings.
+ */
+function entity_content_export_settings() {
+  return entity_content_export_get_config(
+    'entity_content_export.settings'
+  );
+}
+
+/**
+ * Get get configuration object.
+ *
+ * @param $name
+ *   The configuration name.
+ *
+ * @return mixed
+ *   The configuration instance.
+ */
+function entity_content_export_get_config($name) {
+  return \Drupal::service('config.factory')->get($name);
+}
