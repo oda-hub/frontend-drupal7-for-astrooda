@@ -2,8 +2,8 @@
 
 namespace Drupal\Tests\eme\Traits;
 
-use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\field\Entity\FieldConfig;
+use Drupal\field\Entity\FieldStorageConfig;
 
 /**
  * Methods for creating media reference fields.

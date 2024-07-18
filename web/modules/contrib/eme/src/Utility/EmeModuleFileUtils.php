@@ -71,8 +71,8 @@ final class EmeModuleFileUtils {
    *   TRUE when the class is used, FALSE otherwise.
    */
   public static function classIsUsed(string $fqcn, string $module_content): bool {
-    $class_name_qouted = preg_quote($fqcn, '/');
-    $class_use_pattern = "/use\s+$class_name_qouted;/";
+    $class_name_quoted = preg_quote($fqcn, '/');
+    $class_use_pattern = "/use\s+$class_name_quoted;/";
     return (bool) preg_match($class_use_pattern, $module_content);
   }
 

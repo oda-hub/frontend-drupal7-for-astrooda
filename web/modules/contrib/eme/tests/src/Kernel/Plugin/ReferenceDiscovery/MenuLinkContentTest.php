@@ -5,8 +5,8 @@ namespace Drupal\Tests\eme\Kernel\Plugin\ReferenceDiscovery;
 use Drupal\eme\Plugin\Eme\ReferenceDiscovery\MenuLinkContent;
 use Drupal\entity_test\Entity\EntityTest;
 use Drupal\KernelTests\KernelTestBase;
-use Drupal\menu_link_content\MenuLinkContentInterface;
 use Drupal\menu_link_content\Entity\MenuLinkContent as MenuLinkContentEntity;
+use Drupal\menu_link_content\MenuLinkContentInterface;
 use Drupal\Tests\user\Traits\UserCreationTrait;
 
 /**
@@ -58,7 +58,7 @@ class MenuLinkContentTest extends KernelTestBase {
     ]);
     $this->entity->save();
 
-    // Create an another test entity.
+    // Create another test entity.
     EntityTest::create([
       'id' => 2,
       'uid' => $uid,
@@ -88,7 +88,7 @@ class MenuLinkContentTest extends KernelTestBase {
     );
 
     $actual_matching_menu_link_uris = array_map(function (MenuLinkContentInterface $menu_link) {
-      return $menu_link->link->first()->uri;
+      return $menu_link->link->first()->getValue()['uri'] ?? NULL;
     }, $plugin->fetchReverseReferences($this->entity));
 
     sort($expected_matching_uris);
@@ -103,20 +103,20 @@ class MenuLinkContentTest extends KernelTestBase {
    * @return array
    *   The test cases.
    */
-  public function providerTestFetchReverseReferences(): array {
+  public static function providerTestFetchReverseReferences(): array {
     return [
       'No menu links' => [
-        'Links' => [],
-        'Expected' => [],
+        'link_uris' => [],
+        'expected_matching_uris' => [],
       ],
       'Menu links for test entity' => [
-        'Links' => [
+        'link_uris' => [
           'internal:/entity_test/1',
           'entity:entity_test/1',
           'internal:/entity_test/1',
           'route:entity.entity_test.canonical;entity_test=1',
         ],
-        'Expected' => [
+        'expected_matching_uris' => [
           'entity:entity_test/1',
           'internal:/entity_test/1',
           'internal:/entity_test/1',
@@ -124,21 +124,21 @@ class MenuLinkContentTest extends KernelTestBase {
         ],
       ],
       'Menu links for other test entity' => [
-        'Links' => [
+        'link_uris' => [
           'entity:entity_test/2',
           'internal:/entity_test/2',
           'base:entity_test/2',
           'route:entity.entity_test.canonical;entity_test=2',
         ],
-        'Expected' => [],
+        'expected_matching_uris' => [],
       ],
       'Menu links for test entity and for other entities' => [
-        'Links' => [
+        'link_uris' => [
           'entity:entity_test/1',
           'internal:/entity_test/2',
           'base:entity_test/2',
         ],
-        'Expected' => [
+        'expected_matching_uris' => [
           'entity:entity_test/1',
         ],
       ],

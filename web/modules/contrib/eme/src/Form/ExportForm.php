@@ -2,8 +2,10 @@
 
 namespace Drupal\eme\Form;
 
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Extension\ModuleExtensionList;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\RendererInterface;
 use Drupal\Core\StreamWrapper\StreamWrapperManagerInterface;
 use Drupal\Core\Url;
 use Drupal\eme\Access\TemporarySchemeAccessCheck;
@@ -12,7 +14,6 @@ use Drupal\eme\Export\ExportPluginManager;
 use Drupal\eme\InterfaceAwareExportBatchRunner;
 use Drupal\eme\Utility\EmeCollectionUtils;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Entity\EntityTypeManagerInterface;
 
 /**
  * Form for starting a Content Entity to Migrations batch.
@@ -34,6 +35,13 @@ class ExportForm extends ExportFormBase {
   protected $contentEntityTypes;
 
   /**
+   * The renderer service.
+   *
+   * @var \Drupal\Core\Render\RendererInterface
+   */
+  protected $renderer;
+
+  /**
    * Construct an ExportForm instance.
    *
    * @param \Drupal\Core\Extension\ModuleExtensionList $module_list
@@ -46,11 +54,14 @@ class ExportForm extends ExportFormBase {
    *   The entity type manager.
    * @param \Drupal\Core\StreamWrapper\StreamWrapperManagerInterface $stream_wrapper_manager
    *   The stream wrapper manager.
+   * @param \Drupal\Core\Render\RendererInterface $renderer
+   *   The renderer service.
    */
-  public function __construct(ModuleExtensionList $module_list, InterfaceAwareExportBatchRunner $batch_runner, ExportPluginManager $export_plugin_manager, EntityTypeManagerInterface $entity_type_manager, StreamWrapperManagerInterface $stream_wrapper_manager) {
+  public function __construct(ModuleExtensionList $module_list, InterfaceAwareExportBatchRunner $batch_runner, ExportPluginManager $export_plugin_manager, EntityTypeManagerInterface $entity_type_manager, StreamWrapperManagerInterface $stream_wrapper_manager, RendererInterface $renderer) {
     parent::__construct($module_list, $batch_runner, $export_plugin_manager);
     $this->streamWrapperManager = $stream_wrapper_manager;
     $this->contentEntityTypes = EmeCollectionUtils::getContentEntityTypes($entity_type_manager);
+    $this->renderer = $renderer;
   }
 
   /**
@@ -62,7 +73,8 @@ class ExportForm extends ExportFormBase {
       $container->get('eme.batch_runner'),
       $container->get('eme.export_plugin_manager'),
       $container->get('entity_type.manager'),
-      $container->get('stream_wrapper_manager')
+      $container->get('stream_wrapper_manager'),
+      $container->get('renderer')
     );
   }
 
@@ -120,7 +132,7 @@ class ExportForm extends ExportFormBase {
           '#attributes' => ['class' => ['description']],
         ],
       ];
-      return \Drupal::service('renderer')->renderRoot($label_content);
+      return $this->renderer->renderRoot($label_content);
     }, $this->exportPluginManager->getDefinitions());
 
     // If there is only one export plugin, then users don't need to pick one.
@@ -158,13 +170,13 @@ class ExportForm extends ExportFormBase {
           'emeExport' => [
             'eme-id' => [
               'source' => [
-                '[data-drupal-selector="edit-id"]' => 'rplcmnt',
+                '[data-drupal-selector="edit-id"]' => 'replacement',
               ],
               'destination' => [
-                '[data-drupal-selector="edit-module"]' => Eme::getModuleName('(rplcmnt)'),
-                '[data-drupal-selector="edit-name"]' => [Eme::getModuleHumanName('(rplcmnt)')],
-                '[data-drupal-selector="edit-prefix"]' => '(rplcmnt)',
-                '[data-drupal-selector="edit-group"]' => '(rplcmnt)',
+                '[data-drupal-selector="edit-module"]' => Eme::getModuleName('(replacement)'),
+                '[data-drupal-selector="edit-name"]' => [Eme::getModuleHumanName('(replacement)')],
+                '[data-drupal-selector="edit-prefix"]' => '(replacement)',
+                '[data-drupal-selector="edit-group"]' => '(replacement)',
               ],
             ],
           ],
@@ -261,13 +273,6 @@ class ExportForm extends ExportFormBase {
         'group' => $values['group'] ?? $id,
         'path' => NULL,
       ]);
-    $log = "Types =\n".print_r($values['types'], true)."\n";
-    $log .= "module =".($values['module'] ?? Eme::getModuleName($id))."\n";
-    $log .= "name =".($values['name'] ?? Eme::getModuleHumanName($id))."\n";
-    $log .= "id-prefix =".($values['prefix'] ?? $id)."\n";
-    $log .= "group =".($values['group'] ?? $id)."\n";
-
-    $this->save_file('export-params.php', $log);
 
     $this->batchRunner->setupBatch(
       $export_plugin,
@@ -281,20 +286,5 @@ class ExportForm extends ExportFormBase {
   public static function machineNameExists($value, $element): bool {
     return FALSE;
   }
-
-  private function save_file($filename, $filecontent)
-  {
-    $fullfilename = '/tmp/'.$filename;
-    error_log('$fullfilename:'.$fullfilename);
-    if (! ($lfile = fopen($fullfilename, "w"))) {
-      $error_message = "can not open file " . $fullfilename . " for writing.";
-      error_log($error_message);
-      $this->ajax_return['error_message'] .= $error_message;
-      return (PHT2_ERROR);
-    }
-    fwrite($lfile, print_r($filecontent, TRUE));
-    fclose($lfile);
-  }
-
 
 }

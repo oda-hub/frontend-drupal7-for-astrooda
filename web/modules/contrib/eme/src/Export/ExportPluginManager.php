@@ -85,7 +85,7 @@ class ExportPluginManager extends DefaultPluginManager implements ExportPluginMa
     // If the plugin provides a factory method, pass the container to it.
     if (is_subclass_of($plugin_class, ContainerFactoryPluginInterface::class)) {
       // @codingStandardsIgnoreLine
-      $plugin = $plugin_class::create(\Drupal::getContainer(), $configuration, $plugin_id, $plugin_definition);
+      $plugin = $plugin_class::create(\Drupal::getContainer(), $configuration, $plugin_id, $plugin_definition); // @phpstan-ignore-line
     }
     else {
       $plugin = new $plugin_class($configuration, $plugin_id, $plugin_definition);
@@ -218,7 +218,7 @@ class ExportPluginManager extends DefaultPluginManager implements ExportPluginMa
       );
     }
     elseif ($context_param->getType()->getName() !== \ArrayAccess::class) {
-      $task_param_violations[] = sprintf("The batch context parameter '$%s' of task method '%s' has wrong type hint: '%s'. It should be typehinted as '\ArrayAccess'.",
+      $task_param_violations[] = sprintf("The batch context parameter '$%s' of task method '%s' has wrong type hint: '%s'. It should be type-hinted as '\ArrayAccess'.",
         $context_param_name,
         $task_method->getName(),
         $context_param->getType()->getName()

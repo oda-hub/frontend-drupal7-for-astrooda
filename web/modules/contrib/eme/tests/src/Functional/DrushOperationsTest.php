@@ -141,14 +141,14 @@ class DrushOperationsTest extends BrowserTestBase {
       'tag' => $this->migrationGroup,
       'fields' => 'id,status,total,imported,unprocessed',
     ]);
-    $suff = static::isOldDrushVersion() ? '' : '(100%)';
+    $suffix = static::isOldDrushVersion() ? '' : '(100%)';
     $this->assertDrushOutputHasAllLines([
-      "{$this->migrationPrefix}_menu_link_content  Idle   1   1 $suff   0",
-      "{$this->migrationPrefix}_user               Idle   2   2 $suff   0",
-      "{$this->migrationPrefix}_file               Idle   1   1 $suff   0",
-      "{$this->migrationPrefix}_media_image        Idle   1   1 $suff   0",
-      "{$this->migrationPrefix}_node_article       Idle   1   1 $suff   0",
-      "{$this->migrationPrefix}_comment_article    Idle   2   2 $suff   0",
+      "{$this->migrationPrefix}_menu_link_content  Idle   1   1 $suffix   0",
+      "{$this->migrationPrefix}_user               Idle   2   2 $suffix   0",
+      "{$this->migrationPrefix}_file               Idle   1   1 $suffix   0",
+      "{$this->migrationPrefix}_media_image        Idle   1   1 $suffix   0",
+      "{$this->migrationPrefix}_node_article       Idle   1   1 $suffix   0",
+      "{$this->migrationPrefix}_comment_article    Idle   2   2 $suffix   0",
     ]);
 
     $this->assertTestContent();
@@ -228,14 +228,14 @@ class DrushOperationsTest extends BrowserTestBase {
       'fields' => 'id,status,total,imported,unprocessed',
     ]);
     $this->assertDrushOutputHasAllLines([
-      "{$front_page_id}                            Idle   1   1 $suff   0",
-      "{$this->migrationPrefix}_menu_link_content  Idle   2   2 $suff   0",
-      "{$this->migrationPrefix}_user               Idle   3   3 $suff   0",
-      "{$this->migrationPrefix}_file               Idle   3   3 $suff   0",
-      "{$this->migrationPrefix}_media_document     Idle   1   1 $suff   0",
-      "{$this->migrationPrefix}_media_image        Idle   1   1 $suff   0",
-      "{$this->migrationPrefix}_node_article       Idle   2   2 $suff   0",
-      "{$this->migrationPrefix}_comment_article    Idle   3   3 $suff   0",
+      "{$front_page_id}                            Idle   1   1 $suffix   0",
+      "{$this->migrationPrefix}_menu_link_content  Idle   2   2 $suffix   0",
+      "{$this->migrationPrefix}_user               Idle   3   3 $suffix   0",
+      "{$this->migrationPrefix}_file               Idle   3   3 $suffix   0",
+      "{$this->migrationPrefix}_media_document     Idle   1   1 $suffix   0",
+      "{$this->migrationPrefix}_media_image        Idle   1   1 $suffix   0",
+      "{$this->migrationPrefix}_node_article       Idle   2   2 $suffix   0",
+      "{$this->migrationPrefix}_comment_article    Idle   3   3 $suffix   0",
     ]);
 
     $this->rebuildAll();

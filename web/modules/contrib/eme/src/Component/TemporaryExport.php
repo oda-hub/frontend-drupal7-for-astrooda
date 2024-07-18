@@ -39,7 +39,7 @@ final class TemporaryExport {
   protected $filesystem;
 
   /**
-   * Constuts the TemporaryExport instance.
+   * Constructs the TemporaryExport instance.
    *
    * @param string $temporary_dir
    *   The temporary directory.
@@ -135,7 +135,7 @@ final class TemporaryExport {
   /**
    * Copies the given files into the temporary export module.
    *
-   * @param string[] $filelist
+   * @param string[] $file_list
    *   An array of filenames and/or directory names to copy into the export
    *   module.
    * @param string $add_dir
@@ -145,12 +145,12 @@ final class TemporaryExport {
    *   A substring to be removed from the beginning of the real path of each
    *   element in the list.
    */
-  public function addFiles(array $filelist, string $add_dir = '', string $remove_dir = ''): bool {
+  public function addFiles(array $file_list, string $add_dir = '', string $remove_dir = ''): bool {
     $remove_dir = substr($remove_dir, -1) !== DIRECTORY_SEPARATOR
       ? $remove_dir . DIRECTORY_SEPARATOR
       : $remove_dir;
 
-    foreach ($filelist as $filepath) {
+    foreach ($file_list as $filepath) {
       $destination_raw = $filepath;
 
       if (substr($destination_raw, 0, strlen($remove_dir)) === $remove_dir) {

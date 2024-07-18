@@ -96,38 +96,38 @@ class PathAliasTest extends KernelTestBase {
    * @return array
    *   The test cases.
    */
-  public function providerTestFetchReferences(): array {
+  public static function providerTestFetchReferences(): array {
     return [
       'No aliases' => [
-        'Source aliases' => [],
-        'Expected aliases' => [],
+        'source_aliases' => [],
+        'expected_aliases' => [],
       ],
       'Path aliases for test entity' => [
-        'Source aliases' => [
+        'source_aliases' => [
           ['path' => '/entity_test/1', 'alias' => '/an-alias'],
           ['path' => '/entity_test/1', 'alias' => '/an/another/alias'],
         ],
-        'Expected aliases' => [
+        'expected_aliases' => [
           ['path' => '/entity_test/1', 'alias' => '/an-alias'],
           ['path' => '/entity_test/1', 'alias' => '/an/another/alias'],
         ],
       ],
       'Unrelated aliases for other test entity' => [
-        'Source aliases' => [
+        'source_aliases' => [
           ['path' => '/entity_test/2', 'alias' => '/an-unrelated-alias'],
           ['path' => '/user/1', 'alias' => '/root-user'],
         ],
-        'Expected aliases' => [],
+        'expected_aliases' => [],
       ],
       'Aliases for the test entity and for other entities' => [
-        'Source aliases' => [
+        'source_aliases' => [
           ['path' => '/entity_test/2', 'alias' => '/an-unrelated-alias'],
           ['path' => '/entity_test/1', 'alias' => '/an-alias'],
           ['path' => '/user/1', 'alias' => '/root-user'],
           ['path' => '/user/login', 'alias' => '/not-an-entity-alias'],
           ['path' => '/entity_test/1', 'alias' => '/an/another/alias'],
         ],
-        'Expected aliases' => [
+        'expected_aliases' => [
           ['path' => '/entity_test/1', 'alias' => '/an-alias'],
           ['path' => '/entity_test/1', 'alias' => '/an/another/alias'],
         ],

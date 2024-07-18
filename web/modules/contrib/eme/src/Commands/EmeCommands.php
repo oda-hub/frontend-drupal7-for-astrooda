@@ -2,6 +2,7 @@
 
 namespace Drupal\eme\Commands;
 
+// cspell:ignore emecl emerl emex
 use Drupal\Component\Plugin\Exception\PluginException;
 use Drupal\Component\Utility\Variable;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -171,17 +172,19 @@ class EmeCommands extends DrushCommands {
    *
    * @aliases emex
    */
-  public function export(array $options = [
-    'types' => NULL,
-    'destination' => NULL,
-    'module' => NULL,
-    'name' => NULL,
-    'id-prefix' => NULL,
-    'id' => NULL,
-    'group' => NULL,
-    'update' => NULL,
-    'plugin' => 'json_files',
-  ]) {
+  public function export(
+    array $options = [
+      'types' => NULL,
+      'destination' => NULL,
+      'module' => NULL,
+      'name' => NULL,
+      'id-prefix' => NULL,
+      'id' => NULL,
+      'group' => NULL,
+      'update' => NULL,
+      'plugin' => 'json_files',
+    ],
+  ) {
     $given_options = array_filter($options);
     $types_to_export = !empty($given_options['types'])
       ? array_filter(explode(',', $given_options['types']))
@@ -384,7 +387,7 @@ class EmeCommands extends DrushCommands {
    * Creates a human friendly sentence from a method name.
    *
    * @param string $task
-   *   The method name of a task. This is ususally a lowerCamelCased string like
+   *   The method name of a task. This is usually a lowerCamelCased string like
    *   'discoverContentEntityReferences'.
    *
    * @return string

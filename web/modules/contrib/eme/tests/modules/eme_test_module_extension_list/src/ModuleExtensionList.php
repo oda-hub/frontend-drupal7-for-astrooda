@@ -9,7 +9,8 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * A replacement ModuleExtensionList for EME tests.
  */
-class ModuleExtensionList extends DefaultModuleExtensionList {
+// @codingStandardsIgnoreLine
+class ModuleExtensionList extends DefaultModuleExtensionList { // @phpstan-ignore-line
 
   /**
    * {@inheritdoc}

@@ -19,7 +19,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class Flagging extends ReverseReferenceDiscoveryPluginBase implements ContainerFactoryPluginInterface {
 
   /**
-   * The flag(ging) manager.
+   * The flag (flagging) manager.
    *
    * @var \Drupal\flag\FlagServiceInterface
    */
@@ -35,9 +35,15 @@ class Flagging extends ReverseReferenceDiscoveryPluginBase implements ContainerF
    * @param mixed $plugin_definition
    *   The plugin implementation definition.
    * @param \Drupal\flag\FlagServiceInterface $flag_manager
-   *   The flag(ging) manager.
+   *   The flag (flagging) manager.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, FlagServiceInterface $flag_manager) {
+  public function __construct(
+    array $configuration,
+    $plugin_id,
+    $plugin_definition,
+    // @phpstan-ignore-next-line (Flag is not Drupal 11 ready yet.)
+    FlagServiceInterface $flag_manager,
+  ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->flagManager = $flag_manager;
   }

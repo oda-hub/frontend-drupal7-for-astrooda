@@ -91,17 +91,17 @@ class DiscoveryPluginManagerTest extends UnitTestCase {
    * @return array
    *   The test cases.
    */
-  public function providerTestGetReferencePlugins() {
+  public static function providerTestGetReferencePlugins() {
     return [
       'No plugins' => [
-        'Cached definitions' => [],
-        'Expected results' => [
+        'cached_plugins' => [],
+        'expected_results' => [
           'direct' => [],
           'reverse' => [],
         ],
       ],
       'Only direct plugins' => [
-        'Cached definitions' => [
+        'cached_plugins' => [
           'direct_2' => [
             'id' => 'direct_2',
             'class' => DummyDirectReferencePlugin::class,
@@ -111,7 +111,7 @@ class DiscoveryPluginManagerTest extends UnitTestCase {
             'class' => DummyDirectReferencePlugin::class,
           ],
         ],
-        'Expected results' => [
+        'expected_results' => [
           'direct' => [
             'direct_1' => new DummyDirectReferencePlugin([], 'direct_1', [
               'id' => 'direct_1',
@@ -126,7 +126,7 @@ class DiscoveryPluginManagerTest extends UnitTestCase {
         ],
       ],
       'Direct and reverse plugins' => [
-        'Cached definitions' => [
+        'cached_plugins' => [
           'direct' => [
             'id' => 'direct',
             'class' => DummyDirectReferencePlugin::class,
@@ -140,7 +140,7 @@ class DiscoveryPluginManagerTest extends UnitTestCase {
             'class' => DummyAllReferencePlugin::class,
           ],
         ],
-        'Expected results' => [
+        'expected_results' => [
           'direct' => [
             'direct' => new DummyDirectReferencePlugin([], 'direct', [
               'id' => 'direct',
@@ -164,7 +164,7 @@ class DiscoveryPluginManagerTest extends UnitTestCase {
         ],
       ],
       'Only reverse plugins' => [
-        'Cached definitions' => [
+        'cached_plugins' => [
           'reverse_1' => [
             'id' => 'reverse_1',
             'class' => DummyReverseReferencePlugin::class,
@@ -174,7 +174,7 @@ class DiscoveryPluginManagerTest extends UnitTestCase {
             'class' => DummyReverseReferencePlugin::class,
           ],
         ],
-        'Expected results' => [
+        'expected_results' => [
           'direct' => [],
           'reverse' => [
             'reverse_1' => new DummyReverseReferencePlugin([], 'reverse_1', [

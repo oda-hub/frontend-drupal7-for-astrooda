@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Drupal\eme\Export;
 
 use Drupal\Component\Plugin\PluginBase;
+use Drupal\Component\Serialization\Yaml;
 use Drupal\Component\Utility\Variable;
 use Drupal\Core\Cache\MemoryCache\MemoryCacheInterface;
 use Drupal\Core\DependencyInjection\DependencySerializationTrait;
@@ -20,7 +21,6 @@ use Drupal\Core\File\Exception\FileWriteException;
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\Lock\LockBackendInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Drupal\Core\Serialization\Yaml;
 use Drupal\Core\StreamWrapper\StreamWrapperManager;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\eme\Component\TemporaryExport;
@@ -382,7 +382,7 @@ abstract class ExportPluginBase extends PluginBase implements ExportPluginInterf
       'name' => $this->configuration['name'],
       'type' => 'module',
       'description' => 'Generated with EME module',
-      'core_version_requirement' => '^8.9 || ^9 || ^10',
+      'core_version_requirement' => '^8.9 || ^9 || ^10 || ^11',
       'scenarios_module' => $module,
       'dependencies' => [],
       'eme_settings' => [],
@@ -798,7 +798,7 @@ abstract class ExportPluginBase extends PluginBase implements ExportPluginInterf
       $this->logger->notice($message);
     }
 
-    if ($no_message_was_set_before || !($context instanceof \DrushBatchContext)) {
+    if ($no_message_was_set_before || !(class_exists("DrushBatchContext") && $context instanceof \DrushBatchContext)) {
       $context['message'] = $message;
     }
   }

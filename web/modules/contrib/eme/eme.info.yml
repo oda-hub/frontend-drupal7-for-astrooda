@@ -1,11 +1,11 @@
 name: Entity Migrate Export
 type: module
 description: Exports content entities into a migration module
-core_version_requirement: ^8.9 || ^9 || ^10
+core_version_requirement: ^8.9 || ^9 || ^10 || ^11
 package: Development
 configure: eme.settings
 
-# Information added by Drupal.org packaging script on 2023-03-14
-version: '1.0.0-alpha13'
+# Information added by Drupal.org packaging script on 2024-06-29
+version: '1.0.0'
 project: 'eme'
-datestamp: 1678770831
+datestamp: 1719665304

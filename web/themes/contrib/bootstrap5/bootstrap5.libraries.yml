@@ -46,8 +46,6 @@ base:
         weight: -10
       css/components/ui-dialog.css:
         weight: -10
-      dist/icons/1.11.0/font/bootstrap-icons.css:
-        weight: -10
 dialog:
   version: VERSION
   css:
@@ -107,29 +105,29 @@ user:
         weight: -10
 
 bootstrap5-js-latest:
-  version: '5.3.2'
+  version: '5.3.3'
   js:
-    dist/bootstrap/5.3.2/dist/js/bootstrap.bundle.js: {}
+    dist/bootstrap/5.3.3/dist/js/bootstrap.bundle.js: {}
 
 global-styling:
   css:
     theme:
       css/style.css: {}
+      dist/icons/1.11.0/font/bootstrap-icons.css: {}
 
 drupal.nav-tabs:
-  version: '5.3.2'
+  version: '5.3.3'
   js:
     js/nav-tabs.js: {}
   dependencies:
     - core/matchmedia
-    - core/jquery
     - core/drupal
     - core/once
     - core/drupal.debounce
     - core/collapse
 
 style-guide:
-  version: '5.3.2'
+  version: '5.3.3'
   js:
     dist/bootstrap/5.3.2/site/content/docs/5.3/examples/cheatsheet/cheatsheet.js: {}
   css:

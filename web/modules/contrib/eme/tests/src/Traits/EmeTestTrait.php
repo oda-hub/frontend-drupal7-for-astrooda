@@ -5,9 +5,9 @@ namespace Drupal\Tests\eme\Traits;
 use Drupal\comment\Entity\Comment;
 use Drupal\comment\Plugin\Field\FieldType\CommentItemInterface;
 use Drupal\comment\Tests\CommentTestTrait;
+use Drupal\Component\Serialization\Yaml;
 use Drupal\Core\Extension\ModuleInstallerInterface;
 use Drupal\Core\File\FileSystemInterface;
-use Drupal\Core\Serialization\Yaml;
 use Drupal\eme\Eme;
 use Drupal\file\Entity\File;
 use Drupal\media\Entity\Media;
@@ -477,29 +477,29 @@ trait EmeTestTrait {
     }
     $this->assertEmpty(MenuLinkContent::loadMultiple());
 
-    $this->resetAll();
+    $this->resetAllCaches();
   }
 
   /**
    * Resets (uninstalls and reinstalls) content related modules.
    */
   protected function resetContentRelatedModules() {
-    $this->resetAll();
+    $this->resetAllCaches();
     $module_installer = $this->container->get('module_installer');
     assert($module_installer instanceof ModuleInstallerInterface);
     $module_installer->uninstall(['node', 'media']);
-    $this->resetAll();
+    $this->resetAllCaches();
     $module_installer = $this->container->get('module_installer');
     assert($module_installer instanceof ModuleInstallerInterface);
     $module_installer->uninstall(['comment', 'file', 'image']);
-    $this->resetAll();
+    $this->resetAllCaches();
     $module_installer->install(['node', 'comment', 'file', 'image', 'media']);
   }
 
   /**
    * Verifies that the exported content was successfully imported.
    */
-  public function assertTestContent(bool $with_additionals = FALSE) {
+  public function assertTestContent(bool $with_additional = FALSE) {
     $this->assertEquals(
       static::getComparableUserProperties($this->testUsers[10]),
       User::load(10)->toArray()
@@ -541,7 +541,7 @@ trait EmeTestTrait {
       static::getComparableMediaProperties(Media::load(1))
     );
 
-    if ($with_additionals) {
+    if ($with_additional) {
       $this->assertEquals(
         static::getComparableUserProperties($this->testUsers[30]),
         User::load(30)->toArray()
@@ -685,6 +685,15 @@ EOF;
     return file_put_contents($file_path, Yaml::encode($front_page_migration))
       ? $file_path
       : NULL;
+  }
+
+  /**
+   * Resets caches, only needed in functional tests.
+   */
+  protected function resetAllCaches() {
+    if (is_callable([$this, 'resetAll'])) {
+      $this->resetAll();
+    }
   }
 
 }

@@ -2,8 +2,8 @@
 
 namespace Drupal\eme\Plugin\Eme\Export;
 
+use Drupal\Component\Serialization\Yaml;
 use Drupal\Core\Entity\ContentEntityInterface;
-use Drupal\Core\Serialization\Yaml;
 use Drupal\Core\StreamWrapper\StreamWrapperManager;
 use Drupal\Core\TypedData\Type\IntegerInterface;
 use Drupal\eme\Export\ExportPluginBase;
@@ -226,10 +226,10 @@ class JsonFiles extends ExportPluginBase {
 
       // Special fields, where at least one property was serialized (for
       // example, layout builder overrides field).
-      $serializetion_map = $bundle
+      $serialization_map = $bundle
         ? $previous_results['field_property_serialization_map'][$entity_type_id][$bundle][$field_name] ?? NULL
         : $previous_results['field_property_serialization_map'][$entity_type_id][$field_name] ?? NULL;
-      if ($serializetion_map) {
+      if ($serialization_map) {
         $field_value_process = [
           'plugin' => 'sub_process',
           'source' => $field_name,
@@ -241,14 +241,14 @@ class JsonFiles extends ExportPluginBase {
             ],
           ],
         ];
-        foreach ($serializetion_map['serialized'] as $serialized_prop) {
+        foreach ($serialization_map['serialized'] as $serialized_prop) {
           $field_value_process['process'][$serialized_prop] = [
             'plugin' => 'callback',
             'callable' => 'unserialize',
             'source' => $serialized_prop,
           ];
         }
-        foreach ($serializetion_map['normal'] as $normal_prop) {
+        foreach ($serialization_map['normal'] as $normal_prop) {
           $field_value_process['process'][$normal_prop] = $normal_prop;
         }
         $definition['process'][$field_name] = $field_value_process;

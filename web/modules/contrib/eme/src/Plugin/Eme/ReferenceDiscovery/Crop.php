@@ -14,7 +14,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *
  * Crops have to be imported before files, since Crop API creates crop entities
  * on file save. This behavior makes it impossible to "change" crops after a
- * crom migration rollback and reimport.
+ * crop migration rollback and reimport.
  *
  * @ReferenceDiscovery(
  *   id = "crop",
