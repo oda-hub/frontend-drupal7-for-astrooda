@@ -33,9 +33,12 @@
 		"drupal/jquery_ui_draggable": "^2.0",
 		"drupal/jquery_ui_effects": "^2.0",
 		"drupal/jquery_ui_resizable": "^2.0",
+		"drupal/jwt": "^2.1",
 		"drupal/libraries": "^4.0",
 		"drupal/node_export": "^1.0",
+		"drupal/openid_connect": "^3.0@alpha",
 		"drupal/pathauto": "^1.12",
+		"drupal/twig_tweak": "^3.4",
 		"drupal/views_bulk_operations": "^4.2",
 		"drupal/webform": "^6.2",
 		"drush/drush": "^12.5"
