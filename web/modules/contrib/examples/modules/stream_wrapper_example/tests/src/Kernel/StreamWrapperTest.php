@@ -63,7 +63,7 @@ class StreamWrapperTest extends KernelTestBase {
     $this->assertFileDoesNotExist($uri, "File $uri should not exist yet.");
     $handle = fopen($uri, 'wb');
     $this->assertNotEmpty($handle, "Handle for $uri should be non-empty.");
-    $buffer = "Ain't seen nothin' yet!\n";
+    $buffer = "Ain't seen nothing yet!\n";
 
     // Original session class gets an error here,
     // "...stream_write wrote 10 bytes more data than requested".

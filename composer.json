@@ -15,6 +15,7 @@
 	],
 	"require" : {
 		"composer/installers": "^2.0",
+		"cweagans/composer-patches": "^1.7",
 		"datatables/datatables": "^1.10",
 		"drupal/admin_toolbar": "^3.4",
 		"drupal/ajax_login_popup": "^2.0",
@@ -35,9 +36,11 @@
 		"drupal/jquery_ui_resizable": "^2.0",
 		"drupal/jwt": "^2.1",
 		"drupal/libraries": "^4.0",
+		"drupal/mimemail": "^1.0@alpha",
 		"drupal/node_export": "^1.0",
 		"drupal/openid_connect": "^3.0@alpha",
 		"drupal/pathauto": "^1.12",
+		"drupal/redirect_after_login": "^3.0",
 		"drupal/twig_tweak": "^3.4",
 		"drupal/views_bulk_operations": "^4.2",
 		"drupal/webform": "^6.2",
@@ -50,11 +53,12 @@
 	"prefer-stable" : true,
 	"config" : {
 		"allow-plugins" : {
-			"composer/installers" : true,
-			"drupal/core-composer-scaffold" : true,
-			"drupal/core-project-message" : true,
-			"phpstan/extension-installer" : true,
-			"dealerdirect/phpcodesniffer-composer-installer" : true
+			"composer/installers": true,
+			"drupal/core-composer-scaffold": true,
+			"drupal/core-project-message": true,
+			"phpstan/extension-installer": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"cweagans/composer-patches": true
 		},
 		"sort-packages" : true
 	},
@@ -69,6 +73,11 @@
 				"[web-root]/sites/development.services.yml" : false
 			}
 		},
+		"patches": {
+      "drupal/openid_connect": {
+        "Allow  disconnect users": "https://www.drupal.org/files/issues/2023-08-31/openid_connect-cannot_disconnect_users-3298784-3.patch"
+      }
+    },
 		"installer-paths" : {
 			"web/core" : [
 				"type:drupal-core"

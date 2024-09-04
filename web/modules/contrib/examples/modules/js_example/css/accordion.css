@@ -1,18 +1,22 @@
-.accordionWrapper {
+.accordion-wrapper {
+  padding: 30px;
   background: #fff;
   float: left;
   width: 80%;
   box-sizing: border-box;
+  margin: 10%;
   box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
 }
-.accordionItem {
+
+.accordion-item {
   float: left;
   display: block;
   width: 100%;
   box-sizing: border-box;
-  font-family: 'Open-sans',Arial,sans-serif;
+  font-family: "Open-sans", Arial, sans-serif;
 }
-.accordionItemHeading {
+
+.accordion-item-header {
   cursor: pointer;
   margin: 0 0 10px 0;
   padding: 10px;
@@ -24,8 +28,9 @@
   border-radius: 3px;
   box-sizing: border-box;
 }
-.close .accordionItemContent {
-  height: 0;
+
+.close .accordion-item-content {
+  height: 0px;
   transition: height 1s ease-out;
   -webkit-transform: scaleY(0);
   -o-transform: scaleY(0);
@@ -34,11 +39,13 @@
   float: left;
   display: block;
 }
-.open .accordionItemContent {
+
+.open .accordion-item-content {
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
   width: 100%;
+  margin: 0 0 10px 0;
   display: block;
   -webkit-transform: scaleY(1);
   -o-transform: scaleY(1);
@@ -55,20 +62,11 @@
   box-sizing: border-box;
 }
 
-.open .accordionItemHeading {
+.open .accordion-item-header {
   margin: 0;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  background-color: #08447a;
-  color: #ffffff;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  background-color: #bdc3c7;
+  color: #7f8c8d;
 }

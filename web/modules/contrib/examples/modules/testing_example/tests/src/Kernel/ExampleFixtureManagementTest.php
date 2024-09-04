@@ -82,8 +82,8 @@ class ExampleFixtureManagementTest extends KernelTestBase {
     // Install any config provided by the enabled.
     $this->installConfig(['field', 'node', 'text', 'filter', 'user']);
 
-    // Finally, create an 'owner' account.
-    $this->owner = $this->createUser([], 'testuser');
+    // Finally, create an owner account.
+    $this->owner = $this->createUser([], 'test_user');
   }
 
   /**
@@ -109,12 +109,12 @@ class ExampleFixtureManagementTest extends KernelTestBase {
    * Create a user account using createUser() from the UserCreation trait.
    */
   public function testUserCreation() {
-    // Create a user named 'extrauser'.
-    $account = $this->createUser([], 'extrauser');
-    // Assert that this user exists.
-    $this->assertEquals('extrauser', $account->getAccountName());
+    // Create a user account'.
+    $account = $this->createUser([], 'extra_user');
+    // Assert that this user account exists.
+    $this->assertEquals('extra_user', $account->getAccountName());
 
-    // Assert that our auth user is not the same user as extrauser.
+    // Assert that the logged-in account is not the one stored in $account.
     $this->assertNotEquals($this->owner->getAccountName(), $account->getAccountName());
   }
 

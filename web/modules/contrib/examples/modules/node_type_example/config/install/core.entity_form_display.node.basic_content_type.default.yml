@@ -21,7 +21,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings: { }
   uid:
     type: entity_reference_autocomplete
     weight: 1
@@ -30,29 +30,29 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings: { }
   created:
     type: datetime_timestamp
     weight: 2
-    settings: {  }
-    third_party_settings: {  }
+    settings: { }
+    third_party_settings: { }
   promote:
     type: boolean_checkbox
     weight: 3
     settings:
       display_label: true
-    third_party_settings: {  }
+    third_party_settings: { }
   sticky:
     type: boolean_checkbox
     weight: 4
     settings:
       display_label: true
-    third_party_settings: {  }
+    third_party_settings: { }
   path:
     type: path
     weight: 5
-    settings: {  }
-    third_party_settings: {  }
+    settings: { }
+    third_party_settings: { }
   body:
     type: text_textarea_with_summary
     weight: 6
@@ -60,6 +60,6 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
-    third_party_settings: {  }
-hidden: {  }
-third_party_settings: {  }
+    third_party_settings: { }
+hidden: { }
+third_party_settings: { }

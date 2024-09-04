@@ -21,7 +21,7 @@ class Simplest extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $form['changethis'] = [
+    $form['change_this'] = [
       '#title' => $this->t("Choose something and explain why"),
       '#type' => 'select',
       '#options' => [
@@ -31,16 +31,15 @@ class Simplest extends FormBase {
       ],
       '#ajax' => [
         // #ajax has two required keys: callback and wrapper.
-        // 'callback' is a function that will be called when this element
-        // changes.
+        // callback is a callable that will be called when this element changes.
         'callback' => '::promptCallback',
-        // 'wrapper' is the HTML id of the page element that will be replaced.
+        // wrapper is the HTML ID of the page element that will be replaced.
         'wrapper' => 'replace-textfield-container',
       ],
     ];
 
-    // The 'replace-textfield-container' container will be replaced whenever
-    // 'changethis' is updated.
+    // The replace-textfield-container container will be replaced whenever
+    // change_this is updated.
     $form['replace_textfield_container'] = [
       '#type' => 'container',
       '#attributes' => ['id' => 'replace-textfield-container'],
@@ -52,7 +51,7 @@ class Simplest extends FormBase {
 
     // An AJAX request calls the form builder function for every change.
     // We can change how we build the form based on $form_state.
-    $value = $form_state->getValue('changethis');
+    $value = $form_state->getValue('change_this');
     // The getValue() method returns NULL by default if the form element does
     // not exist. It won't exist yet if we're building it for the first time.
     if ($value !== NULL) {

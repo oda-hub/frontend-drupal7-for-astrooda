@@ -39,8 +39,8 @@ class SandwichPluginManager extends DefaultPluginManager {
     // We replace the $subdir parameter with our own value.
     // This tells the plugin manager to look for Sandwich plugins in the
     // 'src/Plugin/Sandwich' subdirectory of any enabled modules. This also
-    // serves to define the PSR-4 subnamespace in which sandwich plugins will
-    // live. Modules can put a plugin class in their own namespace such as
+    // serves to define the PSR-4 namespace in which sandwich plugins will live.
+    // Modules can put a plugin class in their own namespace such as
     // Drupal\{module_name}\Plugin\Sandwich\MySandwichPlugin.
     $subdir = 'Plugin/Sandwich';
 
@@ -64,13 +64,11 @@ class SandwichPluginManager extends DefaultPluginManager {
     // definitions are discovered by examining the $subdir defined above, for
     // any classes with an $plugin_definition_annotation_name. The annotations
     // are read, and then the resulting data is cached using the provided cache
-    // backend. For our Sandwich plugin type, we've specified the @cache.default
-    // service be used in the plugin_type_example.services.yml file. The second
-    // argument is a cache key prefix. Out of the box Drupal with the default
-    // cache backend setup will store our plugin definition in the cache_default
-    // table using the sandwich_info key. All that is implementation details
-    // however, all we care about it that caching for our plugin definition is
-    // taken care of by this call.
+    // backend. The second argument is a cache key prefix. Out of the box Drupal
+    // with the default cache backend setup will store our plugin definition in
+    // the cache_default table using the sandwich_info key. All that is
+    // implementation details, however; all we care about it is that caching for
+    // our plugin definition is taken care of by this call.
     $this->setCacheBackend($cache_backend, 'sandwich_info', ['sandwich_info']);
   }
 

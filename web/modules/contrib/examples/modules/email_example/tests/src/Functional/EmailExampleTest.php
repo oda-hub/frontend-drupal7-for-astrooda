@@ -55,23 +55,23 @@ class EmailExampleTest extends ExamplesBrowserTestBase {
     $this->drupalGet('examples/email-example');
     $assert->statusCodeEquals(200);
 
-    // Verifiy email form has email & message fields.
+    // Verify email form has the email and message fields.
     $assert->fieldExists('edit-email');
     $assert->fieldExists('edit-message');
 
-    // Verifiy email form is submitted.
+    // Verify the email form is submitted.
     $edit = ['email' => 'example@example.com', 'message' => 'test'];
     $this->drupalGet('examples/email-example');
     $this->submitForm($edit, 'Submit');
     $assert->statusCodeEquals(200);
 
-    // Verifiy comfirmation page.
+    // Verify the confirmation message is shown.
     $assert->pageTextContains('Your message has been sent.');
-    $this->assertMailString('to', $edit['email'], 1);
 
-    // Verifiy correct email recieved.
+    // Verify the email contains the correct values for its fields.
     $from = $this->config('system.site')->get('mail');
-    $this->assertMailString('subject', "E-mail sent from $from", 1);
+    $this->assertMailString('to', $edit['email'], 1);
+    $this->assertMailString('subject', "Email sent from $from", 1);
     $this->assertMailString('body', $edit['message'], 1);
     $this->assertMailString('body', "\n--\nMail altered by email_example module.", 1);
   }

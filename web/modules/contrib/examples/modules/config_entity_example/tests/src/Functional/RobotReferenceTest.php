@@ -54,7 +54,7 @@ class RobotReferenceTest extends BrowserTestBase {
     $assert->statusCodeEquals(200);
 
     // - Click on the "add field" button.
-    $this->clickLink('Add field');
+    $this->clickLink('Create a new field');
 
     // - Under "Reference" select "other".
     // - Choose a label and click continue.

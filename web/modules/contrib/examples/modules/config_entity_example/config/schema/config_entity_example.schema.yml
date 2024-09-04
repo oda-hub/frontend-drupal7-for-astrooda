@@ -4,7 +4,7 @@
 # See for example the file config/config_entity_example.robot.marvin.yml, which
 # contains our default config entity.
 
-# Documentation for schema files like this one is located here:
+# Documentation for schema files like this one is available on
 # https://drupal.org/node/1905070
 
 config_entity_example.robot.*:
@@ -20,9 +20,9 @@ config_entity_example.robot.*:
     label:
       type: label
       label: 'Label'
-    floopy:
+    neural_system:
       type: boolean
-      label: 'Floopy'
+      label: 'Neural system'
     langcode:
       type: string
       label: 'Default language'

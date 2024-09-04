@@ -5,7 +5,7 @@ Description text for the Menu Example.
 #}
 
 {% set custom_access = path('examples.menu_example.custom_access') %}
-{% set permissioned = path('examples.menu_example.permissioned') %}
+{% set restricted = path('examples.menu_example.restricted') %}
 {% set route_only = path('examples.menu_example.route_only') %}
 {% set tabs = path('examples.menu_example.tabs') %}
 {% set use_url_arguments = path('examples.menu_example.use_url_arguments') %}
@@ -22,7 +22,7 @@ loaded placeholder arguments. Enjoy!</p>
 
 <ul>
     <li><a href={{ custom_access }}>Custom Access Example</a></li>
-    <li><a href={{ permissioned }}>Permissioned Example</a></li>
+    <li><a href={{ restricted }}>Restricted Example</a></li>
     <li><a href={{ route_only }}>Route only example</a></li>
     <li><a href={{ tabs }}>Tabs</a></li>
     <li><a href={{ use_url_arguments }}>URL Arguments</a></li>

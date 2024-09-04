@@ -34,7 +34,7 @@ class BlockExampleTest extends BrowserTestBase {
 
     // Create user.
     $web_user = $this->drupalCreateUser(['administer blocks']);
-    // Login the admin user.
+    // Log in the admin user.
     $this->drupalLogin($web_user);
 
     $theme_name = $this->config('system.theme')->get('default');
@@ -54,8 +54,8 @@ class BlockExampleTest extends BrowserTestBase {
     $this->drupalPlaceBlock('example_configurable_text', $settings_configurable);
 
     $settings_uppercase = [
-      'label' => 'Configurable block to be uppercased',
-      'id' => 'block_example_example_uppercased',
+      'label' => 'Configurable block to show in upper case',
+      'id' => 'block_example_example_uppercase',
       'theme' => $theme_name,
     ];
     $this->drupalPlaceBlock('example_uppercase', $settings_uppercase);

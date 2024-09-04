@@ -67,7 +67,7 @@ class ExampleFunctionalTest extends ExamplesBrowserTestBase {
       'administer content types',
       'create test_content_type content',
     ]);
-    $this->authUser = $this->drupalCreateUser([], 'authuser');
+    $this->authUser = $this->drupalCreateUser([], 'auth_user');
 
   }
 

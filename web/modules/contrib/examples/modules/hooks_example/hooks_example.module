@@ -160,9 +160,8 @@ function hooks_example_node_view(array &$build, EntityInterface $entity, EntityV
   // are also PHP function names they should contain only lowercase alphanumeric
   // characters and underscores.
   //
-  // The hook name parameter should have the "hook_" prefix removed. So if you
-  // want to invoke hook_mymodule_do_something() the value used here would be
-  // 'mymodule_do_something'.
+  // The hook name parameter should have the "hook_" prefix removed. If you want
+  // to invoke hook_user_login(), the value used here would be 'user_login'.
   //
   // Hook implementations can optionally return a value, depending on the hook
   // definition. If they do, the invokeAll() method aggregates the responses
@@ -194,7 +193,7 @@ function hooks_example_form_alter(&$form, FormStateInterface $form_state, $form_
   // This is an example of what is known as an alter hook. The $form parameter
   // in this case represents an already complete Form API array and our hook
   // implementation is being given the opportunity to make changes to the
-  // existing data structure before it's used. Inovking and alter hooks is a
+  // existing data structure before it's used. Invoking an alter hooks is a
   // common pattern anytime lists or complex data structures are assembled.
   // hook_form_alter(), which allows you to manipulate any form, is one of the
   // most commonly implemented hooks.

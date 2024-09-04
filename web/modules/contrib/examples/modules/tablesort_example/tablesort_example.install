@@ -15,7 +15,12 @@
  */
 function tablesort_example_install() {
   // Let's fill the database with some values for sorting.
+  // The values in the following array are used by
+  // Drupal\Tests\tablesort_example\Functional\TableSortExampleTest::testTableSortExampleBasic()
+  // to verify the functionality of the sortable table. If the values used in
+  // this array are changed, the test code must be changed too.
   $rows = [
+    // cspell:disable
     ['numbers' => 1, 'alpha' => 'e', 'random' => '912cv21'],
     ['numbers' => 2, 'alpha' => 'a', 'random' => '0kuykuh'],
     ['numbers' => 3, 'alpha' => 'm', 'random' => 'fuye8734h'],
@@ -23,6 +28,7 @@ function tablesort_example_install() {
     ['numbers' => 5, 'alpha' => 'o', 'random' => 'd82sf-csj'],
     ['numbers' => 6, 'alpha' => 's', 'random' => 'au832'],
     ['numbers' => 7, 'alpha' => 'e', 'random' => 't982hkv'],
+    // cspell:enable
   ];
 
   $db_connection = \Drupal::database();

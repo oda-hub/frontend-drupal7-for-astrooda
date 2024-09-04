@@ -27,9 +27,9 @@ ajax_example.wizard-example:
   parent: ajax_example.description
   weight: 2
 
-ajax_example.wizard-examplenojs:
+ajax_example.wizard-example-nojs:
   title: 'Wizard example w/JS turned off'
-  route_name: 'ajax_example.wizardnojs'
+  route_name: 'ajax_example.wizard_no_js'
   parent: ajax_example.description
   weight: 3
 
@@ -39,9 +39,9 @@ ajax_example.autocomplete-user:
   parent: ajax_example.description
   weight: 4
 
-ajax_example.autotextfields:
-  title: 'Generate textfields'
-  route_name: 'ajax_example.autotextfields'
+ajax_example.auto_text_fields:
+  title: 'Generate text fields'
+  route_name: 'ajax_example.auto_text_fields'
   parent: ajax_example.description
   weight: 5
 

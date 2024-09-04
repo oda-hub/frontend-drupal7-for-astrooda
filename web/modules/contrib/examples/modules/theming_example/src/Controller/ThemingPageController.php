@@ -6,7 +6,7 @@ use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Core\Url;
 
 /**
- *
+ * Controller for theming example routes.
  */
 class ThemingPageController {
 

@@ -73,7 +73,7 @@ class TabledragMenuTest extends BrowserTestBase {
     $pages = [
       'tabledrag_example.simple_form' => ['Save All Changes', 'Cancel'],
       'tabledrag_example.parent_form' => ['Save All Changes', 'Cancel'],
-      'tabledrag_example.rootleaf_form' => ['Save All Changes', 'Cancel'],
+      'tabledrag_example.root_leaf_form' => ['Save All Changes', 'Cancel'],
       'tabledrag_example.reset_form' => ['Yes, Reset It!'],
     ];
     foreach ($pages as $route => $buttons) {

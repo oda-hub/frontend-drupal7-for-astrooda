@@ -105,10 +105,10 @@ class RobotFormBase extends EntityForm {
       ],
       '#disabled' => !$robot->isNew(),
     ];
-    $form['floopy'] = [
+    $form['neural_system'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('Floopy'),
-      '#default_value' => $robot->floopy,
+      '#title' => $this->t('Neural system'),
+      '#default_value' => $robot->neural_system,
     ];
 
     // Return the form.
@@ -216,6 +216,8 @@ class RobotFormBase extends EntityForm {
 
     // Redirect the user back to the listing route after the save operation.
     $form_state->setRedirect('entity.robot.list');
+
+    return $status;
   }
 
 }

@@ -10,8 +10,8 @@ use Drupal\Core\TypedData\DataDefinition;
  * Plugin implementation of the 'field_permission_example' field type.
  *
  * @FieldType(
- *   id = "field_permission_example_fieldnote",
- *   label = @Translation("Example FieldNote"),
+ *   id = "field_permission_example_field_note",
+ *   label = @Translation("Example Field Note"),
  *   module = "field_permission_example",
  *   description = @Translation("Demonstrates a field simple field note type with permission-based access control."),
  *   default_widget = "field_permission_example_widget",

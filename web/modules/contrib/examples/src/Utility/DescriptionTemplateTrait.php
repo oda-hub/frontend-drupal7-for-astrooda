@@ -11,7 +11,7 @@ namespace Drupal\examples\Utility;
  * 'description.html.twig, and should be placed in the module's templates/
  * directory.
  *
- * These templates should be localizable as is usual for Drupal's Twig
+ * These templates should be translatable as is usual for Drupal's Twig
  * templates, using the {% trans } and {% endtrans %} tags to block out the
  * text that needs to be passed to the translator. Modules using this
  * trait should:

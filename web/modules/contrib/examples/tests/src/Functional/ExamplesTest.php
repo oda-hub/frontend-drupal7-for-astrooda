@@ -72,7 +72,7 @@ class ExamplesTest extends ExamplesBrowserTestBase {
       // Assert that the toolbar link is present.
       $this->assertNotEmpty($this->xpath($xpath), 'Unable to find toolbar link for module: ' . $module);
 
-      // Handle some special cases where modules depend on each other so they
+      // Handle some special cases where modules depend on each other, so they
       // might have already put the toolbar link in the toolbar.
       if ($module == 'file_example') {
         $module_installer->uninstall(['file_example', 'stream_wrapper_example']);

@@ -27,16 +27,18 @@ class RestExampleClientEdit extends FormBase {
    */
   public function __construct(RestExampleClientCalls $restExampleClientCalls) {
     $this->client = $restExampleClientCalls;
-
   }
 
   /**
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container) {
-    return new static(
-      $container->get('rest_example_client_calls')
-    );
+    $form = new static($container->get('rest_example_client_calls'));
+    $form->setConfigFactory($container->get('config.factory'));
+    $form->setMessenger($container->get('messenger'));
+    $form->setStringTranslation($container->get('string_translation'));
+
+    return $form;
   }
 
   /**
@@ -61,10 +63,8 @@ class RestExampleClientEdit extends FormBase {
    * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function buildForm(array $form, FormStateInterface $form_state, $id = NULL) {
-
-    $config_factory = \Drupal::configFactory();
-    if (empty($config_factory->get('rest_example.settings')->get('server_url'))) {
-      $this->messenger()->addError($this->t('The remote endpoint service address have not been set. Please go and provide the credentials and the endpoint address on the <a href="@url">config page</a>.', ['@url' => base_path() . 'examples/rest-client-settings']));
+    if (empty($this->configFactory()->get('rest_example.settings')->get('server_url'))) {
+      $this->messenger()->addError($this->t('The remote endpoint service address have not been set. Please go and provide the credentials and the endpoint address on the <a href=":url">config page</a>.', [':url' => base_path() . 'examples/rest-client-settings']));
       return [
         'error' => [
           '#markup' => 'Unable to establish to the remote site.',

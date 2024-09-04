@@ -77,12 +77,9 @@ class LibraryManager implements LibraryManagerInterface {
    */
   public function load($id) {
     $definition = $this->definitionDiscovery->getDefinition($id);
-    error_log('definition 001:'.print_r($definition, true));
-
     $library_type = $this->getLibraryType($id, $definition);
     // @todo Throw an exception instead of silently failing.
     if ($library_type instanceof LibraryLoadingListenerInterface) {
-      error_log('definition 002:');
       $library_type->onLibraryLoad($this->getLibraryFromDefinition($id, $definition));
     }
   }
@@ -115,7 +112,6 @@ class LibraryManager implements LibraryManagerInterface {
    * @return \Drupal\libraries\ExternalLibrary\Type\LibraryTypeInterface
    */
   protected function getLibraryType($id, $definition) {
-    error_log('def type:'.$definition['type']);
     if (!isset($definition['type'])) {
       throw new LibraryTypeNotFoundException($id);
     }

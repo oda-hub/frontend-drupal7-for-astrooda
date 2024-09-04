@@ -6,17 +6,17 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Show textfields based on AJAX-enabled checkbox clicks.
+ * Adds more text fields basing on AJAX-enabled checkbox clicks.
  *
  * @ingroup ajax_example
  */
-class Autotextfields extends FormBase {
+class AutoTextFields extends FormBase {
 
   /**
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'ajax_example_autotextfields';
+    return 'ajax_example_auto_text_fields';
   }
 
   /**
@@ -43,8 +43,8 @@ class Autotextfields extends FormBase {
       '#type' => 'checkbox',
       '#title' => $this->t('Ask me my first name'),
       '#ajax' => [
-        'callback' => '::textfieldsCallback',
-        'wrapper' => 'textfields-container',
+        'callback' => '::textFieldsCallback',
+        'wrapper' => 'text-fields-container',
         'effect' => 'fade',
       ],
     ];
@@ -52,44 +52,44 @@ class Autotextfields extends FormBase {
       '#type' => 'checkbox',
       '#title' => $this->t('Ask me my last name'),
       '#ajax' => [
-        'callback' => '::textfieldsCallback',
-        'wrapper' => 'textfields-container',
+        'callback' => '::textFieldsCallback',
+        'wrapper' => 'text-fields-container',
         'effect' => 'fade',
       ],
     ];
 
-    // Wrap textfields in a container. This container will be replaced through
+    // Wrap text fields in a container. This container will be replaced through
     // AJAX.
-    $form['textfields_container'] = [
+    $form['text_fields_container'] = [
       '#type' => 'container',
-      '#attributes' => ['id' => 'textfields-container'],
+      '#attributes' => ['id' => 'text-fields-container'],
     ];
-    $form['textfields_container']['textfields'] = [
+    $form['text_fields_container']['text_fields'] = [
       '#type' => 'fieldset',
       '#title' => $this->t("Generated text fields for first and last name"),
-      '#description' => $this->t('This is where we put automatically generated textfields'),
+      '#description' => $this->t('This is where we put automatically generated text fields'),
     ];
 
-    // This form is rebuilt on all requests, so whether or not the request comes
-    // from AJAX, we should rebuild everything based on the form state.
-    // Checkbox values are expressed as 1 or 0, so we have to be sure to compare
+    // This form is rebuilt on all requests; whether the request comes from
+    // AJAX, we should rebuild everything based on the form state.
+    // Checkbox values are expressed as 1 or 0; we have to be sure to compare
     // type as well as value.
     if ($form_state->getValue('ask_first_name', NULL) === 1) {
-      $form['textfields_container']['textfields']['first_name'] = [
+      $form['text_fields_container']['text_fields']['first_name'] = [
         '#type' => 'textfield',
         '#title' => $this->t('First Name'),
         '#required' => TRUE,
       ];
     }
     if ($form_state->getValue('ask_last_name', NULL) === 1) {
-      $form['textfields_container']['textfields']['last_name'] = [
+      $form['text_fields_container']['text_fields']['last_name'] = [
         '#type' => 'textfield',
         '#title' => $this->t('Last Name'),
         '#required' => TRUE,
       ];
     }
 
-    $form['textfields_container']['submit'] = [
+    $form['text_fields_container']['submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Click Me'),
     ];
@@ -112,7 +112,7 @@ class Autotextfields extends FormBase {
   }
 
   /**
-   * Callback for ajax_example_autotextfields.
+   * Callback for ajax_example_auto_text_fields.
    *
    * Selects the piece of the form we want to use as replacement markup and
    * returns it as a form (renderable array).

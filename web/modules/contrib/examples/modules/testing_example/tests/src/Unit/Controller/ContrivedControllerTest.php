@@ -15,7 +15,7 @@ class ContrivedControllerTest extends UnitTestCase {
   /**
    * Data provider for testAdd().
    */
-  public function provideTestAdd() {
+  public static function provideTestAdd() {
     return [
       [4, 2, 2],
     ];
@@ -27,9 +27,7 @@ class ContrivedControllerTest extends UnitTestCase {
    * @dataProvider provideTestAdd
    */
   public function testAdd($expected, $first, $second) {
-    $controller = $this->getMockBuilder(ContrivedController::class)
-      ->disableOriginalConstructor()
-      ->getMock();
+    $controller = $this->createMock(ContrivedController::class);
     $ref_add = new \ReflectionMethod($controller, 'add');
     $ref_add->setAccessible(TRUE);
     $this->assertEquals($expected, $ref_add->invokeArgs($controller, [$first, $second]));
@@ -38,7 +36,7 @@ class ContrivedControllerTest extends UnitTestCase {
   /**
    * Data provider for testHandCount().
    */
-  public function provideTestHandCount() {
+  public static function provideTestHandCount() {
     return [
       ['I can count these on one hand.', 0, 0],
       ['I can count these on one hand.', 1, 0],
@@ -72,7 +70,7 @@ class ContrivedControllerTest extends UnitTestCase {
   /**
    * Data provider for testHandCountIsolated().
    */
-  public function providerTestHandCountIsolated() {
+  public static function providerTestHandCountIsolated() {
     $data = [];
 
     // Add one-hand data.

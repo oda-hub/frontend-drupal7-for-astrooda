@@ -74,8 +74,7 @@ class HooksExampleTest extends BrowserTestBase {
     $this->assertSession()->pageTextContains('You have viewed this node 1 times this session.');
     // Tests that the message set by
     // hooks_example_hooks_example_count_incremented() is displayed on the page.
-    // Which also has the effect of testing to see wehther or not our custom
-    // hook is being invoked.
+    // It also has the effect of testing whether our custom hook is invoked.
     $this->assertSession()->pageTextContains('This is the first time you have viewed the node ' . $node->label() . '.');
 
     // Navigate to a new page, and then back and verify the counter was updated.

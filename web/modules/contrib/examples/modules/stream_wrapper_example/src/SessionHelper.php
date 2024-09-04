@@ -99,7 +99,7 @@ class SessionHelper {
       return ['store' => &$store, 'tip' => &$store];
     }
     $hierarchy = explode('/', $path);
-    if (empty($hierarchy) or empty($hierarchy[0])) {
+    if (empty($hierarchy[0])) {
       return ['store' => &$store, 'tip' => &$store];
     }
     $bottom =& $store;
@@ -127,7 +127,7 @@ class SessionHelper {
    *   A file-system like path string.
    *
    * @return array
-   *   Associative array defining an interal path of our data store.   .
+   *   Associative array defining an internal path of our data store.
    */
   public function getParentPath($path) {
     $dirs = explode('/', $path);
@@ -143,7 +143,6 @@ class SessionHelper {
    *   The path portion of a URI (i.e., without the SCHEME://).
    */
   public function clearPath($path) {
-
     $this->getStore();
     if ($this->checkPath($path)) {
       $path_info = $this->getParentPath($path);

@@ -8,9 +8,9 @@ use Drupal\plugin_type_example\SandwichBase;
  * Provides a ham sandwich.
  *
  * Because the plugin manager class for our plugins uses annotated class
- * discovery, our meatball sandwich only needs to exist within the
- * Plugin\Sandwich namespace, and provide a Sandwich annotation to be declared
- *  as a plugin. This is defined in
+ * discovery, our ham sandwich only needs to exist within the Plugin\Sandwich
+ * namespace, and provide a Sandwich annotation to be declared as a plugin.
+ * This is defined in
  * \Drupal\plugin_type_example\SandwichPluginManager::__construct().
  *
  * The following is the plugin annotation. This is parsed by Doctrine to make

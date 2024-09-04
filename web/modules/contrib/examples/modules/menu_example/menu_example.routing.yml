@@ -28,25 +28,25 @@ examples.menu_example.alternate_menu:
 
 # The menu entry demonstrates the use of permissions to restrict access
 # to a particular path until and unless the requirement is met.
-examples.menu_example.permissioned:
-  path: '/examples/menu-example/permissioned'
+examples.menu_example.restricted:
+  path: '/examples/menu-example/restricted'
   defaults:
-    _controller: '\Drupal\menu_example\Controller\MenuExampleController::permissioned'
-    _title: 'Permissioned Route Example'
+    _controller: '\Drupal\menu_example\Controller\MenuExampleController::restricted'
+    _title: 'Restricted Route Example'
   requirements:
     _permission: 'access content'
 
 # Only the user with the required permission will be able to access this route.
-examples.menu_example.permissioned_controlled:
-  path: '/examples/menu-example/permissioned/controlled'
+examples.menu_example.restricted_controlled:
+  path: '/examples/menu-example/restricted/controlled'
   defaults:
-    _controller: '\Drupal\menu_example\Controller\MenuExampleController::permissionedControlled'
-    _title: 'Permissioned Route'
+    _controller: '\Drupal\menu_example\Controller\MenuExampleController::restrictedControlled'
+    _title: 'Restricted Route'
   requirements:
     _permission: 'access protected menu example'
 
-# Sometimes just relying on permissions and/or roles is not sufficient
-# and you need to do custom access checking on routes.
+# Sometimes just relying on permissions and/or roles is not sufficient, and you
+# need to do custom access checking on routes.
 examples.menu_example.custom_access:
   path: '/examples/menu-example/custom-access'
   defaults:
@@ -75,7 +75,7 @@ examples.menu_example.route_only:
   requirements:
     _permission: 'access content'
 
-# These type of routes can be used to create webservices.
+# These type of routes can be used to create web services.
 examples.menu_example.route_only.callback:
   path: '/examples/menu-example/route-only/callback'
   defaults:
@@ -129,7 +129,8 @@ examples.menu_example.placeholder_argument.display:
     arg: \d+
     _permission: 'access content'
 
-# Any route defined here can be altered. We can do so by defining a RouteSubscriber!
+# Any route defined here can be altered. We can do so by defining a
+# RouteSubscriber.
 example.menu_example.path_override:
   path: '/examples/menu-example/menu-original-path'
   defaults:

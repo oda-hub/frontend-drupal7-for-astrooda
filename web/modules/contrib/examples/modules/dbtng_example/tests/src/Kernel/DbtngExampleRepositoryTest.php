@@ -31,14 +31,14 @@ class DbtngExampleRepositoryTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    *
-   * Kernel tests do not invoke hook_schema() or hook_install(). Therefore we
-   * have to do it if our tests expect them to have been run.
+   * Kernel tests do not invoke hook_schema() or hook_install(). This must be
+   * done when tests are set up.
    */
   protected function setUp(): void {
     parent::setUp();
     // Install the schema we defined in hook_schema().
     $this->installSchema('dbtng_example', 'dbtng_example');
-    // Inovke hook_install().
+    // Invoke hook_install().
     $this->container->get('module_handler')->invoke('dbtng_example', 'install');
   }
 
@@ -59,7 +59,7 @@ class DbtngExampleRepositoryTest extends KernelTestBase {
     // Save another entry.
     $entry = [
       'name' => 'Jane',
-      'surname' => 'NotDoe',
+      'surname' => 'Roe',
       'age' => 19,
     ];
     $repository->insert($entry);
@@ -74,9 +74,9 @@ class DbtngExampleRepositoryTest extends KernelTestBase {
 
     // Now find our not-Doe entry.
     $result = $repository->load(['surname' => 'NotDoe']);
-    // Found one entry in the table with surname "NotDoe'.
-    $this->assertCount(1, $result, 'Did not find one entry in the table with surname "NotDoe');
-    // Our NotDoe will be changed to "NowDoe".
+    // Found one entry in the table with surname "Roe'.
+    $this->assertCount(1, $result, 'Did not find one entry in the table with surname = "Roe".');
+    // Our Roe will be changed to "NowDoe".
     $entry = $result[0];
     $entry->surname = "NowDoe";
     // update() returns the number of entries updated.
@@ -99,8 +99,8 @@ class DbtngExampleRepositoryTest extends KernelTestBase {
     // Find entries with age = 45.
     // Read only John Doe entry.
     $result = $repository->load(['surname' => 'NowDoe']);
-    // Found one entry with surname = Nowdoe.
-    $this->assertCount(1, $result, 'Did not find one entry with surname = Nowdoe.');
+    // Found one entry with surname = NowDoe.
+    $this->assertCount(1, $result, 'Did not find one entry with surname = "Doe".');
 
     // Verify it is Jane NowDoe.
     $entry = (array) end($result);

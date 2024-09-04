@@ -32,7 +32,7 @@ class SimplestTest extends WebDriverTestBase {
    *   values.
    * - Verify that the prompt text changes when the dropdown changes.
    */
-  public function testAutotextfields() {
+  public function testAutoTextFields() {
     // Get the page.
     $this->drupalGet(Url::fromRoute('ajax_example.simplest'));
 
@@ -52,7 +52,7 @@ class SimplestTest extends WebDriverTestBase {
     // values. Start with three so the change event is triggered.
     foreach (['three', 'two', 'one'] as $value) {
       // Select the dropdown value.
-      $page->selectFieldOption('changethis', $value);
+      $page->selectFieldOption('change_this', $value);
       // Wait for AJAX to happen.
       $assert->assertWaitOnAjaxRequest();
       // Assert that the description exists.
@@ -60,10 +60,7 @@ class SimplestTest extends WebDriverTestBase {
       // Get the description element from the page.
       $prompt_element = $page->find('css', $description_selector);
       // Verify that the prompt text changes when the dropdown changes.
-      $this->assertEquals(
-        "Say why you chose '$value'",
-        $prompt_element->getText()
-      );
+      $this->assertEquals("Say why you chose '$value'", $prompt_element->getText());
     }
   }
 

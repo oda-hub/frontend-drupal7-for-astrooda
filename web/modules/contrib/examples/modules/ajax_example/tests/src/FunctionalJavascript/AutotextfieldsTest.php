@@ -6,11 +6,11 @@ use Drupal\Core\Url;
 use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
 
 /**
- * Test the user interactions for the Autotextfields example.
+ * Test the user interactions for the AutoTextFields class.
  *
  * @group ajax_example
  */
-class AutotextfieldsTest extends WebDriverTestBase {
+class AutoTextFieldsTest extends WebDriverTestBase {
 
   /**
    * {@inheritdoc}
@@ -23,16 +23,16 @@ class AutotextfieldsTest extends WebDriverTestBase {
   protected static $modules = ['ajax_example'];
 
   /**
-   * Test the user interactions for the Autotextfields example.
+   * Test the user interactions for the AutoTextFields class.
    */
-  public function testAutotextfields() {
+  public function testAutoTextFields() {
     // Get our Mink stuff.
     $session = $this->getSession();
     $page = $session->getPage();
     $assert = $this->assertSession();
 
     // Get the page.
-    $form_url = Url::fromRoute('ajax_example.autotextfields');
+    $form_url = Url::fromRoute('ajax_example.auto_text_fields');
     $this->drupalGet($form_url);
 
     // Check our initial state.

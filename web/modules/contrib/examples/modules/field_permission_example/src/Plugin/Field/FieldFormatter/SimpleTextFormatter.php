@@ -13,7 +13,7 @@ use Drupal\Core\Field\FieldItemListInterface;
  *   module = "field_permission_example",
  *   label = @Translation("Simple text-based formatter"),
  *   field_types = {
- *     "field_permission_example_fieldnote"
+ *     "field_permission_example_field_note"
  *   }
  * )
  */
@@ -27,18 +27,18 @@ class SimpleTextFormatter extends FormatterBase {
 
     foreach ($items as $delta => $item) {
       $elements[$delta] = [
-        // We wrap the fieldnote content up in a div tag.
+        // We wrap the field note content up in a div tag.
         '#type' => 'html_tag',
         '#tag' => 'div',
-        // This text is auto-XSS escaped.  See docs for the html_tag element.
+        // This text is auto-XSS escaped. See docs for the html_tag element.
         '#value' => $item->value,
         // Let's give the note a nice sticky-note CSS appearance.
         '#attributes' => [
-          'class' => 'stickynote',
+          'class' => 'sticky-note',
         ],
-        // ..And this is the CSS for the stickynote.
+        // This is the CSS for the sticky note.
         '#attached' => [
-          'library' => ['field_permission_example/fieldnote_sticky'],
+          'library' => ['field_permission_example/field_note.sticky'],
         ],
       ];
     }

@@ -2,12 +2,13 @@
 
 namespace Drupal\file_example;
 
+use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\File\Event\FileUploadSanitizeNameEvent;
+use Drupal\Core\File\FileExists;
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Messenger\MessengerInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
-use Drupal\devel\DevelDumperInterface;
 use Drupal\file\FileRepositoryInterface;
 use Drupal\file_example\Traits\DumperTrait;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -36,6 +37,8 @@ class FileExampleSubmitHandlerHelper {
    *   The file system.
    * @param \Symfony\Component\EventDispatcher\EventDispatcherInterface $eventDispatcher
    *   The event dispatcher.
+   * @param \Drupal\Core\Extension\ModuleHandlerInterface $moduleHandler
+   *   The module handler.
    *
    * @see https://php.watch/versions/8.0/constructor-property-promotion
    */
@@ -46,7 +49,8 @@ class FileExampleSubmitHandlerHelper {
     protected MessengerInterface $messenger,
     protected FileRepositoryInterface $fileRepository,
     protected FileSystemInterface $fileSystem,
-    protected EventDispatcherInterface $eventDispatcher
+    protected EventDispatcherInterface $eventDispatcher,
+    protected ModuleHandlerInterface $moduleHandler,
   ) {
   }
 
@@ -59,9 +63,9 @@ class FileExampleSubmitHandlerHelper {
    * The key functions used here are:
    * - file_save_data(), which takes a buffer and saves it to a named file and
    *   also creates a tracking record in the database and returns a file object.
-   *   In this function we use FileSystemInterface::EXISTS_RENAME (the default)
-   *   as the argument, which means that if there's an existing file, create a
-   *   new non-colliding filename and use it.
+   *   In this function we use FileExists::Rename (the default) as the argument,
+   *   which means that if there's an existing file, create a new non-colliding
+   *   filename and use it.
    * - file_create_url(), which converts a URI in the form public://junk.txt or
    *   private://something/test.txt into a URL like
    *   http://example.com/sites/default/files/junk.txt.
@@ -79,7 +83,7 @@ class FileExampleSubmitHandlerHelper {
     $uri = !empty($form_values['destination']) ? $form_values['destination'] : NULL;
 
     // Managed operations work with a file object.
-    $file_object = $this->fileRepository->writeData($data, $uri, FileSystemInterface::EXISTS_RENAME);
+    $file_object = $this->fileRepository->writeData($data, $uri, FileExists::Rename);
     if (!empty($file_object)) {
       $url = $this->fileHelper->getExternalUrl($file_object);
       $this->stateHelper->setDefaultFile($file_object->getFileUri());
@@ -95,7 +99,7 @@ class FileExampleSubmitHandlerHelper {
         );
       }
       else {
-        // This Uri is not routable, so we cannot give a link to it.
+        // The stream type does not support URLs, so we cannot give a link to it.
         $this->messenger->addMessage(
           $this->t('Saved managed file: %file to destination %destination (no URL, since this stream type does not support it)', [
             '%file' => print_r($file_data, TRUE),
@@ -119,9 +123,9 @@ class FileExampleSubmitHandlerHelper {
    * The key functions used here are:
    * - FileSystemInterface::saveData(), which takes a buffer and saves it to a
    *   named file, but does not create any kind of tracking record in the
-   *   database. This example uses FileSystemInterface::EXISTS_REPLACE for the
-   *   third argument, meaning that if there's an existing file at this
-   *   location, it should be replaced.
+   *   database. This example uses FileExists::Replace for the third argument,
+   *   meaning that, if there's an existing file at this location, it should be
+   *   replaced.
    * - file_create_url(), which converts a URI in the form public://junk.txt or
    *   private://something/test.txt into a URL like
    *   http://example.com/sites/default/files/junk.txt.
@@ -139,7 +143,7 @@ class FileExampleSubmitHandlerHelper {
     $destination = !empty($form_values['destination']) ? $form_values['destination'] : NULL;
 
     // With the unmanaged file we just get a filename back.
-    $filename = $this->fileSystem->saveData($data, $destination, FileSystemInterface::EXISTS_REPLACE);
+    $filename = $this->fileSystem->saveData($data, $destination, FileExists::Replace);
     if ($filename) {
       $url = $this->fileHelper->getExternalUrl($filename);
       $this->stateHelper->setDefaultFile($filename);
@@ -243,15 +247,15 @@ class FileExampleSubmitHandlerHelper {
    * private files. PHP provides file:// (the default) and http://, so that a
    * URL can be read or written (as in a POST) as if it were a file. In
    * addition, new schemes can be provided for custom applications. The Stream
-   * Wrapper Example, if installed, impleents a custom 'session' scheme that
-   * you can test with this example.
+   * Wrapper Example, if installed, implements a custom 'session' scheme you can
+   * test with this example.
    *
    * Here we take the stream wrapper provided in the form. We grab the
-   * contents with file_get_contents(). Notice that's it's as simple as that:
+   * contents with file_get_contents(). It is that simple:
    * file_get_contents("http://example.com") or
-   * file_get_contents("public://somefile.txt") just works. Although it's
-   * not necessary, we use FileSystemInterface::saveData() to save this file
-   * locally and then find a local URL for it by using file_create_url().
+   * file_get_contents("public://example.txt") just works. Although not
+   * necessary, we use FileSystemInterface::saveData() to save this file locally
+   * and then find a local URL for it by using file_create_url().
    *
    * @param array $form
    *   An associative array containing the structure of the form.
@@ -260,7 +264,7 @@ class FileExampleSubmitHandlerHelper {
    */
   public function handleFileRead(array &$form, FormStateInterface $form_state) {
     $form_values = $form_state->getValues();
-    $uri = $form_values['fileops_file'];
+    $uri = $form_values['file_ops_file'];
 
     if (empty($uri) or !is_file($uri)) {
       $this->messenger->addMessage($this->t('The file "%uri" does not exist', ['%uri' => $uri]), 'error');
@@ -287,14 +291,14 @@ class FileExampleSubmitHandlerHelper {
 
     $buffer = file_get_contents($filename);
     if ($buffer) {
-      $sourcename = $this->fileSystem->saveData($buffer, 'public://' . $event->getFilename());
-      if ($sourcename) {
-        $url = $this->fileHelper->getExternalUrl($sourcename);
-        $this->stateHelper->setDefaultFile($sourcename);
+      $source_name = $this->fileSystem->saveData($buffer, 'public://' . $event->getFilename());
+      if ($source_name) {
+        $url = $this->fileHelper->getExternalUrl($source_name);
+        $this->stateHelper->setDefaultFile($source_name);
         if ($url) {
           $this->messenger->addMessage(
             $this->t('The file was read and copied to %filename which is accessible at <a href=":url">this URL</a>', [
-              '%filename' => $sourcename,
+              '%filename' => $source_name,
               ':url' => $url->toString(),
             ])
           );
@@ -302,7 +306,7 @@ class FileExampleSubmitHandlerHelper {
         else {
           $this->messenger->addMessage(
             $this->t('The file was read and copied to %filename (not accessible externally)', [
-              '%filename' => $sourcename,
+              '%filename' => $source_name,
             ])
           );
         }
@@ -327,7 +331,7 @@ class FileExampleSubmitHandlerHelper {
    */
   public function handleFileDelete(array &$form, FormStateInterface $form_state) {
     $form_values = $form_state->getValues();
-    $uri = $form_values['fileops_file'];
+    $uri = $form_values['file_ops_file'];
 
     // Since we don't know if the file is managed or not, look in the database
     // to see. Normally, code would be working with either managed or unmanaged
@@ -370,7 +374,7 @@ class FileExampleSubmitHandlerHelper {
    */
   public function handleFileExists(array &$form, FormStateInterface $form_state) {
     $form_values = $form_state->getValues();
-    $uri = $form_values['fileops_file'];
+    $uri = $form_values['file_ops_file'];
     if (is_file($uri)) {
       $this->messenger->addMessage($this->t('The file %uri exists.', ['%uri' => $uri]));
     }
@@ -456,7 +460,7 @@ class FileExampleSubmitHandlerHelper {
    */
   public function handleShowSession(array &$form, FormStateInterface $form_state) {
     $dumper = $this->dumper();
-    if ($dumper instanceof DevelDumperInterface) {
+    if ($this->isDevelDumper($dumper)) {
       // If the devel module is installed, use its nicer message format.
       $dumper->dump($this->sessionHelperWrapper->getStoredData(), $this->t('Entire $_SESSION["file_example"]'));
     }
@@ -481,6 +485,24 @@ class FileExampleSubmitHandlerHelper {
     $this->stateHelper->deleteDefaultState();
     $this->sessionHelperWrapper->clearStoredData();
     $this->messenger->addMessage('Session reset.');
+  }
+
+  /**
+   * Checks if the given object is an instance of DevelDumperInterface.
+   *
+   * @param object $object
+   *   The object to check.
+   *
+   * @return bool
+   *   Returns TRUE if the object is an instance of DevelDumperInterface,
+   *   FALSE otherwise.
+   */
+  protected function isDevelDumper(object $object): bool {
+    if ($this->moduleHandler->moduleExists('devel')) {
+      return in_array('DevelDumperInterface', class_implements($object));
+    }
+
+    return FALSE;
   }
 
 }

@@ -32,12 +32,12 @@ There are three main ways to interact with the examples in this project:
    and documentation blocks.
 1. Browse the code and documentation on the web. There are two main places to
    do this:
-    - https://api.drupal.org/api/examples is the main API site for all of
-    Drupal. It has all manner of cross-linked references between the example
-    code and the APIs being demonstrated. All of the Doxygen-based comments in
-    the code are parsed and made browseable here.
-    - https://drupalcode.org/project/examples.git allows you to browse the git
-    repository for the Examples project.
+    - https://api.drupal.org/api/examples is the main page for the Examples
+      project. It has all manner of cross-linked references between the example
+      code and the APIs being demonstrated. All the Doxygen-based comments in
+      code are parsed and converted to HTML markup.
+    - https://drupalcode.org/project/examples.git is the repository for the
+      Examples project.
 
 This project ships with a `composer.json` file. This is meant to illustrate how
 to provide a `composer.json` file for a Drupal contrib project. You can read

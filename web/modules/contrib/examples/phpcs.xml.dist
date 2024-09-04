@@ -7,6 +7,7 @@
 <ruleset name="drupal_examples">
   <description>Default PHP CodeSniffer configuration for Drupal core.</description>
   <file>.</file>
+  <exclude-pattern>./modules/js_example/js/accordion.js</exclude-pattern>
   <!-- Only include specific sniffs that pass. This ensures that, if new sniffs are added, HEAD does not fail.-->
   <!-- Drupal sniffs -->
   <rule ref="Drupal.Arrays.Array">
@@ -124,7 +125,6 @@
   <rule ref="Drupal.WhiteSpace.ObjectOperatorSpacing"/>
   <rule ref="Drupal.WhiteSpace.OpenBracketSpacing"/>
   <rule ref="Drupal.WhiteSpace.OpenTagNewline"/>
-  <rule ref="Drupal.WhiteSpace.OperatorSpacing"/>
   <rule ref="Drupal.WhiteSpace.ScopeClosingBrace"/>
   <rule ref="Drupal.WhiteSpace.ScopeIndent"/>
 

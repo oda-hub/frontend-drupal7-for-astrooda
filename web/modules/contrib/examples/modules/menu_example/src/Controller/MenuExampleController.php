@@ -62,8 +62,8 @@ class MenuExampleController extends ControllerBase {
    *
    * @throws \InvalidArgumentException
    */
-  public function permissioned() {
-    $url = Url::fromRoute('examples.menu_example.permissioned_controlled');
+  public function restricted() {
+    $url = Url::fromRoute('examples.menu_example.restricted_controlled');
     return [
       '#markup' => $this->t('A menu item that requires the "access protected menu example" permission is at @link', [
         '@link' => Link::createFromRoute($url->getInternalPath(), $url->getRouteName())->toString(),
@@ -76,7 +76,7 @@ class MenuExampleController extends ControllerBase {
    *
    * The permission is defined in file menu_examples.permissions.yml.
    */
-  public function permissionedControlled() {
+  public function restrictedControlled() {
     return [
       '#markup' => $this->t('This menu entry will not show and the page will not be accessible without the "access protected menu example" permission to current user.'),
     ];
@@ -92,7 +92,7 @@ class MenuExampleController extends ControllerBase {
   public function customAccess() {
     $url = Url::fromRoute('examples.menu_example.custom_access_page');
     return [
-      '#markup' => $this->t('A menu item that requires the user to posess a role of "authenticated" is at @link', [
+      '#markup' => $this->t('A menu item that requires the user to have the "authenticated" role is at @link', [
         '@link' => Link::createFromRoute($url->getInternalPath(), $url->getRouteName())->toString(),
       ]),
     ];
@@ -153,7 +153,7 @@ class MenuExampleController extends ControllerBase {
   public function tabsPage($path, $title) {
     $secondary = substr_count($path, '/') > 2 ? 'secondary ' : '';
     return [
-      '#markup' => $this->t('This is the @secondary tab "@tabname" in the "basic tabs" example.', ['@secondary' => $secondary, '@tabname' => $title]),
+      '#markup' => $this->t('This is the @secondary tab "@tab" in the "basic tabs" example.', ['@secondary' => $secondary, '@tab' => $title]),
     ];
   }
 
@@ -171,10 +171,10 @@ class MenuExampleController extends ControllerBase {
    * @see https://www.drupal.org/docs/8/api/routing-system/parameters-in-routes
    */
   public function urlArgument($arg1, $arg2) {
-    // Perpare URL for single arguments.
+    // Prepare the URL for single arguments.
     $url_single = Url::fromRoute('examples.menu_example.use_url_arguments', ['arg1' => 'one']);
 
-    // Prepare URL for multiple arguments.
+    // Prepare the URL for multiple arguments.
     $url_double = Url::fromRoute('examples.menu_example.use_url_arguments', ['arg1' => 'one', 'arg2' => 'two']);
 
     // Add these argument links to the page content.
@@ -198,7 +198,7 @@ class MenuExampleController extends ControllerBase {
   }
 
   /**
-   * Demonstrate generation of dynamic creation of page title.
+   * Demonstrates the dynamic creation of page title.
    *
    * @see \Drupal\menu_example\Controller\MenuExampleController::backTitle()
    */

@@ -13,8 +13,8 @@ jquery.farbtastic:
   dependencies:
     - core/jquery
 
-colorpicker:
-  version: 1.x
+color.picker:
+  version: 4.0.0
   js:
     field_example.js: {}
   dependencies:

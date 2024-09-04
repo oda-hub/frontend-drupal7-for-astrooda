@@ -11,19 +11,17 @@ use Drupal\Core\Url;
  * Example stream wrapper class to handle session:// streams.
  *
  * This is just an example, as it could have horrible results if much
- * information were placed in the session object. However, it does
- * demonstrate both the read and write implementation of a stream wrapper.
- * You should *never* do this on any website accessable on the open
- * Internet.
+ * information were placed in the session object. However, it does demonstrate
+ * both the read and write implementation of a stream wrapper.
+ * You should *never* do this on any website accessible on the open Internet.
  *
- * A "stream" is an important Unix concept for the reading and writing of
- * files and other devices. Reading or writing a "stream" just means that you
- * open some device, file, internet site, or whatever, and you don't have to
- * know at all what it is. All the functions that deal with it are the same.
- * You can read/write more from/to the stream, seek a position in the stream,
- * or anything else without the code that does it even knowing what kind
- * of device it is talking to. This Unix idea is extended into PHP's
- * mindset.
+ * A "stream" is an important Unix concept for the reading and writing of files
+ * and other devices. Reading or writing a "stream" just means that you open
+ * some device, file, internet site, or whatever, and you don't have to know at
+ * all what it is. All the functions that deal with it are the same.
+ * You can read/write more from/to the stream, seek a position in the stream, or
+ * anything else without the code that does it even knowing what kind of device
+ * it is talking to. This Unix idea is extended into PHP's mindset.
  *
  * The idea of "stream wrapper" is that this can be extended indefinitely.
  * The classic example is HTTP: With PHP you can do a
@@ -155,11 +153,11 @@ class SessionStreamWrapper implements StreamWrapperInterface {
   public function __construct() {
     // Dependency injection will not work here, since PHP doesn't give us a
     // chance to perform the injection. PHP creates the stream wrapper objects
-    // automatically when certain file functions are called. Therefore we'll use
-    // the \Drupal service locator.
+    // automatically when certain file functions are called. Therefore, we'll
+    // use the \Drupal service locator.
     // phpcs:ignore
     $this->sessionHelper = \Drupal::service('stream_wrapper_example.session_helper');
-    $this->sessionHelper->setPath('.isadir.txt', TRUE);
+    $this->sessionHelper->setPath('.is_a_dir.txt', TRUE);
     $this->streamMode = FALSE;
   }
 
@@ -690,7 +688,7 @@ class SessionStreamWrapper implements StreamWrapperInterface {
       return FALSE;
     }
     $path = $this->getLocalPath($uri);
-    $new_dir = ['isadir.txt' => TRUE];
+    $new_dir = ['is_a_dir.txt' => TRUE];
     $this->sessionHelper->setPath($path, $new_dir);
     return TRUE;
   }
@@ -813,10 +811,10 @@ class SessionStreamWrapper implements StreamWrapperInterface {
       return FALSE;
     }
 
-    // We grab the list of key names, flip it so that .isadir.txt can easily
-    // be removed, then flip it back so we can easily walk it as a list.
+    // We grab the list of key names, flip it to easily remove .is_a_dir.txt,
+    // and flip it back.
     $this->directoryKeys = array_flip(array_keys($var));
-    unset($this->directoryKeys['.isadir.txt']);
+    unset($this->directoryKeys['.is_a_dir.txt']);
     $this->directoryKeys = array_keys($this->directoryKeys);
     $this->directoryPointer = 0;
     return TRUE;

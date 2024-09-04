@@ -22,7 +22,7 @@ tabledrag_example.parent_form:
   requirements:
     _permission: 'access content'
 
-tabledrag_example.rootleaf_form:
+tabledrag_example.root_leaf_form:
   path: '/examples/tabledrag-example/roots-and-leaves'
   defaults:
     _form: '\Drupal\tabledrag_example\Form\TableDragExampleRootLeafForm'

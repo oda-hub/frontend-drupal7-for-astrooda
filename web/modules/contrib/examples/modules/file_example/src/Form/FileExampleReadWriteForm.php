@@ -82,8 +82,8 @@ class FileExampleReadWriteForm extends FormBase {
     $form['write_file']['destination'] = [
       '#type' => 'textfield',
       '#default_value' => $default_file,
-      '#title' => $this->t('Optional: Enter the streamwrapper saying where it should be written'),
-      '#description' => $this->t('This may be public://some_dir/test_file.txt or private://another_dir/some_file.txt, for example. If you include a directory, it must already exist. The default is "public://". Since this example supports session://, you can also use something like session://somefile.txt.'),
+      '#title' => $this->t('Optional: Enter the stream wrapper saying where it should be written'),
+      '#description' => $this->t('This may be public://some_dir/test_file.txt or private://another_dir/some_file.txt, for example. If you include a directory, it must already exist. The default is "public://". Since this example supports session://, you can also use something like session://example.txt.'),
     ];
 
     $form['write_file']['managed_submit'] = [
@@ -102,27 +102,27 @@ class FileExampleReadWriteForm extends FormBase {
       '#submit' => [[$this->submitHandlerHelper, 'handleUnmanagedPhp']],
     ];
 
-    $form['fileops'] = [
+    $form['file_ops'] = [
       '#type' => 'fieldset',
       '#title' => $this->t('Read from a file'),
     ];
-    $form['fileops']['fileops_file'] = [
+    $form['file_ops']['file_ops_file'] = [
       '#type' => 'textfield',
       '#default_value' => $default_file,
       '#title' => $this->t('Enter the URI of a file'),
       '#description' => $this->t('This must be a stream-type description like public://some_file.txt or http://drupal.org or private://another_file.txt or (for this example) session://yet_another_file.txt.'),
     ];
-    $form['fileops']['read_submit'] = [
+    $form['file_ops']['read_submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Read the file and store it locally'),
       '#submit' => [[$this->submitHandlerHelper, 'handleFileRead']],
     ];
-    $form['fileops']['delete_submit'] = [
+    $form['file_ops']['delete_submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Delete file'),
       '#submit' => [[$this->submitHandlerHelper, 'handleFileDelete']],
     ];
-    $form['fileops']['check_submit'] = [
+    $form['file_ops']['check_submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Check to see if file exists'),
       '#submit' => [[$this->submitHandlerHelper, 'handleFileExists']],
@@ -167,7 +167,7 @@ class FileExampleReadWriteForm extends FormBase {
     $form['debug']['reset_session'] = [
       '#type' => 'submit',
       '#value' => $this->t('Reset the Session'),
-      '#submit' => [[$this->submitHandlerHelper,'handleResetSession']],
+      '#submit' => [[$this->submitHandlerHelper, 'handleResetSession']],
     ];
 
     return $form;
@@ -186,7 +186,7 @@ class FileExampleReadWriteForm extends FormBase {
 
     $filename = $this->fileSystem->basename($destination);
     if (!$filename) {
-      $form_state->setError($form['write_file']['destination'], $this->t('The destination %destination is not valid.', array('%destination' => $destination)));
+      $form_state->setError($form['write_file']['destination'], $this->t('The destination %destination is not valid.', ['%destination' => $destination]));
       return;
     }
 

@@ -25,13 +25,11 @@ class RestExampleClientCalls {
    * The headers used when sending HTTP request.
    *
    * The headers are very important when communicating with the REST server.
-   * They are used by the server the verify that it supports the sent data
-   * (Content-Type) and that it supports the type of response that the client
-   * wants.
+   * They are used by the server that verifies it supports the data sent
+   * (Content-Type) and it supports the type of response the client wants.
    *
    * @var array
    */
-
   protected $clientHeaders = [
     'Accept' => 'application/haljson',
     'Content-Type' => 'application/haljson',
@@ -42,7 +40,6 @@ class RestExampleClientCalls {
    *
    * @var array
    */
-
   protected $clientAuth;
 
   /**
@@ -50,7 +47,6 @@ class RestExampleClientCalls {
    *
    * @var string
    */
-
   protected $remoteUrl;
 
   /**
@@ -59,7 +55,7 @@ class RestExampleClientCalls {
    * @param \GuzzleHttp\ClientInterface $client
    *   The HTTP client.
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
-   *   The Config Factory.
+   *   The config factory.
    */
   public function __construct(ClientInterface $client, ConfigFactoryInterface $config_factory) {
     $this->client = $client;
@@ -92,7 +88,6 @@ class RestExampleClientCalls {
    * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function index($node_id = NULL) {
-
     // If the configured URL is an empty string, return nothing.
     if (empty($this->remoteUrl)) {
       return '';
@@ -103,10 +98,10 @@ class RestExampleClientCalls {
       $id = '/' . $node_id;
     }
 
-    $response = $this->client->request('GET',
-    $this->remoteUrl . '/rest/node' . $id, [
-      'headers' => $this->clientHeaders,
-    ]
+    $response = $this->client->request(
+      'GET',
+      $this->remoteUrl . '/rest/node' . $id,
+      ['headers' => $this->clientHeaders]
     );
 
     return Json::decode($response->getBody()->getContents());
@@ -125,7 +120,6 @@ class RestExampleClientCalls {
    * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function create(array $node) {
-
     if (empty($this->remoteUrl)) {
       return new Response('The remote endpoint URL has not been setup.', 500);
     }
@@ -142,19 +136,22 @@ class RestExampleClientCalls {
       'title' => [0 => ['value' => $node['title']]],
     ]);
 
-    $response = $this->client->request('POST',
-        $this->remoteUrl . '/entity/node',
-    [
-      'headers' => $this->clientHeaders,
-      'auth' => $this->clientAuth,
-      'body' => $request_body,
-    ]
+    $response = $this->client->request(
+      'POST',
+      $this->remoteUrl . '/entity/node',
+      [
+        'headers' => $this->clientHeaders,
+        'auth' => $this->clientAuth,
+        'body' => $request_body,
+      ]
     );
 
     // Validate the response from the remote server.
     if ($response->getStatusCode() != 201) {
       return new Response('An error occurred while creating the node.', 500);
     }
+
+    return $response;
   }
 
   /**
@@ -197,6 +194,8 @@ class RestExampleClientCalls {
     if ($response->getStatusCode() != 204) {
       return new Response('An error occurred while patching the node.', 500);
     }
+
+    return $response;
   }
 
   /**
@@ -215,22 +214,24 @@ class RestExampleClientCalls {
    * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function delete(array $node) {
-
     if (empty($this->remoteUrl)) {
       return new Response('The remote URL has not been setup.', 500);
     }
 
-    $response = $this->client->request('DELETE',
-        $this->remoteUrl . '/node/' . $node['nid'],
-    [
-      'headers' => $this->clientHeaders,
-      'auth' => $this->clientAuth,
-    ]
+    $response = $this->client->request(
+      'DELETE',
+      $this->remoteUrl . '/node/' . $node['nid'],
+      [
+        'headers' => $this->clientHeaders,
+        'auth' => $this->clientAuth,
+      ]
     );
 
     if ($response->getStatusCode() != 204) {
       return new Response('An error occurred while patching the node.', 500);
     }
+
+    return $response;
   }
 
 }

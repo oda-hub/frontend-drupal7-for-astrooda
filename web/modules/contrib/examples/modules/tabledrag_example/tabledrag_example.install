@@ -19,7 +19,7 @@ use Drupal\tabledrag_example\Fixtures;
  */
 function tabledrag_example_schema() {
   $schema['tabledrag_example'] = [
-    'description' => 'Stores some entries for our tabledrag fun.',
+    'description' => 'Stores some entries for our table-drag fun.',
     'fields' => [
       'id' => [
         'description' => 'The primary identifier for each item',
@@ -41,7 +41,7 @@ function tabledrag_example_schema() {
         'not null' => TRUE,
         'default' => '',
       ],
-      'itemgroup' => [
+      'item_group' => [
         'description' => 'The group this item belongs to',
         'type' => 'varchar',
         'length' => 32,

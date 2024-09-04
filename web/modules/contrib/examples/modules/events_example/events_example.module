@@ -52,7 +52,7 @@
  *
  * Dispatching an event requires:
  * - Defining a new static class with constants for unique event names and
- *   documentation. Example: \Drupal\events_exampl\Event\IncidentEvents
+ *   documentation. Example: \Drupal\events_example\Event\IncidentEvents
  * - Defining an event class that extends
  *   \Symfony\Component\EventDispatcher\Event
  *   Example: \Drupal\events_example\Event\IncidentReportEvent

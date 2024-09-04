@@ -14,7 +14,7 @@ use Drupal\Component\Utility\Html;
  *
  * This example module provides two different examples of the Drupal email API:
  *  - Defines a simple contact form and shows how to use MailManager::mail()
- *    to send an e-mail (defined in hook_mail()) when the form is submitted.
+ *    to send an email (defined in hook_mail()) when the form is submitted.
  *  - Shows how modules can alter emails defined by other Drupal modules or
  *    core using hook_mail_alter by attaching a custom signature before
  *    they are sent.
@@ -23,8 +23,8 @@ use Drupal\Component\Utility\Html;
 /**
  * Implements hook_mail().
  *
- * This hook defines a list of possible e-mail templates that this module can
- * send. Each e-mail is given a unique identifier, or 'key'.
+ * This hook defines a list of possible email templates that this module can
+ * send. Each email is given a unique identifier, or 'key'.
  *
  * $message comes in with some standard properties already set: 'to' address,
  * 'from' address, and a set of default 'headers' from MailManager::mail(). The
@@ -41,7 +41,7 @@ use Drupal\Component\Utility\Html;
  */
 function email_example_mail($key, &$message, $params) {
   // Each message is associated with a language, which may or may not be the
-  // current user's selected language, depending on the type of e-mail being
+  // current user's selected language, depending on the type of email being
   // sent. This $options array is used later in the t() calls for subject
   // and body to ensure the proper translation takes effect.
   $options = [
@@ -52,7 +52,7 @@ function email_example_mail($key, &$message, $params) {
     // Send a simple message from the contact form.
     case 'contact_message':
       $from = \Drupal::config('system.site')->get('mail');
-      $message['subject'] = t('E-mail sent from @site-name', ['@site-name' => $from], $options);
+      $message['subject'] = t('Email sent from @site-name', ['@site-name' => $from], $options);
       // Note that the message body is an array, not a string.
       $account = \Drupal::currentUser();
       $message['body'][] = t('@name sent you the following message:', ['@name' => $account->getAccountName()], $options);
@@ -73,8 +73,8 @@ function email_example_mail($key, &$message, $params) {
  *
  * hook_mail_alter() provides an interface to alter any aspect of email sent by
  * Drupal. You can use this hook to add a common site footer to all outgoing
- * email, add extra header fields, and/or modify the email in anyway. HTML-izing
- * the outgoing email is one possibility.
+ * email, add extra header fields, and/or modify the email in any way.
+ * Converting the outgoing email to HTML is one possibility.
  */
 function email_example_mail_alter(&$message) {
   // For the purpose of this example, modify all the outgoing messages and

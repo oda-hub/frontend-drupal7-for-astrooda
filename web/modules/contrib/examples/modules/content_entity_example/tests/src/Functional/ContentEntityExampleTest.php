@@ -120,7 +120,7 @@ class ContentEntityExampleTest extends ExamplesBrowserTestBase {
 
     // Generate a contact so that we can test the paths against it.
     $contact = Contact::create([
-      'name' => 'somename',
+      'name' => 'Smith',
       'first_name' => 'Joe',
       'role' => 'administrator',
     ]);
@@ -254,7 +254,7 @@ class ContentEntityExampleTest extends ExamplesBrowserTestBase {
   }
 
   /**
-   * Ensure admin and permissioned users can create contacts.
+   * Ensure admin and users with the right permissions can create contacts.
    */
   public function testCreateAdminPermission() {
     $assert = $this->assertSession();

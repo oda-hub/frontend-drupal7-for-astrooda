@@ -83,7 +83,7 @@ class PageExampleTest extends BrowserTestBase {
    *     - Key is path to the page where the link should appear.
    *     - Value is the link that should appear on the page.
    */
-  public function providerMenuLinks() {
+  public static function providerMenuLinks() {
     return [
       [
         '',

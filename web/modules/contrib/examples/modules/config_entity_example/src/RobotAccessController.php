@@ -22,7 +22,7 @@ class RobotAccessController extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   public function checkAccess(EntityInterface $entity, $operation, AccountInterface $account) {
-    // The $opereration parameter tells you what sort of operation access is
+    // The $operation parameter tells you what sort of operation access is
     // being checked for.
     if ($operation == 'view') {
       return AccessResult::allowed();

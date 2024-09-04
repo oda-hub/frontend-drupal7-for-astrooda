@@ -9,11 +9,11 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Render\RendererInterface;
 
 /**
- * Table drag example root leaf form.
+ * Example form with a table with draggable items.
  *
- * Tabledrag rows can be marked as roots or leaves. This limits the way the user
+ * Draggable rows can be marked as roots or leaves. This limits the way the user
  * can interact with them in drag-and-drop operations. We'll mark some rows this
- * way and you can try dragging them around on the page to see how they are
+ * way, and you can try dragging them around on the page to see how they are
  * limited.
  *
  * @ingroup tabledrag_example
@@ -61,7 +61,7 @@ class TableDragExampleRootLeafForm extends FormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'tabledrag_example_rootlead_form';
+    return 'table_drag_example_root_leaf_form';
   }
 
   /**
@@ -336,7 +336,7 @@ class TableDragExampleRootLeafForm extends FormBase {
       // Make sure this child does not already exist in the tree, to
       // avoid loops.
       if (!in_array($child->id, array_keys($tree))) {
-        // Add this child's tree to the $itemtree array.
+        // Add this child's tree to the $tree array.
         $this->getTree($child, $tree, $depth);
       }
     }

@@ -8,7 +8,7 @@
  * Available variables:
  * - element: Element that will be rendered.
  * - element['rendered'] : rendered element
- * - element['unrendered'] : unrendered element
+ * - element['debug_value'] : the element array content as shown by var_export()
  * - element['description'] : the description of this example
  *
  * @ingroup themeable
@@ -20,6 +20,6 @@
   <div class="render_example--rendered">
     {{ element['rendered'] }}
   </div>
-  <h3>Unrendered Element</h3>
-  <pre><code class="render_example--code">{{ element['unrendered'] }}</code></pre>
+  <h3>Element as string</h3>
+  <pre><code class="render_example--code">{{ element['debug_value'] }}</code></pre>
 </div>

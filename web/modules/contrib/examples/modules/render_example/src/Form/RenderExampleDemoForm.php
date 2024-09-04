@@ -150,9 +150,9 @@ class RenderExampleDemoForm extends ConfigFormBase {
         // Apply the 'draggable' class to each row in the table that you want to
         // be made draggable.
         '#attributes' => ['class' => ['draggable']],
-        // The first two columsn are render arrays that display a string of
+        // The first two column are render arrays which display a string of
         // text.
-        'name' => ['#plain_text' => $this->t('Amber')],
+        'name' => ['#plain_text' => $this->t('Teal')],
         'color' => ['#plain_text' => $this->t('teal')],
         // The third column is a #weight form field.
         'weight' => [
@@ -172,7 +172,7 @@ class RenderExampleDemoForm extends ConfigFormBase {
       // table to drag around.
       [
         '#attributes' => ['class' => ['draggable']],
-        'name' => ['#plain_text' => $this->t('Addi')],
+        'name' => ['#plain_text' => $this->t('Amber')],
         'color' => ['#plain_text' => $this->t('green')],
         'weight' => [
           '#type' => 'weight',
@@ -229,14 +229,14 @@ class RenderExampleDemoForm extends ConfigFormBase {
       // render array. And each column in the row as a sub element of the row
       // array.
       [
-        'name' => ['#plain_text' => $this->t('Amber')],
+        'name' => ['#plain_text' => $this->t('Teal')],
         'color' => ['#plain_text' => $this->t('teal')],
       ],
       // The rest of this array is additional rows so there is some data in the
       // table.
       [
         '#attributes' => ['class' => ['draggable']],
-        'name' => ['#plain_text' => $this->t('Addi')],
+        'name' => ['#plain_text' => $this->t('Amber')],
         'color' => ['#plain_text' => $this->t('green')],
       ],
       [

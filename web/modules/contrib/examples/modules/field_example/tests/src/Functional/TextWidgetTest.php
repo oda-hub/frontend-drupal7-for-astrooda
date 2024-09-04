@@ -2,8 +2,6 @@
 
 namespace Drupal\Tests\field_example\Functional;
 
-use Drupal\Component\Render\FormattableMarkup;
-
 /**
  * Test basic functionality of the widgets.
  *

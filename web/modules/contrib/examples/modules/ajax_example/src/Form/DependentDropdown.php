@@ -15,7 +15,7 @@ class DependentDropdown extends FormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'ajax_example_dependentdropdown';
+    return 'ajax_example_dependent_dropdown';
   }
 
   /**
@@ -97,7 +97,7 @@ class DependentDropdown extends FormBase {
     $form['instrument_family_fieldset']['choose_family'] = [
       '#type' => 'submit',
       '#value' => $this->t('Choose'),
-      '#attributes' => ['class' => ['ajax-example-hide', 'ajax-example-inline']],
+      '#attributes' => ['class' => ['js-hide', 'ajax-example-inline']],
     ];
     // We are using the path parameter $nojs to signal when to simulate the
     // the user turning off JavaScript. We'll remove all the AJAX elements. This
@@ -106,8 +106,8 @@ class DependentDropdown extends FormBase {
     if ($nojs == 'nojs') {
       // Removing the #ajax element tells the system not to use AJAX.
       unset($form['instrument_family_fieldset']['instrument_family_dropdown']['#ajax']);
-      // Removing the ajax-example-hide class from the Choose button ensures
-      // that our JavaScript won't hide it.
+      // Removing the js-hide class from the Choose button ensures that
+      // JavaScript won't hide it.
       unset($form['instrument_family_fieldset']['choose_family']['#attributes']);
     }
 

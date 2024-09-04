@@ -104,7 +104,7 @@ class SessionExampleForm extends FormBase {
         'red' => $this->t('Red'),
         'blue' => $this->t('Blue'),
         'yellow' => $this->t('Yellow'),
-        'argggh' => $this->t('Argggghhh!!'),
+        'none' => $this->t('None of the above'),
       ],
       '#default_value' => $this->session->get('session_example.color', ''),
       '#description' => $this->t('What is your favorite color?'),

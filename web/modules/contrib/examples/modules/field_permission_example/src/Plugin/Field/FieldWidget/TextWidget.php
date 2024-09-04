@@ -14,7 +14,7 @@ use Drupal\Core\Form\FormStateInterface;
  *   module = "field_permission_example",
  *   label = @Translation("Field Note Widget"),
  *   field_types = {
- *     "field_permission_example_fieldnote"
+ *     "field_permission_example_field_note"
  *   }
  * )
  */

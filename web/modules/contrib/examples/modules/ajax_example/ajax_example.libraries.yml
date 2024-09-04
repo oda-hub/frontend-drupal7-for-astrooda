@@ -3,5 +3,3 @@ ajax_example.library:
   css:
     base:
       css/ajax-example-base.css: {}
-  js:
-    js/ajax-example.js: {}

@@ -95,7 +95,7 @@ class TableDragExampleResetForm extends ConfirmFormBase {
           'weight' => 0,
           'pid' => 0,
           'description' => $item['description'],
-          'itemgroup' => $item['itemgroup'],
+          'item_group' => $item['item_group'],
         ])
         ->condition('id', $id, '=')
         ->execute();

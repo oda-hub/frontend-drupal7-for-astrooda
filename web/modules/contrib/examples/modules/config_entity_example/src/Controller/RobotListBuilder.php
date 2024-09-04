@@ -46,7 +46,7 @@ class RobotListBuilder extends ConfigEntityListBuilder {
   public function buildHeader() {
     $header['label'] = $this->t('Robot');
     $header['machine_name'] = $this->t('Machine Name');
-    $header['floopy'] = $this->t('Floopy');
+    $header['neural_system'] = $this->t('Neural system');
     return $header + parent::buildHeader();
   }
 
@@ -64,7 +64,7 @@ class RobotListBuilder extends ConfigEntityListBuilder {
   public function buildRow(EntityInterface $entity) {
     $row['label'] = $entity->label();
     $row['machine_name'] = $entity->id();
-    $row['floopy'] = $entity->floopy;
+    $row['neural_system'] = $entity->neural_system;
 
     return $row + parent::buildRow($entity);
   }

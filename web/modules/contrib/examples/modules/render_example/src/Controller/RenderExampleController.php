@@ -104,7 +104,7 @@ class RenderExampleController extends ControllerBase implements TrustedCallbackI
     //
     // There is a set of common properties that can be used for all elements in
     // a render array. These are defined by
-    // \Drupal\Core\Render\Element\RenderElement. Most elements also have
+    // \Drupal\Core\Render\Element\RenderElementBase. Most elements also have
     // additional element type specific properties.
     //
     // Figuring out what additional properties are available requires first
@@ -134,7 +134,7 @@ class RenderExampleController extends ControllerBase implements TrustedCallbackI
       // can exclude the '#type' => 'markup' line and it will be assumed
       // automatically if the '#markup' property is present.
       '#type' => 'markup',
-      '#markup' => '<p>' . $this->t('This one adds a prefix and suffix, which put a blockqoute tag around the item.') . '</p>',
+      '#markup' => '<p>' . $this->t('This one adds a prefix and suffix, which put a blockquote tag around the item.') . '</p>',
       '#prefix' => '<blockquote>',
       '#suffix' => '</blockquote>',
     ];
@@ -213,8 +213,8 @@ class RenderExampleController extends ControllerBase implements TrustedCallbackI
       '#caption' => $this->t('Our favorite colors.'),
       '#header' => [$this->t('Name'), $this->t('Favorite color')],
       '#rows' => [
-        [$this->t('Amber'), $this->t('teal')],
-        [$this->t('Addi'), $this->t('green')],
+        [$this->t('Teal'), $this->t('teal')],
+        [$this->t('Amber'), $this->t('green')],
         [$this->t('Blake'), $this->t('#063')],
         [$this->t('Enid'), $this->t('indigo')],
         [$this->t('Joe'), $this->t('green')],
@@ -302,8 +302,8 @@ class RenderExampleController extends ControllerBase implements TrustedCallbackI
     // possible the Render API will cache the results of rendering an array in
     // order to improve performance.
     //
-    // When defining a render array you should use the #cache property to define
-    // the cachability of an element.
+    // When defining a render array you should use the #cache property to make
+    // an element cacheable.
     $build['cache_demonstration'] = [
       '#description' => $this->t('#cache demonstration'),
       // This string contains information that is specific to the user who is
@@ -390,9 +390,7 @@ class RenderExampleController extends ControllerBase implements TrustedCallbackI
 
     $output = [];
     // We are going to create a new output render array that pairs each
-    // example with a set of helper render arrays. These are used to display
-    // the description as a title and the unrendered content alongside the
-    // examples.
+    // example with a set of helper render arrays.
     foreach (Element::children($build) as $key) {
       if (isset($build[$key])) {
         $output[$key] = [
@@ -402,7 +400,7 @@ class RenderExampleController extends ControllerBase implements TrustedCallbackI
             '#markup' => $build[$key]['#description'] ?? '',
           ],
           'rendered' => $build[$key],
-          'unrendered' => [
+          'debug_value' => [
             '#type' => 'markup',
             '#markup' => htmlentities(Variable::export($build[$key])),
           ],
@@ -457,7 +455,7 @@ class RenderExampleController extends ControllerBase implements TrustedCallbackI
           // Export the element definition as a string of text so we can display
           // the array that was used to create the rendered output just below
           // the output.
-          'unrendered' => [
+          'debug_value' => [
             '#markup' => htmlentities(Variable::export($child)),
           ],
           '#theme' => 'render_array',

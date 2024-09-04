@@ -41,44 +41,46 @@ class TableSortExampleTest extends ExamplesBrowserTestBase {
   public function testTableSortExampleBasic() {
     $assert = $this->assertSession();
 
-    // No need to login for this test.
+    // No need to log in for this test.
     $this->drupalGet('/examples/tablesort-example', ['query' => ['sort' => 'desc', 'order' => 'Numbers']]);
     $assert->statusCodeEquals(200);
-    // Ordered by number decending.
+    // Ordered by Number, descending.
     $item = $this->getSession()->getPage()->find('xpath', '//tbody/tr/td[1]');
-    $this->assertEquals(7, $item->getText(), 'Ordered by number decending.');
+    $this->assertEquals(7, $item->getText(), 'Ordered by Number, descending.');
 
     $this->drupalGet('/examples/tablesort-example', ['query' => ['sort' => 'asc', 'order' => 'Numbers']]);
     $assert->statusCodeEquals(200);
-    // Ordered by Number ascending.
+    // Ordered by Number, ascending.
     $item = $this->getSession()->getPage()->find('xpath', '//tbody/tr/td[1]');
-    $this->assertEquals(1, $item->getText(), 'Ordered by Number ascending.');
+    $this->assertEquals(1, $item->getText(), 'Ordered by Number, ascending.');
 
     // Sort by Letters.
     $this->drupalGet('/examples/tablesort-example', ['query' => ['sort' => 'desc', 'order' => 'Letters']]);
     $assert->statusCodeEquals(200);
-    // Ordered by Letters decending.
+    // Ordered by Letters, descending.
     $item = $this->getSession()->getPage()->find('xpath', '//tbody/tr/td[2]');
-    $this->assertEquals('w', $item->getText(), 'Ordered by Letters decending.');
+    $this->assertEquals('w', $item->getText(), 'Ordered by Letters, descending.');
 
     $this->drupalGet('/examples/tablesort-example', ['query' => ['sort' => 'asc', 'order' => 'Letters']]);
     $assert->statusCodeEquals(200);
-    // Ordered by Letters ascending.
+    // Ordered by Letters, ascending.
     $item = $this->getSession()->getPage()->find('xpath', '//tbody/tr/td[2]');
-    $this->assertEquals('a', $item->getText(), 'Ordered by Letters ascending.');
+    $this->assertEquals('a', $item->getText(), 'Ordered by Letters, ascending.');
 
     // Sort by Mixture.
     $this->drupalGet('/examples/tablesort-example', ['query' => ['sort' => 'desc', 'order' => 'Mixture']]);
     $assert->statusCodeEquals(200);
-    // Ordered by Mixture decending.
+    // Ordered by Mixture, descending.
     $item = $this->getSession()->getPage()->find('xpath', '//tbody/tr/td[3]');
-    $this->assertEquals('t982hkv', $item->getText(), 'Ordered by Mixture decending.');
+    // cspell:disable-next-line
+    $this->assertEquals('t982hkv', $item->getText(), 'Ordered by Mixture, descending.');
 
     $this->drupalGet('/examples/tablesort-example', ['query' => ['sort' => 'asc', 'order' => 'Mixture']]);
     $assert->statusCodeEquals(200);
-    // Ordered by Mixture ascending.
+    // Ordered by Mixture, ascending.
     $item = $this->getSession()->getPage()->find('xpath', '//tbody/tr/td[3]');
-    $this->assertEquals('0kuykuh', $item->getText(), 'Ordered by Mixture ascending.');
+    // cspell:disable-next-line
+    $this->assertEquals('0kuykuh', $item->getText(), 'Ordered by Mixture, ascending.');
 
   }
 

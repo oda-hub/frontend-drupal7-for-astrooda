@@ -67,10 +67,10 @@ class SessionHelperTest extends UnitTestCase {
     $fetched_dir = $helper->getPath('directory1');
     $this->assertEquals($fetched_dir['file.txt'], "More stuff", "File inside of directory can be read.");
 
-    // Check file existance.
+    // Check file existence.
     $helper = new SessionHelper($this->requestStack);
     $this->assertTrue($helper->checkPath('drupal.txt'), "File at root still exists.");
-    $this->assertFalse($helper->checkPath('file.txt'), "Non-existant file at root does not exist.");
+    $this->assertFalse($helper->checkPath('file.txt'), "Non-existent file at root does not exist.");
     $this->assertTrue($helper->checkPath('directory1'), "Directory at root still exists.");
     $this->assertTrue($helper->checkPath('directory1/file.txt'), "File in directory at root still exists.");
 

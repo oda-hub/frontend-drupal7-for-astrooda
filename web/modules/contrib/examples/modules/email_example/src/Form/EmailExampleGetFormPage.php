@@ -79,11 +79,11 @@ class EmailExampleGetFormPage extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['intro'] = [
-      '#markup' => $this->t('Use this form to send a message to an e-mail address. No spamming!'),
+      '#markup' => $this->t('Use this form to send a message to an email address. No spamming!'),
     ];
     $form['email'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('E-mail address'),
+      '#title' => $this->t('Email address'),
       '#required' => TRUE,
     ];
     $form['message'] = [
@@ -103,7 +103,7 @@ class EmailExampleGetFormPage extends FormBase {
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     if (!$this->emailValidator->isValid($form_state->getValue('email'))) {
-      $form_state->setErrorByName('email', $this->t('That e-mail address is not valid.'));
+      $form_state->setErrorByName('email', $this->t('That email address is not valid.'));
     }
   }
 
@@ -127,7 +127,7 @@ class EmailExampleGetFormPage extends FormBase {
     // into the form, which include the message body in $form_values['message'].
     $params = $form_values;
 
-    // The language of the e-mail. This will one of three values:
+    // The language of the email. This will one of three values:
     // - $account->getPreferredLangcode(): Used for sending mail to a particular
     //   website user, so that the mail appears in their preferred language.
     // - \Drupal::currentUser()->getPreferredLangcode(): Used when sending a
@@ -135,10 +135,10 @@ class EmailExampleGetFormPage extends FormBase {
     //   the language they're currently using.
     // - \Drupal::languageManager()->getDefaultLanguage()->getId: Used when
     //   sending mail to a pre-existing, 'neutral' address, such as the system
-    //   e-mail address, or when you're unsure of the language preferences of
+    //   email address, or when you're unsure of the language preferences of
     //   the intended recipient.
     //
-    // Since in our case, we are sending a message to a random e-mail address
+    // Since in our case, we are sending a message to a random email address
     // that is not necessarily tied to a user account, we will use the site's
     // default language.
     $language_code = $this->languageManager->getDefaultLanguage()->getId();

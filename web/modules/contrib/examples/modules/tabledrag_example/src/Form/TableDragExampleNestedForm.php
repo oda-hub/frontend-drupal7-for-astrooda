@@ -304,7 +304,7 @@ class TableDragExampleNestedForm extends FormBase {
       // Make sure this child does not already exist in the tree, to
       // avoid loops.
       if (!in_array($child->id, array_keys($tree))) {
-        // Add this child's tree to the $itemtree array.
+        // Add this child's tree to the $tree array.
         $this->getTree($child, $tree, $depth);
       }
     }

@@ -47,12 +47,12 @@ class AjaxExampleMenuTest extends BrowserTestBase {
     $routes_with_menu_links = [
       'ajax_example.description' => [],
       'ajax_example.simplest' => [],
-      'ajax_example.autotextfields' => ['Click Me'],
+      'ajax_example.auto_text_fields' => ['Click Me'],
       'ajax_example.submit_driven_ajax' => ['Submit'],
       'ajax_example.dependent_dropdown' => ['Submit'],
       'ajax_example.dynamic_form_sections' => ['Choose'],
       'ajax_example.wizard' => ['Next step'],
-      'ajax_example.wizardnojs' => ['Next step'],
+      'ajax_example.wizard_no_js' => ['Next step'],
       'ajax_example.ajax_link_render' => [],
       'ajax_example.autocomplete_user' => ['Submit'],
     ];

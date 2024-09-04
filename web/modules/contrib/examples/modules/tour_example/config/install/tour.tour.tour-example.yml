@@ -33,21 +33,21 @@
 #               tips. The 'text' plugin (for making text tooltips) is provided
 #               in core, but developers can define additional plugins for tips
 #               containing images, video, or other interactions.
-#   label:      The lable for the tip. This will be rendered in an h3 element.
+#   label:      The label for the tip. This will be rendered in a <h3> element.
 #   body:       The body of the tip. HTML markup is allowed.
 #   weight:     Tips within a tour are ordered by weight, beginning with the
 #               lowest number. Negative values are acceptable.
 #   position:   Defines the position of the tip, relative to its target.
-#               Acceptable values include: 'auto', 'auto-start', 'auto-end', 
-#               'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 
-#               'bottom-end', 'right', 'right-start', 'right-end', 'left', 
+#               Acceptable values include: 'auto', 'auto-start', 'auto-end',
+#               'top', 'top-start', 'top-end', 'bottom', 'bottom-start',
+#               'bottom-end', 'right', 'right-start', 'right-end', 'left',
 #               'left-start', 'left-end'. Default: auto.
-#   selector:   The HTML element you want to attach the tip to.  You can use 
-#               classes (.class-name), ID's (#id-name), a combination of both, 
-#               and even complex elements like (.action-links 
+#   selector:   The HTML element you want to attach the tip to.  You can use
+#               classes (.class-name), ID's (#id-name), a combination of both,
+#               and even complex elements like (.action-links
 #               a[href="/admin/structure/forum/add/forum"])
 #
-#               If you omit, the tip will be shown as modal instead of being 
+#               If you omit, the tip will be shown as modal instead of being
 #               targeted to an element.
 #
 id: tour-example

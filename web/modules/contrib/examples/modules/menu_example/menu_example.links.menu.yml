@@ -1,16 +1,12 @@
 # This file links a menu link with route_name.
 #
-# 'title' key is only key required.
-#
-# 'description' is  is shown either as a tooltip on the item or in the admin UI
-# as the description of the option on the page/
-#
-# 'weight' is used to order the items (higher weights get placed towards the
-# end of the menu among items on the same level).
-#
-# 'route_name' is used to link menu link to corresponding route.
-#
-# 'parent' is used to put item into the menu hierarchy by referring to the
+# 'title' is the only required key.
+# 'description' is shown either as a tooltip on the item or as the description
+# of the option on the page in the admin UI.
+# 'weight' is used to order the items. (Higher weights get placed towards the
+# end of the menu among items on the same level.)
+# 'route_name' is used to associate menu links to the corresponding route.
+# 'parent' is used to put items into the menu hierarchy by referring to the
 # parent menu link name.
 #
 examples.menu_example:
@@ -21,21 +17,21 @@ examples.menu_example:
 
 examples.menu_example.alternate_menu:
   title: 'Menu Example: Menu in alternate menu'
-   #If menu_name is omitted, the "Tools" menu will be used.
+  # If menu_name is omitted, the "Tools" menu will be used.
   menu_name: 'main'
   route_name: examples.menu_example.alternate_menu
 
-examples.menu_example.permissioned:
-  title: 'Permissioned Example'
+examples.menu_example.restricted:
+  title: 'Restricted Example'
   parent: examples.menu_example
   expanded: 1
-  route_name: examples.menu_example.permissioned
+  route_name: examples.menu_example.restricted
   weight: 10
 
-examples.menu_example.permissioned_controlled:
-  title: 'Permissioned Menu Item'
-  parent: examples.menu_example.permissioned
-  route_name: examples.menu_example.permissioned_controlled
+examples.menu_example.restricted_controlled:
+  title: 'Restricted Menu Item'
+  parent: examples.menu_example.restricted
+  route_name: examples.menu_example.restricted_controlled
   weight: 10
 
 examples.menu_example.custom_access:

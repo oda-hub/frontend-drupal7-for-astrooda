@@ -190,7 +190,7 @@ class Contact extends ContentEntityBase implements ContactInterface {
    * Field name, type and size determine the table structure.
    *
    * In addition, we can define how the field and its content can be manipulated
-   * in the GUI. The behaviour of the widgets used can be determined here.
+   * in the GUI. The behavior of the used widgets can be determined here.
    */
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
 

@@ -2,17 +2,51 @@
 
 namespace Drupal\form_api_example\Form;
 
+use Drupal\Core\Datetime\DrupalDateTime;
+use Drupal\Core\Extension\ExtensionPathResolver;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Implements InputDemo form controller.
  *
  * This example demonstrates the different input elements that are used to
  * collect data in a form.
+ *
+ * @todo Change this class once either https://www.drupal.org/i/2940190 or
+ *   https://www.drupal.org/i/2940481 are fixed.
  */
 class InputDemo extends FormBase {
+
+  /**
+   * The extension path resolver.
+   *
+   * @var \Drupal\Core\Extension\ExtensionPathResolver
+   */
+  protected $extensionPathResolver;
+
+  /**
+   * Constructs a new \Drupal\form_api_example\Form\InputDemo object.
+   *
+   * @param \Drupal\Core\Extension\ExtensionPathResolver $extension_path_resolver
+   *   The extension path resolver.
+   */
+  public function __construct(ExtensionPathResolver $extension_path_resolver) {
+    $this->extensionPathResolver = $extension_path_resolver;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    $form = new static($container->get('extension.path.resolver'));
+    $form->setMessenger($container->get('messenger'));
+    $form->setStringTranslation($container->get('string_translation'));
+
+    return $form;
+  }
 
   /**
    * {@inheritdoc}
@@ -41,10 +75,11 @@ class InputDemo extends FormBase {
     ];
 
     // Date.
+    $now = new DrupalDateTime();
     $form['expiration'] = [
       '#type' => 'date',
       '#title' => $this->t('Content expiration'),
-      '#default_value' => ['year' => 2020, 'month' => 2, 'day' => 15],
+      '#default_value' => $now->format('Y-m-d'),
       '#description' => 'Date, #type = date',
     ];
 
@@ -53,8 +88,7 @@ class InputDemo extends FormBase {
       '#type' => 'datetime',
       '#title' => 'Date Time',
       '#date_increment' => 1,
-      '#date_timezone' => date_default_timezone_get(),
-      '#default_value' => date_default_timezone_get(),
+      '#default_value' => $now,
       '#description' => $this->t('Date time, #type = datetime'),
     ];
 
@@ -146,14 +180,12 @@ class InputDemo extends FormBase {
       '#description' => 'Select Multiple',
     ];
 
-    // Tel.
     $form['phone'] = [
       '#type' => 'tel',
       '#title' => $this->t('Phone'),
       '#description' => $this->t('Tel, #type = tel'),
     ];
 
-    // Details.
     $form['details'] = [
       '#type' => 'details',
       '#title' => $this->t('Details'),
@@ -192,14 +224,6 @@ class InputDemo extends FormBase {
       '#type' => 'text_format',
       '#title' => 'Text format',
       '#format' => 'plain_text',
-      '#expected_value' => [
-        'value' => 'Text value',
-        'format' => 'plain_text',
-      ],
-      '#textformat_value' => [
-        'value' => 'Testvalue',
-        'format' => 'filtered_html',
-      ],
       '#description' => $this->t('Text format, #type = text_format'),
     ];
 
@@ -260,8 +284,11 @@ class InputDemo extends FormBase {
     $form['image_button'] = [
       '#type' => 'image_button',
       '#value' => 'Image button',
-      '#src' => \Drupal::service('extension.list.module')->getPath('examples') . '/images/100x30.svg',
+      '#src' => $this->extensionPathResolver->getPath('module', 'examples') . '/images/button.svg',
       '#description' => $this->t('image file, #type = image_button'),
+      '#attributes' => [
+        'width' => 88,
+      ],
     ];
 
     // Button.

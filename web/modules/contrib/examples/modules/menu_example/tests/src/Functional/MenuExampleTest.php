@@ -54,8 +54,8 @@ class MenuExampleTest extends BrowserTestBase {
     // Key is route, value is page contents.
     $routes = [
       'examples.menu_example' => 'This page is displayed by the simplest (and base) menu example.',
-      'examples.menu_example.permissioned' => 'A menu item that requires the "access protected menu example" permission',
-      'examples.menu_example.custom_access' => 'A menu item that requires the user to posess',
+      'examples.menu_example.restricted' => 'A menu item that requires the "access protected menu example" permission',
+      'examples.menu_example.custom_access' => 'A menu item that requires the user to have the "authenticated" role',
       'examples.menu_example.custom_access_page' => 'This menu entry will not be visible and access will result in a 403',
       'examples.menu_example.route_only' => 'A menu entry with no menu link is',
       'examples.menu_example.use_url_arguments' => 'This page demonstrates using arguments in the url',
@@ -104,10 +104,10 @@ class MenuExampleTest extends BrowserTestBase {
     }
 
     // Check the special permission route.
-    $this->drupalGet(Url::fromRoute('examples.menu_example.permissioned_controlled'));
+    $this->drupalGet(Url::fromRoute('examples.menu_example.restricted_controlled'));
     $assert->statusCodeEquals(403);
     $this->drupalLogin($this->createUser(['access protected menu example']));
-    $this->drupalGet(Url::fromRoute('examples.menu_example.permissioned_controlled'));
+    $this->drupalGet(Url::fromRoute('examples.menu_example.restricted_controlled'));
     $assert->statusCodeEquals(200);
     $assert->pageTextContains('This menu entry will not show and the page will not be accessible');
 

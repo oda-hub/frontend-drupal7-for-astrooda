@@ -55,8 +55,8 @@ class QueueExampleTest extends BrowserTestBase {
     $this->submitForm($edit, 'Claim the next item from the queue');
     $this->assertSession()->pageTextContains('There were no items in the queue available to claim');
 
-    // Sleep a second so we can make sure that the timeouts actually time out.
-    // Local systems work fine with this but apparently the PIFR server is so
+    // Sleep a second, so we can make sure that the timeouts actually time out.
+    // Local systems work fine with this but apparently the test server is so
     // fast that it needs a sleep before the cron run.
     sleep(1);
 

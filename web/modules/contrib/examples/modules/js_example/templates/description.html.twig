@@ -1,10 +1,11 @@
 {#
-
-Description text for the JavaScript Example.
-
+/**
+ * @file
+ * Default theme implementation for the JavaScript Example module's description.
+ */
 #}
 
-{% set js_weights = path('js_example.weights') %}
+{% set js_colors = path('js_example.colors') %}
 {% set js_accordion = path('js_example.accordion') %}
 
 {% trans %}
@@ -20,7 +21,7 @@ Description text for the JavaScript Example.
         system.
   </li>
   <li>
-    <p><a href={{ js_weights }}>Sorting according to numeric weight</a>: This
+    <p><a href={{ js_colors }}>Sorting according to numeric weight</a>: This
         demonstrates attaching your own JavaScript code to individual page
         elements using Drupal rendering system.</p>
   </li>

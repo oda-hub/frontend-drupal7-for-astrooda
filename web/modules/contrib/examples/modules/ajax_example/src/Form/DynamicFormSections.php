@@ -25,7 +25,7 @@ class DynamicFormSections extends FormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'ajax_example_dynamicsectiondegrades';
+    return 'ajax_example_dynamic_sections';
   }
 
   /**
@@ -91,7 +91,7 @@ class DynamicFormSections extends FormBase {
     // javascript in the browser.
     if ($nojs != 'nojs') {
       // Allow JavaScript to hide the choose button if we're using AJAX.
-      $form['question_type_submit']['#attributes']['class'][] = 'ajax-example-hide';
+      $form['question_type_submit']['#attributes']['class'][] = 'js-hide';
     }
     else {
       // Remove #ajax from the above, so it won't perform AJAX behaviors.

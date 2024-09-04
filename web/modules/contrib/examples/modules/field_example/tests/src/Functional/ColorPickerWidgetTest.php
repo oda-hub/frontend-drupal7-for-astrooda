@@ -8,7 +8,7 @@ use Drupal\Component\Render\FormattableMarkup;
  * Test the basic functionality of Color Picker Widget.
  *
  * Create the content type with field_example_rgb field, and configure it
- * with field_example_colorpicker, then create a node of content type
+ * with field_example_color_picker, then create a node of content type
  * and verify the values.
  *
  * @group field_example
@@ -32,7 +32,7 @@ class ColorPickerWidgetTest extends FieldExampleBrowserTestBase {
     $assert = $this->assertSession();
     // Login with Admin and create a field.
     $this->drupalLogin($this->administratorAccount);
-    $this->fieldName = $this->createField('field_example_rgb', 'field_example_colorpicker', '1');
+    $this->fieldName = $this->createField('field_example_rgb', 'field_example_color_picker', '1');
 
     // Login with Author user for content creation.
     $this->drupalLogin($this->authorAccount);
@@ -68,7 +68,7 @@ class ColorPickerWidgetTest extends FieldExampleBrowserTestBase {
 
     // Login with Admin and create a field.
     $this->drupalLogin($this->administratorAccount);
-    $this->fieldName = $this->createField('field_example_rgb', 'field_example_colorpicker', '-1');
+    $this->fieldName = $this->createField('field_example_rgb', 'field_example_color_picker', '-1');
 
     // Login with Author user for content creation.
     $this->drupalLogin($this->authorAccount);

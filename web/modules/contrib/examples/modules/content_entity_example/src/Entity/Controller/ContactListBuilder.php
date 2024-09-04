@@ -58,8 +58,8 @@ class ContactListBuilder extends EntityListBuilder {
    */
   public function render() {
     $build['description'] = [
-      '#markup' => $this->t('Content Entity Example implements a Contacts model. These contacts are fieldable entities. You can manage the fields on the <a href="@adminlink">Contacts admin page</a>.', [
-        '@adminlink' => $this->urlGenerator->generateFromRoute('content_entity_example.contact_settings'),
+      '#markup' => $this->t('Content Entity Example implements a Contacts model. These contacts are fieldable entities. You can manage the fields on the <a href=":admin_link">Contacts admin page</a>.', [
+        ':admin_link' => $this->urlGenerator->generateFromRoute('content_entity_example.contact_settings'),
       ]),
     ];
     $build['table'] = parent::render();

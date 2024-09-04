@@ -52,7 +52,7 @@ class DisplayManagerTest extends UnitTestCase {
     $this->assertSame($mock, $dm->item('the display name'));
     // Assert that the DisplayManager can't find an info object
     // that it shouldn't have.
-    $this->assertNull($dm->item('nonexistant'));
+    $this->assertNull($dm->item('nonexistent'));
   }
 
 }

@@ -76,8 +76,8 @@ class ConfigEntityExampleTest extends BrowserTestBase {
     }
 
     // Create a user with no permissions.
-    $noperms_user = $this->drupalCreateUser();
-    $this->drupalLogin($noperms_user);
+    $without_perms_user = $this->drupalCreateUser();
+    $this->drupalLogin($without_perms_user);
     // Should be the same result for forbidden paths, since the user needs
     // special permissions for these paths.
     foreach ($forbidden_paths as $path) {
@@ -88,9 +88,9 @@ class ConfigEntityExampleTest extends BrowserTestBase {
     // Create a user who can administer robots.
     $admin_user = $this->drupalCreateUser(['administer robots']);
     $this->drupalLogin($admin_user);
-    // Forbidden paths aren't forbidden any more.
-    foreach ($forbidden_paths as $unforbidden) {
-      $this->drupalGet($unforbidden);
+    // Forbidden paths are no longer forbidden.
+    foreach ($forbidden_paths as $path) {
+      $this->drupalGet($path);
       $assert->statusCodeEquals(200);
     }
 
@@ -104,20 +104,20 @@ class ConfigEntityExampleTest extends BrowserTestBase {
     // Go to the list page.
     $this->drupalGet('/examples/config-entity-example');
     $this->clickLink('Add robot');
-    $robot_machine_name = 'roboname';
-    $this->submitForm(['label' => $robot_machine_name, 'id' => $robot_machine_name, 'floopy' => TRUE], 'Create Robot');
+    $robot_machine_name = 'wall-e';
+    $this->submitForm(['label' => $robot_machine_name, 'id' => $robot_machine_name, 'neural_system' => TRUE], 'Create Robot');
 
     // 4) Verify that our robot appears when we edit it.
     $this->drupalGet('/examples/config-entity-example/manage/' . $robot_machine_name);
     $assert->fieldExists('label');
-    $assert->checkboxChecked('edit-floopy');
+    $assert->checkboxChecked('edit-neural-system');
 
     // 5) Verify that the label and machine name are shown in the list.
     $this->drupalGet('/examples/config-entity-example');
     $this->clickLink('Add robot');
     $robby_machine_name = 'robby_machine_name';
     $robby_label = 'Robby label';
-    $this->submitForm(['label' => $robby_label, 'id' => $robby_machine_name, 'floopy' => TRUE], 'Create Robot');
+    $this->submitForm(['label' => $robby_label, 'id' => $robby_machine_name, 'neural_system' => TRUE], 'Create Robot');
     $this->drupalGet('/examples/config-entity-example');
     $assert->pageTextContains($robby_label);
     $assert->pageTextContains($robby_machine_name);
@@ -125,7 +125,7 @@ class ConfigEntityExampleTest extends BrowserTestBase {
     // Try to re-submit the same robot, and verify that we see an error message
     // and not a PHP error.
     $this->drupalGet(Url::fromRoute('entity.robot.add_form'));
-    $this->submitForm(['label' => $robby_label, 'id' => $robby_machine_name, 'floopy' => TRUE], 'Create Robot');
+    $this->submitForm(['label' => $robby_label, 'id' => $robby_machine_name, 'neural_system' => TRUE], 'Create Robot');
     $assert->pageTextContains('The machine-readable name is already in use.');
 
     // 6) Verify that required links are present on respective paths.
@@ -155,7 +155,7 @@ class ConfigEntityExampleTest extends BrowserTestBase {
     // Try to submit a robot with a machine name of 'custom'. This is a reserved
     // keyword we've disallowed in the form.
     $this->drupalGet(Url::fromRoute('entity.robot.add_form'));
-    $this->submitForm(['label' => 'Custom', 'id' => 'custom', 'floopy' => TRUE], 'Create Robot');
+    $this->submitForm(['label' => 'Custom', 'id' => 'custom', 'neural_system' => TRUE], 'Create Robot');
     $assert->pageTextContains('Additionally, it can not be the reserved word "custom".');
 
   }

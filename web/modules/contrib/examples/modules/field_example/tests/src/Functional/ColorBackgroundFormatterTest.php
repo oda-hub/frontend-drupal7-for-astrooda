@@ -5,7 +5,7 @@ namespace Drupal\Tests\field_example\Functional;
 use Drupal\Component\Render\FormattableMarkup;
 
 /**
- * Test the basic functionality of Color background  formatter.
+ * Test the basic functionality of Color background formatter.
  *
  * Create a content type with a field_example_rgb field, configure it with the
  * color_background_formatter, create a node and check for correct values.
@@ -31,7 +31,7 @@ class ColorBackgroundFormatterTest extends FieldExampleBrowserTestBase {
     $assert = $this->assertSession();
     // Login with Admin and create a field.
     $this->drupalLogin($this->administratorAccount);
-    $this->fieldName = $this->createField('field_example_rgb', 'field_example_colorpicker', '1', 'field_example_color_background');
+    $this->fieldName = $this->createField('field_example_rgb', 'field_example_color_picker', '1', 'field_example_color_background');
 
     // Login with Author user for content creation.
     $this->drupalLogin($this->authorAccount);
@@ -54,8 +54,8 @@ class ColorBackgroundFormatterTest extends FieldExampleBrowserTestBase {
 
     // Test the formatter's configuration options. First verify the foreground
     // color calculation logic is enabled by default and working.
-    $assert->elementAttributeNotContains('css', 'p[style*="background-color: '. $color . '"]', 'style', 'color: inherit');
-    $assert->elementAttributeContains('css', 'p[style*="background-color: '. $color . '"]', 'style', 'color: black');
+    $assert->elementAttributeNotContains('css', 'p[style*="background-color: ' . $color . '"]', 'style', 'color: inherit');
+    $assert->elementAttributeContains('css', 'p[style*="background-color: ' . $color . '"]', 'style', 'color: black');
 
     // Then toggle the setting off.
     \Drupal::service('entity_display.repository')
@@ -71,12 +71,12 @@ class ColorBackgroundFormatterTest extends FieldExampleBrowserTestBase {
       ->save();
 
     // Clear the cache to ensure we get updated field output.
-    //drupal_flush_all_caches();
+    // drupal_flush_all_caches();
     $this->getSession()->reload();
     $assert = $this->assertSession();
 
-    $assert->elementAttributeContains('css', 'p[style*="background-color: '. $color . '"]', 'style', 'color: inherit');
-    $assert->elementAttributeNotContains('css', 'p[style*="background-color: '. $color . '"]', 'style', 'color: black');
+    $assert->elementAttributeContains('css', 'p[style*="background-color: ' . $color . '"]', 'style', 'color: inherit');
+    $assert->elementAttributeNotContains('css', 'p[style*="background-color: ' . $color . '"]', 'style', 'color: black');
   }
 
   /**
@@ -94,7 +94,7 @@ class ColorBackgroundFormatterTest extends FieldExampleBrowserTestBase {
 
     // Login with Admin and create a field.
     $this->drupalLogin($this->administratorAccount);
-    $this->fieldName = $this->createField('field_example_rgb', 'field_example_colorpicker', '-1', 'field_example_color_background');
+    $this->fieldName = $this->createField('field_example_rgb', 'field_example_color_picker', '-1', 'field_example_color_background');
 
     // Login with Author user for content creation.
     $this->drupalLogin($this->authorAccount);

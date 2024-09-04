@@ -1,15 +1,17 @@
 # This file brings everything together. Very nifty!
 
-# Route name can be used in several places; e.g. links, redirects, and local
-# actions.
+# Route names can be used in several places, for example links, redirects, and
+# local actions.
 entity.content_entity_example_contact.canonical:
   path: '/content_entity_example_contact/{content_entity_example_contact}'
   defaults:
+
     # Calls the view controller, defined in the annotation of the contact
     # entity. This marks this route as belonging to this entity type.
     _entity_view: 'content_entity_example_contact'
     _title: 'Contact content'
   requirements:
+
     # Calls the access controller of the entity, passing in the suffix ('view')
     # as the $operation parameter to checkAccess().
     _entity_access: 'content_entity_example_contact.view'
@@ -17,20 +19,24 @@ entity.content_entity_example_contact.canonical:
 entity.content_entity_example_contact.collection:
   path: '/content_entity_example_contact/list'
   defaults:
-  # Calls the list controller, defined in the annotation of the contact entity.
+
+    # Calls the list controller, defined in the annotation of the contact entity.
     _entity_list: 'content_entity_example_contact'
     _title: 'Contact list'
   requirements:
-  # Checks for permission directly.
+
+    # Checks for permission directly.
     _permission: 'view contact entity'
 
 content_entity_example.contact_add:
   path: '/content_entity_example_contact/add'
   defaults:
+
     # Calls the form.add controller, defined in the contact entity.
     _entity_form: content_entity_example_contact.default
     _title: 'Add contact'
   requirements:
+
     # Use the entity's access controller. _entity_create_access tells the router
     # to use the access controller's checkCreateAccess() method instead of
     # checkAccess().
@@ -39,10 +45,12 @@ content_entity_example.contact_add:
 entity.content_entity_example_contact.edit_form:
   path: '/content_entity_example_contact/{content_entity_example_contact}/edit'
   defaults:
-  # Calls the form.edit controller, defined in the contact entity.
+
+    # Calls the form.edit controller, defined in the contact entity.
     _entity_form: content_entity_example_contact.default
     _title: 'Edit contact'
   requirements:
+
     # Calls the access controller of the entity, passing in the suffix
     # ('update') as the $operation parameter to checkAccess().
     _entity_access: 'content_entity_example_contact.update'
@@ -50,10 +58,12 @@ entity.content_entity_example_contact.edit_form:
 entity.content_entity_example_contact.delete_form:
   path: '/contact/{content_entity_example_contact}/delete'
   defaults:
+
     # Calls the form.delete controller, defined in the contact entity.
     _entity_form: content_entity_example_contact.delete
     _title: 'Delete contact'
   requirements:
+
     # Calls the access controller of the entity, passing in the suffix
     # ('delete') as the $operation parameter to checkAccess().
     _entity_access: 'content_entity_example_contact.delete'

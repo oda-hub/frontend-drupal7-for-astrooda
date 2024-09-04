@@ -29,8 +29,8 @@ class DescriptionTraitTest extends KernelTestBase {
     $this->assertFileExists($ref_get_path->invoke($sample_controller));
     // And get our render output.
     $render_array = $sample_controller->description();
-    // We cast to string, since renderPlain() returns a markup object.
-    $output = (string) $this->container->get('renderer')->renderPlain($render_array);
+    // We cast to string, since renderInIsolation() returns a markup object.
+    $output = (string) $this->container->get('renderer')->renderInIsolation($render_array);
     // Did the template load?
     $this->assertStringContainsString('Template loaded!', $output);
     // Were the variables resolved correctly?

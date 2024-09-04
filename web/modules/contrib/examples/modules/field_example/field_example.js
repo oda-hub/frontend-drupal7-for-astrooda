@@ -4,24 +4,24 @@
  */
 
 /**
- * Provides a farbtastic colorpicker for the fancier widget.
+ * Provides a color picker for the fancier widget.
  */
 (function ($) {
-
-  'use strict';
-
-  Drupal.behaviors.field_example_colorpicker = {
-    attach: function () {
-      $('.edit-field-example-colorpicker').on('focus', function (event) {
-        var edit_field = this;
-        var picker = $(this).closest('div').parent().find('.field-example-colorpicker');
+  Drupal.behaviors.field_example_color_picker = {
+    attach() {
+      $('.edit-field-example-color-picker').on('focus', function (event) {
+        const editField = this;
+        const picker = $(this)
+          .closest('div')
+          .parent()
+          .find('.field-example-color-picker');
         // Hide all color pickers except this one.
-        $('.field-example-colorpicker').hide();
+        $('.field-example-color-picker').hide();
         $(picker).show();
         $.farbtastic(picker, function (color) {
-          edit_field.value = color;
-        }).setColor(edit_field.value);
+          editField.value = color;
+        }).setColor(editField.value);
       });
-    }
+    },
   };
 })(jQuery);

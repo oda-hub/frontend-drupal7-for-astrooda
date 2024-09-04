@@ -51,7 +51,7 @@ class DbtngExampleUpdateForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     // Wrap the form in a div.
     $form = [
-      '#prefix' => '<div id="updateform">',
+      '#prefix' => '<div id="update-form">',
       '#suffix' => '</div>',
     ];
     // Add some explanatory text to the form.
@@ -95,7 +95,7 @@ class DbtngExampleUpdateForm extends FormBase {
       '#title' => $this->t('Choose entry to update'),
       '#default_value' => $default_entry->pid,
       '#ajax' => [
-        'wrapper' => 'updateform',
+        'wrapper' => 'update-form',
         'callback' => [$this, 'updateCallback'],
       ],
     ];

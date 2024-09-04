@@ -25,7 +25,7 @@ class FileExampleTest extends ExamplesBrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['file_example'];
+  protected static $modules = ['file_example'];
 
   /**
    * Test the basic File Example UI.
@@ -45,8 +45,8 @@ class FileExampleTest extends ExamplesBrowserTestBase {
       'read temporary files',
       'read session files',
     ];
-    $priviledged_user = $this->drupalCreateUser($permissions);
-    $this->drupalLogin($priviledged_user);
+    $privileged_user = $this->drupalCreateUser($permissions);
+    $this->drupalLogin($privileged_user);
 
     $expected_text = [
       'Write managed file' => 'Saved managed file',
@@ -61,7 +61,7 @@ class FileExampleTest extends ExamplesBrowserTestBase {
     ];
     foreach ($buttons as $button) {
       // For each scheme supported by Drupal + the session:// wrapper,
-      // which is defined in the stream_wrapper_exampnle.
+      // which is defined in stream_wrapper_example.
       $schemes = ['public', 'private', 'temporary', 'session'];
       foreach ($schemes as $scheme) {
         // Create a directory for use.
@@ -89,7 +89,7 @@ class FileExampleTest extends ExamplesBrowserTestBase {
 
         // Assert that the file we're about to create does not yet exist.
         $edit = [
-          'fileops_file' => $filename,
+          'file_ops_file' => $filename,
         ];
         $this->drupalGet('examples/file_example');
         $this->submitForm($edit, 'Check to see if file exists');
@@ -125,7 +125,7 @@ class FileExampleTest extends ExamplesBrowserTestBase {
 
         // Verify that the file exists.
         $edit = [
-          'fileops_file' => $filename,
+          'file_ops_file' => $filename,
         ];
         $this->drupalGet('examples/file_example');
         $this->submitForm($edit, 'Check to see if file exists');
@@ -134,14 +134,14 @@ class FileExampleTest extends ExamplesBrowserTestBase {
         // Now read the file that got written above and verify that we can use
         // the writing tools.
         $edit = [
-          'fileops_file' => $output_filename,
+          'file_ops_file' => $output_filename,
         ];
         $this->drupalGet('examples/file_example');
         $this->submitForm($edit, 'Read the file and store it locally');
         $assert->pageTextContains('The file was read and copied');
 
         $edit = [
-          'fileops_file' => $filename,
+          'file_ops_file' => $filename,
         ];
 
         $this->drupalGet('examples/file_example');

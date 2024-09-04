@@ -84,7 +84,7 @@ class PagerExamplePage extends ControllerBase {
     $query = $this->nodeStorage->getQuery()
       ->sort('nid', 'DESC')
       ->addTag('node_access')
-      ->pager(0);
+      ->pager(2);
 
     // The node_access tag does not trigger a check on whether a user has the
     // ability to view unpublished content. The 'bypass node access' permission

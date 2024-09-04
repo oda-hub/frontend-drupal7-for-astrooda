@@ -51,7 +51,7 @@
  *    A form used to confirm the deletion of the node.
  *
  *  - @see \Drupal\rest_example\Form\RestExampleClientSettings
- *    A form wher you setup what site you want to interact with.
+ *    A form where you set up with which site you want to interact.
  *
  *  - @see \Drupal\rest_example\RestExampleClientCalls
  *    This class handles all the calls to the remote site, and returns the

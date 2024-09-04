@@ -74,8 +74,9 @@ class TableSortExampleController extends ControllerBase {
 
     // Build the table for the nice output.
     $build = [
-      '#markup' => '<p>' . t('The layout here is a themed as a table
-           that is sortable by clicking the header name.') . '</p>',
+      '#markup' => '<p>' . $this->t(
+        'The layout here is themed as a table that is sortable by clicking the header name.'
+      ) . '</p>',
     ];
     $build['tablesort_table'] = [
       '#theme' => 'table',

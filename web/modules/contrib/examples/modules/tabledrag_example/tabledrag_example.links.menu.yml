@@ -15,9 +15,9 @@ tabledrag_example.parent_form:
   parent: tabledrag_example.description
   weight: -3
 
-tabledrag_example.rootleaf_form:
+tabledrag_example.root_leaf_form:
   title: Roots and leaves
-  route_name: tabledrag_example.rootleaf_form
+  route_name: tabledrag_example.root_leaf_form
   parent: tabledrag_example.description
   weight: -2
 

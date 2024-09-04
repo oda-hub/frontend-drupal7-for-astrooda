@@ -53,7 +53,7 @@ class ProtectedPrivatesTest extends UnitTestCase {
   /**
    * Good data provider.
    */
-  public function addDataProvider() {
+  public static function addDataProvider() {
     return [
       [5, 2, 3],
     ];
@@ -86,7 +86,7 @@ class ProtectedPrivatesTest extends UnitTestCase {
   /**
    * Bad data provider.
    */
-  public function addBadDataProvider() {
+  public static function addBadDataProvider() {
     return [
       ['string', []],
     ];

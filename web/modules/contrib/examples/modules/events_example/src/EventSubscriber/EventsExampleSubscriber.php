@@ -30,7 +30,7 @@ class EventsExampleSubscriber implements EventSubscriberInterface {
   /**
    * {@inheritdoc}
    */
-  public static function getSubscribedEvents() {
+  public static function getSubscribedEvents(): array {
     // Return an array of events that you want to subscribe to mapped to the
     // method on this class that you would like called whenever the event is
     // triggered. A single class can subscribe to any number of events. For

@@ -96,8 +96,8 @@ class CacheExampleForm extends FormBase {
       // Since we have recalculated, we now need to store the new data into
       // cache. Complex data types will be automatically serialized before
       // being saved into cache.
-      // Here we use the default setting and create an unexpiring cache item.
-      // See below for an example that creates an expiring cache item.
+      // We use the default setting and create a cache item that does not
+      // expire. See below for an example that creates an expiring cache item.
       $this->cacheBackend->set('cache_example_files_count', $files_count, CacheBackendInterface::CACHE_PERMANENT);
     }
 
@@ -110,8 +110,8 @@ class CacheExampleForm extends FormBase {
     $intro_message .= $this->t('We will search filesystem just once and save output to the cache. We will use cached data for later requests.') . '</p>';
     $intro_message .= '<p>'
       . $this->t(
-        '<a href="@url">Reload this page</a> to see cache in action.',
-        ['@url' => $this->getRequest()->getRequestUri()]
+        '<a href=":url">Reload this page</a> to see cache in action.',
+        [':url' => $this->getRequest()->getRequestUri()]
       )
       . ' ';
     $intro_message .= $this->t('You can use the button below to remove cached data.') . '</p>';

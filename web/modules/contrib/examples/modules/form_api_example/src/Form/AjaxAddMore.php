@@ -58,7 +58,7 @@ class AjaxAddMore extends DemoBase {
       '#value' => $this->t('Add one more'),
       '#submit' => ['::addOne'],
       '#ajax' => [
-        'callback' => '::addmoreCallback',
+        'callback' => '::addMoreCallback',
         'wrapper' => 'names-fieldset-wrapper',
       ],
     ];
@@ -69,7 +69,7 @@ class AjaxAddMore extends DemoBase {
         '#value' => $this->t('Remove one'),
         '#submit' => ['::removeCallback'],
         '#ajax' => [
-          'callback' => '::addmoreCallback',
+          'callback' => '::addMoreCallback',
           'wrapper' => 'names-fieldset-wrapper',
         ],
       ];
@@ -86,7 +86,7 @@ class AjaxAddMore extends DemoBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'form_api_example_ajax_addmore';
+    return 'form_api_example_ajax_add_more';
   }
 
   /**
@@ -94,7 +94,7 @@ class AjaxAddMore extends DemoBase {
    *
    * Selects and returns the fieldset with the names in it.
    */
-  public function addmoreCallback(array &$form, FormStateInterface $form_state) {
+  public function addMoreCallback(array &$form, FormStateInterface $form_state) {
     return $form['names_fieldset'];
   }
 

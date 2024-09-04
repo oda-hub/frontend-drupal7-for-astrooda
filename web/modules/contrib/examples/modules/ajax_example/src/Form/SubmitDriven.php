@@ -14,7 +14,7 @@ class SubmitDriven extends FormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'ajax_example_autotextfields';
+    return 'ajax_example_auto_text_fields';
   }
 
   /**

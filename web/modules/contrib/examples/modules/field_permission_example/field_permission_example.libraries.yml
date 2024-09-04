@@ -1,5 +1,5 @@
-fieldnote_sticky:
-  version: 1.x
+field_note.sticky:
+  version: 4.0.0
   css:
     theme:
       css/field_permission_example.css: {}

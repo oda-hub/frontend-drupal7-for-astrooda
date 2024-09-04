@@ -6,10 +6,10 @@ use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\examples\Utility\DescriptionTemplateTrait;
 
 /**
- * Controller for Hooks example description page.
+ * Controller for JavaScript Example description page.
  *
- * This class uses the DescriptionTemplateTrait to display text we put in the
- * templates/description.html.twig file.
+ * This class uses the DescriptionTemplateTrait to display the module
+ * description we put in the templates/description.html.twig file.
  */
 class JsExampleController {
 
@@ -24,63 +24,54 @@ class JsExampleController {
   }
 
   /**
-   * Weights demonstration.
+   * Weight demonstration.
    *
-   * Here we demonstrate attaching a number of scripts to the render array via
-   * a library. These scripts generate content according to 'weight' and color.
+   * We demonstrate how to attach a number of scripts to the render array via
+   * a library.
    *
-   * In this controller, on the Drupal side, we do three main things:
-   * - Create a container DIV, with an ID all the scripts can recognize.
-   * - Attach some scripts which generate color-coded content. We use the
+   * In this controller, on the Drupal side:
+   * - We create a container with an ID the scripts uses to identify the
+   *   container.
+   * - We attach some scripts which generate color-coded content. We use the
    *   'weight' attribute to set the order in which the scripts are included in
    *   the library declaration.
-   * - Add the color->weight array to drupalSettings, which is where Drupal
-   *   passes data out to JavaScript.
+   * - We add values to drupalSettings, which is used to pass data from PHP to
+   *   JavaScript.
    *
-   * Each of the color scripts (red.js, blue.js, etc) uses jQuery to find our
-   * DIV, and then add some content to it. The order in which the color scripts
-   * execute will end up being the order of the content.
+   * The order in which the color scripts are executed will end up being the order
+   * of the content.
    *
-   * The 'weight' atttribute in libraries yml file determines the order in which
-   * a script is output to the page. To see this in action:
-   * - Uncheck the 'Aggregate Javascript files' setting at:
+   * The 'weight' attribute in the .libraries.yml file determines the order in
+   * which a script is added to the page. To see this in action:
+   * - Uncheck the "Aggregate Javascript files" setting on
    *   admin/config/development/performance.
-   * - Load the page: examples/js_example/weights. Examine the page source.
-   *   You will see that the color js scripts have been added in the <head>
-   *   element in weight order.
-   *
-   * To test further, change a weight in the $weights array below and in library
-   * yml file, then rebuild cache and reload examples/js_example/weights.
-   * Examine the new source to see the reordering.
+   * - Visit examples/js_example/colors and examine the page source.
+   *   You will see that the color scripts have been added to <head> following
+   *   the weight order.
    *
    * @return array
-   *   A renderable array.
+   *   A render array.
    */
-  public function getJsWeightImplementation() {
-    // Create an array of items with random-ish weight values.
-    $weights = [
-      'red' => -4,
-      'blue' => -2,
-      'green' => -1,
-      'brown' => -2,
-      'black' => -1,
-      'purple' => -5,
+  public function showColors() {
+    $colors = [
+      'red' => $this->t('I am red.'),
+      'blue' => $this->t('I am blue.'),
+      'green' => $this->t('I am green.'),
+      'cyan' => $this->t('I am cyan.'),
+      'magenta' => $this->t('I am magenta.'),
+      'yellow' => $this->t('I am yellow.'),
     ];
 
-    // Start building the content.
-    $build = [];
-    // Main container DIV. We give it a unique ID so that the JavaScript can
-    // find it using jQuery.
+    // We give use an ID so that to target the HTML markup we added.
     $build['content'] = [
-      '#markup' => '<div id="js-weights" class="js-weights"></div>',
+      '#markup' => '<div id="js-example-colors"></div>',
     ];
-    // Attach library containing css and js files.
-    $build['#attached']['library'][] = 'js_example/js_example.weights';
-    // Attach the weights array to our JavaScript settings. This allows the
-    // color scripts we just attached to discover their weight values, by
-    // accessing drupalSettings.js_example.js_weights.*color*. The color scripts
-    // only use this information for display to the user.
-    $build['#attached']['drupalSettings']['js_example']['js_weights'] = $weights;
+
+    // Attach the library.
+    $build['#attached']['library'][] = 'js_example/colors';
+
+    // Attach the JavaScript settings.
+    $build['#attached']['drupalSettings']['javaScriptExample']['colors'] = $colors;
 
     return $build;
   }
@@ -93,21 +84,22 @@ class JsExampleController {
    * the JavaScript this way.
    *
    * @return array
-   *   A renderable array.
+   *   A render array.
    */
-  public function getJsAccordionImplementation() {
-    $title = $this->t('Click sections to expand or collapse:');
-    // Build using our theme. This gives us content, which is not a good
-    // practice, but which allows us to demonstrate adding JavaScript here.
-    $build['myelement'] = [
+  public function showAccordion() {
+    // We get all the page content from a theme hook. This is not a good
+    // practice, though: Theme hooks should just theme the content they obtain.
+    $build['accordion'] = [
       '#theme' => 'js_example_accordion',
-      '#title' => $title,
+      '#title' => $this->t('Click on sections to expand or collapse them.'),
     ];
-    // Add our script. It is tiny, but this demonstrates how to add it. We pass
-    // our module name followed by the internal library name declared in
-    // libraries yml file.
-    $build['myelement']['#attached']['library'][] = 'js_example/js_example.accordion';
-    // Return the renderable array.
+
+    // The usual way to attach a library to a page is adding it to the render
+    // array via the #attached property. In this case, we added it via the
+    // template file we use. This is why the following lines are commented out.
+    //
+    // $build['accordion']['#attached']['library'][] = 'js_example/accordion';
+
     return $build;
   }
 

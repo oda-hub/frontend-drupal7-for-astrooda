@@ -36,21 +36,21 @@ class Wizard extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state, $no_js_use = FALSE) {
-    $url = Url::fromUri('internal:/examples/ajax-example/wizard-nojs');
-    $link = Link::fromTextAndUrl($this->t('examples/ajax-example/wizard-nojs'), $url)
+    $url_one = Url::fromUri('internal:/examples/ajax-example/wizard-nojs');
+    $link_one = Link::fromTextAndUrl($this->t('examples/ajax-example/wizard-nojs'), $url_one)
       ->toString();
 
     // Prepare link for multiple arguments.
-    $urltwo = Url::fromUri('internal:/examples/ajax-example/wizard');
-    $linktwo = Link::fromTextAndUrl($this->t('examples/ajax-example/wizard'), $urltwo)
+    $url_two = Url::fromUri('internal:/examples/ajax-example/wizard');
+    $link_two = Link::fromTextAndUrl($this->t('examples/ajax-example/wizard'), $url_two)
       ->toString();
 
     // We want to deal with hierarchical form values.
     $form['#tree'] = TRUE;
     $form['description'] = [
-      '#markup' => $this->t('This example is a step-by-step wizard. The @link does it without page reloads; the @link1 is the same code but simulates a non-javascript environment, showing it with page reloads.', [
-        '@link' => $linktwo,
-        '@link1' => $link,
+      '#markup' => $this->t('This example is a step-by-step wizard. The @link2 does it without page reloads; the @link1 is the same code but simulates a non-javascript environment, showing it with page reloads.', [
+        '@link2' => $link_two,
+        '@link1' => $link_one,
       ]),
     ];
 

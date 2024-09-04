@@ -50,16 +50,16 @@ class FieldNoteItemTest extends FieldKernelTestBase {
     $type_manager
       ->getStorage('field_storage_config')
       ->create([
-        'field_name' => 'field_fieldnote',
+        'field_name' => 'field_field_note',
         'entity_type' => 'entity_test',
-        'type' => 'field_permission_example_fieldnote',
+        'type' => 'field_permission_example_field_note',
       ])->save();
 
     $type_manager
       ->getStorage('field_config')
       ->create([
         'entity_type' => 'entity_test',
-        'field_name' => 'field_fieldnote',
+        'field_name' => 'field_field_note',
         'bundle' => 'entity_test',
       ])->save();
 
@@ -73,7 +73,7 @@ class FieldNoteItemTest extends FieldKernelTestBase {
         'mode' => 'default',
         'status' => TRUE,
       ])
-      ->setComponent('field_fieldnote', [
+      ->setComponent('field_field_note', [
         'type' => 'field_permission_example_widget',
       ])
       ->save();
@@ -82,16 +82,16 @@ class FieldNoteItemTest extends FieldKernelTestBase {
     $type_manager
       ->getStorage('field_storage_config')
       ->create([
-        'field_name' => 'user_fieldnote',
+        'field_name' => 'user_field_note',
         'entity_type' => 'user',
-        'type' => 'field_permission_example_fieldnote',
+        'type' => 'field_permission_example_field_note',
       ])->save();
 
     $type_manager
       ->getStorage('field_config')
       ->create([
         'entity_type' => 'user',
-        'field_name' => 'user_fieldnote',
+        'field_name' => 'user_field_note',
         'bundle' => 'user',
       ])->save();
 
@@ -114,14 +114,14 @@ class FieldNoteItemTest extends FieldKernelTestBase {
           ]);
     }
     // And add our fancy field to that display:
-    $entity_form_display->setComponent('field_fieldnote', [
+    $entity_form_display->setComponent('field_field_note', [
       'type' => 'field_permission_example_widget',
     ])->save();
 
   }
 
   /**
-   * Test entity fields of the field_permission_example_fieldnote field type.
+   * Test entity fields of the field_permission_example_field_note field type.
    */
   public function testFieldNoteItem() {
     // Verify entity creation.
@@ -131,7 +131,7 @@ class FieldNoteItemTest extends FieldKernelTestBase {
         ->getStorage('entity_test')
         ->create([]);
     $value = 'This is an epic entity';
-    $entity->field_fieldnote = $value;
+    $entity->field_field_note = $value;
     $entity->name->value = $this->randomMachineName();
     $entity->save();
 
@@ -142,15 +142,15 @@ class FieldNoteItemTest extends FieldKernelTestBase {
         ->getStorage('entity_test')
         ->load($id);
 
-    $this->assertTrue($entity->field_fieldnote instanceof FieldItemListInterface, 'Field implements interface.');
-    $this->assertTrue($entity->field_fieldnote[0] instanceof FieldItemInterface, 'Field item implements interface.');
-    $this->assertEquals($entity->field_fieldnote->value, $value);
-    $this->assertEquals($entity->field_fieldnote[0]->value, $value);
+    $this->assertTrue($entity->field_field_note instanceof FieldItemListInterface, 'Field implements interface.');
+    $this->assertTrue($entity->field_field_note[0] instanceof FieldItemInterface, 'Field item implements interface.');
+    $this->assertEquals($entity->field_field_note->value, $value);
+    $this->assertEquals($entity->field_field_note[0]->value, $value);
 
     // Verify changing the field's value.
     $new_value = $this->randomMachineName();
-    $entity->field_fieldnote->value = $new_value;
-    $this->assertEquals($entity->field_fieldnote->value, $new_value);
+    $entity->field_field_note->value = $new_value;
+    $this->assertEquals($entity->field_field_note->value, $new_value);
 
     // Read changed entity and assert changed values.
     $entity->save();
@@ -160,7 +160,7 @@ class FieldNoteItemTest extends FieldKernelTestBase {
         ->getStorage('entity_test')
         ->load($id);
 
-    $this->assertEquals($entity->field_fieldnote->value, $new_value);
+    $this->assertEquals($entity->field_field_note->value, $new_value);
 
     // Test sample item generation.
     $entity
@@ -168,19 +168,19 @@ class FieldNoteItemTest extends FieldKernelTestBase {
         ->getStorage('entity_test')
         ->create([]);
 
-    $entity->field_fieldnote->generateSampleItems();
+    $entity->field_field_note->generateSampleItems();
     $this->entityValidateAndSave($entity);
   }
 
   /**
-   * Test multiple access scenarios for the fieldnote field.
+   * Test multiple access scenarios for the field_note field.
    */
   public function testFieldNoteAccess() {
 
     // Let's set up some scenarios.
     $scenarios = [
       'admin_type' => [
-        'perms' => ['administer the fieldnote field'],
+        'perms' => ['administer the field note field'],
         'can_view_any' => TRUE,
         'can_edit_any' => TRUE,
         'can_view_own' => TRUE,
@@ -196,7 +196,7 @@ class FieldNoteItemTest extends FieldKernelTestBase {
       'view_any' => [
         'perms' => [
           'view test entity',
-          'view any fieldnote',
+          'view any field note',
         ],
         'can_view_any' => TRUE,
         'can_edit_any' => FALSE,
@@ -206,8 +206,8 @@ class FieldNoteItemTest extends FieldKernelTestBase {
       'edit_any' => [
         'perms' => [
           'view test entity',
-          'view any fieldnote',
-          'edit any fieldnote',
+          'view any field note',
+          'edit any field note',
         ],
         'can_view_any' => TRUE,
         'can_edit_any' => TRUE,
@@ -217,7 +217,7 @@ class FieldNoteItemTest extends FieldKernelTestBase {
       'view_own' => [
         'perms' => [
           'view test entity',
-          'view own fieldnote',
+          'view own field note',
         ],
         'can_view_any' => FALSE,
         'can_edit_any' => FALSE,
@@ -227,8 +227,8 @@ class FieldNoteItemTest extends FieldKernelTestBase {
       'edit_own' => [
         'perms' => [
           'view test entity',
-          'view own fieldnote',
-          'edit own fieldnote',
+          'view own field note',
+          'edit own field note',
         ],
         'can_view_any' => FALSE,
         'can_edit_any' => FALSE,
@@ -241,7 +241,7 @@ class FieldNoteItemTest extends FieldKernelTestBase {
     // We also need to test users as an entity to attach to.  They work
     // a little differently than most content entity types:
     $arbitrary_user = $this->createUser([], 'Some User');
-    $arbitrary_user->user_fieldnote = $value;
+    $arbitrary_user->user_field_note = $value;
     $arbitrary_user->save();
 
     $storage = $this->container->get('entity_type.manager')->getStorage('entity_test');
@@ -249,24 +249,24 @@ class FieldNoteItemTest extends FieldKernelTestBase {
     foreach ($scenarios as $name => $scenario) {
       $test_user = $this->createUser($scenario['perms'], $name);
       $entity = $storage->create(['entity_test']);
-      $entity->field_fieldnote = $value;
+      $entity->field_field_note = $value;
       $entity->name->value = $this->randomMachineName();
       $entity->save();
 
       foreach (['can_view_any', 'can_edit_any'] as $op) {
-        $this->doAccessAssertion($entity, 'field_fieldnote', $test_user, $name, $op, $scenario[$op]);
-        $this->doAccessAssertion($arbitrary_user, 'user_fieldnote', $test_user, $name, $op, $scenario[$op]);
+        $this->doAccessAssertion($entity, 'field_field_note', $test_user, $name, $op, $scenario[$op]);
+        $this->doAccessAssertion($arbitrary_user, 'user_field_note', $test_user, $name, $op, $scenario[$op]);
       }
 
       if ($scenario['can_view_own'] or $scenario['can_edit_own']) {
         $entity->user_id = $test_user;
         $entity->save();
-        $test_user->user_fieldnote = $value;
+        $test_user->user_field_note = $value;
         $test_user->save();
 
         foreach (['can_view_own', 'can_edit_own'] as $op) {
-          $this->doAccessAssertion($entity, 'field_fieldnote', $test_user, $name, $op, $scenario[$op]);
-          $this->doAccessAssertion($test_user, 'user_fieldnote', $test_user, $name, $op, $scenario[$op]);
+          $this->doAccessAssertion($entity, 'field_field_note', $test_user, $name, $op, $scenario[$op]);
+          $this->doAccessAssertion($test_user, 'user_field_note', $test_user, $name, $op, $scenario[$op]);
         }
       }
     }

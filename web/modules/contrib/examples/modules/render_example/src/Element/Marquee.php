@@ -2,7 +2,7 @@
 
 namespace Drupal\render_example\Element;
 
-use Drupal\Core\Render\Element\RenderElement;
+use Drupal\Core\Render\Element\RenderElementBase;
 
 /**
  * Provides a marquee render element.
@@ -12,7 +12,7 @@ use Drupal\Core\Render\Element\RenderElement;
  * \Drupal\Core\Render\Element\ElementInterface. They are annotated with either
  * \Drupal\Core\Render\Annotation\RenderElement or
  * \Drupal\Core\Render\Annotation\FormElement. And extend either the
- * \Drupal\Core\Render\Element\RenderElement, or
+ * \Drupal\Core\Render\Element\RenderElementBase, or
  * \Drupal\Core\Render\Element\FormElement base classes.
  *
  * In the annotation below we define the string "marquee" as the ID for this
@@ -34,7 +34,7 @@ use Drupal\Core\Render\Element\RenderElement;
  *
  * @RenderElement("marquee")
  */
-class Marquee extends RenderElement {
+class Marquee extends RenderElementBase {
 
   /**
    * {@inheritdoc}

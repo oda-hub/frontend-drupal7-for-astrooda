@@ -154,15 +154,15 @@ class ModalForm extends FormBase {
    *   Array of AJAX commands to execute on submit of the modal form.
    */
   public function ajaxSubmitForm(array &$form, FormStateInterface $form_state) {
-    // We begin building a new ajax reponse.
+    // We begin building a new AJAX response.
     $response = new AjaxResponse();
 
     // If the user submitted the form and there are errors, show them the
     // input dialog again with error messages. Since the title element is
-    // required, the empty string wont't validate and there will be an error.
+    // required, the empty string will not validate and there will be an error.
     if ($form_state->getErrors()) {
-      // If there are errors, we can show the form again with the errors in
-      // the status_messages section.
+      // If there are errors, we can show the form again with the errors in the
+      // status_messages section.
       $form['status_messages'] = [
         '#type' => 'status_messages',
         '#weight' => -10,
@@ -171,19 +171,19 @@ class ModalForm extends FormBase {
     }
     // If there are no errors, show the output dialog.
     else {
-      // We don't want any messages that were added by submitForm().
+      // We don't want messages that were added by submitForm().
       $this->messenger()->deleteAll();
       // We use FormattableMarkup to handle sanitizing the input.
       // @todo There's probably a better way to do this.
       $title = new FormattableMarkup(':title', [':title' => $form_state->getValue('title')]);
-      // This will be the contents for the modal dialog.
+      // This will be the content for the modal dialog.
       $content = [
         '#type' => 'item',
         '#markup' => $this->t("Your specified title of '%title' appears in this modal dialog.", ['%title' => $title]),
       ];
       // Add the OpenModalDialogCommand to the response. This will cause Drupal
-      // AJAX to show the modal dialog. The user can click the little X to close
-      // the dialog.
+      // AJAX to show the modal dialog. The dialog can be closed by clicking the
+      // little X.
       $response->addCommand(new OpenModalDialogCommand($title, $content, static::getDataDialogOptions()));
     }
 

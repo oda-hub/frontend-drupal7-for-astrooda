@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\rest_example\Funtional;
+namespace Drupal\Tests\rest_example\Functional;
 
 use Drupal\Tests\BrowserTestBase;
 
@@ -12,6 +12,11 @@ use Drupal\Tests\BrowserTestBase;
  * @group examples
  */
 class RestExampleSettingsTest extends BrowserTestBase {
+
+  /**
+   * {@inheritdoc}
+   */
+  protected $defaultTheme = 'stark';
 
   /**
    * Modules to enable.

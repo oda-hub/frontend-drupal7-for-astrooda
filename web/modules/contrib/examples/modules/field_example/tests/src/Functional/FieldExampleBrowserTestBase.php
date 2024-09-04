@@ -6,7 +6,7 @@ use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Tests\examples\Functional\ExamplesBrowserTestBase;
 
 /**
- * Class FieldExampleBrowserTestBase.
+ * The Base Class for field example browser testing.
  *
  * @group field_example
  * @group examples
@@ -112,7 +112,7 @@ abstract class FieldExampleBrowserTestBase extends ExamplesBrowserTestBase {
     $this->drupalGet('admin/structure/types/manage/' . $this->contentTypeName . '/fields');
 
     // Go to the 'Add field' page.
-    $this->clickLink('Add field');
+    $this->clickLink('Create a new field');
 
     // Make a name for this field.
     $field_name = strtolower($this->randomMachineName(10));

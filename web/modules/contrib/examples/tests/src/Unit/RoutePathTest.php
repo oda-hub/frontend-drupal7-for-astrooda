@@ -2,49 +2,44 @@
 
 namespace Drupal\Tests\examples\Unit;
 
-use PHPUnit\Framework\TestCase;
+use Drupal\Tests\UnitTestCase;
 use Symfony\Component\Yaml\Yaml;
 
 /**
- * Validate paths for routes.
+ * Verifies route paths are valid.
  *
- * Paths in routes should start with a /.
+ * Route paths are considered valid when they start with a slash.
  *
  * @group examples
  */
-class RoutePathTest extends TestCase {
+class RoutePathTest extends UnitTestCase {
+
+  use FilesTestTrait;
+  use RetrieveRoutingFilesTrait;
 
   /**
-   * Find all the routing YAML files and provide them to the test.
+   * Provides test data for testPathStartsWithSlash().
    *
-   * @return array[]
-   *   An array of arrays of strings, suitable as a data provider. Strings are
-   *   paths to routing YAML files.
+   * @return array
+   *   The test data.
    */
-  public function provideYamls() {
-    $yaml_paths = [];
-
-    $examples_project_path = realpath(__DIR__ . '/../../..');
-
-    $paths = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($examples_project_path, \RecursiveDirectoryIterator::FOLLOW_SYMLINKS));
-    foreach ($paths as $path) {
-      $pathname = $path->getPathname();
-      if (strpos($pathname, 'routing.yml') !== FALSE) {
-        $yaml_paths[] = [$pathname];
-      }
-    }
-    return $yaml_paths;
+  public static function providerRoutingFiles(): array {
+    $data = [];
+    $directory = self::projectPathname('modules');
+    return self::retrieveFiles($directory, 'yml', self::routingFilesCallback(...));
   }
 
   /**
-   * @dataProvider provideYamls
+   * Tests that route paths start with a slash.
+   *
+   * @dataProvider providerRoutingFiles
    */
-  public function testPathsStartWithSlash($yaml_path) {
-    $routes = Yaml::parse(file_get_contents($yaml_path));
+  public function testPathStartsWithSlash(string $filename, string $path, string $pathname): void {
+    $routes = Yaml::parse(file_get_contents($pathname));
 
     foreach ($routes as $name => $route) {
       if (isset($route['path'])) {
-        $this->assertEquals('/', $route['path'][0], "Route $name does not start with a slash '/'.");
+        $this->assertEquals('/', $route['path'][0], "$filename in $path contains a route ($name) that does not start with a slash.");
       }
     }
   }

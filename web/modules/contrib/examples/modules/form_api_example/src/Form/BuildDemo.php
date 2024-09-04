@@ -86,7 +86,7 @@ class BuildDemo extends FormBase {
       '#submit' => ['::rebuildFormSubmit'],
     ];
 
-    $form['actions']['ajaxsubmit'] = [
+    $form['actions']['ajax_submit'] = [
       '#type' => 'submit',
       '#value' => 'Ajax Submit',
       '#ajax' => [

@@ -36,7 +36,8 @@ class ContactForm extends ContentEntityForm {
   public function save(array $form, FormStateInterface $form_state) {
     $form_state->setRedirect('entity.content_entity_example_contact.collection');
     $entity = $this->getEntity();
-    $entity->save();
+
+    return $entity->save();
   }
 
 }

@@ -58,7 +58,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBase;
  *     "id",
  *     "uuid",
  *     "label",
- *     "floopy"
+ *     "neural_system"
  *   }
  * )
  */
@@ -86,10 +86,10 @@ class Robot extends ConfigEntityBase {
   public $label;
 
   /**
-   * The robot floopy flag.
+   * The robot neural_system flag.
    *
    * @var string
    */
-  public $floopy;
+  public $neural_system;
 
 }

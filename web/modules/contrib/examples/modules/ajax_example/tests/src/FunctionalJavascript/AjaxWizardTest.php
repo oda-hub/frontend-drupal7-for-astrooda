@@ -48,7 +48,7 @@ class AjaxWizardTest extends WebDriverTestBase {
     $assert->buttonNotExists('Submit your information');
 
     // We fill the  name at first step and continue with the second step.
-    $page->fillField('name', 'José Saramago');
+    $page->fillField('name', 'Sherlock Holmes');
     $page->pressButton('Next step');
     $assert->assertWaitOnAjaxRequest();
 
@@ -61,7 +61,7 @@ class AjaxWizardTest extends WebDriverTestBase {
     $assert->buttonNotExists('Submit your information');
 
     // We fill the address at the second step and continue with the last step.
-    $page->fillField('address', 'Rua dos Bacalhoeiros, 10');
+    $page->fillField('address', '221B Baker Street');
     $page->pressButton('Next step');
     $assert->assertWaitOnAjaxRequest();
 
@@ -73,15 +73,15 @@ class AjaxWizardTest extends WebDriverTestBase {
     $assert->buttonExists('Previous step');
     $assert->buttonExists('Submit your information');
 
-    // We fill the city at the third step and we finally submit the form.
-    $page->fillField('city', 'Lisboa');
+    // We fill the city at the third step, and we finally submit the form.
+    $page->fillField('city', 'London');
     $page->pressButton('Submit your information');
 
     // We check the output and assert that the already set values are displayed.
     $assert->pageTextContains('Your information has been submitted:');
-    $assert->pageTextContains('Name: José Saramago');
-    $assert->pageTextContains('Address: Rua dos Bacalhoeiros, 10');
-    $assert->pageTextContains('City: Lisboa');
+    $assert->pageTextContains('Name: Sherlock Holmes');
+    $assert->pageTextContains('Address: 221B Baker Street');
+    $assert->pageTextContains('City: London');
   }
 
   /**
@@ -101,29 +101,28 @@ class AjaxWizardTest extends WebDriverTestBase {
     $this->drupalGet($form_url);
 
     // We fill the first step and continue.
-    $page->fillField('name', 'José Saramago');
+    $page->fillField('name', 'Sherlock Holmes');
     $page->pressButton('Next step');
     $assert->assertWaitOnAjaxRequest();
 
     // We fill the second step and continue with the last step.
-    $page->fillField('address', 'Rua dos Bacalhoeiros, 10');
+    $page->fillField('address', '221B Baker Street');
     $page->pressButton('Next step');
     $assert->assertWaitOnAjaxRequest();
 
-    // We fill the third step and we finally submit the form.
-    $page->fillField('city', 'Lisboa');
+    // We fill the third step, and we finally submit the form.
+    $page->fillField('city', 'London');
 
     // Now we move back to previous steps and check that the values are still
     // there.
     $page->pressButton('Previous step');
     $assert->assertWaitOnAjaxRequest();
 
-    $assert->fieldValueEquals('address', 'Rua dos Bacalhoeiros, 10');
+    $assert->fieldValueEquals('address', '221B Baker Street');
     $page->pressButton('Previous step');
     $assert->assertWaitOnAjaxRequest();
 
-    $assert->fieldValueEquals('name', 'José Saramago');
-
+    $assert->fieldValueEquals('name', 'Sherlock Holmes');
   }
 
 }

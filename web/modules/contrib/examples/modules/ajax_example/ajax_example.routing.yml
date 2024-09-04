@@ -14,11 +14,11 @@ ajax_example.simplest:
   requirements:
     _permission: 'access content'
 
-ajax_example.autotextfields:
-  path: '/examples/ajax-example/autotextfields'
+ajax_example.auto_text_fields:
+  path: '/examples/ajax-example/auto-text-fields'
   defaults:
-    _form: '\Drupal\ajax_example\Form\Autotextfields'
-    _title: 'Generate textfields'
+    _form: '\Drupal\ajax_example\Form\AutoTextFields'
+    _title: 'Adds new text fields via AJAX'
   requirements:
     _permission: 'access content'
 
@@ -56,7 +56,7 @@ ajax_example.wizard:
   requirements:
     _permission: 'access content'
 
-ajax_example.wizardnojs:
+ajax_example.wizard_no_js:
   path: '/examples/ajax-example/wizard-nojs/{no_js_use}'
   defaults:
     _form: '\Drupal\ajax_example\Form\Wizard'

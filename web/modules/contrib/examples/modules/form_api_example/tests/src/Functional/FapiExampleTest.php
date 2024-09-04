@@ -70,12 +70,12 @@ class FapiExampleTest extends ExamplesBrowserTestBase {
       'form_api_example.state_demo' => ['Submit'],
       'form_api_example.container_demo' => ['Submit'],
       'form_api_example.vertical_tabs_demo' => ['Submit'],
-      // Modal form has a submit button, but requires input.
+      // Modal form has a submission button, but it needs input.
       'form_api_example.modal_form' => [],
       'form_api_example.ajax_color_demo' => ['Submit'],
       'form_api_example.build_demo' => ['Submit'],
-      'form_api_example.ajax_addmore' => ['Submit'],
-      // Multistep form has submit buttons, but requires input.
+      'form_api_example.ajax_add_more' => ['Submit'],
+      // Multistep form has submission buttons, but it needs input.
       'form_api_example.multistep_form' => [],
     ];
 
@@ -177,9 +177,9 @@ class FapiExampleTest extends ExamplesBrowserTestBase {
       'url' => 'https://www.drupal.org',
       'email' => 'somebody@example.org',
       'quantity' => '4',
-      'password' => 'letmein',
-      'password_confirm[pass1]' => 'letmein',
-      'password_confirm[pass2]' => 'letmein',
+      'password' => 'easy as pie',
+      'password_confirm[pass1]' => 'easy as pie',
+      'password_confirm[pass2]' => 'easy as pie',
       'size' => '76',
       'active' => '1',
       'search' => 'my search string',
@@ -204,8 +204,8 @@ class FapiExampleTest extends ExamplesBrowserTestBase {
     $assert->pageTextContains('Value for URL: https://www.drupal.org');
     $assert->pageTextContains('Value for Email: somebody@example.org');
     $assert->pageTextContains('Value for Quantity: 4');
-    $assert->pageTextContains('Value for Password: letmein');
-    $assert->pageTextContains('Value for New Password: letmein');
+    $assert->pageTextContains('Value for Password: easy as pie');
+    $assert->pageTextContains('Value for New Password: easy as pie');
     $assert->pageTextContains('Value for Size: 76');
     $assert->pageTextContains('Value for active: 1');
     $assert->pageTextContains('Value for Search: my search string');
@@ -284,10 +284,10 @@ class FapiExampleTest extends ExamplesBrowserTestBase {
    * Test the Ajax Add More demo form.
    */
   public function doTestAjaxAddMore() {
-    $ajax_addmore_url = Url::fromRoute('form_api_example.ajax_addmore');
+    $ajax_add_more_url = Url::fromRoute('form_api_example.ajax_add_more');
 
     // Verify that anonymous can access the ajax_add_more page.
-    $this->drupalGet($ajax_addmore_url);
+    $this->drupalGet($ajax_add_more_url);
     $assert_session = $this->assertSession();
     $assert_session->statusCodeEquals(200);
     // Verify that there is no remove button.

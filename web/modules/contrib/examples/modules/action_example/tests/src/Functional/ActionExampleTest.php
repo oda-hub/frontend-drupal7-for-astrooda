@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\theming_example\Functional;
+namespace Drupal\Tests\action_example\Functional;
 
 use Drupal\Tests\examples\Functional\ExamplesBrowserTestBase;
 

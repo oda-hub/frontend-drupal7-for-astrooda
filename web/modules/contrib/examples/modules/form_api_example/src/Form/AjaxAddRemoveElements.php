@@ -17,7 +17,7 @@ class AjaxAddRemoveElements extends FormBase {
    * Required by FormBase.
    */
   public function getFormId() {
-    return 'form_api_example_ajaxaddremoveelements';
+    return 'form_api_example_ajax-add-remove-elements';
   }
 
   /**
@@ -70,12 +70,12 @@ class AjaxAddRemoveElements extends FormBase {
         '#title' => $this->t('Person') . ' ' . ($i + 1),
       ];
       // Date.
-      $form['names_fieldset'][$i]['firstname'] = [
+      $form['names_fieldset'][$i]['first_name'] = [
         '#type' => 'textfield',
         '#title' => $this->t('First name'),
       ];
       // Amount.
-      $form['names_fieldset'][$i]['lastname'] = [
+      $form['names_fieldset'][$i]['last_name'] = [
         '#type' => 'textfield',
         '#title' => $this->t('Last name'),
       ];
@@ -85,7 +85,7 @@ class AjaxAddRemoveElements extends FormBase {
         '#name' => $i,
         '#submit' => ['::removeCallback'],
         '#ajax' => [
-          'callback' => '::addmoreCallback',
+          'callback' => '::addMoreCallback',
           'wrapper' => 'names-fieldset-wrapper',
         ],
       ];
@@ -100,7 +100,7 @@ class AjaxAddRemoveElements extends FormBase {
       '#value' => $this->t('Add one more'),
       '#submit' => ['::addOne'],
       '#ajax' => [
-        'callback' => '::addmoreCallback',
+        'callback' => '::addMoreCallback',
         'wrapper' => 'names-fieldset-wrapper',
       ],
     ];
@@ -119,7 +119,7 @@ class AjaxAddRemoveElements extends FormBase {
    *
    * Selects and returns the fieldset with the names in it.
    */
-  public function addmoreCallback(array &$form, FormStateInterface $form_state) {
+  public function addMoreCallback(array &$form, FormStateInterface $form_state) {
     return $form['names_fieldset'];
   }
 

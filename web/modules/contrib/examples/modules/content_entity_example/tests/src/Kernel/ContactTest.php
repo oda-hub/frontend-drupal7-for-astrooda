@@ -32,7 +32,7 @@ class ContactTest extends KernelTestBase {
     $this->installEntitySchema('content_entity_example_contact');
     $entity = Contact::create([
       'name' => 'Name',
-      'first_name' => 'Firstname',
+      'first_name' => 'First name',
       'user_id' => 0,
       'role' => 'user',
     ]);
