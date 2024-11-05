@@ -1,0 +1,66 @@
+uuid:
+  -
+    value: 1a745cfa-0268-416b-886d-c088cb2942cc
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-10-01T09:03:37+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+name:
+  -
+    value: toppanel0.png
+thumbnail:
+  -
+    target_id: 172
+    alt: toppanel
+    title: null
+    width: 786
+    height: 237
+    target_type: file
+    target_uuid: 0864fd51-b587-4ce4-a90d-c9a5fb8aa0a7
+    url: 'http://default/sites/default/files/2024-10/toppanel0.png'
+created:
+  -
+    value: '2024-10-01T09:03:22+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T09:03:37+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 172
+    alt: toppanel
+    title: ''
+    width: 786
+    height: 237
+    target_type: file
+    target_uuid: 0864fd51-b587-4ce4-a90d-c9a5fb8aa0a7
+    url: 'http://default/sites/default/files/2024-10/toppanel0.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

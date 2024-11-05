@@ -1,0 +1,6 @@
+booktree.admin_settings:
+  title: Booktree
+  parent: system.admin_config_media
+  description: 'Manage booktree.'
+  route_name: booktree.admin_settings
+  weight: 20

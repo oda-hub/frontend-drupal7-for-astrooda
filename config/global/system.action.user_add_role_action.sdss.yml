@@ -1,0 +1,14 @@
+uuid: 07147814-0700-433a-a6b0-ef57a0a52376
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.sdss
+  module:
+    - user
+id: user_add_role_action.sdss
+label: 'Add the sdss role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: sdss

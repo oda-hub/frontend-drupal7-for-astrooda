@@ -1,0 +1,18 @@
+uuid: ffc4eb41-4939-473d-897c-f5f1494f7da9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'MMODA help page'
+type: mmoda_help_page
+description: 'A dedicated content type for the help pages of the module MMODA.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

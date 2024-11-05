@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: be9ef3e1-9476-42c7-8a5b-1b1c8b2110b3
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: a749d3fc-f322-40e2-9221-4fb94317986d
+alias:
+  -
+    value: /help/mmoda/polar
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.a749d3fc-f322-40e2-9221-4fb94317986d

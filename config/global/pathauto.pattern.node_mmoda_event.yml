@@ -1,0 +1,21 @@
+uuid: bb9ad602-4749-421a-86e1-44d71ac77b27
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_mmoda_event
+label: 'Content - MMODA event'
+type: 'canonical_entities:node'
+pattern: 'events/[node:title]'
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      mmoda_event: mmoda_event
+selection_logic: and
+weight: -7
+relationships: {  }

@@ -1,0 +1,9 @@
+uuid: a6a1dc26-d6c2-4a6f-9d20-7c1c9c1e058b
+langcode: en
+status: true
+dependencies: {  }
+id: unige_hpc_full
+label: unige-hpc-full
+weight: 8
+is_admin: null
+permissions: {  }

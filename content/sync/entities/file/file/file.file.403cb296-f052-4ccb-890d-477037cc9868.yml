@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 403cb296-f052-4ccb-890d-477037cc9868
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+filename:
+  -
+    value: lcoda.png
+uri:
+  -
+    value: 'public://2023-11/lcoda.png'
+    url: /sites/default/files/2023-11/lcoda.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 44192
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

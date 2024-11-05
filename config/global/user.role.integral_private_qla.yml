@@ -1,0 +1,9 @@
+uuid: c4993517-1867-4e44-b743-054cd128d003
+langcode: en
+status: true
+dependencies: {  }
+id: integral_private_qla
+label: integral-private-qla
+weight: 6
+is_admin: null
+permissions: {  }

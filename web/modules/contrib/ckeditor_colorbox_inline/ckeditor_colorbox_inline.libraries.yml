@@ -1,0 +1,3 @@
+ckeditor_colorbox_inline:
+  dependencies:
+    - colorbox/colorbox

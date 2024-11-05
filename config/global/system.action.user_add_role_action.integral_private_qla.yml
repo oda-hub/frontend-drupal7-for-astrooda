@@ -1,0 +1,14 @@
+uuid: ca13ffc8-767b-4911-9bcc-7861c73dc237
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.integral_private_qla
+  module:
+    - user
+id: user_add_role_action.integral_private_qla
+label: 'Add the integral-private-qla role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: integral_private_qla

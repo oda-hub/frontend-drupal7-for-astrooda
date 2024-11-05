@@ -1,0 +1,20 @@
+uuid: 9e5b3833-c7e9-4568-99f9-e0617394c86d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_matrix_room_id
+  module:
+    - user
+id: user.user.field_matrix_room_id
+field_name: field_matrix_room_id
+entity_type: user
+bundle: user
+label: 'Matrix room-id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

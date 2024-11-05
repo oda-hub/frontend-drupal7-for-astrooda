@@ -1,0 +1,14 @@
+uuid: 1a2c0b7f-63b1-4645-a4d3-6fbfdb877570
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.public_pool_hpc
+  module:
+    - user
+id: user_add_role_action.public_pool_hpc
+label: 'Add the public-pool-hpc role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: public_pool_hpc

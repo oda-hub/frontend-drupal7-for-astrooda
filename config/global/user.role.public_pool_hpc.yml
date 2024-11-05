@@ -1,0 +1,9 @@
+uuid: 825558f0-7f68-4d67-b722-a625b70fc508
+langcode: en
+status: true
+dependencies: {  }
+id: public_pool_hpc
+label: public-pool-hpc
+weight: 9
+is_admin: null
+permissions: {  }

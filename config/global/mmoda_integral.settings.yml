@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: NNyFMXPE-uJ3x2qYtLxkQoQZyiSPZnRL_vJXAtDO0w0
+name: integral
+messenger: 'Hard X-rays'
+title: INTEGRAL
+virtual: true
+weight: 10

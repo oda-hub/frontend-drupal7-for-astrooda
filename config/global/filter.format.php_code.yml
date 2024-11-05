@@ -1,0 +1,32 @@
+uuid: 70998724-d3b0-4018-a3d3-7087ee8e99a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+    - media
+name: 'PHP code'
+format: php_code
+weight: -7
+filters:
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: true
+    weight: 15
+    settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types: {  }

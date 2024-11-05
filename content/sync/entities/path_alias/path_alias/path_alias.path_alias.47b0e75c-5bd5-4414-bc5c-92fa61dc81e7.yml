@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 47b0e75c-5bd5-4414-bc5c-92fa61dc81e7
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: 54eebc6c-ecdc-4044-b0f7-e64f94399fb7
+alias:
+  -
+    value: /help/mmoda/integral-mission
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.54eebc6c-ecdc-4044-b0f7-e64f94399fb7

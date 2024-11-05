@@ -1,0 +1,9 @@
+uuid: b481dea2-d8bc-4333-994c-41b514adf456
+langcode: en
+status: true
+dependencies: {  }
+id: antares
+label: antares
+weight: 10
+is_admin: null
+permissions: {  }

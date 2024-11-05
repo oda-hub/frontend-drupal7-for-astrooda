@@ -1,0 +1,55 @@
+serial:
+  -
+    value: 4
+uuid:
+  -
+    value: 2d301e9d-6774-47b7-95be-f98a08e2524e
+token:
+  -
+    value: xBKi2oGQADWZhv5Hbh2x7IwTU5_mLus-aI9K0Ps-PTg
+uri:
+  -
+    value: '/form/contact?_webform_dialog=1&'
+created:
+  -
+    value: '2024-08-20T13:47:40+00:00'
+    format: 'Y-m-d\TH:i:sP'
+completed:
+  -
+    value: '2024-08-20T13:47:40+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-08-20T13:47:40+00:00'
+    format: 'Y-m-d\TH:i:sP'
+in_draft:
+  -
+    value: false
+current_page: {  }
+remote_addr:
+  -
+    value: 129.194.169.83
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+langcode:
+  -
+    value: en
+webform_id:
+  -
+    target_id: contact
+entity_type: {  }
+entity_id: {  }
+locked:
+  -
+    value: false
+sticky:
+  -
+    value: false
+notes: {  }
+_content_sync:
+  entity_type: webform_submission
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

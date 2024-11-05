@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Enable the "Colorbox Inline Text Filter" functionality.
+ */
+
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function ckeditor_colorbox_inline_page_attachments(array &$page) {
+  \Drupal::service('colorbox.attachment')->attach($page);
+  $page['#attached']['library'][] = 'ckeditor_colorbox_inline/ckeditor_colorbox_inline';
+}
+
+/**
+ * Implements hook_help().
+ */
+function ckeditor_colorbox_inline_help($route_name) {
+  if ($route_name === 'help.page.ckeditor_colorbox_inline') {
+    $text = file_get_contents(__DIR__ . '/README.md');
+    return '<pre>' . Html::escape($text) . '</pre>';
+  }
+  return '';
+}

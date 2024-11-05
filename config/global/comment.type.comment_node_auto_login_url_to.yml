@@ -1,0 +1,8 @@
+uuid: bb409542-833a-4174-8e5d-138cfe3d6636
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_auto_login_url_to
+label: 'Auto Login URL Token comment'
+target_entity_type_id: node
+description: null

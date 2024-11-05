@@ -1,0 +1,14 @@
+uuid: 5492248f-1abf-42d5-9b4f-78457e850b3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.apc
+  module:
+    - user
+id: user_remove_role_action.apc
+label: 'Remove the apc role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: apc

@@ -1,0 +1,14 @@
+uuid: 5ae5b2cc-8a02-4c6d-b10c-63e722ba1265
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.antares
+  module:
+    - user
+id: user_add_role_action.antares
+label: 'Add the antares role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: antares

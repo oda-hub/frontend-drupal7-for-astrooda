@@ -1,0 +1,19 @@
+uuid: 4b52aab3-bba2-4648-97ff-eeb5990f3620
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_alu_token_url
+field_name: field_alu_token_url
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

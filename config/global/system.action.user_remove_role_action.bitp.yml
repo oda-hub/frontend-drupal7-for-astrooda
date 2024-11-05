@@ -1,0 +1,14 @@
+uuid: cbe032eb-4a4d-4f92-ab48-e08761da5d99
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.bitp
+  module:
+    - user
+id: user_remove_role_action.bitp
+label: 'Remove the bitp role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: bitp

@@ -1,0 +1,14 @@
+uuid: 25177604-e154-41db-844a-facd5da71f18
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.sdss
+  module:
+    - user
+id: user_remove_role_action.sdss
+label: 'Remove the sdss role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: sdss

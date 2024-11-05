@@ -1,0 +1,30 @@
+_core:
+  default_config_hash: 6CZIzFifRq3qbdq3n3nDpEOO4hWIQtKOAQNPvGNGKeM
+langcode: en
+cancel_confirm:
+  subject: 'Account details for [user:name] at [site:name] (canceled)'
+  body: "<p style=\"margin-bottom: 2em;\"><a href=\"[site:url]\"><img src=\"[site:logo-url]\" style=\"width:100px;\"></a></p>\r\n<p>[user:display-name],</p>\r\n\r\n<p>Your account on <a href=\"[site:url]\">[site:name]</a> has been canceled.</p>\r\n\r\n<p>\r\nKind regards,<br/>\r\nThe <a href=\"[site:url]\"> [site:name]</a> team.\r\n</p>"
+password_reset:
+  subject: 'Replacement login information for [user:name] at [site:name]'
+  body: "<p style=\"margin-bottom: 2em;\"><a href=\"[site:url]\"><img src=\"[site:logo-url]\" style=\"width:100px;\"></a></p>\r\n<p>[user:display-name],</p>\r\n<p>A request to reset the password for your account has been made at <a href=\"[site:url]\">[site:name]</a>.</p>\r\n\r\n<p>You may now log in by clicking this link or copying and pasting it into your browser:</p>\r\n\r\n<p><a href=\"[user:one-time-login-url]\">[user:one-time-login-url]</a></p>\r\n\r\n<p><strong>This link can only be used once to log in and will lead you to a page where you can set your password.<br>\r\nIt expires after one day and nothing will happen if it's not used.</strong></p>\r\n\r\n<p>\r\nKind regards,<br/>\r\nThe <a href=\"[site:url]\"> [site:name]</a> team.\r\n</p>"
+register_admin_created:
+  subject: 'An administrator created an account for you at [site:name]'
+  body: "<p style=\"margin-bottom: 2em;\"><a href=\"[site:url]\"><img src=\"[site:logo-url]\" style=\"width:100px;\"></a></p>\r\n<p>[user:display-name],</p>\r\n<p>A site administrator at <a href=\"[site:url]\">[site:name]</a> has created an account for you.</p>\r\n\r\n<p>You may now log in by clicking this link or copying and pasting it into your browser:</p>\r\n\r\n<p><a href=\"[user:one-time-login-url]\">[user:one-time-login-url]</a></p>\r\n\r\n<p><strong>This link can only be used once to log in and will lead you to a page where you can set your password.</strong></p>\r\n\r\nAfter setting your password, you will be able to log in the future using:\r\n<ul>\r\n<li>username: [user:account-name]</li>\r\n<li>password: Your password</li>\r\n</ul>\r\n\r\n<p>\r\nKind regards,<br/>\r\nThe <a href=\"[site:url]\"> [site:name]</a> team.\r\n</p>"
+register_no_approval_required:
+  subject: 'Account details for [user:name] at [site:name]'
+  body: "<p style=\"margin-bottom: 2em;\"><a href=\"[site:url]\"><img src=\"[site:logo-url]\" style=\"width:100px;\"></a></p>\r\n<p>[user:display-name],</p>\r\n<p>Thank you for registering at  <a href=\"[site:url]\">[site:name]</a>.</p>\r\n\r\n<p>You may now log in by clicking this link or copying and pasting it into your browser:</p>\r\n\r\n<p><a href=\"[user:one-time-login-url]\">[user:one-time-login-url]</a></p>\r\n\r\n<p><strong>This link can only be used once to log in and will lead you to a page where you can set your password.</strong></p>\r\n\r\nAfter setting your password, you will be able to log in the future using:\r\n<ul>\r\n<li>username: [user:display-name]</li>\r\n<li>password: Your password</li>\r\n</ul>\r\n\r\n<p>\r\nKind regards,<br/>\r\nThe <a href=\"[site:url]\"> [site:name]</a> team.\r\n</p>\r\n\r\n"
+register_pending_approval:
+  subject: 'Account details for [user:name] at [site:name] (pending admin approval)'
+  body: "<p style=\"margin-bottom: 2em;\"><a href=\"[site:url]\"><img src=\"[site:logo-url]\" style=\"width:100px;\"></a></p>\r\n<p>[user:display-name],</p>\r\n<p>Thank you for registering at <a href=\"[site:url]\">[site:name]</a>.</p>\r\n<p>Your application for an account is currently pending approval.</p>\r\n<p>Once it has been approved, you will receive another e-mail containing information about how to log in, set your password, and other details.</p>\r\n\r\n<p>\r\nKind regards,<br/>\r\nThe <a href=\"[site:url]\"> [site:name]</a> team.\r\n</p>"
+register_pending_approval_admin:
+  subject: 'Account details for [user:display-name] at [site:name] (pending admin approval)'
+  body: "[user:display-name] has applied for an account.\r\n\r\n[user:edit-url]"
+status_activated:
+  subject: 'Account details for [user:name] at [site:name] (approved)'
+  body: "<p style=\"margin-bottom: 2em;\"><a href=\"[site:url]\"><img src=\"[site:logo-url]\" style=\"width:100px;\"></a></p>\r\n<p>Your account at <a href=\"[site:url]\">[site:name]</a> has been activated.</p>\r\n\r\n<p>You may now log in by clicking this link or copying and pasting it into your browser:</p>\r\n\r\n<p><a href=\"[user:one-time-login-url]\">[user:one-time-login-url]</a></p>\r\n\r\n<p><strong>This link can only be used once to log in and will lead you to a page where you can set your password.</strong></p>\r\n\r\nAfter setting your password, you will be able to log in the future using:\r\n<ul>\r\n<li>username: [user:display-name]</li>\r\n<li>password: Your password</li>\r\n</ul>\r\n\r\n<p>\r\nKind regards,<br/>\r\nThe <a href=\"[site:url]\"> [site:name]</a> team.\r\n</p>"
+status_blocked:
+  subject: 'Account details for [user:name] at [site:name] (blocked)'
+  body: "<p style=\"margin-bottom: 2em;\"><a href=\"[site:url]\"><img src=\"[site:logo-url]\" style=\"width:100px;\"></a></p>\r\n<p>[user:display-name],</p>\r\n\r\n<p>Your account on <a href=\"[site:url]\">[site:name]</a> has been blocked.</p>\r\n\r\n<p>\r\nKind regards,<br/>\r\nThe <a href=\"[site:url]\"> [site:name]</a> team.\r\n</p>"
+status_canceled:
+  subject: 'Account details for [user:display-name] at [site:name] (canceled)'
+  body: "<p style=\"margin-bottom: 2em;\"><a href=\"[site:url]\"><img src=\"[site:logo-url]\" style=\"width:100px;\"></a></p>\r\n<p>[user:display-name],</p>\r\n\r\n<p>Your account on <a href=\"[site:url]\">[site:name]</a> has been canceled.</p>\r\n\r\n<p>\r\nKind regards,<br/>\r\nThe <a href=\"[site:url]\"> [site:name]</a> team.\r\n</p>"

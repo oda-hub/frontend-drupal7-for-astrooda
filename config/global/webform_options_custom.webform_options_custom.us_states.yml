@@ -1,0 +1,25 @@
+uuid: bd4c88b9-1e3c-4f06-ad1b-147d22b4b389
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Sh8c2Sw3otCGTZSWsmgf1c9vvzsHu1g6YWT-9ySgeb0
+id: us_states
+label: 'U.S. states'
+description: 'A clickable map of U.S. states.'
+help: 'A clickable map of U.S. states.'
+category: Maps
+type: url
+template: ''
+url: us_states.svg
+css: ''
+javascript: ''
+options: ''
+value_attributes: data-id
+text_attributes: data-name
+fill: true
+zoom: true
+tooltip: true
+show_select: false
+element: true
+entity_reference: false

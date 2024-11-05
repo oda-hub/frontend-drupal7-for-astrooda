@@ -1742,6 +1742,111 @@
             "install-path": "../../web/modules/contrib/ajax_login_popup"
         },
         {
+            "name": "drupal/book",
+            "version": "2.0.0-alpha1",
+            "version_normalized": "2.0.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/book.git",
+                "reference": "2.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/book-2.0.0-alpha1.zip",
+                "reference": "2.0.0-alpha1",
+                "shasum": "d4c33eca6d2bda670cfdd2e7e270718cd0e6102b"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha1",
+                    "datestamp": "1725469820",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Wolanin (pwolanin)",
+                    "homepage": "https://www.drupal.org/u/pwolanin",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Stephen Mustgrave (smustgrave)",
+                    "homepage": "https://www.drupal.org/u/smustgrave",
+                    "role": "Co-Maintainer"
+                }
+            ],
+            "description": "A book is a set of nodes tied together in a hierarchical structure, with chapters, sections, and subsections.",
+            "homepage": "https://drupal.org/project/book",
+            "support": {
+                "source": "https://git.drupalcode.org/project/book",
+                "issues": "https://drupal.org/project/issues/book"
+            },
+            "install-path": "../../web/modules/contrib/book"
+        },
+        {
+            "name": "drupal/booktree",
+            "version": "1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/booktree.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/booktree-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "5134c49412c78c97bd3c9a466a46c14d7028c069"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1714753774",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "psicomante",
+                    "homepage": "https://www.drupal.org/user/29518"
+                },
+                {
+                    "name": "Uccio",
+                    "homepage": "https://www.drupal.org/user/32370"
+                }
+            ],
+            "description": "A tree representation of one or more books.",
+            "homepage": "https://www.drupal.org/project/booktree",
+            "support": {
+                "source": "https://git.drupalcode.org/project/booktree"
+            },
+            "install-path": "../../web/modules/contrib/booktree"
+        },
+        {
             "name": "drupal/bootstrap5",
             "version": "4.0.3",
             "version_normalized": "4.0.3.0",
@@ -1793,6 +1898,56 @@
                 "issues": "https://www.drupal.org/project/issues/bootstrap5"
             },
             "install-path": "../../web/themes/contrib/bootstrap5"
+        },
+        {
+            "name": "drupal/ckeditor_colorbox_inline",
+            "version": "1.2.0",
+            "version_normalized": "1.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_colorbox_inline.git",
+                "reference": "1.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_colorbox_inline-1.2.0.zip",
+                "reference": "1.2.0",
+                "shasum": "b43c3e0b5bf71e19205c24543960a5575de3fec6"
+            },
+            "require": {
+                "drupal/colorbox": "^2.1",
+                "drupal/core": "^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.2.0",
+                    "datestamp": "1723619273",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Andrei Ivnitskii",
+                    "homepage": "https://www.drupal.org/u/ivnish",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "The module add text filter and your inline images will open with ColorBox",
+            "homepage": "https://www.drupal.org/project/ckeditor_colorbox_inline",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_colorbox_inline",
+                "issues": "https://www.drupal.org/project/issues/ckeditor_colorbox_inline"
+            },
+            "install-path": "../../web/modules/contrib/ckeditor_colorbox_inline"
         },
         {
             "name": "drupal/colorbox",
@@ -1860,6 +2015,143 @@
                 "issues": "https://www.drupal.org/project/issues/colorbox"
             },
             "install-path": "../../web/modules/contrib/colorbox"
+        },
+        {
+            "name": "drupal/colorbox_inline",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/colorbox_inline.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/colorbox_inline-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "078e74b4a4b383c270a9901cecbb914fab1ac3b0"
+            },
+            "require": {
+                "drupal/colorbox": "*",
+                "drupal/core": "^9.2 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1671057589",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "NickDickinsonWilde",
+                    "homepage": "https://www.drupal.org/user/3094661"
+                },
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                }
+            ],
+            "description": "Provides inline colorbox functionality.",
+            "homepage": "https://www.drupal.org/project/colorbox_inline",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/colorbox_inline",
+                "issues": "http://drupal.org/project/issues/colorbox_inline"
+            },
+            "install-path": "../../web/modules/contrib/colorbox_inline"
+        },
+        {
+            "name": "drupal/content_sync",
+            "version": "4.0.0-rc2",
+            "version_normalized": "4.0.0.0-RC2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/content_sync.git",
+                "reference": "4.0.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/content_sync-4.0.0-rc2.zip",
+                "reference": "4.0.0-rc2",
+                "shasum": "1308846e9f1cd149784a4dfdf0c40aaa2b6b3a92"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.0.0-rc2",
+                    "datestamp": "1727240381",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^10 || ^11"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Blanca.Esqueda",
+                    "homepage": "https://www.drupal.org/u/blancaesqueda",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "David Gil Hidalgo",
+                    "homepage": "https://www.drupal.org/u/dabito",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "David Nova",
+                    "homepage": "https://www.drupal.org/u/david4lim",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Andrés Moncada",
+                    "homepage": "https://www.drupal.org/u/acmoncadab4",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/2865869/committers"
+                },
+                {
+                    "name": "ridefree",
+                    "homepage": "https://www.drupal.org/user/49148"
+                },
+                {
+                    "name": "tobias märz",
+                    "homepage": "https://www.drupal.org/user/1776082"
+                }
+            ],
+            "description": "Content Sync functionality.",
+            "homepage": "http://drupal.org/project/content_sync",
+            "support": {
+                "source": "https://git.drupalcode.org/project/content_sync",
+                "issues": "http://drupal.org/project/content_sync"
+            },
+            "install-path": "../../web/modules/contrib/content_sync"
         },
         {
             "name": "drupal/core",
@@ -3709,6 +4001,129 @@
                 "source": "https://git.drupalcode.org/project/redirect_after_login"
             },
             "install-path": "../../web/modules/contrib/redirect_after_login"
+        },
+        {
+            "name": "drupal/remove_unused_files",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/remove_unused_files.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/remove_unused_files-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "c2af20ae69f05fa7f5c4ef414dd6d514f7717122"
+            },
+            "require": {
+                "drupal/core": ">=10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1719592869",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "zealialize",
+                    "homepage": "https://www.drupal.org/user/3630796"
+                }
+            ],
+            "description": "Move all managed unused files to temporary status, those files removal next time cron run.",
+            "homepage": "https://www.drupal.org/project/remove_unused_files",
+            "support": {
+                "source": "https://git.drupalcode.org/project/remove_unused_files"
+            },
+            "install-path": "../../web/modules/contrib/remove_unused_files"
+        },
+        {
+            "name": "drupal/single_content_sync",
+            "version": "1.4.6",
+            "version_normalized": "1.4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/single_content_sync.git",
+                "reference": "1.4.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/single_content_sync-1.4.6.zip",
+                "reference": "1.4.6",
+                "shasum": "ed341103812f72e602a71f476bf4bba7085fc3e6"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "ext-dom": "*",
+                "ext-zip": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "drupal/address": "*",
+                "drupal/block_field": "*",
+                "drupal/color_field": "*",
+                "drupal/dynamic_entity_reference": "*",
+                "drupal/geofield": "*",
+                "drupal/geolocation": "*",
+                "drupal/metatag": "*",
+                "drupal/paragraphs": "*",
+                "drupal/section_library": "*",
+                "drupal/svg_image_field": "*",
+                "drupal/viewsreference": "*",
+                "drupal/webform": "*",
+                "drupal/weight": "*",
+                "drupal/yearonly": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.4.6",
+                    "datestamp": "1726823290",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Kuzava (nginex)",
+                    "homepage": "https://www.drupal.org/u/nginex",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "artycal",
+                    "homepage": "https://www.drupal.org/user/3708798"
+                },
+                {
+                    "name": "nginex",
+                    "homepage": "https://www.drupal.org/user/2822325"
+                }
+            ],
+            "description": "This is a simple way of exporting a single node to yml file with possibility to import it on another environment.",
+            "homepage": "https://drupal.org/project/single_content_sync",
+            "support": {
+                "source": "https://cgit.drupalcode.org/single_content_sync",
+                "issues": "https://drupal.org/project/issues/single_content_sync"
+            },
+            "install-path": "../../web/modules/contrib/single_content_sync"
         },
         {
             "name": "drupal/token",

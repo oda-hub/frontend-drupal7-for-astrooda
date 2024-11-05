@@ -1,0 +1,22 @@
+uuid: 044166cf-6709-4d27-b214-a4ef327cc3cb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: eBv7YzO5mD_3svdne4yQH7KFgMhOddXTqw4LYUShuXY
+id: mmoda_bootstrap_local_tasks
+theme: mmoda_bootstrap
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

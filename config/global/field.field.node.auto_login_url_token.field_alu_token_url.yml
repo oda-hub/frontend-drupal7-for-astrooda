@@ -1,0 +1,19 @@
+uuid: 38eeada7-a1c2-49ec-b5c8-a67ad7c6f8c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alu_token_url
+    - node.type.auto_login_url_token
+id: node.auto_login_url_token.field_alu_token_url
+field_name: field_alu_token_url
+entity_type: node
+bundle: auto_login_url_token
+label: 'Token URL'
+description: 'Auto Login URL. You may use %uid for the user id. E.g. user/%uid/edit'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

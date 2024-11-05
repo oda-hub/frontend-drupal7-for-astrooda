@@ -1,0 +1,7 @@
+filter_settings.ckeditor_colorbox_inline:
+  type: filter
+  label: 'Colorbox Inline Text Filter'
+  mapping:
+    css_classes:
+      type: string
+      label: 'CSS classes'

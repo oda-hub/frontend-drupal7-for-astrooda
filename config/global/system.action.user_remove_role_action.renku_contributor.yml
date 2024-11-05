@@ -1,0 +1,14 @@
+uuid: b63062cb-5575-4080-b5e0-e05c84f2cc9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.renku_contributor
+  module:
+    - user
+id: user_remove_role_action.renku_contributor
+label: 'Remove the renku contributor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: renku_contributor

@@ -1,0 +1,19 @@
+_core:
+  default_config_hash: tg_kL94haeI0W1FTTU9ch_nMYKFElL8UAQjcD-eO5KI
+support_email:
+  - no-reply@unige.ch
+  - cdci-oda-feedback@listes.unige.ch
+local_name_resolver_url: 'https://resolver-prod.obsuks1.unige.ch/api/v1.1/byname/'
+name_resolver_url: 'http://cdsweb.u-strasbg.fr/cgi-bin/nph-sesame/-oxp/NSV?'
+gallery_data_request_url: 'https://www.astro.unige.ch/mmoda/dispatch-data/get_astro_entity_info_by_source_name'
+gallery_base_url: 'https://www.astro.unige.ch'
+default_data_server_url: dispatch-data/run_analysis
+src_name: '1E 1740.7-2942'
+RA: '265.97845833'
+DEC: '-29.74516667'
+T1: '2017-03-06T13:26:48.0'
+T2: '2017-03-06T15:32:27.0'
+T_format: isot
+mmoda_debug: true
+help_page_url: help/mmoda/mmoda
+user_managers_role_name: 'user manager'

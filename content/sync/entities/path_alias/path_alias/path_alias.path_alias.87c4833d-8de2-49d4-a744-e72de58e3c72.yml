@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 87c4833d-8de2-49d4-a744-e72de58e3c72
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 79328849-286e-47db-bbfe-56d91b938e21
+alias:
+  -
+    value: /help/mmoda/antares
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.79328849-286e-47db-bbfe-56d91b938e21

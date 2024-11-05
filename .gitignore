@@ -1,2 +1,3 @@
 # Ignore paths that contain user-generated content.
 /composer.lock
+/sites/

@@ -1,0 +1,68 @@
+uuid:
+  -
+    value: 0cb81b67-3539-4548-bf3c-463835f2a5ba
+langcode:
+  -
+    value: und
+type:
+  -
+    target_id: mmoda_help_page
+revision_timestamp:
+  -
+    value: '2024-09-26T14:12:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+title:
+  -
+    value: 'Upload a custom catalog for INTEGRAL analysis'
+created:
+  -
+    value: '2023-09-14T08:43:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: "<p>The <a href=\"https://www.isdc.unige.ch/integral/science/catalogue\" target=\"_blank\">ISDC general reference catalog</a> is used as a base for imaging, but for <a href=\"isgri-spectrum\">spectral</a> and light-curve extraction, it is suggested to prepare your own catalog based on the sources detected in the <a href=\"ibis-isgri-image-new-source\">image</a>.</p>\r\n\r\n<p>A catalog can be prepared based on templates that can be downloaded either in <a download=\"\" href=\"sites/all/modules/mmoda/data/catalog.txt\">ASCII</a> or <a download=\"\" href=\"sites/all/modules/mmoda/data/catalog.fits\">fits</a> format.</p>\r\n\r\n<p>Then, it is enough to upload it in the given window.</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral/upload-catalog.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"215\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/upload-catalog.png?itok=sVtBqPoj\" width=\"480\" /> </a></p>\r\n"
+    format: full_html
+    processed: |
+      <p>The <a href="https://www.isdc.unige.ch/integral/science/catalogue" target="_blank">ISDC general reference catalog</a> is used as a base for imaging, but for <a href="isgri-spectrum">spectral</a> and light-curve extraction, it is suggested to prepare your own catalog based on the sources detected in the <a href="ibis-isgri-image-new-source">image</a>.</p>
+
+      <p>A catalog can be prepared based on templates that can be downloaded either in <a download href="sites/all/modules/mmoda/data/catalog.txt">ASCII</a> or <a download href="sites/all/modules/mmoda/data/catalog.fits">fits</a> format.</p>
+
+      <p>Then, it is enough to upload it in the given window.</p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral/upload-catalog.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/upload-catalog.png?itok=sVtBqPoj" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="215" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/upload-catalog.png?itok=sVtBqPoj" width="480"></a> </a></p>
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

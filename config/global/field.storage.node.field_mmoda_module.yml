@@ -1,0 +1,48 @@
+uuid: 79fdab54-0861-4fa8-a0e0-306c84a4de3d
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_mmoda_module
+field_name: field_mmoda_module
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: mmoda
+      label: MMODA
+    -
+      value: mmoda_antares
+      label: Antares
+    -
+      value: mmoda_integral
+      label: INTEGRAL
+    -
+      value: mmoda_isgri
+      label: 'INTEGRAL ISGRI'
+    -
+      value: mmoda_jemx
+      label: 'INTEGRAL JEM-X'
+    -
+      value: mmoda_legacysurvey
+      label: 'DESI LegacySurvey'
+    -
+      value: mmoda_polar
+      label: Polar
+    -
+      value: mmoda_spi_acs
+      label: 'INTEGRAL SPI-ACS'
+    -
+      value: mmoda_gw
+      label: Ligo/VIRGO
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

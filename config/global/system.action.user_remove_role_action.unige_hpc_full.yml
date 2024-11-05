@@ -1,0 +1,14 @@
+uuid: a269ecc9-048c-4690-bf92-aff92beb68af
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.unige_hpc_full
+  module:
+    - user
+id: user_remove_role_action.unige_hpc_full
+label: 'Remove the unige-hpc-full role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: unige_hpc_full

@@ -1,0 +1,73 @@
+uuid:
+  -
+    value: 6bf63b96-dc00-4987-af62-aaa80e1bc456
+langcode:
+  -
+    value: und
+type:
+  -
+    target_id: mmoda_help_page
+revision_timestamp:
+  -
+    value: '2024-09-26T14:12:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+title:
+  -
+    value: 'JEM-X spectrum'
+created:
+  -
+    value: '2023-09-14T08:43:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: '<p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p><drupal-media data-entity-type="media" data-entity-uuid="56c5772f-53ed-43f9-9eea-82b1c56a313f" data-view-mode="full">&nbsp;</drupal-media><p>Fowwing the <a href="jem-x-image">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is "NEW SOURCE", one should edit it and change a name (select the source with the tick-mark at the left and click on "edit".</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalogjemx.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="373" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" width="480"></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/edit-source1.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="375" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source1.png?itok=9eRXPIbh" width="480"></a></p><p>Click on save and <strong>then</strong> use catalog.</p><p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/submit-spec-jemx.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="242" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/submit-spec-jemx.png?itok=YwwJuly8" width="480"></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jem-x-spec-email.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="189" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-spec-email.png?itok=f9LCx0we" width="480"></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jemx-spec-done.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="120" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-spec-done.png?itok=VEBaTg8w" width="480"></a></p><p>Then you get to a page where you can fit and download the spectrum.</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalog-spectrum.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="329" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalog-spectrum.png?itok=nmkP9LD1" width="480"></a></p><p>You can view the fit with a power-law (no other models for the moment) and download it.</p><p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called "spectra-GX_5-1.tar.gz".</p><p>You will need to unpack the archive with the command</p><p>tar xfz spectra-GX_5-1.tar.gz</p><p>then navigate into the folder that is created and load the spectra with xspec or equivalent.</p>'
+    format: full_html
+    processed: |-
+      <p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media_embed_error' -->
+      <!-- BEGIN OUTPUT from 'core/themes/stable9/templates/content/media-embed-error.html.twig' -->
+      <div>
+        The referenced media source is missing and needs to be re-embedded.
+      </div>
+
+      <!-- END OUTPUT from 'core/themes/stable9/templates/content/media-embed-error.html.twig' -->
+
+      <p>Fowwing the <a href="jem-x-image">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is "NEW SOURCE", one should edit it and change a name (select the source with the tick-mark at the left and click on "edit".</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalogjemx.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="373" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" width="480"></a></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/edit-source1.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source1.png?itok=9eRXPIbh" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="375" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source1.png?itok=9eRXPIbh" width="480"></a></a></p><p>Click on save and <strong>then</strong> use catalog.</p><p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/submit-spec-jemx.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/submit-spec-jemx.png?itok=YwwJuly8" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="242" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/submit-spec-jemx.png?itok=YwwJuly8" width="480"></a></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jem-x-spec-email.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-spec-email.png?itok=f9LCx0we" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="189" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-spec-email.png?itok=f9LCx0we" width="480"></a></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jemx-spec-done.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-spec-done.png?itok=VEBaTg8w" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="120" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-spec-done.png?itok=VEBaTg8w" width="480"></a></a></p><p>Then you get to a page where you can fit and download the spectrum.</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalog-spectrum.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalog-spectrum.png?itok=nmkP9LD1" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="329" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalog-spectrum.png?itok=nmkP9LD1" width="480"></a></a></p><p>You can view the fit with a power-law (no other models for the moment) and download it.</p><p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called "spectra-GX_5-1.tar.gz".</p><p>You will need to unpack the archive with the command</p><p>tar xfz spectra-GX_5-1.tar.gz</p><p>then navigate into the folder that is created and load the spectra with xspec or equivalent.</p>
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

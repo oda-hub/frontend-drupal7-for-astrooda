@@ -1,0 +1,64 @@
+uuid:
+  -
+    value: 7b6b445f-6b2c-40d2-b436-ad53b9c23be0
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+name:
+  -
+    value: isgri-query.png
+thumbnail:
+  -
+    target_id: 164
+    alt: 'ISGRI Query'
+    title: null
+    width: 717
+    height: 1344
+    target_type: file
+    target_uuid: e810ca56-b434-46c9-b2d7-3ce0f8e0123a
+    url: 'http://default/sites/default/files/2023-11/isgri-query.png'
+created:
+  -
+    value: '2023-11-21T17:54:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 164
+    alt: 'ISGRI Query'
+    title: ''
+    width: 717
+    height: 1344
+    target_type: file
+    target_uuid: e810ca56-b434-46c9-b2d7-3ce0f8e0123a
+    url: 'http://default/sites/default/files/2023-11/isgri-query.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b

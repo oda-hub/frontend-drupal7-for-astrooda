@@ -1,0 +1,18 @@
+uuid: f19ea77c-6a36-46ed-a3e3-d98106d13bea
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+    - system
+id: user_manager
+label: 'user manager'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access help pages'
+  - 'access user profiles'
+  - 'administer users'
+  - 'cancel account'
+  - 'change own username'

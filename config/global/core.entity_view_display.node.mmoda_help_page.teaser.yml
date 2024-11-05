@@ -1,0 +1,30 @@
+uuid: c0202b94-bf0b-416c-911c-8bf36d811eb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mmoda_help_page.body
+    - node.type.mmoda_help_page
+  module:
+    - text
+    - user
+id: node.mmoda_help_page.teaser
+targetEntityType: node
+bundle: mmoda_help_page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

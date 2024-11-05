@@ -1,0 +1,66 @@
+uuid:
+  -
+    value: a8028236-5e42-451a-b562-2a6d54c7e2e3
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-10-01T09:09:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+name:
+  -
+    value: processingdone.png
+thumbnail:
+  -
+    target_id: 173
+    alt: processingdone
+    title: null
+    width: 1361
+    height: 452
+    target_type: file
+    target_uuid: 0ab71153-7304-4752-9863-f1a348e7f00e
+    url: 'http://default/sites/default/files/2024-10/processingdone.png'
+created:
+  -
+    value: '2024-10-01T09:09:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T09:09:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 173
+    alt: processingdone
+    title: ''
+    width: 1361
+    height: 452
+    target_type: file
+    target_uuid: 0ab71153-7304-4752-9863-f1a348e7f00e
+    url: 'http://default/sites/default/files/2024-10/processingdone.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

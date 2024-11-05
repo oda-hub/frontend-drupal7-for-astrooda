@@ -1,0 +1,9 @@
+uuid: 8984ecbd-18a5-4a3a-82dd-314f27eb003d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Book name'
+vid: book_name
+description: 'Book names needed especially to have a specific path per book'
+weight: 0
+new_revision: false

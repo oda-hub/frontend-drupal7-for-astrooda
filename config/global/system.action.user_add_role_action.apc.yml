@@ -1,0 +1,14 @@
+uuid: 9e201f13-1538-437c-b86f-affddfeb5ff4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.apc
+  module:
+    - user
+id: user_add_role_action.apc
+label: 'Add the apc role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: apc

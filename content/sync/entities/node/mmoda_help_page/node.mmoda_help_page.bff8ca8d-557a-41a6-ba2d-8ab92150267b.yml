@@ -1,0 +1,95 @@
+uuid:
+  -
+    value: bff8ca8d-557a-41a6-ba2d-8ab92150267b
+langcode:
+  -
+    value: und
+type:
+  -
+    target_id: mmoda_help_page
+revision_timestamp:
+  -
+    value: '2024-09-26T14:12:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+title:
+  -
+    value: 'INTEGRAL NRT data access'
+created:
+  -
+    value: '2023-09-14T08:43:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: "<p>Near Real time data are available a few hours after an observation is performed. The best way to access them is using the python API, see for instance this <a href=\"https://gitlab.astro.unige.ch/integral/qla/maxij1803\" target=\"_blank\">preliminary analysis</a>.</p>\r\n\r\n<p>Note, however, that a special permission should be asked and accept the term and conditions for the usage of private data (no access to Russian data can be granted).</p>\r\n\r\n<p>We prepared basic video tutorial to perform for NRT data analysis with MMODA</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://youtu.be/SRu-SS-sX38\" target=\"_blank\">Extract an Image from NRT data</a></li>\r\n\t<li><a href=\"https://youtu.be/Ds6HzmvFQqE\" target=\"_blank\">Extract a spectrum</a> for the sources in the image</li>\r\n\t<li><a href=\"https://youtu.be/YdLzQ23RAf4\" target=\"_blank\">Inspect the spectrum</a></li>\r\n</ul>\r\n\r\n<p>and we show the basic steps below.</p>\r\n\r\n<p>Should you want to use the web interface, it is necessary to use a custom science window list with the .000 suffix, for instance</p>\r\n\r\n<pre>\r\n236100030010.000,236100040010.000,236100050010.000,236100060010.000,236100090010.000,236100100010.000,236100110010.000,236100120010.000</pre>\r\n\r\n<p>and copy it inside the dedicated box</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral/custom-lc.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"462\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/custom-lc.png?itok=WC3CN9pB\" width=\"480\" /> </a></p>\r\n\r\n<p>Alternatively, one can prepare a file with one scw per line and upload it after selecting \"Custom list in file\".</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral/customscwfile.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"480\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/customscwfile.png?itok=GxryTGvg\" width=\"366\" /> </a></p>\r\n\r\n<p>The file content is like:</p>\r\n\r\n<p>236100030010.000<br />\r\n236100040010.000<br />\r\n236100050010.000<br />\r\n236100060010.000<br />\r\n236100090010.000</p>\r\n"
+    format: full_html
+    processed: |
+      <p>Near Real time data are available a few hours after an observation is performed. The best way to access them is using the python API, see for instance this <a href="https://gitlab.astro.unige.ch/integral/qla/maxij1803" target="_blank">preliminary analysis</a>.</p>
+
+      <p>Note, however, that a special permission should be asked and accept the term and conditions for the usage of private data (no access to Russian data can be granted).</p>
+
+      <p>We prepared basic video tutorial to perform for NRT data analysis with MMODA</p>
+
+      <ul>
+      	<li><a href="https://youtu.be/SRu-SS-sX38" target="_blank">Extract an Image from NRT data</a></li>
+      	<li><a href="https://youtu.be/Ds6HzmvFQqE" target="_blank">Extract a spectrum</a> for the sources in the image</li>
+      	<li><a href="https://youtu.be/YdLzQ23RAf4" target="_blank">Inspect the spectrum</a></li>
+      </ul>
+
+      <p>and we show the basic steps below.</p>
+
+      <p>Should you want to use the web interface, it is necessary to use a custom science window list with the .000 suffix, for instance</p>
+
+      <pre>
+      236100030010.000,236100040010.000,236100050010.000,236100060010.000,236100090010.000,236100100010.000,236100110010.000,236100120010.000</pre>
+
+      <p>and copy it inside the dedicated box</p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral/custom-lc.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/custom-lc.png?itok=WC3CN9pB" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="462" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/custom-lc.png?itok=WC3CN9pB" width="480"></a> </a></p>
+
+      <p>Alternatively, one can prepare a file with one scw per line and upload it after selecting "Custom list in file".</p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral/customscwfile.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/customscwfile.png?itok=GxryTGvg" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="480" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/customscwfile.png?itok=GxryTGvg" width="366"></a> </a></p>
+
+      <p>The file content is like:</p>
+
+      <p>236100030010.000<br>
+      236100040010.000<br>
+      236100050010.000<br>
+      236100060010.000<br>
+      236100090010.000</p>
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

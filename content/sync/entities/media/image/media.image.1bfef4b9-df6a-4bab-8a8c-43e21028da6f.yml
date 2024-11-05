@@ -1,0 +1,66 @@
+uuid:
+  -
+    value: 1bfef4b9-df6a-4bab-8a8c-43e21028da6f
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-10-01T10:12:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+name:
+  -
+    value: conesearchparam.png
+thumbnail:
+  -
+    target_id: 183
+    alt: conesearchparam
+    title: null
+    width: 544
+    height: 583
+    target_type: file
+    target_uuid: 35ecf603-2b31-488b-9769-a29454944d29
+    url: 'http://default/sites/default/files/2024-10/conesearchparam.png'
+created:
+  -
+    value: '2024-10-01T10:11:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:12:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 183
+    alt: conesearchparam
+    title: ''
+    width: 544
+    height: 583
+    target_type: file
+    target_uuid: 35ecf603-2b31-488b-9769-a29454944d29
+    url: 'http://default/sites/default/files/2024-10/conesearchparam.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

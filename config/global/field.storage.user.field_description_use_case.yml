@@ -1,0 +1,19 @@
+uuid: 5c287d58-8183-49ae-a70a-d00d13f36e77
+langcode: und
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_description_use_case
+field_name: field_description_use_case
+entity_type: user
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: 9d346f11-0f48-4266-b607-3f6e11ce43b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.unige_hpc_full
+  module:
+    - user
+id: user_add_role_action.unige_hpc_full
+label: 'Add the unige-hpc-full role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: unige_hpc_full

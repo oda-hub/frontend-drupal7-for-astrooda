@@ -1,0 +1,8 @@
+uuid: a92a7088-ecb4-4fb2-adb9-ed75a51f3e3c
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_mmoda_event
+label: 'MMODA event comment'
+target_entity_type_id: node
+description: null

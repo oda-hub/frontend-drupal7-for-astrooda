@@ -1,0 +1,40 @@
+uuid:
+  -
+    value: a66eeed5-7446-4bb3-819c-18406fa1512a
+langcode:
+  -
+    value: en
+name:
+  -
+    value: d10_sitamin
+created:
+  -
+    value: '2018-10-10T09:16:44+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-06-10T12:31:33+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+field_description_use_case:
+  -
+    value: ' Note that the computing resources are provided by the University of Geneva. For their fair use, we need to know: We would like you to provide us with a small overview of your activities, in particular: '
+field_matrix_room_id: {  }
+user_picture: {  }
+_content_sync:
+  entity_type: user
+pass:
+  -
+    value: $2y$10$4Y2iXE88.rrPfSI1RBmHaOfC1g0PzAtWjpyqk48jG8DA/ER3LO3z2
+    pre_hashed: true
+mail:
+  value: mohamed.meharga@unige.ch
+status:
+  value: '1'
+roles:
+  - authenticated
+  - administrator
+  - integral_private_qla
+  - unige_hpc_full

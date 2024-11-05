@@ -1,0 +1,55 @@
+uuid: 0d072507-51c5-43f3-b448-5907be564573
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.article
+    - node.type.auto_login_url_token
+    - node.type.mmoda_event
+    - node.type.mmoda_help_page
+    - node.type.page
+  module:
+    - filter
+    - help
+    - node
+    - path
+    - system
+id: content_manager
+label: 'content manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access help pages'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create auto_login_url_token content'
+  - 'create mmoda_event content'
+  - 'create mmoda_help_page content'
+  - 'create page content'
+  - 'create url aliases'
+  - 'delete any article content'
+  - 'delete any auto_login_url_token content'
+  - 'delete any mmoda_event content'
+  - 'delete any mmoda_help_page content'
+  - 'delete any page content'
+  - 'delete own article content'
+  - 'delete own auto_login_url_token content'
+  - 'delete own mmoda_event content'
+  - 'delete own mmoda_help_page content'
+  - 'delete own page content'
+  - 'edit any article content'
+  - 'edit any auto_login_url_token content'
+  - 'edit any mmoda_event content'
+  - 'edit any mmoda_help_page content'
+  - 'edit any page content'
+  - 'edit own article content'
+  - 'edit own auto_login_url_token content'
+  - 'edit own mmoda_event content'
+  - 'edit own mmoda_help_page content'
+  - 'edit own page content'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

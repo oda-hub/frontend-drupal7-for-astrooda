@@ -1,0 +1,8 @@
+uuid: d5686449-1aab-4fe2-b85d-9db19c182294
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_mmoda_help_page
+label: 'MMODA help page comment'
+target_entity_type_id: node
+description: null

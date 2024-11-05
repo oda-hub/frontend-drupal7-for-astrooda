@@ -1,0 +1,22 @@
+uuid: 7b6679f3-fe23-4d08-978e-507d91da7a48
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_auto_login_url_to
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_auto_login_url_to.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_auto_login_url_to
+label: Comment
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

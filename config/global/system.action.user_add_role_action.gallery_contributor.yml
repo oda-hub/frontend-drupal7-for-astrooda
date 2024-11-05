@@ -1,0 +1,14 @@
+uuid: e53f949c-3b74-4be4-a2f2-e0827af91e88
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.gallery_contributor
+  module:
+    - user
+id: user_add_role_action.gallery_contributor
+label: 'Add the gallery contributor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gallery_contributor

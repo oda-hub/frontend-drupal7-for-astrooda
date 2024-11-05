@@ -1,0 +1,23 @@
+uuid: 0a4590f0-61f6-48e9-9222-5c6444e24df4
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: nn-X--dKXfcmgYn_eaLgQNuJf3MMZ9dN8TPPQMDD4KE
+id: mmoda_bootstrap_search_form
+theme: mmoda_bootstrap
+region: nav_additional
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

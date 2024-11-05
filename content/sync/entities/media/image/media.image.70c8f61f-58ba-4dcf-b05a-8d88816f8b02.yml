@@ -1,0 +1,66 @@
+uuid:
+  -
+    value: 70c8f61f-58ba-4dcf-b05a-8d88816f8b02
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-10-01T10:35:17+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+name:
+  -
+    value: ngc.png
+thumbnail:
+  -
+    target_id: 193
+    alt: ngc
+    title: null
+    width: 480
+    height: 120
+    target_type: file
+    target_uuid: f758abf1-7e58-48d2-b826-92e8fe629fbe
+    url: 'http://default/sites/default/files/2024-10/ngc.png'
+created:
+  -
+    value: '2024-10-01T10:35:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:35:17+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 193
+    alt: ngc
+    title: ''
+    width: 480
+    height: 120
+    target_type: file
+    target_uuid: f758abf1-7e58-48d2-b826-92e8fe629fbe
+    url: 'http://default/sites/default/files/2024-10/ngc.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

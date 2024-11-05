@@ -1,0 +1,20 @@
+uuid: d47b81d0-7f44-4b4e-add5-f4c86dada8e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_description_use_case
+  module:
+    - user
+id: user.user.field_description_use_case
+field_name: field_description_use_case
+entity_type: user
+bundle: user
+label: 'Description of your case'
+description: "Note that the computing resources are provided by the University of Geneva. For their fair use, we need to know: We would like you to provide us with a small overview of your activities, in particular:\r\n<ul>\r\n<li>The purpose of your work(s) in broad terms</li>\r\n<li>Possible collaborators in or outside of the University of Geneva</li>\r\n<li>An estimation of the amount of resources needed for your project(s)</li>\r\n</ul>\r\nWe will contact you back in case we need additional information."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

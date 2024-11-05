@@ -1,0 +1,56 @@
+serial:
+  -
+    value: 2
+uuid:
+  -
+    value: 1debed2f-c0c1-4e38-b785-615d851f064f
+token:
+  -
+    value: 9wAkE6vx9Mby99fLcR09Dke-6vPREc1sY29IpuHN4cg
+uri:
+  -
+    value: '/form/user-feedback?_webform_dialog=1&'
+created:
+  -
+    value: '2024-08-26T15:32:19+00:00'
+    format: 'Y-m-d\TH:i:sP'
+completed:
+  -
+    value: '2024-08-26T15:32:19+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-08-26T15:32:19+00:00'
+    format: 'Y-m-d\TH:i:sP'
+in_draft:
+  -
+    value: false
+current_page: {  }
+remote_addr:
+  -
+    value: 129.194.169.83
+uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+langcode:
+  -
+    value: en
+webform_id:
+  -
+    target_id: user_feedback
+entity_type: {  }
+entity_id: {  }
+locked:
+  -
+    value: false
+sticky:
+  -
+    value: false
+notes: {  }
+_content_sync:
+  entity_type: webform_submission
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b

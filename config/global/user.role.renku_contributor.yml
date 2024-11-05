@@ -1,0 +1,9 @@
+uuid: 48aa333f-367d-4daf-b7bd-5aef033a0624
+langcode: en
+status: true
+dependencies: {  }
+id: renku_contributor
+label: 'renku contributor'
+weight: 14
+is_admin: null
+permissions: {  }

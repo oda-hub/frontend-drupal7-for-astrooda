@@ -1,0 +1,66 @@
+uuid:
+  -
+    value: ee1460b8-5cdb-46f0-839e-2ba2f43d6492
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-10-01T10:11:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+name:
+  -
+    value: apiskymap.png
+thumbnail:
+  -
+    target_id: 182
+    alt: apiskymap
+    title: null
+    width: 427
+    height: 786
+    target_type: file
+    target_uuid: 91f4d089-58cf-4431-a33b-519000c7ba5c
+    url: 'http://default/sites/default/files/2024-10/apiskymap.png'
+created:
+  -
+    value: '2024-10-01T10:11:36+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:11:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 182
+    alt: apiskymap
+    title: ''
+    width: 427
+    height: 786
+    target_type: file
+    target_uuid: 91f4d089-58cf-4431-a33b-519000c7ba5c
+    url: 'http://default/sites/default/files/2024-10/apiskymap.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: a26421e9-cc0a-46e6-94c6-e0f322beee3e
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+filename:
+  -
+    value: imaoda.png
+uri:
+  -
+    value: 'public://2023-11/imaoda.png'
+    url: /sites/default/files/2023-11/imaoda.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 316796
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

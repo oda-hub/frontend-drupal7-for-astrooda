@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: 73d93149-612b-436f-bebb-aef2a1d9d5a9
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /taxonomy/term/2
+alias:
+  -
+    value: /book-name/help
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

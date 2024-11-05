@@ -1,0 +1,37 @@
+uuid:
+  -
+    value: a105396b-112f-4892-ad35-4da0cae2cefd
+langcode:
+  -
+    value: en
+name:
+  -
+    value: burnout87
+created:
+  -
+    value: '2024-09-02T12:34:57+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-02T12:34:57+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+field_description_use_case:
+  -
+    value: 'https://github.com/burnout87'
+field_matrix_room_id: {  }
+user_picture: {  }
+_content_sync:
+  entity_type: user
+pass:
+  -
+    value: null
+    pre_hashed: true
+mail:
+  value: gabriele.barni@gmail.com
+status:
+  value: '0'
+roles:
+  - authenticated

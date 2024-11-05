@@ -1,0 +1,22 @@
+uuid: 97cfd9fc-fe2b-435d-af69-54f64b85d05a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_mmoda_help_page
+label: 'Content - MMODA help page'
+type: 'canonical_entities:node'
+pattern: 'help/mmoda/[node:title]'
+selection_criteria:
+  837d9304-ccc7-427b-b419-697f3b935732:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 837d9304-ccc7-427b-b419-697f3b935732
+    context_mapping:
+      node: node
+    bundles:
+      mmoda_help_page: mmoda_help_page
+selection_logic: and
+weight: -9
+relationships: {  }

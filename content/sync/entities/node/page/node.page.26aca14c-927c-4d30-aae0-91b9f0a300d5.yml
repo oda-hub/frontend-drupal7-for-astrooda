@@ -1,0 +1,53 @@
+uuid:
+  -
+    value: 26aca14c-927c-4d30-aae0-91b9f0a300d5
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+revision_timestamp:
+  -
+    value: '2023-11-08T10:56:30+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+title:
+  -
+    value: Home
+created:
+  -
+    value: '2023-11-08T10:54:39+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T10:48:26+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected: {  }
+body: {  }
+comment_node_page: {  }
+field_documents: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

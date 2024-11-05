@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+name: MMODA
+mail: mohamed.meharga@mtmco.net
+slogan: 'Multi-Messenger Online Data Analysis'
+page:
+  403: ''
+  404: ''
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 94291200-a121-4189-8181-a04e43ee7ac9
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: 0cb81b67-3539-4548-bf3c-463835f2a5ba
+alias:
+  -
+    value: /help/mmoda/upload-custom-catalog-integral-analysis
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.0cb81b67-3539-4548-bf3c-463835f2a5ba

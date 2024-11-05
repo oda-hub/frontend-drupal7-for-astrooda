@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 018fcaf9-1894-4f23-a05f-9917d8cb7f2d
+langcode:
+  -
+    value: en
+path:
+  target_type: user
+  target_uuid: a105396b-112f-4892-ad35-4da0cae2cefd
+alias:
+  -
+    value: /users/burnout87
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    user:
+      - user.user.a105396b-112f-4892-ad35-4da0cae2cefd

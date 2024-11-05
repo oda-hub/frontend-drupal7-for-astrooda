@@ -1,0 +1,20 @@
+uuid: 5f684223-6c0f-4880-b763-30d8ab3c810b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: lQDIbAQooJMcvkwu5kTnV1y3n8jzdsUxYRJ9hFFTMbk
+id: mmoda_bootstrap_page_title
+theme: mmoda_bootstrap
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,66 @@
+uuid:
+  -
+    value: e32ab776-b8f6-4171-b823-a68cf0d9451f
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-10-01T10:10:52+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+name:
+  -
+    value: strain.png
+thumbnail:
+  -
+    target_id: 179
+    alt: strain
+    title: null
+    width: 811
+    height: 801
+    target_type: file
+    target_uuid: ad53cfd3-114c-49da-a38e-a234fe27cdbf
+    url: 'http://default/sites/default/files/2024-10/strain.png'
+created:
+  -
+    value: '2024-10-01T10:10:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:10:52+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 179
+    alt: strain
+    title: ''
+    width: 811
+    height: 801
+    target_type: file
+    target_uuid: ad53cfd3-114c-49da-a38e-a234fe27cdbf
+    url: 'http://default/sites/default/files/2024-10/strain.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

@@ -1,0 +1,27 @@
+uuid: c67d4405-a210-442b-b057-196e65c3359c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: 3cfM_wDkv5GAk1w2xGJRJHVAutA37eJ0Z03_b0AyfrQ
+id: mmoda_bootstrap_account_menu
+theme: mmoda_bootstrap
+region: nav_additional
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 40818a86-0b53-4354-a6fd-a118eeaddbec
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+filename:
+  -
+    value: skymap.png
+uri:
+  -
+    value: 'public://2024-10/skymap.png'
+    url: /sites/default/files/2024-10/skymap.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 105033
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T10:16:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:16:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

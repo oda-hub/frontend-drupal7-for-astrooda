@@ -1,0 +1,18 @@
+uuid: ec4fd2ac-5c17-4a0e-8c10-95f744b3db37
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.auto_login_url_token
+id: node.auto_login_url_token.title
+field_name: title
+entity_type: node
+bundle: auto_login_url_token
+label: 'Auto Login URL Token'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

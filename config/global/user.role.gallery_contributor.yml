@@ -1,0 +1,9 @@
+uuid: 337c397b-ff57-45a0-b198-3e5c15b44b9b
+langcode: en
+status: true
+dependencies: {  }
+id: gallery_contributor
+label: 'gallery contributor'
+weight: 15
+is_admin: null
+permissions: {  }

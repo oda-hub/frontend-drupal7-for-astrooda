@@ -1,0 +1,64 @@
+uuid:
+  -
+    value: a7344671-166e-492d-9cda-d11517d96f4c
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+name:
+  -
+    value: topoda1.png
+thumbnail:
+  -
+    target_id: 163
+    alt: 'ISGRI ODA top1'
+    title: null
+    width: 964
+    height: 422
+    target_type: file
+    target_uuid: a1ced337-4cf8-4eec-8c91-5dadb9a64e3f
+    url: 'http://default/sites/default/files/2023-11/topoda1.png'
+created:
+  -
+    value: '2023-11-21T17:53:10+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 163
+    alt: 'ISGRI ODA top1'
+    title: ''
+    width: 964
+    height: 422
+    target_type: file
+    target_uuid: a1ced337-4cf8-4eec-8c91-5dadb9a64e3f
+    url: 'http://default/sites/default/files/2023-11/topoda1.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b

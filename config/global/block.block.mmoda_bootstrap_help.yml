@@ -1,0 +1,22 @@
+uuid: a45a061b-3a4b-4c4f-ba88-903aa77967de
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: fLg80FKQx4Hg8FepqbKpAc94jJhQapw92vDhZtEqHMs
+id: mmoda_bootstrap_help
+theme: mmoda_bootstrap
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

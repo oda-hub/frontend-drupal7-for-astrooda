@@ -1,0 +1,9 @@
+uuid: bc49cd22-5445-48de-b04c-307664dbab18
+langcode: en
+status: true
+dependencies: {  }
+id: sdss
+label: sdss
+weight: 11
+is_admin: null
+permissions: {  }

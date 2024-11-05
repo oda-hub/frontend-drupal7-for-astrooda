@@ -1,0 +1,66 @@
+uuid:
+  -
+    value: 2c6b5271-b406-4c49-a9fd-5dc1812b6db8
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-10-01T10:16:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+name:
+  -
+    value: skymap.png
+thumbnail:
+  -
+    target_id: 186
+    alt: skymap
+    title: null
+    width: 1016
+    height: 563
+    target_type: file
+    target_uuid: 40818a86-0b53-4354-a6fd-a118eeaddbec
+    url: 'http://default/sites/default/files/2024-10/skymap.png'
+created:
+  -
+    value: '2024-10-01T10:16:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:16:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 186
+    alt: skymap
+    title: ''
+    width: 1016
+    height: 563
+    target_type: file
+    target_uuid: 40818a86-0b53-4354-a6fd-a118eeaddbec
+    url: 'http://default/sites/default/files/2024-10/skymap.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

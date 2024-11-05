@@ -1,0 +1,29 @@
+uuid: aa448f13-476e-48b5-a8d0-c95e0a6cff45
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.mmoda_help_page.body
+    - node.type.mmoda_help_page
+  module:
+    - text
+    - user
+id: node.mmoda_help_page.full
+targetEntityType: node
+bundle: mmoda_help_page
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

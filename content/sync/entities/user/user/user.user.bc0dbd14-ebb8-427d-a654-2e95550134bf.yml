@@ -1,0 +1,41 @@
+uuid:
+  -
+    value: bc0dbd14-ebb8-427d-a654-2e95550134bf
+langcode:
+  -
+    value: en
+name:
+  -
+    value: d10_mmeharga
+created:
+  -
+    value: '2020-02-11T13:23:27+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-04T14:00:36+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+field_description_use_case:
+  -
+    value: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker."
+field_matrix_room_id: {  }
+user_picture: {  }
+_content_sync:
+  entity_type: user
+pass:
+  -
+    value: $2y$10$a1U5X7WsnFJqSGzIfkBAv.k9bZsekY9k0P2BxMYLnK0zQK4t2fqty
+    pre_hashed: true
+mail:
+  value: mtm@mtmco.net
+status:
+  value: '1'
+roles:
+  - authenticated
+  - content_manager
+  - general
+  - integral_private_qla
+  - magic

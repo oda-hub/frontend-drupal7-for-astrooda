@@ -1,0 +1,28 @@
+uuid: cc61ce8c-4305-4303-ba84-81cdfd5dab52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mmoda_help_page.body
+    - node.type.mmoda_help_page
+  module:
+    - text
+    - user
+id: node.mmoda_help_page.default
+targetEntityType: node
+bundle: mmoda_help_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

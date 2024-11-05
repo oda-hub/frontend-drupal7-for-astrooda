@@ -1,0 +1,9 @@
+uuid: cd2fb396-9d43-4de7-a407-e2ee4312bfad
+langcode: en
+status: true
+dependencies: {  }
+id: general
+label: general
+weight: 5
+is_admin: null
+permissions: {  }

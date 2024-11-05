@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 4a958dd0-62aa-4bc2-9681-1747a4c918b5
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+filename:
+  -
+    value: spectrogrampanel.png
+uri:
+  -
+    value: 'public://2024-10/spectrogrampanel.png'
+    url: /sites/default/files/2024-10/spectrogrampanel.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 26755
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T10:10:26+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:10:35+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

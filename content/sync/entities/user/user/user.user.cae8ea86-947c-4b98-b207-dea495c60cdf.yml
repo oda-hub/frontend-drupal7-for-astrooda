@@ -1,0 +1,52 @@
+uuid:
+  -
+    value: cae8ea86-947c-4b98-b207-dea495c60cdf
+langcode:
+  -
+    value: en
+name:
+  -
+    value: cferrigno
+created:
+  -
+    value: '2023-05-17T14:03:04+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-04-24T11:47:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+field_description_use_case:
+  -
+    value: 'My Description of your case *'
+field_matrix_room_id: {  }
+user_picture: {  }
+_content_sync:
+  entity_type: user
+pass:
+  -
+    value: $S$D6wqsidXkvWBQVTd8GnBp5/hAHXOA/xl0P3z5CxBGumlxC3eGPGj
+    pre_hashed: true
+mail:
+  value: carlo.ferrigno@unige.ch
+status:
+  value: '1'
+roles:
+  - authenticated
+  - user_manager
+  - content_manager
+  - general
+  - integral_private_qla
+  - magic
+  - unige_hpc_full
+  - public_pool_hpc
+  - antares
+  - sdss
+  - apc
+  - bitp
+  - renku_contributor
+  - gallery_contributor
+  - job_manager
+  - developer

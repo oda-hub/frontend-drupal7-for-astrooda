@@ -1,0 +1,14 @@
+uuid: 57774178-102c-4ece-9100-6bd94ac84a68
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.magic
+  module:
+    - user
+id: user_remove_role_action.magic
+label: 'Remove the magic role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: magic

@@ -1,0 +1,70 @@
+uuid:
+  -
+    value: a8fc1c08-6bb5-4f55-be9f-1e1786746e49
+langcode:
+  -
+    value: und
+type:
+  -
+    target_id: mmoda_help_page
+revision_timestamp:
+  -
+    value: '2024-09-26T14:12:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+title:
+  -
+    value: 'Extract an ISGRI spectrum without a catalog'
+created:
+  -
+    value: '2023-09-14T08:43:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: "<p>It is possible to extract a spectrum without passing from a catalog. The system will take care of making a mosaic image and extract sources from a catalog.</p>\r\n\r\n<p>However, this is not recommended, as there could be NEW fake sources that appear and slow down or even degrade the spectral quality.</p>\r\n\r\n<p>We give this example:</p>\r\n\r\n<p>We look for the Crab nebula and pulsar, so we type \"Crab\" and click on \"resolve\". Then, we select a date in which we know there are Crab observations (here we limit ourselves to one hour). Then, we select \"Spectrum\", put a minimum detection significance of 7 to reduce the number of fake detected sources in the field of a bright object and use an energy range from 30 to 50 that we know is less noisy. Finally, we click on \"submit\".</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+    format: filtered_html
+    processed: |-
+      <p>It is possible to extract a spectrum without passing from a catalog. The system will take care of making a mosaic image and extract sources from a catalog.</p>
+
+      <p>However, this is not recommended, as there could be NEW fake sources that appear and slow down or even degrade the spectral quality.</p>
+
+      <p>We give this example:</p>
+
+      <p>We look for the Crab nebula and pulsar, so we type "Crab" and click on "resolve". Then, we select a date in which we know there are Crab observations (here we limit ourselves to one hour). Then, we select "Spectrum", put a minimum detection significance of 7 to reduce the number of fake detected sources in the field of a bright object and use an energy range from 30 to 50 that we know is less noisy. Finally, we click on "submit".</p>
+
+      <p>&nbsp;</p>
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

@@ -1,0 +1,23 @@
+uuid: eefaeb43-183d-4658-ab5d-a2c694fa7cbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.mmoda_event
+  module:
+    - options
+id: node.mmoda_event.field_category
+field_name: field_category
+entity_type: node
+bundle: mmoda_event
+label: Category
+description: '<span class="mmoda-event-help-box mmoda-event-primary"></span>'
+required: true
+translatable: false
+default_value:
+  -
+    value: light
+default_value_callback: ''
+settings: {  }
+field_type: list_string

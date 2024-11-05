@@ -1,0 +1,11 @@
+uuid: 0e4fced9-97f6-4b80-8e5c-23ab76cae2a0
+langcode: en
+status: true
+dependencies: {  }
+id: github
+label: Github
+plugin: github
+settings:
+  client_id: Ov23liOIjARstXh217qR
+  client_secret: f52ad29723c8effccedf3efc43de4c86e2a0664b
+  iss_allowed_domains: dev.mtmco.net

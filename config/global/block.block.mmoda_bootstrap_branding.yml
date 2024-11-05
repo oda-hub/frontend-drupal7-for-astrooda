@@ -1,0 +1,25 @@
+uuid: eea867bd-2088-4574-806e-6e3b5a0ee513
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: RDxcbaKi9FSQDCtEAn7v7jLq_xkGYfnS70AcDSIcOng
+id: mmoda_bootstrap_branding
+theme: mmoda_bootstrap
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

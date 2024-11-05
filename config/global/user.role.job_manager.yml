@@ -1,0 +1,9 @@
+uuid: 3a705bc4-d04e-4745-a9da-785f204f9618
+langcode: en
+status: true
+dependencies: {  }
+id: job_manager
+label: 'job manager'
+weight: 16
+is_admin: null
+permissions: {  }

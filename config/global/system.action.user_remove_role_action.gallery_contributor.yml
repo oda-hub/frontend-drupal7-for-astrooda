@@ -1,0 +1,14 @@
+uuid: cc613cdd-fe79-4fd4-bbd7-6f2d00b38a9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.gallery_contributor
+  module:
+    - user
+id: user_remove_role_action.gallery_contributor
+label: 'Remove the gallery contributor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gallery_contributor

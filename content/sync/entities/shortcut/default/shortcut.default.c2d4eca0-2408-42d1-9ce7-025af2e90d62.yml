@@ -1,0 +1,25 @@
+uuid:
+  -
+    value: c2d4eca0-2408-42d1-9ce7-025af2e90d62
+langcode:
+  -
+    value: en
+shortcut_set:
+  -
+    target_id: default
+title:
+  -
+    value: 'Find content'
+weight:
+  -
+    value: -19
+link:
+  -
+    uri: 'internal:/admin/content'
+    title: null
+    options: {  }
+default_langcode:
+  -
+    value: true
+_content_sync:
+  entity_type: shortcut

@@ -1,0 +1,14 @@
+uuid: bb00ec75-e94a-441e-8272-acf4c835cb2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.renku_contributor
+  module:
+    - user
+id: user_add_role_action.renku_contributor
+label: 'Add the renku contributor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: renku_contributor

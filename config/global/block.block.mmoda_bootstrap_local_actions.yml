@@ -1,0 +1,20 @@
+uuid: 67cb301c-b4f8-41a8-b4f0-c0aae67e3032
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: NZQAkoD6Y-4M3CUUL3NLvuMSoq0EyEpL0kYiqUW48dM
+id: mmoda_bootstrap_local_actions
+theme: mmoda_bootstrap
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

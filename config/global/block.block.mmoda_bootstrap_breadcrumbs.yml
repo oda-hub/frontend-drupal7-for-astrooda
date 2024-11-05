@@ -1,0 +1,22 @@
+uuid: 831c2810-ea39-4f74-be70-a5cb9e591823
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: Esv8QkPbxWamsY5OAV7DGKxRHYLz3yTojTdNIkN1oJM
+id: mmoda_bootstrap_breadcrumbs
+theme: mmoda_bootstrap
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

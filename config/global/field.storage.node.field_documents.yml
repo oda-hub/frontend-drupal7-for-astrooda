@@ -1,0 +1,23 @@
+uuid: 23d1201c-7e4a-43bb-b0b7-0a90bdd4e21e
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_documents
+field_name: field_documents
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: true
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

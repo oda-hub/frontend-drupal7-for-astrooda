@@ -1,0 +1,26 @@
+uuid: 592f5eb2-5fd8-476a-955d-5a28218a5539
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.book
+  module:
+    - text
+_core:
+  default_config_hash: ixtdivMIK7bLEDlPssoK_n1NdWEQjhD2EZ8th_biWJo
+id: node.book.body
+field_name: body
+entity_type: node
+bundle: book
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

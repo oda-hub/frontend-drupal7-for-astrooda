@@ -1,0 +1,22 @@
+uuid: 5eb89bfe-6914-4883-938e-43c232a84f10
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: WKNpcC_M2qrxa15YCHBALmsg-KBeTx1MK1q1vvV2kdU
+id: mmoda_bootstrap_messages
+theme: mmoda_bootstrap
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

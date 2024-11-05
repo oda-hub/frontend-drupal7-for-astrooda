@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: b039ecaa-c783-4ec0-ab38-b6e57f37e23c
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: b65f22f8-9973-4824-b7cc-316bd9e767da
+alias:
+  -
+    value: /content/policy-processing-personal-data
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.page.b65f22f8-9973-4824-b7cc-316bd9e767da

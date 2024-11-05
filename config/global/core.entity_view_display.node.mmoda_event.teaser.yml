@@ -1,0 +1,36 @@
+uuid: e3cfc847-31a6-42c3-ae1f-a47bccfe39a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mmoda_event.body
+    - field.field.node.mmoda_event.comment_node_mmoda_event
+    - field.field.node.mmoda_event.field_category
+    - field.field.node.mmoda_event.field_show_in_banner
+    - node.type.mmoda_event
+  module:
+    - text
+    - user
+id: node.mmoda_event.teaser
+targetEntityType: node
+bundle: mmoda_event
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment_node_mmoda_event: true
+  field_category: true
+  field_show_in_banner: true

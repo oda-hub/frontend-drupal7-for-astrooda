@@ -1,0 +1,86 @@
+uuid:
+  -
+    value: 731da114-70c1-4619-8c54-53cfcb35e007
+langcode:
+  -
+    value: und
+type:
+  -
+    target_id: mmoda_help_page
+revision_timestamp:
+  -
+    value: '2024-09-26T14:12:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+title:
+  -
+    value: 'JEM-X light curve'
+created:
+  -
+    value: '2023-09-14T08:43:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: "<p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p>\r\n\r\n<p>Following the <a href=\"jem-x-image\">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is \"NEW SOURCE\", one should edit it and change a name (select the source with the tickmark at the left and click on \"edit\".</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalogjemx.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"373\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru\" width=\"480\" /> </a></p>\r\n\r\n<p>Click on save and <strong>then</strong> use catalog. YOU MUST UNSELECT the source before clicking \"Use Catalog\", otherwise only that source is used.</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/maxi-source-jem-x.png\"><img alt=\"\" class=\"image-large\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/maxi-source-jem-x.png?itok=4gprmYzt\" style=\"height:309px; width:480px\" /> </a></p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/edit-source.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"375\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source.png?itok=A7opZYnw\" width=\"480\" /> </a></p>\r\n\r\n<p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close<a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/maxi-source-jem-x.png\"> </a></p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/email-jem-x-lc.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"226\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/email-jem-x-lc.png?itok=9XrDreVX\" width=\"480\" /> </a></p>\r\n\r\n<p>Then you get to a page where you can view and download the light curve</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/jem-x-lc.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"333\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-lc.png?itok=ODmR0e2E\" width=\"480\" /> </a></p>\r\n\r\n<p><!-- THEME DEBUG --><!-- CALL: theme('insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- THEME DEBUG --><!-- CALL: theme('insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+    format: full_html
+    processed: |
+      <p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p>
+
+      <p>Following the <a href="jem-x-image">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is "NEW SOURCE", one should edit it and change a name (select the source with the tickmark at the left and click on "edit".</p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalogjemx.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="373" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" width="480"></a> </a></p>
+
+      <p>Click on save and <strong>then</strong> use catalog. YOU MUST UNSELECT the source before clicking "Use Catalog", otherwise only that source is used.</p>
+
+      <p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/maxi-source-jem-x.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/maxi-source-jem-x.png?itok=4gprmYzt" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="image-large" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/maxi-source-jem-x.png?itok=4gprmYzt" style="height:309px; width:480px"></a> </a></p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/edit-source.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source.png?itok=A7opZYnw" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="375" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source.png?itok=A7opZYnw" width="480"></a> </a></p>
+
+      <p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close<a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/maxi-source-jem-x.png"> </a></p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/email-jem-x-lc.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/email-jem-x-lc.png?itok=9XrDreVX" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="226" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/email-jem-x-lc.png?itok=9XrDreVX" width="480"></a> </a></p>
+
+      <p>Then you get to a page where you can view and download the light curve</p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jem-x-lc.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-lc.png?itok=ODmR0e2E" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="333" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-lc.png?itok=ODmR0e2E" width="480"></a> </a></p>
+
+      <p><!-- THEME DEBUG --><!-- CALL: theme('insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- THEME DEBUG --><!-- CALL: theme('insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --></p>
+
+      <p>&nbsp;</p>
+
+      <p>&nbsp;</p>
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

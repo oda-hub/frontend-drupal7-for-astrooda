@@ -1,0 +1,55 @@
+serial:
+  -
+    value: 3
+uuid:
+  -
+    value: cdc4c00b-eaeb-42d0-9c57-b6693e39e52e
+token:
+  -
+    value: TCu3A_hP_oG5aQx8JrS0bzcbTtrG8UsCeEP8hJsGYp0
+uri:
+  -
+    value: '/form/your-api-token?_webform_dialog=1&'
+created:
+  -
+    value: '2024-09-04T18:12:35+00:00'
+    format: 'Y-m-d\TH:i:sP'
+completed:
+  -
+    value: '2024-09-04T18:12:35+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-04T18:12:35+00:00'
+    format: 'Y-m-d\TH:i:sP'
+in_draft:
+  -
+    value: false
+current_page: {  }
+remote_addr:
+  -
+    value: 129.194.169.83
+uid:
+  -
+    target_type: user
+    target_uuid: 5f57b92f-2eb1-4419-966f-11543a313f70
+langcode:
+  -
+    value: en
+webform_id:
+  -
+    target_id: your_api_token
+entity_type: {  }
+entity_id: {  }
+locked:
+  -
+    value: false
+sticky:
+  -
+    value: false
+notes: {  }
+_content_sync:
+  entity_type: webform_submission
+  entity_dependencies:
+    user:
+      - user.user.5f57b92f-2eb1-4419-966f-11543a313f70

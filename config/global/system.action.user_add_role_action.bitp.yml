@@ -1,0 +1,14 @@
+uuid: 59fbed87-5254-45bd-88fc-1d7b5dab78bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.bitp
+  module:
+    - user
+id: user_add_role_action.bitp
+label: 'Add the bitp role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: bitp

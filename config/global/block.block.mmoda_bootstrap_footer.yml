@@ -1,0 +1,27 @@
+uuid: 5c6c013c-61fb-4f76-8942-7ac99a3c8c4a
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: 4XBR2v316v8vAR6x4jdhqSAm3nCYxunR8tP-jH73dqE
+id: mmoda_bootstrap_footer
+theme: mmoda_bootstrap
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

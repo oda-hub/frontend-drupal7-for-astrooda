@@ -1,0 +1,56 @@
+uuid: d3b115f3-c3cf-4f5e-8e08-4632c1ad6cdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - core.entity_view_mode.media.media_library
+  module:
+    - ckeditor_colorbox_inline
+    - media
+_core:
+  default_config_hash: HvAE4vD_4-nvhwLobIN3k5rTE9zq9AQG8UScfnwuKQo
+name: 'Full HTML'
+format: full_html
+weight: -10
+filters:
+  ckeditor_colorbox_inline:
+    id: ckeditor_colorbox_inline
+    provider: ckeditor_colorbox_inline
+    status: true
+    weight: -10
+    settings:
+      css_classes: colorbox
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: ''
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: -43
+    settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: full
+      allowed_view_modes:
+        default: default
+        full: full
+        media_library: media_library
+      allowed_media_types: {  }

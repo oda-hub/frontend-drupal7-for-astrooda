@@ -1,0 +1,45 @@
+uuid: c759e50e-8a7c-4a8c-bbba-5390a5e5e7e1
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_category
+field_name: field_category
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: primary
+      label: Primary
+    -
+      value: secondary
+      label: Secondary
+    -
+      value: success
+      label: Success
+    -
+      value: danger
+      label: 'Very important'
+    -
+      value: warning
+      label: Important
+    -
+      value: info
+      label: Info
+    -
+      value: light
+      label: Light
+    -
+      value: dark
+      label: Dark
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

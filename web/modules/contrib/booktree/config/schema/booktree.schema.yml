@@ -1,0 +1,10 @@
+booktree.settings:
+  type: mapping
+  label: Settings
+  mapping:
+    booktree_start:
+      type: integer
+    booktree_deep:
+      type: integer
+    booktree_trim:
+      type: integer

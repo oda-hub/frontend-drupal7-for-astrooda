@@ -1,0 +1,24 @@
+uuid: 47c07afd-eddd-4f67-9f14-989211d40c2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mmoda_event
+  module:
+    - text
+id: node.mmoda_event.body
+field_name: body
+entity_type: node
+bundle: mmoda_event
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

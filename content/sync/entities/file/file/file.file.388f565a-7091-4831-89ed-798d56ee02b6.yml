@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 388f565a-7091-4831-89ed-798d56ee02b6
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+filename:
+  -
+    value: grb-selection.png
+uri:
+  -
+    value: 'public://2024-10/grb-selection.png'
+    url: /sites/default/files/2024-10/grb-selection.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 26141
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T09:02:10+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T09:02:22+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

@@ -1,0 +1,64 @@
+uuid:
+  -
+    value: aba46c87-3e28-4488-91fe-7b9314094464
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+name:
+  -
+    value: spectrumoda.png
+thumbnail:
+  -
+    target_id: 168
+    alt: 'Spectrum ODA'
+    title: null
+    width: 1056
+    height: 653
+    target_type: file
+    target_uuid: 9812ff19-b8d8-4438-9d95-5fef890ac696
+    url: 'http://default/sites/default/files/2023-11/spectrumoda.png'
+created:
+  -
+    value: '2023-11-21T18:13:58+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 168
+    alt: 'Spectrum ODA'
+    title: ''
+    width: 1056
+    height: 653
+    target_type: file
+    target_uuid: 9812ff19-b8d8-4438-9d95-5fef890ac696
+    url: 'http://default/sites/default/files/2023-11/spectrumoda.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b

@@ -1,0 +1,36 @@
+uuid:
+  -
+    value: 6de78aeb-ed11-4856-bd85-d2a65a5df8aa
+langcode:
+  -
+    value: en
+name:
+  -
+    value: aneronov
+created:
+  -
+    value: '2020-02-11T14:35:50+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2023-11-13T08:51:06+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+field_description_use_case: {  }
+field_matrix_room_id: {  }
+user_picture: {  }
+_content_sync:
+  entity_type: user
+pass:
+  -
+    value: $S$Dq09bOIlKcywBlzO/Eee4jnBO6kPiSikI1a.5dzW9/oAUFMojBU6
+    pre_hashed: true
+mail:
+  value: Andrii.Neronov@unige.ch
+status:
+  value: '1'
+roles:
+  - authenticated
+  - content_manager

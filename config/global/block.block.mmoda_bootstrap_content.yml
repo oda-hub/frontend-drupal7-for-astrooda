@@ -1,0 +1,22 @@
+uuid: bbf84d30-f615-4e0c-83d1-d68fde29836b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: zLVQAgUqJsqcJKyXmP10wN-e01Ov1z1DGtTsojtfSSQ
+id: mmoda_bootstrap_content
+theme: mmoda_bootstrap
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

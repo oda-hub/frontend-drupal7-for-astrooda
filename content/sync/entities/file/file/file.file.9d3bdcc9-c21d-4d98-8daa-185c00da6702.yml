@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 9d3bdcc9-c21d-4d98-8daa-185c00da6702
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+filename:
+  -
+    value: spi-acs-viewlc.png
+uri:
+  -
+    value: 'public://2024-10/spi-acs-viewlc.png'
+    url: /sites/default/files/2024-10/spi-acs-viewlc.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 34246
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T09:14:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T09:14:49+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

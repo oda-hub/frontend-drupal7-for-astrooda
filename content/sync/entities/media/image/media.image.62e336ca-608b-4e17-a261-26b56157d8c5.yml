@@ -1,0 +1,66 @@
+uuid:
+  -
+    value: 62e336ca-608b-4e17-a261-26b56157d8c5
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-10-01T10:34:58+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+name:
+  -
+    value: ngcimage.png
+thumbnail:
+  -
+    target_id: 192
+    alt: ngcimage
+    title: null
+    width: 480
+    height: 425
+    target_type: file
+    target_uuid: e94c318e-86c7-4d96-bc3f-424159455d83
+    url: 'http://default/sites/default/files/2024-10/ngcimage.png'
+created:
+  -
+    value: '2024-10-01T10:34:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:34:58+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 192
+    alt: ngcimage
+    title: ''
+    width: 480
+    height: 425
+    target_type: file
+    target_uuid: e94c318e-86c7-4d96-bc3f-424159455d83
+    url: 'http://default/sites/default/files/2024-10/ngcimage.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

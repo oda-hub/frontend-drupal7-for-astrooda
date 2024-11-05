@@ -1,0 +1,14 @@
+uuid: 95b1b9c7-9081-4e7a-ae3e-3bbe8d757475
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_manager
+  module:
+    - user
+id: user_add_role_action.job_manager
+label: 'Add the job manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: job_manager

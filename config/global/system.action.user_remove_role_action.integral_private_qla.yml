@@ -1,0 +1,14 @@
+uuid: 3b8cba2e-735e-4723-a00a-8098b92c4178
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.integral_private_qla
+  module:
+    - user
+id: user_remove_role_action.integral_private_qla
+label: 'Remove the integral-private-qla role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: integral_private_qla

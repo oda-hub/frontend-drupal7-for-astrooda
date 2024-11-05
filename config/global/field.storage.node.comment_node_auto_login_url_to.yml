@@ -1,0 +1,20 @@
+uuid: 71642b0b-04f5-4307-9be3-ddb32c3a7fd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_auto_login_url_to
+field_name: comment_node_auto_login_url_to
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_auto_login_url_to
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

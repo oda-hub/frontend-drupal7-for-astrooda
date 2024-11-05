@@ -1,0 +1,14 @@
+uuid: a6106dbf-caea-4e09-86ac-fb66e607acc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.antares
+  module:
+    - user
+id: user_remove_role_action.antares
+label: 'Remove the antares role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: antares

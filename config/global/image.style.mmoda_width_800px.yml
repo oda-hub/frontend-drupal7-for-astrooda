@@ -1,0 +1,15 @@
+uuid: 29f24079-2c2d-4f07-b3c5-e8dc040c2f99
+langcode: en
+status: true
+dependencies: {  }
+name: mmoda_width_800px
+label: 'MMODA width 800px'
+effects:
+  3cd1d6d9-386e-438b-b0a3-e3c3ffccab2f:
+    uuid: 3cd1d6d9-386e-438b-b0a3-e3c3ffccab2f
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: false

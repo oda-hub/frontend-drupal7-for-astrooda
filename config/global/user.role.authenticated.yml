@@ -1,0 +1,35 @@
+uuid: 45d3fbb8-0756-465b-a98c-782c49c2df2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.webform_default
+  module:
+    - comment
+    - contact
+    - eu_cookie_compliance
+    - filter
+    - media
+    - openid_connect
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'cancel account'
+  - 'change own username'
+  - 'display eu cookie compliance popup'
+  - 'manage own openid connect accounts'
+  - 'post comments'
+  - 'select account cancellation method'
+  - 'skip comment approval'
+  - 'use text format filtered_html'
+  - 'use text format webform_default'
+  - 'view media'

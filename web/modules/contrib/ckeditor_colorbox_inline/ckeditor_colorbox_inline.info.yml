@@ -1,0 +1,11 @@
+name: Colorbox Inline Text Filter
+type: module
+description: The module add text filter and your inline images will open with ColorBox
+core_version_requirement: ^10 || ^11
+dependencies:
+  - colorbox:colorbox
+
+# Information added by Drupal.org packaging script on 2024-08-14
+version: '1.2.0'
+project: 'ckeditor_colorbox_inline'
+datestamp: 1723619275

@@ -1,0 +1,14 @@
+uuid: f0625c76-9ac2-4bf6-b89e-8839f3b81100
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.public_pool_hpc
+  module:
+    - user
+id: user_remove_role_action.public_pool_hpc
+label: 'Remove the public-pool-hpc role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: public_pool_hpc

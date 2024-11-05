@@ -1,0 +1,66 @@
+uuid:
+  -
+    value: d0713b8d-62a9-4c96-9dba-a293a2417c67
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-10-01T09:14:30+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+name:
+  -
+    value: spi-acs-lc.png
+thumbnail:
+  -
+    target_id: 174
+    alt: lc
+    title: null
+    width: 630
+    height: 716
+    target_type: file
+    target_uuid: e17338ce-d8c6-483d-b7ee-00f06698f612
+    url: 'http://default/sites/default/files/2024-10/spi-acs-lc.png'
+created:
+  -
+    value: '2024-10-01T09:14:17+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T09:14:30+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 174
+    alt: lc
+    title: ''
+    width: 630
+    height: 716
+    target_type: file
+    target_uuid: e17338ce-d8c6-483d-b7ee-00f06698f612
+    url: 'http://default/sites/default/files/2024-10/spi-acs-lc.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

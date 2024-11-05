@@ -1,0 +1,66 @@
+uuid:
+  -
+    value: 070ccddf-93eb-4de5-985e-226ae6a1997a
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-10-01T10:12:30+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+name:
+  -
+    value: frontendtoppanegw.png
+thumbnail:
+  -
+    target_id: 184
+    alt: frontendtoppanegw
+    title: null
+    width: 480
+    height: 190
+    target_type: file
+    target_uuid: 6f1b2f07-2ca0-4ade-ad38-48603e659bf8
+    url: 'http://default/sites/default/files/2024-10/frontendtoppanegw.png'
+created:
+  -
+    value: '2024-10-01T10:12:16+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:12:30+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 184
+    alt: frontendtoppanegw
+    title: ''
+    width: 480
+    height: 190
+    target_type: file
+    target_uuid: 6f1b2f07-2ca0-4ade-ad38-48603e659bf8
+    url: 'http://default/sites/default/files/2024-10/frontendtoppanegw.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

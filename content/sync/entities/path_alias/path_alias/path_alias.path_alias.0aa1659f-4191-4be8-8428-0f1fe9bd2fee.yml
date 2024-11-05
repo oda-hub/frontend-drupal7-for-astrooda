@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 0aa1659f-4191-4be8-8428-0f1fe9bd2fee
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: 522aad64-6c80-4395-8b79-427abb7c3efa
+alias:
+  -
+    value: /form/feedback-bug-report
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.webform.522aad64-6c80-4395-8b79-427abb7c3efa

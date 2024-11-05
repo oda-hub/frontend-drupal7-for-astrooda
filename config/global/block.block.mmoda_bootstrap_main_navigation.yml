@@ -1,0 +1,27 @@
+uuid: 6bba8afe-271c-4ea3-af2d-15fb6f476d18
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - mmoda_bootstrap
+_core:
+  default_config_hash: 9LiqQvufFfdmq94_AQ1Czwrlwv9V6iR8RnEuwQXuKfc
+id: mmoda_bootstrap_main_navigation
+theme: mmoda_bootstrap
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,33 @@
+uuid: f1098924-4f41-45f7-878e-c0a9c4605bdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_auto_login_url_to.default
+    - field.field.node.auto_login_url_token.comment_node_auto_login_url_to
+    - field.field.node.auto_login_url_token.field_alu_token_url
+    - node.type.auto_login_url_token
+  module:
+    - comment
+    - user
+id: node.auto_login_url_token.default
+targetEntityType: node
+bundle: auto_login_url_token
+mode: default
+content:
+  comment_node_auto_login_url_to:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_alu_token_url: true

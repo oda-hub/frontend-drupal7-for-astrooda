@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: b2008a82-0f9b-476e-80d6-8065455624f6
+langcode:
+  -
+    value: und
+path:
+  -
+    value: /webform/your_api_token/confirmation
+alias:
+  -
+    value: /form/your-api-token/confirmation
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

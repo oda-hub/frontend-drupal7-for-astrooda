@@ -1,0 +1,90 @@
+uuid:
+  -
+    value: cf42a126-f67b-43aa-b2c6-2608b3d29b7e
+langcode:
+  -
+    value: und
+type:
+  -
+    target_id: mmoda_help_page
+revision_timestamp:
+  -
+    value: '2024-09-26T14:12:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+title:
+  -
+    value: 'JEM-X image'
+created:
+  -
+    value: '2023-09-14T08:43:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: "<p>We want to look if a newly reported source is observed also with JEM-X in a given time range (1-5 May 2021)</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/query.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"156\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/query.png?itok=ecxBOA98\" width=\"480\" /> </a></p>\r\n\r\n<p>Then, we need to fill the query for the JEM-X image. Note that you need to select the unit to use, as well as a suitable energy range. For more insight look at the <a href=\"https://www.isdc.unige.ch/integral/download/osa/doc/11.1/osa_um_jemx/man.html\" target=\"_blank\">JEM-X user manual</a></p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/jemx-image-query.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"480\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-image-query.png?itok=xdB6l1dg\" width=\"180\" /> </a></p>\r\n\r\n<p>after you click submit, you will receive an email and another one at job completion.</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/jemx-email.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"227\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-email.png?itok=-SdoBxYf\" width=\"480\" /> </a></p>\r\n\r\n<p>When you click on the url you will be directed to the page and you close the popup</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/done-lemx.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"120\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/done-lemx.png?itok=P-BHVxPq\" width=\"480\" /> </a></p>\r\n\r\n<p>To finally get the image with a new source</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/jem-x-image.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"379\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-image.png?itok=anSXsj-A\" width=\"480\" /> </a></p>\r\n\r\n<p>At this point, you can visualize the catalog and you want to change the \"flag\" to 1. To do that, select the source and click on edit.</p>\r\n\r\n<p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalogjemx.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"373\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru\" width=\"480\" /> </a> <!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>\r\n\r\n<p>you will have a popup</p>\r\n\r\n<p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/edit-source.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"375\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source.png?itok=A7opZYnw\" width=\"480\" /> </a> <!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>\r\n\r\n<p>click on save and then on use catalog to use the catalog for the jem-x spectral or light-curve extraction. <strong>Remember to unselect the source before use catalog is hit ! Otherwise only the selected source is used.</strong></p>\r\n"
+    format: full_html
+    processed: |
+      <p>We want to look if a newly reported source is observed also with JEM-X in a given time range (1-5 May 2021)</p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/query.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/query.png?itok=ecxBOA98" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="156" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/query.png?itok=ecxBOA98" width="480"></a> </a></p>
+
+      <p>Then, we need to fill the query for the JEM-X image. Note that you need to select the unit to use, as well as a suitable energy range. For more insight look at the <a href="https://www.isdc.unige.ch/integral/download/osa/doc/11.1/osa_um_jemx/man.html" target="_blank">JEM-X user manual</a></p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jemx-image-query.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-image-query.png?itok=xdB6l1dg" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="480" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-image-query.png?itok=xdB6l1dg" width="180"></a> </a></p>
+
+      <p>after you click submit, you will receive an email and another one at job completion.</p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jemx-email.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-email.png?itok=-SdoBxYf" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="227" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-email.png?itok=-SdoBxYf" width="480"></a> </a></p>
+
+      <p>When you click on the url you will be directed to the page and you close the popup</p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/done-lemx.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/done-lemx.png?itok=P-BHVxPq" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="120" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/done-lemx.png?itok=P-BHVxPq" width="480"></a> </a></p>
+
+      <p>To finally get the image with a new source</p>
+
+      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jem-x-image.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-image.png?itok=anSXsj-A" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="379" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-image.png?itok=anSXsj-A" width="480"></a> </a></p>
+
+      <p>At this point, you can visualize the catalog and you want to change the "flag" to 1. To do that, select the source and click on edit.</p>
+
+      <p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalogjemx.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="373" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" width="480"></a> </a> <!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>
+
+      <p>you will have a popup</p>
+
+      <p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/edit-source.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source.png?itok=A7opZYnw" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="375" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source.png?itok=A7opZYnw" width="480"></a> </a> <!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>
+
+      <p>click on save and then on use catalog to use the catalog for the jem-x spectral or light-curve extraction. <strong>Remember to unselect the source before use catalog is hit ! Otherwise only the selected source is used.</strong></p>
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

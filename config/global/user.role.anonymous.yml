@@ -1,0 +1,29 @@
+uuid: 71f1ec43-26d3-4a78-8343-e939435c4a36
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - node.type.webform
+  module:
+    - comment
+    - contact
+    - eu_cookie_compliance
+    - filter
+    - media
+    - node
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create webform content'
+  - 'display eu cookie compliance popup'
+  - 'use text format filtered_html'
+  - 'view media'

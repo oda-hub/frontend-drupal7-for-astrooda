@@ -1,0 +1,14 @@
+uuid: 7ac3008a-c3a7-4079-903e-47a42b1e1a7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_manager
+  module:
+    - user
+id: user_remove_role_action.job_manager
+label: 'Remove the job manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: job_manager

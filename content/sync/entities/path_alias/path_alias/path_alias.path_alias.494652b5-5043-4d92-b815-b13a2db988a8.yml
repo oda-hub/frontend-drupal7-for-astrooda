@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 494652b5-5043-4d92-b815-b13a2db988a8
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: ec9f9173-d164-40b3-9ec8-2b117e0d64f3
+alias:
+  -
+    value: /help/mmoda/gravitational-wave-analysis
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.ec9f9173-d164-40b3-9ec8-2b117e0d64f3

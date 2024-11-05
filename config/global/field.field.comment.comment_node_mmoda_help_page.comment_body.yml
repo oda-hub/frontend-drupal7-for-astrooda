@@ -1,0 +1,22 @@
+uuid: d817b14b-f4e5-4033-a2bc-fc6521cbe664
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_mmoda_help_page
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_mmoda_help_page.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_mmoda_help_page
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,11 @@
+uuid: fe71a946-038a-47e9-bbd5-dbc216e31448
+langcode: en
+status: true
+dependencies:
+  module:
+    - eu_cookie_compliance
+id: cookie_category.token
+label: Token
+description: ''
+targetEntityType: cookie_category
+cache: true
