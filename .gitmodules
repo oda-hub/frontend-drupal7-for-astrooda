@@ -1,3 +1,0 @@
-[submodule "sites/all/modules/astrooda"]
-	path = sites/all/modules/astrooda
-	url = git@gitlab.astro.unige.ch:cdci/frontend/astrooda.git
