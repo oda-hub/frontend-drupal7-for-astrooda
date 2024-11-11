@@ -6,6 +6,11 @@
 /web/themes/
 /web/profiles/
 /web/libraries/
+
+/web/sites/
+!/web/sites/default/settings.php
+!/web/sites/development.services.yml
+
 .gitlab*
 .settings
 .project
