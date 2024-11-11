@@ -8,9 +8,10 @@
 #/web/libraries/
 
 /web/*
-!/web/sites/default/settings.php
-!/web/sites/development.services.yml
-
+!/web/sites/
+/web/sites/default/files
+/web/sites/default/settings.local.php
+ 
 .gitlab*
 .settings
 .project
