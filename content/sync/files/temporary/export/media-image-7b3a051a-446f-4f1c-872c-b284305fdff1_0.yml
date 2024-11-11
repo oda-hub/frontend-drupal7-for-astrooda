@@ -1,0 +1,16 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 7b3a051a-446f-4f1c-872c-b284305fdff1
+entity_type: media
+bundle: image
+base_fields:
+  name: photometryparam.png
+  created: '1727779157'
+  status: true
+  langcode: en
+custom_fields:
+  field_media_image:
+    -
+      uri: 'public://2024-10/photometryparam.png'
+      url: 'http://default/sites/default/files/2024-10/photometryparam.png'
+      alt: photometryparam
+      title: ''

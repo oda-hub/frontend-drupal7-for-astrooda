@@ -1,0 +1,11 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 09c65128-4786-421e-86bd-62d84f072893
+entity_type: taxonomy_term
+bundle: book_name
+base_fields:
+  name: Help
+  weight: 0
+  langcode: en
+  description: null
+  parent: 0
+custom_fields: {  }

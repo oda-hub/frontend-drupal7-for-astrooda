@@ -1,0 +1,148 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 33d679f5-96a0-4aca-8c3f-02756b4552ac
+entity_type: node
+bundle: mmoda_help_page
+base_fields:
+  title: 'Legacy Survey'
+  status: true
+  langcode: und
+  created: '1694680994'
+  author: mohamed.meharga@unige.ch
+  url: /help/mmoda/legacy-survey
+  revision_log_message: null
+  revision_uid: '0'
+custom_fields:
+  body:
+    -
+      value: '<h2>Scope</h2><p>This interface provides an access for the publicly available data of the<a href="https://www.legacysurvey.org/" target="_blank"> DESI Legacy Survey</a>. This includes sky images and photometry data in the infrared-to-visible band. The photometry data is obtained from the queries of TAP service provided by Astro Data Lab(https://datalab.noirlab.edu/ls/ls.php).</p><h2>Source query panel</h2><p><br>The general MMODA interface provides the top panel which allows to specify the sky position of the source of interest.&nbsp;</p><drupal-media data-entity-type="media" data-entity-uuid="70c8f61f-58ba-4dcf-b05a-8d88816f8b02">&nbsp;</drupal-media><p>The source coordinates can be either found using the name resolver or directly entered in the RA, DEC parameter windows. The generic parameter panel also includes the time interval parameter windows, however the time information is not used for the Legacy Survey service.&nbsp;</p><h2><br>Image</h2><p><br>The interface allows to retrieve the sky image and source catalog for the region of interest around the source position. This can be done by selecting the "Image and catalog" radio button in the side instrument-specific parameter panel and specifying the imaging band, the image size, the pixel size and the data release for the catalog:&nbsp;</p><drupal-media data-entity-type="media" data-entity-uuid="6d0f4e61-ade8-498d-935b-e94c433cd075">&nbsp;</drupal-media><p>The image can be retrieved by pressing "Submit" button. The result is the sky image with sources from LegacySurvey catalog overplotted.</p><drupal-media data-entity-type="media" data-entity-uuid="62e336ca-608b-4e17-a261-26b56157d8c5">&nbsp;</drupal-media><p>The result display window has a number of buttons that allow to manipulate the sky image data products. The "Download" button provides a possibility to get the corresponding image fits file as well as source catalog table. The MMODA interface can be accessed from Python notebooks, using a an API. The API code for the image can be retrieved by pressing the "API code" button. The result will be a piece of a Python code like this:&nbsp;</p><drupal-media data-entity-type="media" data-entity-uuid="a889e623-9cdd-4a42-8c84-e4b47f1f2cd1">&nbsp;</drupal-media><p>Sky image can also be opened in the JS9 viewer by pressing the "JS9" button.</p><drupal-media data-entity-type="media" data-entity-uuid="186926b2-f1ef-4871-8989-dd89e4676d23">&nbsp;</drupal-media><p>It is possibly to directly deploy a Jupyter notebook with the API code to retrieve the data product at one of the online notebook servers. The MMODA interface currently provides a possibility to run notebooks on Renku platform provided by Swiss Data Science Centre https://renkulab.io/. This can be done by pressing the "Publish on Renku" button.</p><p>The catalog of the sources can be viewed by pressing the "Catalog" button</p><drupal-media data-entity-type="media" data-entity-uuid="92831a3a-5bd1-4486-be20-fb598a960424">&nbsp;</drupal-media><p><br>The catalog table lists source positions and fluxes in different bands.</p><h2>Photometry</h2><p><br>Switching the side parameter selector to "Photometry" provides a possibility to extract the infrared-to-visible band spectra energy distribution (SED) for the source or region of interest</p><drupal-media data-entity-type="media" data-entity-uuid="7b3a051a-446f-4f1c-872c-b284305fdff1">&nbsp;</drupal-media><p>The photometry information that is used for calculation of the SED is extracted from the catalog. To avoid ambiguity of source identification and allow estimate of the flux of extended sources, the "aperture photometry" approach is used: the result shown is the sum of the fluxes of all catalog sources within a circle of the radius that can be specified in the parameter window &nbsp;"Photometry collection radius".&nbsp;</p><p>Pressing the "Submit" button initiates the calculation of the aperture photometry SED:</p><drupal-media data-entity-type="media" data-entity-uuid="29440629-9b57-4c18-ad96-088f489791b8">&nbsp;</drupal-media><p>The data points have errorbars, but they are rather small and may be not visible for bright sources.</p><p>Similarly to the image and catalog, the SED data display has several buttons that provide a possibility to manipulate the result. The "Download" button allows to get the table representation of the photometry data. The results window also buttons to get an &nbsp;API code to access data products from Python and the "Publish on Renku" button to open this code in the interactive session of Renku platform.<br>&nbsp;</p>'
+      summary: ''
+      format: full_html
+      embed_entities:
+        -
+          uuid: 70c8f61f-58ba-4dcf-b05a-8d88816f8b02
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: ngc.png
+            created: '1727778905'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/ngc.png'
+                url: 'http://default/sites/default/files/2024-10/ngc.png'
+                alt: ngc
+                title: ''
+        -
+          uuid: 6d0f4e61-ade8-498d-935b-e94c433cd075
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: imageparam.png
+            created: '1727778773'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/imageparam.png'
+                url: 'http://default/sites/default/files/2024-10/imageparam.png'
+                alt: imageparam
+                title: ''
+        -
+          uuid: 62e336ca-608b-4e17-a261-26b56157d8c5
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: ngcimage.png
+            created: '1727778887'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/ngcimage.png'
+                url: 'http://default/sites/default/files/2024-10/ngcimage.png'
+                alt: ngcimage
+                title: ''
+        -
+          uuid: a889e623-9cdd-4a42-8c84-e4b47f1f2cd1
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: apicode.png
+            created: '1727778871'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/apicode.png'
+                url: 'http://default/sites/default/files/2024-10/apicode.png'
+                alt: apicode
+                title: ''
+        -
+          uuid: 186926b2-f1ef-4871-8989-dd89e4676d23
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: js9.png
+            created: '1727778856'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/js9.png'
+                url: 'http://default/sites/default/files/2024-10/js9.png'
+                alt: js9
+                title: ''
+        -
+          uuid: 92831a3a-5bd1-4486-be20-fb598a960424
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: catalog.png
+            created: '1727778840'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/catalog.png'
+                url: 'http://default/sites/default/files/2024-10/catalog.png'
+                alt: catalog
+                title: ''
+        -
+          uuid: 7b3a051a-446f-4f1c-872c-b284305fdff1
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: photometryparam.png
+            created: '1727779157'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/photometryparam.png'
+                url: 'http://default/sites/default/files/2024-10/photometryparam.png'
+                alt: photometryparam
+                title: ''
+        -
+          uuid: 29440629-9b57-4c18-ad96-088f489791b8
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: photometry.png
+            created: '1727778816'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/photometry.png'
+                url: 'http://default/sites/default/files/2024-10/photometry.png'
+                alt: photometry
+                title: ''

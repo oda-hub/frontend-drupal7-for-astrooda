@@ -1,0 +1,16 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 62e336ca-608b-4e17-a261-26b56157d8c5
+entity_type: media
+bundle: image
+base_fields:
+  name: ngcimage.png
+  created: '1727778887'
+  status: true
+  langcode: en
+custom_fields:
+  field_media_image:
+    -
+      uri: 'public://2024-10/ngcimage.png'
+      url: 'http://default/sites/default/files/2024-10/ngcimage.png'
+      alt: ngcimage
+      title: ''

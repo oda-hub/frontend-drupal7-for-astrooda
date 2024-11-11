@@ -1,0 +1,16 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 93dca83d-c8e3-4d6a-827e-eb7cab994858
+entity_type: media
+bundle: image
+base_fields:
+  name: grb-selection.png
+  created: '1727773321'
+  status: true
+  langcode: en
+custom_fields:
+  field_media_image:
+    -
+      uri: 'public://2024-10/grb-selection.png'
+      url: 'http://default/sites/default/files/2024-10/grb-selection.png'
+      alt: grb-selection
+      title: ''

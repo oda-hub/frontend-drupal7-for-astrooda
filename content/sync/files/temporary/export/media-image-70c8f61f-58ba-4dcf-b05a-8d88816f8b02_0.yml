@@ -1,0 +1,16 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 70c8f61f-58ba-4dcf-b05a-8d88816f8b02
+entity_type: media
+bundle: image
+base_fields:
+  name: ngc.png
+  created: '1727778905'
+  status: true
+  langcode: en
+custom_fields:
+  field_media_image:
+    -
+      uri: 'public://2024-10/ngc.png'
+      url: 'http://default/sites/default/files/2024-10/ngc.png'
+      alt: ngc
+      title: ''

@@ -1,0 +1,16 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 5f3ee866-5b1d-4c65-8ada-5f173fee1ac0
+entity_type: media
+bundle: image
+base_fields:
+  name: strainparam.png
+  created: '1727777459'
+  status: true
+  langcode: en
+custom_fields:
+  field_media_image:
+    -
+      uri: 'public://2024-10/strainparam.png'
+      url: 'http://default/sites/default/files/2024-10/strainparam.png'
+      alt: strainparam
+      title: ''

@@ -1,0 +1,17 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 26aca14c-927c-4d30-aae0-91b9f0a300d5
+entity_type: node
+bundle: page
+base_fields:
+  title: Home
+  status: true
+  langcode: en
+  created: '1699440879'
+  author: mohamed.meharga@unige.ch
+  url: /content/home
+  revision_log_message: null
+  revision_uid: '1'
+custom_fields:
+  body: null
+  comment_node_page: null
+  field_documents: null

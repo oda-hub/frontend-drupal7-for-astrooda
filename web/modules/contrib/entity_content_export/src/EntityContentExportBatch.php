@@ -39,11 +39,6 @@ class EntityContentExportBatch {
     array $export_options = [],
     array &$context
   ) {
-    error_log('$entity_type: '.$entity_type.', $bundle: '.$bundle);
-//     error_log('$display: '.print_r($display,true));
-//     error_log('$export_type: '.print_r($export_type,true));
-    error_log('$export_options: '.print_r($export_options,true));
-    error_log('$context: '.print_r($context,true));
     $limit = 10;
 
     /** @var \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager */
@@ -56,7 +51,6 @@ class EntityContentExportBatch {
     $query = $entity_type_manager
       ->getStorage($entity_type)
       ->getQuery();
-    $query->accessCheck(FALSE);
 
     if (isset($export_options['exclude_non_published'])
       && $export_options['exclude_non_published']) {
@@ -113,7 +107,6 @@ class EntityContentExportBatch {
     if ($context['finished'] >= 1) {
       $export_type->appendContent();
       $context['results']['file'] = $export_type->filePath();
-      error_log('context finished:'.print_r($context['results'], true));
     }
   }
 

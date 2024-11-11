@@ -1,0 +1,116 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 340efc35-286c-4cca-ae0f-5a8bf1455e12
+entity_type: node
+bundle: mmoda_help_page
+base_fields:
+  title: 'INTEGRAL SPI-ACS'
+  status: true
+  langcode: en
+  created: '1694680994'
+  author: mohamed.meharga@unige.ch
+  url: /help/mmoda/integral-spi-acs
+  revision_log_message: nan
+  revision_uid: '0'
+custom_fields:
+  body:
+    -
+      value: '<h1>Overview</h1><h4><strong>SPI-ACS</strong> : the anti-coincidence shield of the pectrometer on Board INTEGRAL is most massive&nbsp;Gamma Ray Bursts detector in operations..</h4><p>This page provides a short tutorial for the online analysis interface of SPI-CAS data.</p><h2>Source query panel</h2><p>The top panel of the interface allows to resolve a GRB time. Coordinates are not rilevant.</p><p>You can also specify a time range, either in UTC or MJD by changing the time unit.</p><drupal-media data-entity-type="media" data-entity-uuid="93dca83d-c8e3-4d6a-827e-eb7cab994858">&nbsp;</drupal-media><h2>Instrument&nbsp;query panel</h2><p>Click on the "SPI-ACS" button in the virtual desktop field to display POLAR specific parameters.</p><drupal-media data-entity-type="media" data-entity-uuid="1a745cfa-0268-416b-886d-c088cb2942cc">&nbsp;</drupal-media><h1>Analysis Flow</h1><p>The analysis steps are described below: &nbsp;</p><h2>Query Data</h2><ol><li>Start analysis by entering the source name of interest (a GRB) in the field "Object name" of the top panel and click on "Resolve" OR enter the start and end times in the cells below.</li><li>The RA and Dec fields are dummy.</li><li>You can always adapt (or fill) the time interval for the data</li></ol><drupal-media data-entity-type="media" data-entity-uuid="a8028236-5e42-451a-b562-2a6d54c7e2e3">&nbsp;</drupal-media><h2>Timing GRB Analysis</h2><ol><li>Select "SPI-ACS" on the instrument quera panel.</li><li>Check the "Lightcurve" checkbox..</li><li>Set&nbsp; the time bin width and unit for the lightcurve (the minimum is 50 ms). Remind that the start and end time of the lightcurve are determined by the time limits set in the top multi-instrument panel.</li><li>The "Query Type" field must be set to <em>Real</em>.</li><li>Launch the lightcurve extraction by pressing the "Submit" button.</li></ol><p>&nbsp;</p><p>A window pops up showing the status of the processing request. Note that according to the request, the processing time can be quite long. Click on "close" when done to close the window.</p><drupal-media data-entity-type="media" data-entity-uuid="43856e7e-28da-4bee-acee-e665670eaced">&nbsp;</drupal-media><p>Once the request is processed, it is displayed in the workspace, together with other previous results.</p><drupal-media data-entity-type="media" data-entity-uuid="43439fa4-6613-48d2-8dce-e6768922249d">&nbsp;</drupal-media><p>Click on the "View" button on the right of the source object to display the lightcurve.</p><drupal-media data-entity-type="media" data-entity-uuid="d0713b8d-62a9-4c96-9dba-a293a2417c67">&nbsp;</drupal-media><p>By clicking on the "Download" button, you have a possibility to download the lightcurve in FITS and ROOT format for further analysis.</p><h2>Caveats / Known Issues</h2><p>A) if the given time range is inverted, the server issues no specific warning. It just says that there is no data for the given time range.</p>'
+      summary: "<p>This page provides a short tutorial for the online analysis interface of SPI-ACS data.</p>\r\n"
+      format: full_html
+      embed_entities:
+        -
+          uuid: 93dca83d-c8e3-4d6a-827e-eb7cab994858
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: grb-selection.png
+            created: '1727773321'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/grb-selection.png'
+                url: 'http://default/sites/default/files/2024-10/grb-selection.png'
+                alt: grb-selection
+                title: ''
+        -
+          uuid: 1a745cfa-0268-416b-886d-c088cb2942cc
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: toppanel0.png
+            created: '1727773402'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/toppanel0.png'
+                url: 'http://default/sites/default/files/2024-10/toppanel0.png'
+                alt: toppanel
+                title: ''
+        -
+          uuid: a8028236-5e42-451a-b562-2a6d54c7e2e3
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: processingdone.png
+            created: '1727773745'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/processingdone.png'
+                url: 'http://default/sites/default/files/2024-10/processingdone.png'
+                alt: processingdone
+                title: ''
+        -
+          uuid: 43856e7e-28da-4bee-acee-e665670eaced
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: spi-acs.png
+            created: '1727774097'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/spi-acs.png'
+                url: 'http://default/sites/default/files/2024-10/spi-acs.png'
+                alt: spi-acs
+                title: ''
+        -
+          uuid: 43439fa4-6613-48d2-8dce-e6768922249d
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: spi-acs-viewlc.png
+            created: '1727774077'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/spi-acs-viewlc.png'
+                url: 'http://default/sites/default/files/2024-10/spi-acs-viewlc.png'
+                alt: lc
+                title: ''
+        -
+          uuid: d0713b8d-62a9-4c96-9dba-a293a2417c67
+          entity_type: media
+          bundle: image
+          base_fields:
+            name: spi-acs-lc.png
+            created: '1727774057'
+            status: true
+            langcode: en
+          custom_fields:
+            field_media_image:
+              -
+                uri: 'public://2024-10/spi-acs-lc.png'
+                url: 'http://default/sites/default/files/2024-10/spi-acs-lc.png'
+                alt: lc
+                title: ''

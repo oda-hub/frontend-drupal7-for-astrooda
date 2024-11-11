@@ -1,0 +1,40 @@
+uuid:
+  -
+    value: 71780b20-7874-46ff-ad1d-f1efefb5dcaa
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+filename:
+  -
+    value: media-image-c226c751-3b5c-4392-9dbf-6ec2ba4738c3.yml
+uri:
+  -
+    value: 'temporary://export/media-image-c226c751-3b5c-4392-9dbf-6ec2ba4738c3_0.yml'
+    url: '/system/temporary?file=export/media-image-c226c751-3b5c-4392-9dbf-6ec2ba4738c3_0.yml'
+filemime:
+  -
+    value: application/octet-stream
+filesize:
+  -
+    value: 402
+status:
+  -
+    value: false
+created:
+  -
+    value: '2024-11-08T14:47:25+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-08T14:47:25+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b

@@ -213,7 +213,6 @@ class EntityContentExport extends FormBase {
       $entity_type, $bundle, $default_mode
     );
     $display_ids = $this->entityViewDisplayQuery()
-      ->accessCheck(FALSE)
       ->condition('mode', $view_mode)
       ->condition('bundle', $bundle)
       ->condition('targetEntityType', $entity_type)

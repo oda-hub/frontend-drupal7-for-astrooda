@@ -1,0 +1,16 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 186926b2-f1ef-4871-8989-dd89e4676d23
+entity_type: media
+bundle: image
+base_fields:
+  name: js9.png
+  created: '1727778856'
+  status: true
+  langcode: en
+custom_fields:
+  field_media_image:
+    -
+      uri: 'public://2024-10/js9.png'
+      url: 'http://default/sites/default/files/2024-10/js9.png'
+      alt: js9
+      title: ''

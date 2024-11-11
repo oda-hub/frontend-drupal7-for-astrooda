@@ -1,0 +1,16 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 1a745cfa-0268-416b-886d-c088cb2942cc
+entity_type: media
+bundle: image
+base_fields:
+  name: toppanel0.png
+  created: '1727773402'
+  status: true
+  langcode: en
+custom_fields:
+  field_media_image:
+    -
+      uri: 'public://2024-10/toppanel0.png'
+      url: 'http://default/sites/default/files/2024-10/toppanel0.png'
+      alt: toppanel
+      title: ''

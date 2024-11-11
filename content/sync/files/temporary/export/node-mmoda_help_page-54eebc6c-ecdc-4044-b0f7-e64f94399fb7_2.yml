@@ -1,0 +1,19 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 54eebc6c-ecdc-4044-b0f7-e64f94399fb7
+entity_type: node
+bundle: mmoda_help_page
+base_fields:
+  title: 'INTEGRAL mission'
+  status: true
+  langcode: und
+  created: '1694680994'
+  author: mohamed.meharga@unige.ch
+  url: /help/mmoda/integral-mission
+  revision_log_message: null
+  revision_uid: '0'
+custom_fields:
+  body:
+    -
+      value: "<h2>Presentation and scope</h2>\r\n\r\n<p>The INTErnational Gamma-Ray Astrophysics Laboratory (INTEGRAL), is an astronomical satellite for observing the gamma-ray sky. It was selected by the science program committee of the European Space Agency (ESA) on June 3rd, 1993 as a medium size mission. It was launched on October 17, 2002 by a Russian PROTON launcher from Baikonur in Kazakstan. It orbits in a highly elliptical orbit with a period of about three days, il performs uninterrupted observations split in hor-long pointings called \"science windows\".</p>\r\n\r\n<p>The INTEGRAL spacecraft has four scientific instruments:</p>\r\n\r\n<ul>\r\n\t<li>The gamma-ray imager IBIS with its low-energy detector ISGRI and high-energy detector PICSIT</li>\r\n\t<li>The two X-ray monitors JEM-X (1 &amp; 2)</li>\r\n\t<li>The gamma-ray spectrometer SPI</li>\r\n\t<li>The optical monitoring camera OMC</li>\r\n</ul>\r\n\r\n<p>With MMODA, we provide high-level products for IBIS/ISGRI and JEM-X: images, spectra, and light curves of sources in any available time window and energy range. The anonymous session has access to at most 50 science windows per single run. Upon login, it is possible to exploit more resources, up to 500 science windows for each single run.</p>\r\n\r\n<p>Dedicated analysis threads are available in these help pages to guide throughout the platform exploitation.</p>\r\n\r\n<h2>General tasks related to INTEGRAL analysis</h2>\r\n\r\n<ul>\r\n\t<li><a href=\"upload-custom-catalog-integral-analysis\">Upload a catalog from file.</a></li>\r\n\t<li><a href=\"integral-nrt-data-access\">How to access Near Real Time data.</a></li>\r\n</ul>\r\n\r\n<h2>Complete threads</h2>\r\n\r\n<ul>\r\n\t<li><a href=\"integral-spi-acs\" target=\"_self\">Extract a SPI-ACS light curve</a>.</li>\r\n\t<li><a href=\"integral-isgri\">ISGRI workflow from web interface.</a></li>\r\n\t<li><a href=\"integral-jem-x\">JEM-X workflow from web interface.</a></li>\r\n</ul>\r\n\r\n<h2>Some example analysis threads for the web interface</h2>\r\n\r\n<p>We provide some analysis threads for the online analysis using the web interface. They are based on a real case, they are not exhaustive, but they can be used as a base.</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>ISGRI</p>\r\n\r\n\t<ul>\r\n\t\t<li>\r\n\t\t<p><a href=\"ibis-isgri-image-new-source\">ISGRI image in a time range</a> looking for a new source.</p>\r\n\t\t</li>\r\n\t\t<li>\r\n\t\t<p><a href=\"isgri-spectrum\">Extract ISGRI spectrum with a catalog.</a></p>\r\n\t\t</li>\r\n\t\t<li><a href=\"isgri-light-curve\">Extract a ISGRI light curve with a catalog.</a></li>\r\n\t\t<li><a href=\"extract-isgri-spectrum-without-catalog\">Extract an ISGRI spectrum without a catalog</a> (not recommended).</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>JEM-X\r\n\t<ul>\r\n\t\t<li><a href=\"jem-x-image\">Extract a JEM-X image</a></li>\r\n\t\t<li><a href=\"jem-x-spectrum\">Extract a JEM-X spectrum</a></li>\r\n\t\t<li><a href=\"jem-x-light-curve\">Extract a JEM-X light curve</a></li>\r\n\t</ul>\r\n\t</li>\r\n</ul>\r\n"
+      summary: ''
+      format: full_html

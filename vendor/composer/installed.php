@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/recommended-project',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => 'c033266590cb02d2fe4032268626ef14b7fbe8fa',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => null,
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -281,9 +281,9 @@
             'dev_requirement' => false,
         ),
         'drupal/content_sync' => array(
-            'pretty_version' => '4.0.0-rc2',
-            'version' => '4.0.0.0-RC2',
-            'reference' => '4.0.0-rc2',
+            'pretty_version' => '4.0.x-dev',
+            'version' => '4.0.9999999.9999999-dev',
+            'reference' => '321ce479c9501eb41cb628caabfb402dc6b42deb',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../web/modules/contrib/content_sync',
             'aliases' => array(),
@@ -650,9 +650,9 @@
             'dev_requirement' => false,
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'c033266590cb02d2fe4032268626ef14b7fbe8fa',
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => null,
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -820,6 +820,24 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'oda/bootstrap_mmoda' => array(
+            'pretty_version' => 'dev-d10-main',
+            'version' => 'dev-d10-main',
+            'reference' => '707242985932c177665bd8cadbda1f28d11845da',
+            'type' => 'drupal-custom-theme',
+            'install_path' => __DIR__ . '/../../web/themes/custom/bootstrap_mmoda',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'oda/mmoda' => array(
+            'pretty_version' => 'dev-d10-main',
+            'version' => 'dev-d10-main',
+            'reference' => 'b9b34fd8267fb608809034215a01748818fe10b3',
+            'type' => 'drupal-custom-module',
+            'install_path' => __DIR__ . '/../../web/modules/custom/mmoda',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'orno/di' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -910,8 +928,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '^1.0',
-                1 => '1.1|2.0',
+                0 => '1.1|2.0',
+                1 => '^1.0',
             ),
         ),
         'psr/event-dispatcher' => array(

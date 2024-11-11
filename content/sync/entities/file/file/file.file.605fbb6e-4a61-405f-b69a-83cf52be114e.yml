@@ -1,0 +1,40 @@
+uuid:
+  -
+    value: 605fbb6e-4a61-405f-b69a-83cf52be114e
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_id: 0
+    target_type: user
+    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+filename:
+  -
+    value: node-mmoda_help_page-33d679f5-96a0-4aca-8c3f-02756b4552ac.yml
+uri:
+  -
+    value: 'temporary://export/node-mmoda_help_page-33d679f5-96a0-4aca-8c3f-02756b4552ac_0.yml'
+    url: '/system/temporary?file=export/node-mmoda_help_page-33d679f5-96a0-4aca-8c3f-02756b4552ac_0.yml'
+filemime:
+  -
+    value: application/octet-stream
+filesize:
+  -
+    value: 9140
+status:
+  -
+    value: false
+created:
+  -
+    value: '2024-11-08T14:47:25+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-08T14:47:25+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b

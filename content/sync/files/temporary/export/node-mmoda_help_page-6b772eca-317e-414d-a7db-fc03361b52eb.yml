@@ -1,0 +1,19 @@
+site_uuid: c5ce301b-dafd-43ab-9513-12dcad933672
+uuid: 6b772eca-317e-414d-a7db-fc03361b52eb
+entity_type: node
+bundle: mmoda_help_page
+base_fields:
+  title: 'Dezdeg MMODA help'
+  status: true
+  langcode: en
+  created: '1731083946'
+  author: mohamed.meharga@unige.ch
+  url: /help/mmoda/dezdeg-mmoda-help
+  revision_log_message: null
+  revision_uid: '1'
+custom_fields:
+  body:
+    -
+      value: "<p>Il faut reconnaitre que c'est bien</p>"
+      summary: ''
+      format: full_html

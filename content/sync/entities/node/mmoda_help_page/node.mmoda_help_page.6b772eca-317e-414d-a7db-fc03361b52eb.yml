@@ -1,0 +1,59 @@
+uuid:
+  -
+    value: 6b772eca-317e-414d-a7db-fc03361b52eb
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: mmoda_help_page
+revision_timestamp:
+  -
+    value: '2024-11-08T16:39:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+title:
+  -
+    value: 'Dezdeg MMODA help'
+created:
+  -
+    value: '2024-11-08T16:39:06+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-08T16:39:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: "<p>Il faut reconnaitre que c'est bien</p>"
+    format: full_html
+    processed: "<p>Il faut reconnaitre que c'est bien</p>"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a
