@@ -1,5 +1,0 @@
-services:
-  remove_unused_files:
-    class: "\\Drupal\\remove_unused_files\\RemoveUnusedFilesService"
-    arguments:
-      - "@database"

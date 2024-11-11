@@ -1,9 +1,0 @@
-name: Module extension list replacement
-type: module
-package: Testing
-hidden: true
-
-# Information added by Drupal.org packaging script on 2024-06-29
-version: '1.0.0'
-project: 'eme'
-datestamp: 1719665304

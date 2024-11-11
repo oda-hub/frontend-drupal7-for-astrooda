@@ -1,5 +1,0 @@
-services:
-  http_middleware.redirect_after_login:
-    class: Drupal\redirect_after_login\RedirectMiddleware
-    tags:
-      - { name: http_middleware}
