@@ -6,4 +6,12 @@
 /web/themes/
 /web/profiles/
 /web/libraries/
+.gitlab*
+.settings
+.project
+.editorconfig
+.buildpath
+.gitattributes
+
+
 
