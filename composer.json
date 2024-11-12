@@ -23,7 +23,18 @@
                 }, {
                         "type" : "vcs",
                         "url" : "https://git.drupalcode.org/issue/content_sync-3486660.git"
-                }
+                }, {
+			"type": "package",
+			"package": {
+				"name": "jackmoore/colorbox",
+				"version": "1.6.4",
+				"type": "drupal-library",
+              "dist": {
+                "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                "type": "zip"
+              }
+            }
+        }
 	],
 	"require" : {
 		"composer/installers": "^2.0",
@@ -34,7 +45,7 @@
 		"drupal/book": "^2.0@alpha",
 		"drupal/bootstrap5": "^4.0@alpha",
 		"drupal/ckeditor_colorbox_inline": "^1.2",
-		"drupal/colorbox": "^2.0",
+		"drupal/colorbox": "^2.1",
 		"drupal/colorbox_inline": "^2.0",
 		"drupal/content_sync": "4.0.x-dev",
 		"drupal/core-composer-scaffold": "^10.1",
@@ -46,6 +57,7 @@
 		"drupal/entity_content_export": "^2.0@alpha",
 		"drupal/eu_cookie_compliance": "^1.24",
 		"drupal/examples": "^4.0",
+		"drupal/highlight_js": "^1.1",
 		"drupal/jquery_ui": "^1.6",
 		"drupal/jquery_ui_draggable": "^2.0",
 		"drupal/jquery_ui_effects": "^2.0",
