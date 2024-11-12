@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 4ed7b200-5c22-44ff-987d-1123381bd715
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: 731da114-70c1-4619-8c54-53cfcb35e007
+alias:
+  -
+    value: /help/mmoda/jem-x-light-curve
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.731da114-70c1-4619-8c54-53cfcb35e007

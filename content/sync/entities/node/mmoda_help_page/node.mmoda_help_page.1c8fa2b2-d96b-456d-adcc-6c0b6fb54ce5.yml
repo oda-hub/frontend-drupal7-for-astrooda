@@ -15,14 +15,15 @@ revision_uid:
   -
     target_id: 0
     target_type: user
-    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
 status:
   -
     value: true
 uid:
   -
+    target_id: 0
     target_type: user
-    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
 title:
   -
     value: 'INTEGRAL JEM-X'
@@ -148,5 +149,4 @@ _content_sync:
   entity_type: node
   entity_dependencies:
     user:
-      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
-      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a
+      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8

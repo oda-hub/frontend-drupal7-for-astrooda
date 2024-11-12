@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: 28eed6bf-46e5-45a5-bc45-8a8b643113c0
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /webform/your_api_token/submissions
+alias:
+  -
+    value: /form/your-api-token/submissions
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

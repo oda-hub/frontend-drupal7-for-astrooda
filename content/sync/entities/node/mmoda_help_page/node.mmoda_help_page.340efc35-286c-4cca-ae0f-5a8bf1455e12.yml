@@ -15,14 +15,15 @@ revision_uid:
   -
     target_id: 0
     target_type: user
-    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
 status:
   -
     value: true
 uid:
   -
+    target_id: 0
     target_type: user
-    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
 title:
   -
     value: 'INTEGRAL SPI-ACS'
@@ -96,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/grb-selection.png?itok=6Zj0IXjl" width="480" height="163" alt="grb-selection" class="img-fluid image-style-large">
+      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/grb-selection.png?itok=a78wA-WT" width="480" height="163" alt="grb-selection" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -163,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/toppanel0.png?itok=DvLaqI8p" width="480" height="145" alt="toppanel" class="img-fluid image-style-large">
+      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/toppanel0.png?itok=xaATUe-J" width="480" height="145" alt="toppanel" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -230,7 +231,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/processingdone.png?itok=f4-xsbYh" width="480" height="159" alt="processingdone" class="img-fluid image-style-large">
+      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/processingdone.png?itok=cs9FIo9T" width="480" height="159" alt="processingdone" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -297,7 +298,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/spi-acs.png?itok=OGoOgZ_9" width="433" height="480" alt="spi-acs" class="img-fluid image-style-large">
+      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/spi-acs.png?itok=hw-dJKwG" width="433" height="480" alt="spi-acs" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -364,7 +365,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/spi-acs-viewlc.png?itok=V4iDR5zD" width="480" height="273" alt="lc" class="img-fluid image-style-large">
+      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/spi-acs-viewlc.png?itok=q1xV4byw" width="480" height="273" alt="lc" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -431,7 +432,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/spi-acs-lc.png?itok=hN7lBiKp" width="422" height="480" alt="lc" class="img-fluid image-style-large">
+      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/spi-acs-lc.png?itok=6gy8VnjK" width="422" height="480" alt="lc" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -461,5 +462,4 @@ _content_sync:
   entity_type: node
   entity_dependencies:
     user:
-      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
-      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a
+      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8

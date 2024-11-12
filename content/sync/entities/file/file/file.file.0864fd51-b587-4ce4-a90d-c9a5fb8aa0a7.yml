@@ -4,10 +4,7 @@ uuid:
 langcode:
   -
     value: en
-uid:
-  -
-    target_type: user
-    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+uid: {  }
 filename:
   -
     value: toppanel0.png
@@ -34,6 +31,3 @@ changed:
     format: 'Y-m-d\TH:i:sP'
 _content_sync:
   entity_type: file
-  entity_dependencies:
-    user:
-      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

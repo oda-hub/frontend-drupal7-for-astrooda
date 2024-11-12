@@ -19,13 +19,13 @@ uid:
   -
     target_id: 0
     target_type: user
-    target_uuid: 49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
 name:
   -
     value: topoda1.png
 thumbnail:
   -
-    target_id: 163
+    target_id: 92
     alt: 'ISGRI ODA top1'
     title: null
     width: 964
@@ -49,7 +49,7 @@ revision_translation_affected:
     value: true
 field_media_image:
   -
-    target_id: 163
+    target_id: 92
     alt: 'ISGRI ODA top1'
     title: ''
     width: 964
@@ -61,4 +61,4 @@ _content_sync:
   entity_type: media
   entity_dependencies:
     user:
-      - user.user.49c2e62f-4cd4-4fc7-a63b-af3dda87e22b
+      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8

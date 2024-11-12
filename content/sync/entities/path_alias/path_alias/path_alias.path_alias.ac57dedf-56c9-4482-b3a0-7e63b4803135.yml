@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: ac57dedf-56c9-4482-b3a0-7e63b4803135
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 6b772eca-317e-414d-a7db-fc03361b52eb
+alias:
+  -
+    value: /help/mmoda/dezdeg-mmoda-help
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.6b772eca-317e-414d-a7db-fc03361b52eb

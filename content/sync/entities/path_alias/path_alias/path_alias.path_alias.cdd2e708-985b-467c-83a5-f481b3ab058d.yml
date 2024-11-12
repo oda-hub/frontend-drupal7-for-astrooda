@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: cdd2e708-985b-467c-83a5-f481b3ab058d
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: b6b8845e-1021-498e-aea0-892e1c2d8096
+alias:
+  -
+    value: /content/highlight-test
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.article.b6b8845e-1021-498e-aea0-892e1c2d8096

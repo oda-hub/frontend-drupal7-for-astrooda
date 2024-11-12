@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: feda77b1-f7e6-4da0-b7c4-9aa6b74d0b4b
+langcode:
+  -
+    value: en
+path:
+  target_type: user
+  target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+alias:
+  -
+    value: /users/admin
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

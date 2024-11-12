@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: ee732b75-a888-4d66-87af-56e1c113a1b5
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /webform/user_feedback/confirmation
+alias:
+  -
+    value: /form/user-feedback/confirmation
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

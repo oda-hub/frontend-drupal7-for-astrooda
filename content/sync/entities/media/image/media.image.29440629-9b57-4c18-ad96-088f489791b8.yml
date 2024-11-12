@@ -11,23 +11,21 @@ revision_created:
   -
     value: '2024-10-01T10:33:53+00:00'
     format: 'Y-m-d\TH:i:sP'
-revision_user:
-  -
-    target_type: user
-    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+revision_user: {  }
 status:
   -
     value: true
 uid:
   -
+    target_id: 0
     target_type: user
-    target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
 name:
   -
     value: photometry.png
 thumbnail:
   -
-    target_id: 188
+    target_id: 90
     alt: photometry
     title: null
     width: 480
@@ -51,7 +49,7 @@ revision_translation_affected:
     value: true
 field_media_image:
   -
-    target_id: 188
+    target_id: 90
     alt: photometry
     title: ''
     width: 480
@@ -63,4 +61,4 @@ _content_sync:
   entity_type: media
   entity_dependencies:
     user:
-      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f
+      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8

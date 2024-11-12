@@ -13,15 +13,17 @@ revision_timestamp:
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
+    target_id: 0
     target_type: user
-    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
 status:
   -
     value: true
 uid:
   -
+    target_id: 0
     target_type: user
-    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
 title:
   -
     value: 'Feedback / Bug report'
@@ -49,13 +51,13 @@ comment_node_webform:
   -
     status: 1
     cid: 0
-    last_comment_timestamp: 1631527081
+    last_comment_timestamp: 1727347706
     last_comment_name: null
-    last_comment_uid: 1
+    last_comment_uid: 0
     comment_count: 0
 field_body: {  }
 _content_sync:
   entity_type: node
   entity_dependencies:
     user:
-      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a
+      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8

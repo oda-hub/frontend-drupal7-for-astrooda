@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 1063d3ac-0ed8-4cf2-9833-ce87ae8fe740
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 26aca14c-927c-4d30-aae0-91b9f0a300d5
+alias:
+  -
+    value: /content/home
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.page.26aca14c-927c-4d30-aae0-91b9f0a300d5
