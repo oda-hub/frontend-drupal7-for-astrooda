@@ -896,4 +896,3 @@ $settings['config_sync_directory'] = '../config/global';
 global $content_directories;
 $content_directories['sync'] = $app_root.'/../content/sync';
 
-
