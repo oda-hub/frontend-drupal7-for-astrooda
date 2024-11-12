@@ -5178,12 +5178,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/oda-hub/mmoda-frontend-module.git",
-                "reference": "b9b34fd8267fb608809034215a01748818fe10b3"
+                "reference": "8b93bf5060a601631d09e2177294d88a3f40045b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oda-hub/mmoda-frontend-module/zipball/b9b34fd8267fb608809034215a01748818fe10b3",
-                "reference": "b9b34fd8267fb608809034215a01748818fe10b3",
+                "url": "https://api.github.com/repos/oda-hub/mmoda-frontend-module/zipball/8b93bf5060a601631d09e2177294d88a3f40045b",
+                "reference": "8b93bf5060a601631d09e2177294d88a3f40045b",
                 "shasum": ""
             },
             "type": "drupal-custom-module",
@@ -5211,7 +5211,7 @@
                 "source": "https://github.com/oda-hub/mmoda-frontend-module/tree/d10-main",
                 "issues": "https://github.com/oda-hub/mmoda-frontend-module/issues"
             },
-            "time": "2024-11-10T16:22:39+00:00"
+            "time": "2024-11-12T09:34:56+00:00"
         },
         {
             "name": "pear/archive_tar",
