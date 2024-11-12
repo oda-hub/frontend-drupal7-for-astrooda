@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47f6076c4ec95e560ad25e0aa8b255bd",
+    "content-hash": "383919973de65f6d8d73cab217328312",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4866,6 +4866,15 @@
                 }
             ],
             "time": "2024-07-18T09:59:12+00:00"
+        },
+        {
+            "name": "jackmoore/colorbox",
+            "version": "1.6.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "league/container",

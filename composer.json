@@ -11,30 +11,30 @@
 	"repositories" : [{
 			"type" : "composer",
 			"url" : "https://packages.drupal.org/8",
-			"exclude": [
+			"exclude" : [
 				"drupal/content_sync"
 			]
 		}, {
 			"type" : "vcs",
 			"url" : "git@github.com:oda-hub/mmoda-frontend-module.git"
 		}, {
-                        "type" : "vcs",
-                        "url" : "git@github.com:oda-hub/mmoda-frontend-theme.git"
-                }, {
-                        "type" : "vcs",
-                        "url" : "https://git.drupalcode.org/issue/content_sync-3486660.git"
-                }, {
-			"type": "package",
-			"package": {
-				"name": "jackmoore/colorbox",
-				"version": "1.6.4",
-				"type": "drupal-library",
-              "dist": {
-                "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
-                "type": "zip"
-              }
-            }
-        }
+			"type" : "vcs",
+			"url" : "git@github.com:oda-hub/mmoda-frontend-theme.git"
+		}, {
+			"type" : "vcs",
+			"url" : "https://git.drupalcode.org/issue/content_sync-3486660.git"
+		}, {
+			"type" : "package",
+			"package" : {
+				"name" : "jackmoore/colorbox",
+				"version" : "1.6.4",
+				"type" : "drupal-library",
+				"dist" : {
+					"url" : "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+					"type" : "zip"
+				}
+			}
+		}
 	],
 	"require" : {
 		"composer/installers": "^2.0",
@@ -74,6 +74,7 @@
 		"drupal/views_bulk_operations": "^4.2",
 		"drupal/webform": "^6.2",
 		"drush/drush": "^12.5",
+		"jackmoore/colorbox": "^1.6",
 		"oda/bootstrap_mmoda": "dev-d10-main",
 		"oda/mmoda": "dev-d10-main"
 	},

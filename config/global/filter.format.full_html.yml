@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.colorbox
     - core.entity_view_mode.media.full
     - core.entity_view_mode.media.media_library
   module:
     - ckeditor_colorbox_inline
+    - highlight_js
     - media
 _core:
   default_config_hash: HvAE4vD_4-nvhwLobIN3k5rTE9zq9AQG8UScfnwuKQo
@@ -42,6 +44,12 @@ filters:
     status: true
     weight: -43
     settings: {  }
+  highlight_js:
+    id: highlight_js
+    provider: highlight_js
+    status: true
+    weight: 100
+    settings: {  }
   media_embed:
     id: media_embed
     provider: media
@@ -51,6 +59,7 @@ filters:
       default_view_mode: full
       allowed_view_modes:
         default: default
+        colorbox: colorbox
         full: full
         media_library: media_library
       allowed_media_types: {  }
