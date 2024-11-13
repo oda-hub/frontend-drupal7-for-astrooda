@@ -34,16 +34,101 @@
 					"type" : "zip"
 				}
 			}
+		}, {
+			"type" : "package",
+			"package" : {
+				"name" : "marioizquierdo/jquery.serialize-json",
+				"version" : "3.2.1",
+				"type" : "drupal-library",
+				"source" : {
+					"url" : "https://github.com/marioizquierdo/jquery.serializeJSON.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		}, {
+			"type" : "package",
+			"package" : {
+				"name" : "datatables/datatables-dist",
+				"version" : "2.1.8",
+				"type" : "drupal-library",
+				"source" : {
+					"url" : "git@github.com:DataTables/Dist-DataTables.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		}, {
+			"type" : "package",
+			"package" : {
+				"name" : "datatables/datatables-dist-bs5",
+				"version" : "2.1.8",
+				"type" : "drupal-library",
+				"source" : {
+					"url" : "git@github.com:DataTables/Dist-DataTables-Bootstrap5.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		}, {
+			"type" : "package",
+			"package" : {
+				"name" : "datatables/datatables-buttons",
+				"version" : "3.2.0",
+				"type" : "drupal-library",
+				"source" : {
+					"url" : "git@github.com:DataTables/Dist-DataTables-Buttons.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		}, {
+			"type" : "package",
+			"package" : {
+				"name" : "datatables/datatables-buttons-bs5",
+				"version" : "3.2.0",
+				"type" : "drupal-library",
+				"source" : {
+					"url" : "git@github.com:DataTables/Dist-DataTables-Buttons-Bootstrap5.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		}, {
+			"type" : "package",
+			"package" : {
+				"name" : "datatables/datatables-select",
+				"version" : "2.1.0",
+				"type" : "drupal-library",
+				"source" : {
+					"url" : "git@github.com:DataTables/Dist-DataTables-Select.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		}, {
+			"type" : "package",
+			"package" : {
+				"name" : "datatables/datatables-select-bs5",
+				"version" : "2.1.0",
+				"type" : "drupal-library",
+				"source" : {
+					"url" : "git@github.com:DataTables/Dist-DataTables-Select-Bootstrap5.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
 		}
 	],
 	"require" : {
 		"composer/installers": "^2.0",
 		"cweagans/composer-patches": "^1.7",
-		"datatables.net/datatables.net": "2.1.8",
-		"datatables.net/datatables.net-bs5": "^2.1",
-		"datatables.net/datatables.net-buttons-bs5": "3.2.0",
-		"datatables.net/datatables.net-select": "2.1.0",
-		"datatables.net/datatables.net-select-bs5": "^2.1",
+		"datatables/datatables-buttons": "^3.2",
+		"datatables/datatables-buttons-bs5": "^3.2",
+		"datatables/datatables-dist": "^2.1",
+		"datatables/datatables-dist-bs5": "^2.1",
+		"datatables/datatables-select": "^2.1",
+		"datatables/datatables-select-bs5": "^2.1",
 		"drupal/admin_toolbar": "^3.4",
 		"drupal/ajax_login_popup": "^2.0",
 		"drupal/book": "^2.0@alpha",
@@ -75,11 +160,11 @@
 		"drupal/redirect_after_login": "^3.0",
 		"drupal/remove_unused_files": "^2.1",
 		"drupal/twig_tweak": "^3.4",
-		"drupal/vendor_stream_wrapper": "^2.0",
 		"drupal/views_bulk_operations": "^4.2",
 		"drupal/webform": "^6.2",
 		"drush/drush": "^12.5",
 		"jackmoore/colorbox": "^1.6",
+		"marioizquierdo/jquery.serialize-json": "^3.2",
 		"oda/bootstrap_mmoda": "dev-d10-main",
 		"oda/mmoda": "dev-d10-main"
 	},
