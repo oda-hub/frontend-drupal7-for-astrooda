@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d32dd5f72d927d28a332adc6a251cec0",
+    "content-hash": "0aab01b634e1c981eb55beed38c2c8b3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5216,17 +5216,37 @@
             "time": "2024-11-10T11:32:49+00:00"
         },
         {
+            "name": "oda/datatables-editor",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.astro.unige.ch:oda/datatables-editor-2.git",
+                "reference": "main"
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "oda/form-validation",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.astro.unige.ch:oda/form-validation.git",
+                "reference": "main"
+            },
+            "type": "drupal-library"
+        },
+        {
             "name": "oda/mmoda",
             "version": "dev-d10-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oda-hub/mmoda-frontend-module.git",
-                "reference": "6e88f209929ca8c5fdc2ce83d3d864a77a4fcbfe"
+                "reference": "aa0efb44d1f0551b561b0c12f9c2bfd7ef0cf6fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oda-hub/mmoda-frontend-module/zipball/6e88f209929ca8c5fdc2ce83d3d864a77a4fcbfe",
-                "reference": "6e88f209929ca8c5fdc2ce83d3d864a77a4fcbfe",
+                "url": "https://api.github.com/repos/oda-hub/mmoda-frontend-module/zipball/aa0efb44d1f0551b561b0c12f9c2bfd7ef0cf6fc",
+                "reference": "aa0efb44d1f0551b561b0c12f9c2bfd7ef0cf6fc",
                 "shasum": ""
             },
             "type": "drupal-custom-module",
@@ -5254,7 +5274,7 @@
                 "source": "https://github.com/oda-hub/mmoda-frontend-module/tree/d10-main",
                 "issues": "https://github.com/oda-hub/mmoda-frontend-module/issues"
             },
-            "time": "2024-11-13T15:46:52+00:00"
+            "time": "2024-11-15T10:48:16+00:00"
         },
         {
             "name": "pear/archive_tar",
