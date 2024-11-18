@@ -896,3 +896,6 @@ $settings['config_sync_directory'] = '../config/global';
 global $content_directories;
 $content_directories['sync'] = $app_root.'/../content/sync';
 
+# Path + file name for MMODA CSV books export/import file
+$settings['mmoda_export_import_book_csv_file'] = $app_root.'/../content/book.csv';
+
