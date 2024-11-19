@@ -56,7 +56,7 @@ filters:
     status: true
     weight: 100
     settings:
-      default_view_mode: full
+      default_view_mode: colorbox
       allowed_view_modes:
         default: default
         colorbox: colorbox
