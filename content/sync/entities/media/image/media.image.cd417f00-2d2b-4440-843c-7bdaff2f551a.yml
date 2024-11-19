@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: cd417f00-2d2b-4440-843c-7bdaff2f551a
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T06:40:29+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: edit-source.png
+thumbnail:
+  -
+    target_id: 174
+    alt: 'Edit source'
+    title: null
+    width: 592
+    height: 463
+    target_type: file
+    target_uuid: 6b821934-34db-4e29-8e51-55f2778aba7f
+    url: 'http://default/sites/default/files/2024-11/edit-source.png'
+created:
+  -
+    value: '2024-11-19T06:40:29+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:40:29+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 174
+    alt: 'Edit source'
+    title: ''
+    width: 592
+    height: 463
+    target_type: file
+    target_uuid: 6b821934-34db-4e29-8e51-55f2778aba7f
+    url: 'http://default/sites/default/files/2024-11/edit-source.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

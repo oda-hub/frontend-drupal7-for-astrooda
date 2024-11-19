@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: cd581ec5-7e1e-408d-8f76-e50dcf10e4d3
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-18T14:39:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: frontendtoppanegw.png
+thumbnail:
+  -
+    target_id: 155
+    alt: 'MMODA common parameters'
+    title: null
+    width: 1222
+    height: 484
+    target_type: file
+    target_uuid: b7d58ce8-4358-40fe-be71-ca803fff838f
+    url: 'http://default/sites/default/files/2024-11/frontendtoppanegw.png'
+created:
+  -
+    value: '2024-11-18T14:39:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:39:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 155
+    alt: 'MMODA common parameters'
+    title: ''
+    width: 1222
+    height: 484
+    target_type: file
+    target_uuid: b7d58ce8-4358-40fe-be71-ca803fff838f
+    url: 'http://default/sites/default/files/2024-11/frontendtoppanegw.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 52f82e4a-8acf-41c6-8952-5b6a1869fff6
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-18T14:08:06+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: ready-lc0.png
+thumbnail:
+  -
+    target_id: 143
+    alt: 'LC ready'
+    title: null
+    width: 1848
+    height: 866
+    target_type: file
+    target_uuid: 6b9ae3b8-6972-44e2-97ea-88d3a0b7e9ef
+    url: 'http://default/sites/default/files/2024-11/ready-lc0.png'
+created:
+  -
+    value: '2024-11-18T14:08:06+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:08:06+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 143
+    alt: 'LC ready'
+    title: ''
+    width: 1848
+    height: 866
+    target_type: file
+    target_uuid: 6b9ae3b8-6972-44e2-97ea-88d3a0b7e9ef
+    url: 'http://default/sites/default/files/2024-11/ready-lc0.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

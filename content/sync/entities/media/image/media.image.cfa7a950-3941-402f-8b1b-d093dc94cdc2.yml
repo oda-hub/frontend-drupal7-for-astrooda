@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: cfa7a950-3941-402f-8b1b-d093dc94cdc2
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T09:00:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: polar-query.png
+thumbnail:
+  -
+    target_id: 193
+    alt: 'Polar Query'
+    title: null
+    width: 566
+    height: 689
+    target_type: file
+    target_uuid: a16ca44b-53fa-4238-9b3c-d1e772afd152
+    url: 'http://default/sites/default/files/2024-11/polar-query.png'
+created:
+  -
+    value: '2024-11-19T09:00:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:00:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 193
+    alt: 'Polar Query'
+    title: ''
+    width: 566
+    height: 689
+    target_type: file
+    target_uuid: a16ca44b-53fa-4238-9b3c-d1e772afd152
+    url: 'http://default/sites/default/files/2024-11/polar-query.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

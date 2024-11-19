@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 2bee61ff-53e8-4dba-9897-cdf1b4719983
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: jem-x-image.png
+uri:
+  -
+    value: 'public://2024-11/jem-x-image.png'
+    url: /sites/default/files/2024-11/jem-x-image.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 276976
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-19T09:07:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:07:19+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

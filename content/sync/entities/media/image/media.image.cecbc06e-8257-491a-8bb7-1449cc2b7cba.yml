@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: cecbc06e-8257-491a-8bb7-1449cc2b7cba
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T06:28:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: fitjemx.png
+thumbnail:
+  -
+    target_id: 170
+    alt: 'JEM-X Fit'
+    title: null
+    width: 850
+    height: 885
+    target_type: file
+    target_uuid: 69aa45c8-35c1-4b43-996d-b47da67044eb
+    url: 'http://default/sites/default/files/2024-11/fitjemx.png'
+created:
+  -
+    value: '2024-11-19T06:28:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:28:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 170
+    alt: 'JEM-X Fit'
+    title: ''
+    width: 850
+    height: 885
+    target_type: file
+    target_uuid: 69aa45c8-35c1-4b43-996d-b47da67044eb
+    url: 'http://default/sites/default/files/2024-11/fitjemx.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

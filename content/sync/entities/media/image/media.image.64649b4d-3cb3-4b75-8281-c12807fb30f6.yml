@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 64649b4d-3cb3-4b75-8281-c12807fb30f6
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T06:39:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: maxi-source-jem-x.png
+thumbnail:
+  -
+    target_id: 173
+    alt: 'JEM-X maxi source'
+    title: null
+    width: 658
+    height: 423
+    target_type: file
+    target_uuid: 6a173bce-3d8d-46ab-9631-55b3525f3460
+    url: 'http://default/sites/default/files/2024-11/maxi-source-jem-x.png'
+created:
+  -
+    value: '2024-11-19T06:39:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:39:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 173
+    alt: 'JEM-X maxi source'
+    title: ''
+    width: 658
+    height: 423
+    target_type: file
+    target_uuid: 6a173bce-3d8d-46ab-9631-55b3525f3460
+    url: 'http://default/sites/default/files/2024-11/maxi-source-jem-x.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

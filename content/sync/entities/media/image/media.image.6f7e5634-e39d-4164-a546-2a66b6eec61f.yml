@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 6f7e5634-e39d-4164-a546-2a66b6eec61f
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T09:06:45+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: done-lemx.png
+thumbnail:
+  -
+    target_id: 200
+    alt: 'JEM-X image done'
+    title: null
+    width: 1097
+    height: 274
+    target_type: file
+    target_uuid: f3e212e4-fc93-4f51-afad-68ef94e6b5a0
+    url: 'http://default/sites/default/files/2024-11/done-lemx.png'
+created:
+  -
+    value: '2024-11-19T09:06:45+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:06:45+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 200
+    alt: 'JEM-X image done'
+    title: ''
+    width: 1097
+    height: 274
+    target_type: file
+    target_uuid: f3e212e4-fc93-4f51-afad-68ef94e6b5a0
+    url: 'http://default/sites/default/files/2024-11/done-lemx.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

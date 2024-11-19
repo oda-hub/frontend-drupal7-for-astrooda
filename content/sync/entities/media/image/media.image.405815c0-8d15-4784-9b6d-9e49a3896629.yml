@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 405815c0-8d15-4784-9b6d-9e49a3896629
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-18T14:35:26+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: photometry.png
+thumbnail:
+  -
+    target_id: 154
+    alt: Photometry
+    title: null
+    width: 711
+    height: 496
+    target_type: file
+    target_uuid: 323a7384-75d2-472a-b552-9bbe2e35595c
+    url: 'http://default/sites/default/files/2024-11/photometry.png'
+created:
+  -
+    value: '2024-11-18T14:35:26+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:35:26+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 154
+    alt: Photometry
+    title: ''
+    width: 711
+    height: 496
+    target_type: file
+    target_uuid: 323a7384-75d2-472a-b552-9bbe2e35595c
+    url: 'http://default/sites/default/files/2024-11/photometry.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

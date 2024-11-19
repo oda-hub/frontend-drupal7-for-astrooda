@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: f058f457-4a3d-4c02-b44e-cb15bb4eec76
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T09:07:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: jem-x-image.png
+thumbnail:
+  -
+    target_id: 201
+    alt: 'JEM-X image'
+    title: null
+    width: 945
+    height: 747
+    target_type: file
+    target_uuid: 2bee61ff-53e8-4dba-9897-cdf1b4719983
+    url: 'http://default/sites/default/files/2024-11/jem-x-image.png'
+created:
+  -
+    value: '2024-11-19T09:07:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:07:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 201
+    alt: 'JEM-X image'
+    title: ''
+    width: 945
+    height: 747
+    target_type: file
+    target_uuid: 2bee61ff-53e8-4dba-9897-cdf1b4719983
+    url: 'http://default/sites/default/files/2024-11/jem-x-image.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

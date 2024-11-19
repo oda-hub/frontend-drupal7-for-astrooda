@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 33be3e8f-6b5f-4525-a6bf-c8f3b39df89f
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T06:27:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: catalogjemx.png
+thumbnail:
+  -
+    target_id: 168
+    alt: 'JEM-X Catalog'
+    title: null
+    width: 758
+    height: 589
+    target_type: file
+    target_uuid: dd08f511-d3b5-406d-a749-839fad45b98f
+    url: 'http://default/sites/default/files/2024-11/catalogjemx.png'
+created:
+  -
+    value: '2024-11-19T06:27:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:27:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 168
+    alt: 'JEM-X Catalog'
+    title: ''
+    width: 758
+    height: 589
+    target_type: file
+    target_uuid: dd08f511-d3b5-406d-a749-839fad45b98f
+    url: 'http://default/sites/default/files/2024-11/catalogjemx.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

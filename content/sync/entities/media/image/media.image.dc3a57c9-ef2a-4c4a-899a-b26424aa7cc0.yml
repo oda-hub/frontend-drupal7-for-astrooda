@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: dc3a57c9-ef2a-4c4a-899a-b26424aa7cc0
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-18T14:07:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: email-lc0.png
+thumbnail:
+  -
+    target_id: 142
+    alt: 'LC Email'
+    title: null
+    width: 1039
+    height: 483
+    target_type: file
+    target_uuid: bd351f04-0903-4e35-acc2-6cf7e638c321
+    url: 'http://default/sites/default/files/2024-11/email-lc0.png'
+created:
+  -
+    value: '2024-11-18T14:07:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:07:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 142
+    alt: 'LC Email'
+    title: ''
+    width: 1039
+    height: 483
+    target_type: file
+    target_uuid: bd351f04-0903-4e35-acc2-6cf7e638c321
+    url: 'http://default/sites/default/files/2024-11/email-lc0.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

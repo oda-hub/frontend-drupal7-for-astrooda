@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-09-26T14:12:41+00:00'
+    value: '2024-11-19T09:23:26+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,50 +49,350 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: "<h2>The role of a catalog</h2>\r\n\r\n<p>It is important to understand that the INTEGRAL instruments are equipped with coded mask. It is tus necessary to specify a sky model to extract spectra or light curve. If you do not supply a catalog, the infrastructure will first produce an image and take all the source, with possible contamination from spurious detections. See the <a href=\"https://www.isdc.unige.ch/integral/download/osa/doc/11.1/osa_um_ibis/man.html\" target=\"_blank\">IBIS user manual</a> for details.</p>\r\n\r\n<p>It is thus strongly encouraged to prepare explicitly a <a href=\"ibis-isgri-image-new-source\">catalog through an image</a>, edit the catalog and then submit the spectral extraction. A common practice is to make an image from a subset of science windows by adjusting the \"Maximum number of ScWs\" parameter and then extract a spectrum from all science windows. In the platform, a defaul binning is applied to the spectrum.</p>\r\n\r\n<p>Note that all this can be done also using the python API, see <a href=\"https://gitlab.astro.unige.ch/integral/qla/maxij1803\" target=\"_blank\">this notebook</a>.</p>\r\n\r\n<h2>Spectral extraction from a catalog</h2>\r\n\r\n<p>Suppose that you have <a href=\"ibis-isgri-image-new-source\">succesfully extracted an image</a> and get to the point</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" href=\"/mmoda/sites/default/files/mmoda/help/integral-isgri/screenshot-frontendstagingodahubio-20210602-110838.png\"><img alt=\"\" class=\"image-large\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/screenshot-frontendstagingodahubio-20210602-110838.png?itok=cJ6u9KuC\" style=\"height:446px; width:480px\" /> </a></p>\r\n\r\n<p>you should remove the spurious \"NEW_1\" introduced by the OSA software by selecting it and click on \"delete\"</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" href=\"/mmoda/sites/default/files/mmoda/help/integral-isgri/screenshot-2021-06-02-11-10-33.png\"><img alt=\"\" class=\"image-large\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/screenshot-2021-06-02-11-10-33.png?itok=63O04jlt\" style=\"height:338px; width:480px\" /> </a></p>\r\n\r\n<p>The click on use catalog, select spectrum on the left and hit submit (Energy Min and Energy Max parameters are ignored).</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" href=\"/mmoda/sites/default/files/mmoda/help/integral-isgri/submit-spec.png\"><img alt=\"\" class=\"image-large\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/submit-spec.png?itok=_vS7dqPM\" style=\"height:480px; width:214px\" /> </a></p>\r\n\r\n<p>You will receive a message like the one reported here and wait for a second one with the report of completion.</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" href=\"/mmoda/sites/default/files/mmoda/help/integral-isgri/spectrum-email.png\"><img alt=\"\" class=\"image-large\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/spectrum-email.png?itok=WlaYsQbE\" style=\"height:233px; width:480px\" /> </a></p>\r\n\r\n<p>At his point you can click or the url, click on the \"done\" button of the popup and you will reach a page like</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" href=\"/mmoda/sites/default/files/mmoda/help/integral-isgri/spectrum-ready.png\"><img alt=\"\" class=\"image-large\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/spectrum-ready.png?itok=MGTBumRb\" style=\"height:464px; width:480px\" /> </a></p>\r\n\r\n<p>You can make an online fit for any source with a powerlaw (a known issue prevents to use other models) and download the spectrum to make your own local fit.</p>\r\n\r\n<p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called \"spectra-GX_5-1.tar.gz\".</p>\r\n\r\n<p>You will need to unpack the archive with the command</p>\r\n\r\n<p>tar xfz spectra-GX_5-1.tar.gz</p>\r\n\r\n<p>then navigate into the folder that is created and load the spectra with xspec.</p>\r\n\r\n<p>Go to the main&nbsp;<a href=\"mmoda\">MMODA Help</a></p>\r\n"
+    value: '<h2>The role of a catalog</h2><p>It is important to understand that the INTEGRAL instruments are equipped with coded mask. It is tus necessary to specify a sky model to extract spectra or light curve. If you do not supply a catalog, the infrastructure will first produce an image and take all the source, with possible contamination from spurious detections. See the <a href="https://www.isdc.unige.ch/integral/download/osa/doc/11.1/osa_um_ibis/man.html" target="_blank">IBIS user manual</a> for details.</p><p>It is thus strongly encouraged to prepare explicitly a <a href="ibis-isgri-image-new-source">catalog through an image</a>, edit the catalog and then submit the spectral extraction. A common practice is to make an image from a subset of science windows by adjusting the "Maximum number of ScWs" parameter and then extract a spectrum from all science windows. In the platform, a defaul binning is applied to the spectrum.</p><p>Note that all this can be done also using the python API, see <a href="https://gitlab.astro.unige.ch/integral/qla/maxij1803" target="_blank">this notebook</a>.</p><h2>Spectral extraction from a catalog</h2><p>Suppose that you have <a href="ibis-isgri-image-new-source">succesfully extracted an image</a> and get to the point</p><drupal-media data-entity-type="media" data-entity-uuid="fb1025c2-6613-43cd-a608-b14220301222">&nbsp;</drupal-media><p>you should remove the spurious "NEW_1" introduced by the OSA software by selecting it and click on "delete"</p><drupal-media data-entity-type="media" data-entity-uuid="18670a31-8a3c-458e-9580-04206cda66e9">&nbsp;</drupal-media><p>The click on use catalog, select spectrum on the left and hit submit (Energy Min and Energy Max parameters are ignored).</p><drupal-media data-entity-type="media" data-entity-uuid="9db02de5-2ecd-4d3d-aeb0-a08a0526566e">&nbsp;</drupal-media><p>You will receive a message like the one reported here and wait for a second one with the report of completion.</p><drupal-media data-entity-type="media" data-entity-uuid="4655c890-8d3e-419e-a100-615e5920673a">&nbsp;</drupal-media><p>At his point you can click or the url, click on the "done" button of the popup and you will reach a page like</p><drupal-media data-entity-type="media" data-entity-uuid="66acc964-8e92-45d2-910f-440c868c634c">&nbsp;</drupal-media><p>You can make an online fit for any source with a powerlaw (a known issue prevents to use other models) and download the spectrum to make your own local fit.</p><p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called "spectra-GX_5-1.tar.gz".</p><p>You will need to unpack the archive with the command</p><p>tar xfz spectra-GX_5-1.tar.gz</p><p>then navigate into the folder that is created and load the spectra with xspec.</p><p>Go to the main&nbsp;<a href="mmoda">MMODA Help</a></p>'
     format: full_html
-    processed: |
-      <h2>The role of a catalog</h2>
+    processed: |-
+      <h2>The role of a catalog</h2><p>It is important to understand that the INTEGRAL instruments are equipped with coded mask. It is tus necessary to specify a sky model to extract spectra or light curve. If you do not supply a catalog, the infrastructure will first produce an image and take all the source, with possible contamination from spurious detections. See the <a href="https://www.isdc.unige.ch/integral/download/osa/doc/11.1/osa_um_ibis/man.html" target="_blank">IBIS user manual</a> for details.</p><p>It is thus strongly encouraged to prepare explicitly a <a href="ibis-isgri-image-new-source">catalog through an image</a>, edit the catalog and then submit the spectral extraction. A common practice is to make an image from a subset of science windows by adjusting the "Maximum number of ScWs" parameter and then extract a spectrum from all science windows. In the platform, a defaul binning is applied to the spectrum.</p><p>Note that all this can be done also using the python API, see <a href="https://gitlab.astro.unige.ch/integral/qla/maxij1803" target="_blank">this notebook</a>.</p><h2>Spectral extraction from a catalog</h2><p>Suppose that you have <a href="ibis-isgri-image-new-source">succesfully extracted an image</a> and get to the point</p>
 
-      <p>It is important to understand that the INTEGRAL instruments are equipped with coded mask. It is tus necessary to specify a sky model to extract spectra or light curve. If you do not supply a catalog, the infrastructure will first produce an image and take all the source, with possible contamination from spurious detections. See the <a href="https://www.isdc.unige.ch/integral/download/osa/doc/11.1/osa_um_ibis/man.html" target="_blank">IBIS user manual</a> for details.</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
 
-      <p>It is thus strongly encouraged to prepare explicitly a <a href="ibis-isgri-image-new-source">catalog through an image</a>, edit the catalog and then submit the spectral extraction. A common practice is to make an image from a subset of science windows by adjusting the "Maximum number of ScWs" parameter and then extract a spectrum from all science windows. In the platform, a defaul binning is applied to the spectrum.</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
 
-      <p>Note that all this can be done also using the python API, see <a href="https://gitlab.astro.unige.ch/integral/qla/maxij1803" target="_blank">this notebook</a>.</p>
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
 
-      <h2>Spectral extraction from a catalog</h2>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <p>Suppose that you have <a href="ibis-isgri-image-new-source">succesfully extracted an image</a> and get to the point</p>
+      <a href="http://default/sites/default/files/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png" aria-label="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}" role="button" title="ISGRI light curve" data-colorbox-gallery="gallery-image-32-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-m52b9828CEI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}">
 
-      <p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/screenshot-frontendstagingodahubio-20210602-110838.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/screenshot-frontendstagingodahubio-20210602-110838.png?itok=cJ6u9KuC" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="image-large" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/screenshot-frontendstagingodahubio-20210602-110838.png?itok=cJ6u9KuC" style="height:446px; width:480px"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-m52b9828CEI" src="/sites/default/files/styles/large/public/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png?itok=oCcG-Wsb" width="480" height="446" alt="ISGRI light curve" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>you should remove the spurious "NEW_1" introduced by the OSA software by selecting it and click on "delete"</p>
 
-      <p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/screenshot-2021-06-02-11-10-33.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/screenshot-2021-06-02-11-10-33.png?itok=63O04jlt" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="image-large" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/screenshot-2021-06-02-11-10-33.png?itok=63O04jlt" style="height:338px; width:480px"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/ibis-isgri-catalog-01.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}" role="button" title="IBIS ISGRI catalog" data-colorbox-gallery="gallery-image-76-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-Zwj0E01AXMM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-Zwj0E01AXMM" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-catalog-01.png?itok=b78TxZaw" width="480" height="342" alt="IBIS ISGRI catalog" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>The click on use catalog, select spectrum on the left and hit submit (Energy Min and Energy Max parameters are ignored).</p>
 
-      <p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/submit-spec.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/submit-spec.png?itok=_vS7dqPM" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="image-large" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/submit-spec.png?itok=_vS7dqPM" style="height:480px; width:214px"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/submit-spec.png" aria-label="{&quot;alt&quot;:&quot;ISGRI spec submit&quot;}" role="button" title="ISGRI spec submit" data-colorbox-gallery="gallery-image-94-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-Kgyl3P0qeE8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI spec submit&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-Kgyl3P0qeE8" src="/sites/default/files/styles/large/public/2024-11/submit-spec.png?itok=Gl6Xfj7I" width="214" height="480" alt="ISGRI spec submit" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>You will receive a message like the one reported here and wait for a second one with the report of completion.</p>
 
-      <p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/spectrum-email.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/spectrum-email.png?itok=WlaYsQbE" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="image-large" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/spectrum-email.png?itok=WlaYsQbE" style="height:233px; width:480px"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/spectrum-email.png" aria-label="{&quot;alt&quot;:&quot;ISGRI spectrum email&quot;}" role="button" title="ISGRI spectrum email" data-colorbox-gallery="gallery-image-95-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-6J6kGMQLYok" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI spectrum email&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-6J6kGMQLYok" src="/sites/default/files/styles/large/public/2024-11/spectrum-email.png?itok=G_SZyRnR" width="480" height="233" alt="ISGRI spectrum email" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>At his point you can click or the url, click on the "done" button of the popup and you will reach a page like</p>
 
-      <p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/spectrum-ready.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/spectrum-ready.png?itok=MGTBumRb" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="image-large" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/spectrum-ready.png?itok=MGTBumRb" style="height:464px; width:480px"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
 
-      <p>You can make an online fit for any source with a powerlaw (a known issue prevents to use other models) and download the spectrum to make your own local fit.</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
 
-      <p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called "spectra-GX_5-1.tar.gz".</p>
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
 
-      <p>You will need to unpack the archive with the command</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <p>tar xfz spectra-GX_5-1.tar.gz</p>
+      <a href="http://default/sites/default/files/2024-11/spectrum-ready.png" aria-label="{&quot;alt&quot;:&quot;ISGRI spectrum ready&quot;}" role="button" title="ISGRI spectrum ready" data-colorbox-gallery="gallery-image-96-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-WnNmYmo2Ucg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI spectrum ready&quot;}">
 
-      <p>then navigate into the folder that is created and load the spectra with xspec.</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
-      <p>Go to the main&nbsp;<a href="mmoda">MMODA Help</a></p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-WnNmYmo2Ucg" src="/sites/default/files/styles/large/public/2024-11/spectrum-ready.png?itok=-Au7CwRV" width="480" height="464" alt="ISGRI spectrum ready" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>You can make an online fit for any source with a powerlaw (a known issue prevents to use other models) and download the spectrum to make your own local fit.</p><p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called "spectra-GX_5-1.tar.gz".</p><p>You will need to unpack the archive with the command</p><p>tar xfz spectra-GX_5-1.tar.gz</p><p>then navigate into the folder that is created and load the spectra with xspec.</p><p>Go to the main&nbsp;<a href="mmoda">MMODA Help</a></p>
     summary: ''
     summary_processed: ''
 _content_sync:

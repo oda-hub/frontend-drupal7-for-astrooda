@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: a596e73a-f5b3-46b6-9805-d8967eb61158
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-18T15:04:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: screenshot2021-06-22at1659250.png
+thumbnail:
+  -
+    target_id: 162
+    alt: 'Antares 06'
+    title: null
+    width: 1282
+    height: 440
+    target_type: file
+    target_uuid: 5053e7ae-d78e-4411-bfdd-0b383490ac86
+    url: 'http://default/sites/default/files/2024-11/screenshot2021-06-22at1659250.png'
+created:
+  -
+    value: '2024-11-18T15:04:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T15:04:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 162
+    alt: 'Antares 06'
+    title: ''
+    width: 1282
+    height: 440
+    target_type: file
+    target_uuid: 5053e7ae-d78e-4411-bfdd-0b383490ac86
+    url: 'http://default/sites/default/files/2024-11/screenshot2021-06-22at1659250.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

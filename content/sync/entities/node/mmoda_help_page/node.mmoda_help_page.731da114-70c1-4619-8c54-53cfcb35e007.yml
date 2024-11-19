@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-09-26T14:12:41+00:00'
+    value: '2024-11-19T06:42:26+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,34 +49,350 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: "<p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p>\r\n\r\n<p>Following the <a href=\"jem-x-image\">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is \"NEW SOURCE\", one should edit it and change a name (select the source with the tickmark at the left and click on \"edit\".</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalogjemx.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"373\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru\" width=\"480\" /> </a></p>\r\n\r\n<p>Click on save and <strong>then</strong> use catalog. YOU MUST UNSELECT the source before clicking \"Use Catalog\", otherwise only that source is used.</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/maxi-source-jem-x.png\"><img alt=\"\" class=\"image-large\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/maxi-source-jem-x.png?itok=4gprmYzt\" style=\"height:309px; width:480px\" /> </a></p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/edit-source.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"375\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source.png?itok=A7opZYnw\" width=\"480\" /> </a></p>\r\n\r\n<p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close<a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/maxi-source-jem-x.png\"> </a></p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/email-jem-x-lc.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"226\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/email-jem-x-lc.png?itok=9XrDreVX\" width=\"480\" /> </a></p>\r\n\r\n<p>Then you get to a page where you can view and download the light curve</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral-jem-x/jem-x-lc.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"333\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-lc.png?itok=ODmR0e2E\" width=\"480\" /> </a></p>\r\n\r\n<p><!-- THEME DEBUG --><!-- CALL: theme('insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- THEME DEBUG --><!-- CALL: theme('insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+    value: '<p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p><p>Following the <a href="jem-x-image">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is "NEW SOURCE", one should edit it and change a name (select the source with the tickmark at the left and click on "edit".</p><drupal-media data-entity-type="media" data-entity-uuid="33be3e8f-6b5f-4525-a6bf-c8f3b39df89f">&nbsp;</drupal-media><p>Click on save and <strong>then</strong> use catalog. YOU MUST UNSELECT the source before clicking "Use Catalog", otherwise only that source is used.</p><drupal-media data-entity-type="media" data-entity-uuid="64649b4d-3cb3-4b75-8281-c12807fb30f6">&nbsp;</drupal-media><drupal-media data-entity-type="media" data-entity-uuid="cd417f00-2d2b-4440-843c-7bdaff2f551a">&nbsp;</drupal-media><p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close</p><drupal-media data-entity-type="media" data-entity-uuid="65412336-88be-445d-b548-46eb92964e24">&nbsp;</drupal-media><p>Then you get to a page where you can view and download the light curve</p><drupal-media data-entity-type="media" data-entity-uuid="21a04058-b989-401c-a0b4-f391efa945bb">&nbsp;</drupal-media><p><!-- THEME DEBUG --><!-- CALL: theme(''insert_image'') --><!-- BEGIN OUTPUT from ''sites/all/modules/insert/templates/insert-image.tpl.php'' --><!-- END OUTPUT from ''sites/all/modules/insert/templates/insert-image.tpl.php'' --><!-- THEME DEBUG --><!-- CALL: theme(''insert_image'') --><!-- BEGIN OUTPUT from ''sites/all/modules/insert/templates/insert-image.tpl.php'' --><!-- END OUTPUT from ''sites/all/modules/insert/templates/insert-image.tpl.php'' -->&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>'
     format: full_html
-    processed: |
-      <p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p>
+    processed: |-
+      <p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p><p>Following the <a href="jem-x-image">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is "NEW SOURCE", one should edit it and change a name (select the source with the tickmark at the left and click on "edit".</p>
 
-      <p>Following the <a href="jem-x-image">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is "NEW SOURCE", one should edit it and change a name (select the source with the tickmark at the left and click on "edit".</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalogjemx.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="373" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" width="480"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/catalogjemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Catalog&quot;}" role="button" title="JEM-X Catalog" data-colorbox-gallery="gallery-image-60-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-wqThAjaqV1I" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Catalog&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-wqThAjaqV1I" src="/sites/default/files/styles/large/public/2024-11/catalogjemx.png?itok=2uCQTMHj" width="480" height="373" alt="JEM-X Catalog" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>Click on save and <strong>then</strong> use catalog. YOU MUST UNSELECT the source before clicking "Use Catalog", otherwise only that source is used.</p>
 
-      <p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/maxi-source-jem-x.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/maxi-source-jem-x.png?itok=4gprmYzt" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="image-large" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/maxi-source-jem-x.png?itok=4gprmYzt" style="height:309px; width:480px"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/edit-source.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source.png?itok=A7opZYnw" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="375" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source.png?itok=A7opZYnw" width="480"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
 
-      <p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close<a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/maxi-source-jem-x.png"> </a></p>
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/email-jem-x-lc.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/email-jem-x-lc.png?itok=9XrDreVX" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="226" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/email-jem-x-lc.png?itok=9XrDreVX" width="480"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/maxi-source-jem-x.png" aria-label="{&quot;alt&quot;:&quot;JEM-X maxi source&quot;}" role="button" title="JEM-X maxi source" data-colorbox-gallery="gallery-image-65-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-M10AQmkKiOE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X maxi source&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-M10AQmkKiOE" src="/sites/default/files/styles/large/public/2024-11/maxi-source-jem-x.png?itok=ViNpPcni" width="480" height="309" alt="JEM-X maxi source" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/edit-source.png" aria-label="{&quot;alt&quot;:&quot;Edit source&quot;}" role="button" title="Edit source" data-colorbox-gallery="gallery-image-66-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-dLrgf2Al4nE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Edit source&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-dLrgf2Al4nE" src="/sites/default/files/styles/large/public/2024-11/edit-source.png?itok=iG77Vq63" width="480" height="375" alt="Edit source" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/email-jem-x-lc.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Email LC&quot;}" role="button" title="JEM-X Email LC" data-colorbox-gallery="gallery-image-67-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-mwgmdianE90" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Email LC&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-mwgmdianE90" src="/sites/default/files/styles/large/public/2024-11/email-jem-x-lc.png?itok=RHqs5YZF" width="480" height="226" alt="JEM-X Email LC" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>Then you get to a page where you can view and download the light curve</p>
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jem-x-lc.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-lc.png?itok=ODmR0e2E" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="333" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-lc.png?itok=ODmR0e2E" width="480"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
 
-      <p><!-- THEME DEBUG --><!-- CALL: theme('insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- THEME DEBUG --><!-- CALL: theme('insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
 
-      <p>&nbsp;</p>
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
 
-      <p>&nbsp;</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/jem-x-lc.png" aria-label="{&quot;alt&quot;:&quot;JEM-X LC&quot;}" role="button" title="JEM-X LC" data-colorbox-gallery="gallery-image-68-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-VgrWrnWEYQA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X LC&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-VgrWrnWEYQA" src="/sites/default/files/styles/large/public/2024-11/jem-x-lc.png?itok=IYOo8XLX" width="480" height="333" alt="JEM-X LC" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p><!-- THEME DEBUG --><!-- CALL: theme('insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- THEME DEBUG --><!-- CALL: theme('insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/insert/templates/insert-image.tpl.php' -->&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
     summary: ''
     summary_processed: ''
 _content_sync:

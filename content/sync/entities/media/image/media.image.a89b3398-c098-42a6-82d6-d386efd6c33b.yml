@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: a89b3398-c098-42a6-82d6-d386efd6c33b
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-18T14:31:52+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: ngcimage.png
+thumbnail:
+  -
+    target_id: 149
+    alt: 'NCG image'
+    title: null
+    width: 841
+    height: 745
+    target_type: file
+    target_uuid: 4df67026-ff61-4369-b986-ef83efb185d6
+    url: 'http://default/sites/default/files/2024-11/ngcimage.png'
+created:
+  -
+    value: '2024-11-18T14:31:52+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:31:52+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 149
+    alt: 'NCG image'
+    title: ''
+    width: 841
+    height: 745
+    target_type: file
+    target_uuid: 4df67026-ff61-4369-b986-ef83efb185d6
+    url: 'http://default/sites/default/files/2024-11/ngcimage.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

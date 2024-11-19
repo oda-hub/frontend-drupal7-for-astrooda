@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: a45259a2-1650-41c4-968e-1aab29f9c088
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T09:01:58+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: requestslist.png
+thumbnail:
+  -
+    target_id: 195
+    alt: 'Polar request list'
+    title: null
+    width: 461
+    height: 338
+    target_type: file
+    target_uuid: 6f132c4a-d6cb-4253-89fc-161158729cca
+    url: 'http://default/sites/default/files/2024-11/requestslist.png'
+created:
+  -
+    value: '2024-11-19T09:01:58+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:01:58+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 195
+    alt: 'Polar request list'
+    title: ''
+    width: 461
+    height: 338
+    target_type: file
+    target_uuid: 6f132c4a-d6cb-4253-89fc-161158729cca
+    url: 'http://default/sites/default/files/2024-11/requestslist.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

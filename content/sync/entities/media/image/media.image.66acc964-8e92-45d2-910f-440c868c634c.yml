@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 66acc964-8e92-45d2-910f-440c868c634c
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T09:22:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: spectrum-ready.png
+thumbnail:
+  -
+    target_id: 204
+    alt: 'ISGRI spectrum ready'
+    title: null
+    width: 1808
+    height: 1748
+    target_type: file
+    target_uuid: 98718ddf-58d4-4479-828e-31decc48846c
+    url: 'http://default/sites/default/files/2024-11/spectrum-ready.png'
+created:
+  -
+    value: '2024-11-19T09:22:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:22:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 204
+    alt: 'ISGRI spectrum ready'
+    title: ''
+    width: 1808
+    height: 1748
+    target_type: file
+    target_uuid: 98718ddf-58d4-4479-828e-31decc48846c
+    url: 'http://default/sites/default/files/2024-11/spectrum-ready.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

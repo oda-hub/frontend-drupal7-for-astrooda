@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 8483fead-b3a2-45b8-b9a3-106a06745cfb
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-18T14:34:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: photometryparam.png
+thumbnail:
+  -
+    target_id: 153
+    alt: 'Photometry params'
+    title: null
+    width: 546
+    height: 513
+    target_type: file
+    target_uuid: 07f65f4d-b66e-4f8e-87c0-9b05a5bc4ec9
+    url: 'http://default/sites/default/files/2024-11/photometryparam.png'
+created:
+  -
+    value: '2024-11-18T14:34:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:34:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 153
+    alt: 'Photometry params'
+    title: ''
+    width: 546
+    height: 513
+    target_type: file
+    target_uuid: 07f65f4d-b66e-4f8e-87c0-9b05a5bc4ec9
+    url: 'http://default/sites/default/files/2024-11/photometryparam.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

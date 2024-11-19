@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 26fb1f80-c3cf-4d2c-94bf-13708dee66cf
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-18T14:34:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: catalog.png
+thumbnail:
+  -
+    target_id: 152
+    alt: Catalog
+    title: null
+    width: 834
+    height: 545
+    target_type: file
+    target_uuid: 7e26b1ec-8367-4f97-bc5c-669e9c25ec72
+    url: 'http://default/sites/default/files/2024-11/catalog.png'
+created:
+  -
+    value: '2024-11-18T14:34:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:34:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 152
+    alt: Catalog
+    title: ''
+    width: 834
+    height: 545
+    target_type: file
+    target_uuid: 7e26b1ec-8367-4f97-bc5c-669e9c25ec72
+    url: 'http://default/sites/default/files/2024-11/catalog.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

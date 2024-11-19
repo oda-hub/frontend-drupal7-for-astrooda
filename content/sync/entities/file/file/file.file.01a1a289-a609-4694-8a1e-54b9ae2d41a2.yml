@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 01a1a289-a609-4694-8a1e-54b9ae2d41a2
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: jemx-spec-done.png
+uri:
+  -
+    value: 'public://2024-11/jemx-spec-done.png'
+    url: /sites/default/files/2024-11/jemx-spec-done.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 17861
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-19T08:48:53+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T08:49:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

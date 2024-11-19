@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 57d5f970-31ad-485f-9128-a60e301681eb
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T06:27:33+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: catalogbox.png
+thumbnail:
+  -
+    target_id: 169
+    alt: 'JEM-X catalog box'
+    title: null
+    width: 448
+    height: 688
+    target_type: file
+    target_uuid: b2dbac2e-c0d9-473f-9af8-c81af86561a7
+    url: 'http://default/sites/default/files/2024-11/catalogbox.png'
+created:
+  -
+    value: '2024-11-19T06:27:33+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:27:33+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 169
+    alt: 'JEM-X catalog box'
+    title: ''
+    width: 448
+    height: 688
+    target_type: file
+    target_uuid: b2dbac2e-c0d9-473f-9af8-c81af86561a7
+    url: 'http://default/sites/default/files/2024-11/catalogbox.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

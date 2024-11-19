@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 4fafebcb-1c48-48d1-9e7e-3c029169c843
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T06:48:36+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: query1.png
+thumbnail:
+  -
+    target_id: 179
+    alt: 'Query 1'
+    title: null
+    width: 761
+    height: 249
+    target_type: file
+    target_uuid: 49436450-f049-441b-a6a0-caf86d8c331d
+    url: 'http://default/sites/default/files/2024-11/query1.png'
+created:
+  -
+    value: '2024-11-19T06:48:36+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:48:36+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 179
+    alt: 'Query 1'
+    title: ''
+    width: 761
+    height: 249
+    target_type: file
+    target_uuid: 49436450-f049-441b-a6a0-caf86d8c331d
+    url: 'http://default/sites/default/files/2024-11/query1.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 2283007f-f377-4960-9520-4c206b3b674a
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T06:24:44+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: topoda1.png
+thumbnail:
+  -
+    target_id: 163
+    alt: 'Top ODA 1'
+    title: null
+    width: 964
+    height: 422
+    target_type: file
+    target_uuid: fb03429e-e957-4481-95e2-00ec89dda89e
+    url: 'http://default/sites/default/files/2024-11/topoda1.png'
+created:
+  -
+    value: '2024-11-19T06:24:44+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:24:44+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 163
+    alt: 'Top ODA 1'
+    title: ''
+    width: 964
+    height: 422
+    target_type: file
+    target_uuid: fb03429e-e957-4481-95e2-00ec89dda89e
+    url: 'http://default/sites/default/files/2024-11/topoda1.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

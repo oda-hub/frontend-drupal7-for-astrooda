@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-09-26T14:12:41+00:00'
+    value: '2024-11-19T08:50:45+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,7 +49,7 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: '<p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p><drupal-media data-entity-type="media" data-entity-uuid="56c5772f-53ed-43f9-9eea-82b1c56a313f" data-view-mode="full">&nbsp;</drupal-media><p>Fowwing the <a href="jem-x-image">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is "NEW SOURCE", one should edit it and change a name (select the source with the tick-mark at the left and click on "edit".</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalogjemx.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="373" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" width="480"></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/edit-source1.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="375" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source1.png?itok=9eRXPIbh" width="480"></a></p><p>Click on save and <strong>then</strong> use catalog.</p><p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/submit-spec-jemx.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="242" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/submit-spec-jemx.png?itok=YwwJuly8" width="480"></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jem-x-spec-email.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="189" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-spec-email.png?itok=f9LCx0we" width="480"></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jemx-spec-done.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="120" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-spec-done.png?itok=VEBaTg8w" width="480"></a></p><p>Then you get to a page where you can fit and download the spectrum.</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalog-spectrum.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="329" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalog-spectrum.png?itok=nmkP9LD1" width="480"></a></p><p>You can view the fit with a power-law (no other models for the moment) and download it.</p><p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called "spectra-GX_5-1.tar.gz".</p><p>You will need to unpack the archive with the command</p><p>tar xfz spectra-GX_5-1.tar.gz</p><p>then navigate into the folder that is created and load the spectra with xspec or equivalent.</p>'
+    value: '<p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p><drupal-media data-entity-type="media" data-entity-uuid="56c5772f-53ed-43f9-9eea-82b1c56a313f" data-view-mode="full">&nbsp;</drupal-media><p>Fowwing the <a href="jem-x-image">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is "NEW SOURCE", one should edit it and change a name (select the source with the tick-mark at the left and click on "edit".</p><drupal-media data-entity-type="media" data-entity-uuid="33be3e8f-6b5f-4525-a6bf-c8f3b39df89f">&nbsp;</drupal-media><drupal-media data-entity-type="media" data-entity-uuid="cd417f00-2d2b-4440-843c-7bdaff2f551a">&nbsp;</drupal-media><p>Click on save and <strong>then</strong> use catalog.</p><p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close</p><drupal-media data-entity-type="media" data-entity-uuid="180426c3-f430-4aa7-bbee-96985d25781f">&nbsp;</drupal-media><drupal-media data-entity-type="media" data-entity-uuid="6755d162-dc6e-498f-bf80-ee1a7687a726">&nbsp;</drupal-media><drupal-media data-entity-type="media" data-entity-uuid="662c7c32-b042-451c-ace7-e2abc85eca21">&nbsp;</drupal-media><p>Then you get to a page where you can fit and download the spectrum.</p><drupal-media data-entity-type="media" data-entity-uuid="48cafe13-e0c1-452c-ab0a-14d10c81a71d">&nbsp;</drupal-media><p>You can view the fit with a power-law (no other models for the moment) and download it.</p><p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called "spectra-GX_5-1.tar.gz".</p><p>You will need to unpack the archive with the command</p><p>tar xfz spectra-GX_5-1.tar.gz</p><p>then navigate into the folder that is created and load the spectra with xspec or equivalent.</p>'
     format: full_html
     processed: |-
       <p>To extract a spectrum, we first want to have an image in the same time range of the spectrum to derive a suitable catalog.</p>
@@ -63,7 +63,415 @@ body:
 
       <!-- END OUTPUT from 'core/themes/stable9/templates/content/media-embed-error.html.twig' -->
 
-      <p>Fowwing the <a href="jem-x-image">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is "NEW SOURCE", one should edit it and change a name (select the source with the tick-mark at the left and click on "edit".</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalogjemx.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="373" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalogjemx.png?itok=FSqcGsru" width="480"></a></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/edit-source1.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source1.png?itok=9eRXPIbh" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="375" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/edit-source1.png?itok=9eRXPIbh" width="480"></a></a></p><p>Click on save and <strong>then</strong> use catalog.</p><p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/submit-spec-jemx.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/submit-spec-jemx.png?itok=YwwJuly8" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="242" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/submit-spec-jemx.png?itok=YwwJuly8" width="480"></a></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jem-x-spec-email.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-spec-email.png?itok=f9LCx0we" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="189" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jem-x-spec-email.png?itok=f9LCx0we" width="480"></a></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/jemx-spec-done.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-spec-done.png?itok=VEBaTg8w" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="120" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/jemx-spec-done.png?itok=VEBaTg8w" width="480"></a></a></p><p>Then you get to a page where you can fit and download the spectrum.</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-jem-x/catalog-spectrum.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalog-spectrum.png?itok=nmkP9LD1" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="329" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-jem-x/catalog-spectrum.png?itok=nmkP9LD1" width="480"></a></a></p><p>You can view the fit with a power-law (no other models for the moment) and download it.</p><p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called "spectra-GX_5-1.tar.gz".</p><p>You will need to unpack the archive with the command</p><p>tar xfz spectra-GX_5-1.tar.gz</p><p>then navigate into the folder that is created and load the spectra with xspec or equivalent.</p>
+      <p>Fowwing the <a href="jem-x-image">JEM-X image thread</a>, we can see a catalog. Note that in this case, the name of a source is "NEW SOURCE", one should edit it and change a name (select the source with the tick-mark at the left and click on "edit".</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/catalogjemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Catalog&quot;}" role="button" title="JEM-X Catalog" data-colorbox-gallery="gallery-image-60-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-2lCgcaoOt5w" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Catalog&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-2lCgcaoOt5w" src="/sites/default/files/styles/large/public/2024-11/catalogjemx.png?itok=2uCQTMHj" width="480" height="373" alt="JEM-X Catalog" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/edit-source.png" aria-label="{&quot;alt&quot;:&quot;Edit source&quot;}" role="button" title="Edit source" data-colorbox-gallery="gallery-image-66-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-bI54zZNYRz4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Edit source&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-bI54zZNYRz4" src="/sites/default/files/styles/large/public/2024-11/edit-source.png?itok=iG77Vq63" width="480" height="375" alt="Edit source" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>Click on save and <strong>then</strong> use catalog.</p><p>You will receive an email like the following, after hitting on the URL, you will access the page with the pop-up and click on close</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/submit-spec-jemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Spec &quot;}" role="button" title="JEM-X Spec " data-colorbox-gallery="gallery-image-78-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-ybjcZcczEuQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Spec &quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-ybjcZcczEuQ" src="/sites/default/files/styles/large/public/2024-11/submit-spec-jemx.png?itok=EDe_oOKe" width="480" height="242" alt="JEM-X Spec " loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/jem-x-spec-email.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Spec email&quot;}" role="button" title="JEM-X Spec email" data-colorbox-gallery="gallery-image-79-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-YQTMIPc8c4M" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Spec email&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-YQTMIPc8c4M" src="/sites/default/files/styles/large/public/2024-11/jem-x-spec-email.png?itok=Hq-MplQC" width="480" height="189" alt="JEM-X Spec email" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/jemx-spec-done.png" aria-label="{&quot;alt&quot;:&quot;JEMX Spec processing done&quot;}" role="button" title="JEMX Spec processing done" data-colorbox-gallery="gallery-image-80-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-f2QJPW_cyFo" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEMX Spec processing done&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-f2QJPW_cyFo" src="/sites/default/files/styles/large/public/2024-11/jemx-spec-done.png?itok=guxsSicm" width="480" height="120" alt="JEMX Spec processing done" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>Then you get to a page where you can fit and download the spectrum.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/catalog-spectrum.png" aria-label="{&quot;alt&quot;:&quot;JEM-X catalog spectrum&quot;}" role="button" title="JEM-X catalog spectrum" data-colorbox-gallery="gallery-image-81-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-eaz0dw5WdbE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X catalog spectrum&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-eaz0dw5WdbE" src="/sites/default/files/styles/large/public/2024-11/catalog-spectrum.png?itok=rlVGQbTR" width="480" height="329" alt="JEM-X catalog spectrum" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>You can view the fit with a power-law (no other models for the moment) and download it.</p><p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called "spectra-GX_5-1.tar.gz".</p><p>You will need to unpack the archive with the command</p><p>tar xfz spectra-GX_5-1.tar.gz</p><p>then navigate into the folder that is created and load the spectra with xspec or equivalent.</p>
     summary: ''
     summary_processed: ''
 _content_sync:

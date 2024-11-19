@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: a16ca44b-53fa-4238-9b3c-d1e772afd152
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: polar-query.png
+uri:
+  -
+    value: 'public://2024-11/polar-query.png'
+    url: /sites/default/files/2024-11/polar-query.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 42183
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-19T09:00:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:01:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

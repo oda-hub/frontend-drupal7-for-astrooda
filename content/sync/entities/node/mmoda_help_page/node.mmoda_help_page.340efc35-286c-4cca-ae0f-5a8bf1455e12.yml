@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-10-01T09:16:15+00:00'
+    value: '2024-11-18T14:49:50+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -58,13 +58,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -85,9 +85,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/grb-selection.png" aria-label="{&quot;alt&quot;:&quot;grb-selection&quot;}" role="button" title="grb-selection" data-colorbox-gallery="gallery-image-23-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-niv4liZvVg8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;grb-selection&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +98,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/grb-selection.png?itok=a78wA-WT" width="480" height="163" alt="grb-selection" class="img-fluid image-style-large">
+      <img id="colorbox-niv4liZvVg8" src="/sites/default/files/styles/large/public/2024-10/grb-selection.png?itok=a78wA-WT" width="480" height="163" alt="grb-selection" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -105,9 +106,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -125,13 +126,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -152,9 +153,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/toppanel0.png" aria-label="{&quot;alt&quot;:&quot;toppanel&quot;}" role="button" title="toppanel" data-colorbox-gallery="gallery-image-5-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-2arsRMIjeRA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;toppanel&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -164,7 +166,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/toppanel0.png?itok=xaATUe-J" width="480" height="145" alt="toppanel" class="img-fluid image-style-large">
+      <img id="colorbox-2arsRMIjeRA" src="/sites/default/files/styles/large/public/2024-10/toppanel0.png?itok=xaATUe-J" width="480" height="145" alt="toppanel" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -172,9 +174,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -192,13 +194,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -219,9 +221,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/processingdone.png" aria-label="{&quot;alt&quot;:&quot;processingdone&quot;}" role="button" title="processingdone" data-colorbox-gallery="gallery-image-25-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-6nLjG5yz_xM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;processingdone&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -231,7 +234,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/processingdone.png?itok=cs9FIo9T" width="480" height="159" alt="processingdone" class="img-fluid image-style-large">
+      <img id="colorbox-6nLjG5yz_xM" src="/sites/default/files/styles/large/public/2024-10/processingdone.png?itok=cs9FIo9T" width="480" height="159" alt="processingdone" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -239,9 +242,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -259,13 +262,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -286,9 +289,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/spi-acs.png" aria-label="{&quot;alt&quot;:&quot;spi-acs&quot;}" role="button" title="spi-acs" data-colorbox-gallery="gallery-image-12-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-YLfd39QFeBg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;spi-acs&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -298,7 +302,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/spi-acs.png?itok=hw-dJKwG" width="433" height="480" alt="spi-acs" class="img-fluid image-style-large">
+      <img id="colorbox-YLfd39QFeBg" src="/sites/default/files/styles/large/public/2024-10/spi-acs.png?itok=hw-dJKwG" width="433" height="480" alt="spi-acs" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -306,9 +310,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -326,13 +330,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -353,9 +357,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/spi-acs-viewlc.png" aria-label="{&quot;alt&quot;:&quot;lc&quot;}" role="button" title="lc" data-colorbox-gallery="gallery-image-11-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-hDb9w9CDeNQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;lc&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -365,7 +370,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/spi-acs-viewlc.png?itok=q1xV4byw" width="480" height="273" alt="lc" class="img-fluid image-style-large">
+      <img id="colorbox-hDb9w9CDeNQ" src="/sites/default/files/styles/large/public/2024-10/spi-acs-viewlc.png?itok=q1xV4byw" width="480" height="273" alt="lc" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -373,9 +378,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -393,13 +398,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -420,9 +425,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/spi-acs-lc.png" aria-label="{&quot;alt&quot;:&quot;lc&quot;}" role="button" title="lc" data-colorbox-gallery="gallery-image-29-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox--YX7SPWN6xI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;lc&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -432,7 +438,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/spi-acs-lc.png?itok=6gy8VnjK" width="422" height="480" alt="lc" class="img-fluid image-style-large">
+      <img id="colorbox--YX7SPWN6xI" src="/sites/default/files/styles/large/public/2024-10/spi-acs-lc.png?itok=6gy8VnjK" width="422" height="480" alt="lc" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -440,9 +446,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -455,9 +461,9 @@ body:
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>By clicking on the "Download" button, you have a possibility to download the lightcurve in FITS and ROOT format for further analysis.</p><h2>Caveats / Known Issues</h2><p>A) if the given time range is inverted, the server issues no specific warning. It just says that there is no data for the given time range.</p>
-    summary: "<p>This page provides a short tutorial for the online analysis interface of SPI-ACS data.</p>\r\n"
+    summary: "This page provides a short tutorial for the online analysis interface of SPI-ACS data.\r\n"
     summary_processed: |
-      <p>This page provides a short tutorial for the online analysis interface of SPI-ACS data.</p>
+      This page provides a short tutorial for the online analysis interface of SPI-ACS data.
 _content_sync:
   entity_type: node
   entity_dependencies:

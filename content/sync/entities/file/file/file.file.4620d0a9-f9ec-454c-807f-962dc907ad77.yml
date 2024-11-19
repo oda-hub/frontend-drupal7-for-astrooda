@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 4620d0a9-f9ec-454c-807f-962dc907ad77
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: imageparam.png
+uri:
+  -
+    value: 'public://2024-11/imageparam.png'
+    url: /sites/default/files/2024-11/imageparam.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 30232
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-18T14:31:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:31:11+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

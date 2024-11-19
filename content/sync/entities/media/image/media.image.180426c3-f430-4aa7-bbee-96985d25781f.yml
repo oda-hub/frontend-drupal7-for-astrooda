@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 180426c3-f430-4aa7-bbee-96985d25781f
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T08:47:39+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: submit-spec-jemx.png
+thumbnail:
+  -
+    target_id: 186
+    alt: 'JEM-X Spec '
+    title: null
+    width: 1112
+    height: 560
+    target_type: file
+    target_uuid: 48e029e0-0a78-4bed-ba68-38657d1563ae
+    url: 'http://default/sites/default/files/2024-11/submit-spec-jemx.png'
+created:
+  -
+    value: '2024-11-19T08:47:39+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T08:47:39+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 186
+    alt: 'JEM-X Spec '
+    title: ''
+    width: 1112
+    height: 560
+    target_type: file
+    target_uuid: 48e029e0-0a78-4bed-ba68-38657d1563ae
+    url: 'http://default/sites/default/files/2024-11/submit-spec-jemx.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

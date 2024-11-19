@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 024039fa-6dde-4cbb-9304-181a88650d3d
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: screenshot2021-06-22at1656240.png
+uri:
+  -
+    value: 'public://2024-11/screenshot2021-06-22at1656240.png'
+    url: /sites/default/files/2024-11/screenshot2021-06-22at1656240.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 116102
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-18T15:04:15+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T15:04:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

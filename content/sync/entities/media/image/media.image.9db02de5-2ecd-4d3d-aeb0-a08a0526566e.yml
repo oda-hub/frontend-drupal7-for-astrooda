@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 9db02de5-2ecd-4d3d-aeb0-a08a0526566e
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T09:19:27+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: submit-spec.png
+thumbnail:
+  -
+    target_id: 202
+    alt: 'ISGRI spec submit'
+    title: null
+    width: 548
+    height: 1232
+    target_type: file
+    target_uuid: 91d74510-d4c5-4f28-9ac0-b278bd8cca72
+    url: 'http://default/sites/default/files/2024-11/submit-spec.png'
+created:
+  -
+    value: '2024-11-19T09:19:27+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:19:27+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 202
+    alt: 'ISGRI spec submit'
+    title: ''
+    width: 548
+    height: 1232
+    target_type: file
+    target_uuid: 91d74510-d4c5-4f28-9ac0-b278bd8cca72
+    url: 'http://default/sites/default/files/2024-11/submit-spec.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 2dc32df3-d4f8-4d62-b7fb-eacb05f575bc
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-18T15:01:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: upload-catalog.png
+thumbnail:
+  -
+    target_id: 156
+    alt: 'Upload catalog'
+    title: null
+    width: 526
+    height: 236
+    target_type: file
+    target_uuid: f193dc54-7a71-4c61-b08c-7718a23ad685
+    url: 'http://default/sites/default/files/2024-11/upload-catalog.png'
+created:
+  -
+    value: '2024-11-18T15:01:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T15:01:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 156
+    alt: 'Upload catalog'
+    title: ''
+    width: 526
+    height: 236
+    target_type: file
+    target_uuid: f193dc54-7a71-4c61-b08c-7718a23ad685
+    url: 'http://default/sites/default/files/2024-11/upload-catalog.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

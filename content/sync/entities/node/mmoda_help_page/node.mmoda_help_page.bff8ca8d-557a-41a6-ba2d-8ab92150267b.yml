@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-09-26T14:12:41+00:00'
+    value: '2024-11-19T08:55:02+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,43 +49,146 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: "<p>Near Real time data are available a few hours after an observation is performed. The best way to access them is using the python API, see for instance this <a href=\"https://gitlab.astro.unige.ch/integral/qla/maxij1803\" target=\"_blank\">preliminary analysis</a>.</p>\r\n\r\n<p>Note, however, that a special permission should be asked and accept the term and conditions for the usage of private data (no access to Russian data can be granted).</p>\r\n\r\n<p>We prepared basic video tutorial to perform for NRT data analysis with MMODA</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://youtu.be/SRu-SS-sX38\" target=\"_blank\">Extract an Image from NRT data</a></li>\r\n\t<li><a href=\"https://youtu.be/Ds6HzmvFQqE\" target=\"_blank\">Extract a spectrum</a> for the sources in the image</li>\r\n\t<li><a href=\"https://youtu.be/YdLzQ23RAf4\" target=\"_blank\">Inspect the spectrum</a></li>\r\n</ul>\r\n\r\n<p>and we show the basic steps below.</p>\r\n\r\n<p>Should you want to use the web interface, it is necessary to use a custom science window list with the .000 suffix, for instance</p>\r\n\r\n<pre>\r\n236100030010.000,236100040010.000,236100050010.000,236100060010.000,236100090010.000,236100100010.000,236100110010.000,236100120010.000</pre>\r\n\r\n<p>and copy it inside the dedicated box</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral/custom-lc.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"462\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/custom-lc.png?itok=WC3CN9pB\" width=\"480\" /> </a></p>\r\n\r\n<p>Alternatively, one can prepare a file with one scw per line and upload it after selecting \"Custom list in file\".</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/integral/customscwfile.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"480\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/customscwfile.png?itok=GxryTGvg\" width=\"366\" /> </a></p>\r\n\r\n<p>The file content is like:</p>\r\n\r\n<p>236100030010.000<br />\r\n236100040010.000<br />\r\n236100050010.000<br />\r\n236100060010.000<br />\r\n236100090010.000</p>\r\n"
+    value: '<p>Near Real time data are available a few hours after an observation is performed. The best way to access them is using the python API, see for instance this <a href="https://gitlab.astro.unige.ch/integral/qla/maxij1803" target="_blank">preliminary analysis</a>.</p><p>Note, however, that a special permission should be asked and accept the term and conditions for the usage of private data (no access to Russian data can be granted).</p><p>We prepared basic video tutorial to perform for NRT data analysis with MMODA</p><ul><li><a href="https://youtu.be/SRu-SS-sX38" target="_blank">Extract an Image from NRT data</a></li><li><a href="https://youtu.be/Ds6HzmvFQqE" target="_blank">Extract a spectrum</a> for the sources in the image</li><li><a href="https://youtu.be/YdLzQ23RAf4" target="_blank">Inspect the spectrum</a></li></ul><p>and we show the basic steps below.</p><p>Should you want to use the web interface, it is necessary to use a custom science window list with the .000 suffix, for instance</p><pre>236100030010.000,236100040010.000,236100050010.000,236100060010.000,236100090010.000,236100100010.000,236100110010.000,236100120010.000</pre><p>and copy it inside the dedicated box</p><drupal-media data-entity-type="media" data-entity-uuid="e48f09b0-83df-449c-a2b6-65dde9d31176">&nbsp;</drupal-media><p>Alternatively, one can prepare a file with one scw per line and upload it after selecting "Custom list in file".</p><drupal-media data-entity-type="media" data-entity-uuid="42464ca9-330d-423c-a53e-5d37bc44f5c0">&nbsp;</drupal-media><p>The file content is like:</p><p>236100030010.000<br>236100040010.000<br>236100050010.000<br>236100060010.000<br>236100090010.000</p>'
     format: full_html
-    processed: |
-      <p>Near Real time data are available a few hours after an observation is performed. The best way to access them is using the python API, see for instance this <a href="https://gitlab.astro.unige.ch/integral/qla/maxij1803" target="_blank">preliminary analysis</a>.</p>
+    processed: |-
+      <p>Near Real time data are available a few hours after an observation is performed. The best way to access them is using the python API, see for instance this <a href="https://gitlab.astro.unige.ch/integral/qla/maxij1803" target="_blank">preliminary analysis</a>.</p><p>Note, however, that a special permission should be asked and accept the term and conditions for the usage of private data (no access to Russian data can be granted).</p><p>We prepared basic video tutorial to perform for NRT data analysis with MMODA</p><ul><li><a href="https://youtu.be/SRu-SS-sX38" target="_blank">Extract an Image from NRT data</a></li><li><a href="https://youtu.be/Ds6HzmvFQqE" target="_blank">Extract a spectrum</a> for the sources in the image</li><li><a href="https://youtu.be/YdLzQ23RAf4" target="_blank">Inspect the spectrum</a></li></ul><p>and we show the basic steps below.</p><p>Should you want to use the web interface, it is necessary to use a custom science window list with the .000 suffix, for instance</p><pre>236100030010.000,236100040010.000,236100050010.000,236100060010.000,236100090010.000,236100100010.000,236100110010.000,236100120010.000</pre><p>and copy it inside the dedicated box</p>
 
-      <p>Note, however, that a special permission should be asked and accept the term and conditions for the usage of private data (no access to Russian data can be granted).</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
 
-      <p>We prepared basic video tutorial to perform for NRT data analysis with MMODA</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
 
-      <ul>
-      	<li><a href="https://youtu.be/SRu-SS-sX38" target="_blank">Extract an Image from NRT data</a></li>
-      	<li><a href="https://youtu.be/Ds6HzmvFQqE" target="_blank">Extract a spectrum</a> for the sources in the image</li>
-      	<li><a href="https://youtu.be/YdLzQ23RAf4" target="_blank">Inspect the spectrum</a></li>
-      </ul>
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
 
-      <p>and we show the basic steps below.</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <p>Should you want to use the web interface, it is necessary to use a custom science window list with the .000 suffix, for instance</p>
+      <a href="http://default/sites/default/files/2024-11/custom-lc.png" aria-label="{&quot;alt&quot;:&quot;Custom LC - ScWs&quot;}" role="button" title="Custom LC - ScWs" data-colorbox-gallery="gallery-image-82-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-vReFHTVZxww" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Custom LC - ScWs&quot;}">
 
-      <pre>
-      236100030010.000,236100040010.000,236100050010.000,236100060010.000,236100090010.000,236100100010.000,236100110010.000,236100120010.000</pre>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
-      <p>and copy it inside the dedicated box</p>
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral/custom-lc.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/custom-lc.png?itok=WC3CN9pB" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="462" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/custom-lc.png?itok=WC3CN9pB" width="480"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-vReFHTVZxww" src="/sites/default/files/styles/large/public/2024-11/custom-lc.png?itok=FoIlU_4J" width="480" height="462" alt="Custom LC - ScWs" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>Alternatively, one can prepare a file with one scw per line and upload it after selecting "Custom list in file".</p>
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/integral/customscwfile.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/customscwfile.png?itok=GxryTGvg" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="480" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral/customscwfile.png?itok=GxryTGvg" width="366"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
 
-      <p>The file content is like:</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
 
-      <p>236100030010.000<br>
-      236100040010.000<br>
-      236100050010.000<br>
-      236100060010.000<br>
-      236100090010.000</p>
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/customscwfile.png" aria-label="{&quot;alt&quot;:&quot;Custom ScW File&quot;}" role="button" title="Custom ScW File" data-colorbox-gallery="gallery-image-83-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-vE4S3ZWxTXY" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Custom ScW File&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-vE4S3ZWxTXY" src="/sites/default/files/styles/large/public/2024-11/customscwfile.png?itok=vRs5ZAhr" width="366" height="480" alt="Custom ScW File" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>The file content is like:</p><p>236100030010.000<br>236100040010.000<br>236100050010.000<br>236100060010.000<br>236100090010.000</p>
     summary: ''
     summary_processed: ''
 _content_sync:

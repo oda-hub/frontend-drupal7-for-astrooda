@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-09-26T14:12:41+00:00'
+    value: '2024-11-19T06:56:02+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,9 +49,486 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: '<h2>Fill coordinates from literature</h2><p>&nbsp;</p><p>I have seen in ATeL <a href="https://www.astronomerstelegram.org/?read=14588">#14588</a> and <a href="https://www.astronomerstelegram.org/?read=14589" target="_blank">#14589</a> we see that a source is detected at coordinates R.A. = 270.80 deg Dec = <strong>-</strong>29.80 deg.</p><p>We want to check if there are INTEGRAL results from 1 to 5 May 2021, so we insert these coordinate and the start and end time in the source query (the object name is not relevant here).</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/query1.png"><img class="image-large" style="height:157px;width:480px;" alt="" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/query1.png?itok=oBDIG08N"></a></p><p>We want to see if the source is detected in IBIS ISGRI, so we click on ISGRI tab and proceed.</p><h2>ISGRI image request (parameters)</h2><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/isgri-query1.png"><img class="image-large" style="height:480px;width:256px;" alt="" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/isgri-query1.png?itok=WzDhXiAe"></a></p><p>We first coose OSA 11.0, as data are after January 2016.</p><p>Then we have a search radius of 10 degrees to exploit the ISGRI field of view with limited artifacts.</p><p>We selected science windows from time range</p><p>We analyze at most 50 science windows : with login, we can choose up to 500.</p><p>Note that some data are private if one year has not passed since their distribution, so we select "All private". This is a serendipitous source, so data rights are not reserved. However, the user must comply with the <a href="https://www.isdc.unige.ch/integral/archive#NRT_CONS_data" target="_blank">terms and condition</a> of use and this will be possible only after approval of login ! For public data, login is not necessary, but encourages.</p><p>We then select a suitable energy range: here for discovery 28-40 keV is a good practice in our experience. Note that at the beginning of the mission, down to 20 keV could be selected.</p><p>Detection threshold can be left to 5 or raised, we discourage anything below 5.</p><p>Be sure that "image" is selected and hit "submit button. Soon after you will see a progress windows and will receive an email.</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/rprogress-image.png"><img class="image-large" style="height:356px;width:480px;" alt="" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/rprogress-image.png?itok=Deq6pO8d"></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/email.png"><img class="image-large" style="height:256px;width:480px;" alt="" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/email.png?itok=EyRZenN_"></a></p><p>Note that the email is received only with a login ! At this point, you can close the browser window and wait for a second email that will be sent when the product is ready. Three important points in the email:</p><ul class="rteindent1"><li>the url link allows you to inspect the status of your request at any time or retrieve the data when finished.</li><li>in case of issues you can contact us</li><li>if you are familiar with python, you can get the products also in a jupyter noteboon using the code snippet at the end of the email (not shown here).</li></ul><h1>Image and catalog inspection</h1><p>You will be able to see the image with a new source. You can check its coordinates by looking at the catalog (click on catalog). You will see that there are two new sources in this case. This is because one is detected in the mosaicked image and one possibly in a science window. You can delete one from the catalog by selecting it and clicking on delete. You can click then on "use catalog" to use this new catalog in spectrum extraction or light curve extraction.</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/image.png"><img class="image-large" style="height:415px;width:480px;" alt="" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/image.png?itok=W-2yNz4n"></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/catalog.png"><img class="image-large" style="height:342px;width:480px;" alt="" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/catalog.png?itok=LTVZ6LcV"></a></p><p>Nothe that if you click on "js9" yoou can see the image with coordinates, but it is not currently possible to visualize regions. To do that, you can save the catalog in a text format and convert it in <a href="http://ds9 region file," target="_blank">ds9 region file</a> and load it. Or you can download the image and do it locally.</p><p>This command ican be used to convert the catalog.txt text file to a ds9 region file to be loaded by js9 (In this example edit the catalog.txt to change NEW_1 into NEW 1 )</p><p><span style="font-family:Courier New,Courier,monospace;">echo "FK5" &gt; region.reg;awk ''{print "circle("$5 "d, " $6 "d, 0.5d) {\"text\" : \""$2 $3 "\"}" }'' catalog.txt &gt;&gt; region.reg</span></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/js9.png"><img class="image-large" style="height:480px;width:416px;" alt="" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/js9.png?itok=9mgkcjEF"></a></p><p>This thread can be reproduced using <a href="https://frontend.staging.odahub.io/cdci/mmoda/?src_name=4U+1700-377&amp;RA=270.80&amp;DEC=-29.80&amp;T1=2021-05-01&amp;T2=2021-05-05&amp;T_format=isot&amp;instrument=isgri&amp;osa_version=OSA11.0&amp;radius=10&amp;use_scws=no&amp;max_pointings=50&amp;integral_data_rights=all-private&amp;E1_keV=28&amp;E2_keV=40&amp;query_type=Real&amp;detection_threshold=5&amp;product_type=isgri_image&amp;query_status=new" target="_blank">this url</a>.</p><address><p>Go to the main <a href="mmoda">MMODA Help</a></p></address>'
+    value: '<h2>Fill coordinates from literature</h2><p>&nbsp;</p><p>I have seen in ATeL <a href="https://www.astronomerstelegram.org/?read=14588">#14588</a> and <a href="https://www.astronomerstelegram.org/?read=14589" target="_blank">#14589</a> we see that a source is detected at coordinates R.A. = 270.80 deg Dec = <strong>-</strong>29.80 deg.</p><p>We want to check if there are INTEGRAL results from 1 to 5 May 2021, so we insert these coordinate and the start and end time in the source query (the object name is not relevant here).</p><drupal-media data-entity-type="media" data-entity-uuid="4fafebcb-1c48-48d1-9e7e-3c029169c843">&nbsp;</drupal-media><p>We want to see if the source is detected in IBIS ISGRI, so we click on ISGRI tab and proceed.</p><h2>ISGRI image request (parameters)</h2><drupal-media data-entity-type="media" data-entity-uuid="3fe47b64-d9c1-482c-9572-3f6a652ca44a">&nbsp;</drupal-media><p>We first coose OSA 11.0, as data are after January 2016.</p><p>Then we have a search radius of 10 degrees to exploit the ISGRI field of view with limited artifacts.</p><p>We selected science windows from time range</p><p>We analyze at most 50 science windows : with login, we can choose up to 500.</p><p>Note that some data are private if one year has not passed since their distribution, so we select "All private". This is a serendipitous source, so data rights are not reserved. However, the user must comply with the <a href="https://www.isdc.unige.ch/integral/archive#NRT_CONS_data" target="_blank">terms and condition</a> of use and this will be possible only after approval of login ! For public data, login is not necessary, but encourages.</p><p>We then select a suitable energy range: here for discovery 28-40 keV is a good practice in our experience. Note that at the beginning of the mission, down to 20 keV could be selected.</p><p>Detection threshold can be left to 5 or raised, we discourage anything below 5.</p><p>Be sure that "image" is selected and hit "submit button. Soon after you will see a progress windows and will receive an email.</p><drupal-media data-entity-type="media" data-entity-uuid="af487140-090b-44ad-913d-91ed6da679b5">&nbsp;</drupal-media><drupal-media data-entity-type="media" data-entity-uuid="48efe565-0e32-4e99-bbf5-c44e54a4293d">&nbsp;</drupal-media><p>Note that the email is received only with a login ! At this point, you can close the browser window and wait for a second email that will be sent when the product is ready. Three important points in the email:</p><ul class="rteindent1"><li>the url link allows you to inspect the status of your request at any time or retrieve the data when finished.</li><li>in case of issues you can contact us</li><li>if you are familiar with python, you can get the products also in a jupyter noteboon using the code snippet at the end of the email (not shown here).</li></ul><h1>Image and catalog inspection</h1><p>You will be able to see the image with a new source. You can check its coordinates by looking at the catalog (click on catalog). You will see that there are two new sources in this case. This is because one is detected in the mosaicked image and one possibly in a science window. You can delete one from the catalog by selecting it and clicking on delete. You can click then on "use catalog" to use this new catalog in spectrum extraction or light curve extraction.</p><drupal-media data-entity-type="media" data-entity-uuid="de849f22-695c-49cd-a0a9-491007e17c05">&nbsp;</drupal-media><drupal-media data-entity-type="media" data-entity-uuid="18670a31-8a3c-458e-9580-04206cda66e9">&nbsp;</drupal-media><p>Nothe that if you click on "js9" yoou can see the image with coordinates, but it is not currently possible to visualize regions. To do that, you can save the catalog in a text format and convert it in <a href="http://ds9 region file," target="_blank">ds9 region file</a> and load it. Or you can download the image and do it locally.</p><p>This command ican be used to convert the catalog.txt text file to a ds9 region file to be loaded by js9 (In this example edit the catalog.txt to change NEW_1 into NEW 1 )</p><p><span style="font-family:Courier New,Courier,monospace;">echo "FK5" &gt; region.reg;awk ''{print "circle("$5 "d, " $6 "d, 0.5d) {\"text\" : \""$2 $3 "\"}" }'' catalog.txt &gt;&gt; region.reg</span></p><drupal-media data-entity-type="media" data-entity-uuid="4927ea66-9720-485c-bec4-1b48f7091947">&nbsp;</drupal-media><p>This thread can be reproduced using <a href="https://frontend.staging.odahub.io/cdci/mmoda/?src_name=4U+1700-377&amp;RA=270.80&amp;DEC=-29.80&amp;T1=2021-05-01&amp;T2=2021-05-05&amp;T_format=isot&amp;instrument=isgri&amp;osa_version=OSA11.0&amp;radius=10&amp;use_scws=no&amp;max_pointings=50&amp;integral_data_rights=all-private&amp;E1_keV=28&amp;E2_keV=40&amp;query_type=Real&amp;detection_threshold=5&amp;product_type=isgri_image&amp;query_status=new" target="_blank">this url</a>.</p><address><p>Go to the main <a href="mmoda">MMODA Help</a></p></address>'
     format: full_html
-    processed: '<h2>Fill coordinates from literature</h2><p>&nbsp;</p><p>I have seen in ATeL <a href="https://www.astronomerstelegram.org/?read=14588">#14588</a> and <a href="https://www.astronomerstelegram.org/?read=14589" target="_blank">#14589</a> we see that a source is detected at coordinates R.A. = 270.80 deg Dec = <strong>-</strong>29.80 deg.</p><p>We want to check if there are INTEGRAL results from 1 to 5 May 2021, so we insert these coordinate and the start and end time in the source query (the object name is not relevant here).</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/query1.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/query1.png?itok=oBDIG08N" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="image-large" style="height:157px;width:480px;" alt src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/query1.png?itok=oBDIG08N"></a></a></p><p>We want to see if the source is detected in IBIS ISGRI, so we click on ISGRI tab and proceed.</p><h2>ISGRI image request (parameters)</h2><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/isgri-query1.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/isgri-query1.png?itok=WzDhXiAe" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="image-large" style="height:480px;width:256px;" alt src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/isgri-query1.png?itok=WzDhXiAe"></a></a></p><p>We first coose OSA 11.0, as data are after January 2016.</p><p>Then we have a search radius of 10 degrees to exploit the ISGRI field of view with limited artifacts.</p><p>We selected science windows from time range</p><p>We analyze at most 50 science windows : with login, we can choose up to 500.</p><p>Note that some data are private if one year has not passed since their distribution, so we select "All private". This is a serendipitous source, so data rights are not reserved. However, the user must comply with the <a href="https://www.isdc.unige.ch/integral/archive#NRT_CONS_data" target="_blank">terms and condition</a> of use and this will be possible only after approval of login ! For public data, login is not necessary, but encourages.</p><p>We then select a suitable energy range: here for discovery 28-40 keV is a good practice in our experience. Note that at the beginning of the mission, down to 20 keV could be selected.</p><p>Detection threshold can be left to 5 or raised, we discourage anything below 5.</p><p>Be sure that "image" is selected and hit "submit button. Soon after you will see a progress windows and will receive an email.</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/rprogress-image.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/rprogress-image.png?itok=Deq6pO8d" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="image-large" style="height:356px;width:480px;" alt src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/rprogress-image.png?itok=Deq6pO8d"></a></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/email.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/email.png?itok=EyRZenN_" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="image-large" style="height:256px;width:480px;" alt src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/email.png?itok=EyRZenN_"></a></a></p><p>Note that the email is received only with a login ! At this point, you can close the browser window and wait for a second email that will be sent when the product is ready. Three important points in the email:</p><ul class="rteindent1"><li>the url link allows you to inspect the status of your request at any time or retrieve the data when finished.</li><li>in case of issues you can contact us</li><li>if you are familiar with python, you can get the products also in a jupyter noteboon using the code snippet at the end of the email (not shown here).</li></ul><h1>Image and catalog inspection</h1><p>You will be able to see the image with a new source. You can check its coordinates by looking at the catalog (click on catalog). You will see that there are two new sources in this case. This is because one is detected in the mosaicked image and one possibly in a science window. You can delete one from the catalog by selecting it and clicking on delete. You can click then on "use catalog" to use this new catalog in spectrum extraction or light curve extraction.</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/image.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/image.png?itok=W-2yNz4n" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="image-large" style="height:415px;width:480px;" alt src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/image.png?itok=W-2yNz4n"></a></a></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/catalog.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/catalog.png?itok=LTVZ6LcV" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="image-large" style="height:342px;width:480px;" alt src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/catalog.png?itok=LTVZ6LcV"></a></a></p><p>Nothe that if you click on "js9" yoou can see the image with coordinates, but it is not currently possible to visualize regions. To do that, you can save the catalog in a text format and convert it in <a href="http://ds9 region file," target="_blank">ds9 region file</a> and load it. Or you can download the image and do it locally.</p><p>This command ican be used to convert the catalog.txt text file to a ds9 region file to be loaded by js9 (In this example edit the catalog.txt to change NEW_1 into NEW 1 )</p><p><span style="font-family:Courier New,Courier,monospace;">echo "FK5" &gt; region.reg;awk ''{print "circle("$5 "d, " $6 "d, 0.5d) {\"text\" : \""$2 $3 "\"}" }'' catalog.txt &gt;&gt; region.reg</span></p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/integral-isgri/js9.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/js9.png?itok=9mgkcjEF" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="image-large" style="height:480px;width:416px;" alt src="/mmoda/sites/default/files/styles/large/public/mmoda/help/integral-isgri/js9.png?itok=9mgkcjEF"></a></a></p><p>This thread can be reproduced using <a href="https://frontend.staging.odahub.io/cdci/mmoda/?src_name=4U+1700-377&amp;RA=270.80&amp;DEC=-29.80&amp;T1=2021-05-01&amp;T2=2021-05-05&amp;T_format=isot&amp;instrument=isgri&amp;osa_version=OSA11.0&amp;radius=10&amp;use_scws=no&amp;max_pointings=50&amp;integral_data_rights=all-private&amp;E1_keV=28&amp;E2_keV=40&amp;query_type=Real&amp;detection_threshold=5&amp;product_type=isgri_image&amp;query_status=new" target="_blank">this url</a>.</p><address><p>Go to the main <a href="mmoda">MMODA Help</a></p></address>'
+    processed: |-
+      <h2>Fill coordinates from literature</h2><p>&nbsp;</p><p>I have seen in ATeL <a href="https://www.astronomerstelegram.org/?read=14588">#14588</a> and <a href="https://www.astronomerstelegram.org/?read=14589" target="_blank">#14589</a> we see that a source is detected at coordinates R.A. = 270.80 deg Dec = <strong>-</strong>29.80 deg.</p><p>We want to check if there are INTEGRAL results from 1 to 5 May 2021, so we insert these coordinate and the start and end time in the source query (the object name is not relevant here).</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/query1.png" aria-label="{&quot;alt&quot;:&quot;Query 1&quot;}" role="button" title="Query 1" data-colorbox-gallery="gallery-image-71-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-dKqTL4tX5L8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Query 1&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-dKqTL4tX5L8" src="/sites/default/files/styles/large/public/2024-11/query1.png?itok=YhaElxSa" width="480" height="157" alt="Query 1" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>We want to see if the source is detected in IBIS ISGRI, so we click on ISGRI tab and proceed.</p><h2>ISGRI image request (parameters)</h2>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/isgri-query1.png" aria-label="{&quot;alt&quot;:&quot;ISGRI query 1&quot;}" role="button" title="ISGRI query 1" data-colorbox-gallery="gallery-image-72-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-22OK0Wkf-0A" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI query 1&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-22OK0Wkf-0A" src="/sites/default/files/styles/large/public/2024-11/isgri-query1.png?itok=U-bhCOzX" width="256" height="480" alt="ISGRI query 1" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>We first coose OSA 11.0, as data are after January 2016.</p><p>Then we have a search radius of 10 degrees to exploit the ISGRI field of view with limited artifacts.</p><p>We selected science windows from time range</p><p>We analyze at most 50 science windows : with login, we can choose up to 500.</p><p>Note that some data are private if one year has not passed since their distribution, so we select "All private". This is a serendipitous source, so data rights are not reserved. However, the user must comply with the <a href="https://www.isdc.unige.ch/integral/archive#NRT_CONS_data" target="_blank">terms and condition</a> of use and this will be possible only after approval of login ! For public data, login is not necessary, but encourages.</p><p>We then select a suitable energy range: here for discovery 28-40 keV is a good practice in our experience. Note that at the beginning of the mission, down to 20 keV could be selected.</p><p>Detection threshold can be left to 5 or raised, we discourage anything below 5.</p><p>Be sure that "image" is selected and hit "submit button. Soon after you will see a progress windows and will receive an email.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/rprogress-image.png" aria-label="{&quot;alt&quot;:&quot;Progress image&quot;}" role="button" title="Progress image" data-colorbox-gallery="gallery-image-73-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-QgqpjrGLshw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Progress image&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-QgqpjrGLshw" src="/sites/default/files/styles/large/public/2024-11/rprogress-image.png?itok=qt1TT-Gk" width="480" height="356" alt="Progress image" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/email.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI Image Email&quot;}" role="button" title="IBIS ISGRI Image Email" data-colorbox-gallery="gallery-image-74-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-kY8GBKykRug" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI Image Email&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-kY8GBKykRug" src="/sites/default/files/styles/large/public/2024-11/email.png?itok=uiCvij0O" width="480" height="256" alt="IBIS ISGRI Image Email" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>Note that the email is received only with a login ! At this point, you can close the browser window and wait for a second email that will be sent when the product is ready. Three important points in the email:</p><ul class="rteindent1"><li>the url link allows you to inspect the status of your request at any time or retrieve the data when finished.</li><li>in case of issues you can contact us</li><li>if you are familiar with python, you can get the products also in a jupyter noteboon using the code snippet at the end of the email (not shown here).</li></ul><h1>Image and catalog inspection</h1><p>You will be able to see the image with a new source. You can check its coordinates by looking at the catalog (click on catalog). You will see that there are two new sources in this case. This is because one is detected in the mosaicked image and one possibly in a science window. You can delete one from the catalog by selecting it and clicking on delete. You can click then on "use catalog" to use this new catalog in spectrum extraction or light curve extraction.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/ibis-isgri-image-01.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI Image 01&quot;}" role="button" title="IBIS ISGRI Image 01" data-colorbox-gallery="gallery-image-75-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-5t6RyErXK68" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI Image 01&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-5t6RyErXK68" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-image-01.png?itok=w_gmU9jk" width="480" height="415" alt="IBIS ISGRI Image 01" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/ibis-isgri-catalog-01.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}" role="button" title="IBIS ISGRI catalog" data-colorbox-gallery="gallery-image-76-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-W4tnPTxaNVs" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-W4tnPTxaNVs" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-catalog-01.png?itok=b78TxZaw" width="480" height="342" alt="IBIS ISGRI catalog" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>Nothe that if you click on "js9" yoou can see the image with coordinates, but it is not currently possible to visualize regions. To do that, you can save the catalog in a text format and convert it in <a href="http://ds9 region file," target="_blank">ds9 region file</a> and load it. Or you can download the image and do it locally.</p><p>This command ican be used to convert the catalog.txt text file to a ds9 region file to be loaded by js9 (In this example edit the catalog.txt to change NEW_1 into NEW 1 )</p><p><span style="font-family:Courier New,Courier,monospace;">echo "FK5" &gt; region.reg;awk '{print "circle("$5 "d, " $6 "d, 0.5d) {\"text\" : \""$2 $3 "\"}" }' catalog.txt &gt;&gt; region.reg</span></p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/ibis-isgri-js9-01.png" aria-label="{&quot;alt&quot;:&quot;IBISI ISGRI JS9&quot;}" role="button" title="IBISI ISGRI JS9" data-colorbox-gallery="gallery-image-77-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-OHHapJ3NVeI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBISI ISGRI JS9&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-OHHapJ3NVeI" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-js9-01.png?itok=u7RVM9UD" width="416" height="480" alt="IBISI ISGRI JS9" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>This thread can be reproduced using <a href="https://frontend.staging.odahub.io/cdci/mmoda/?src_name=4U+1700-377&amp;RA=270.80&amp;DEC=-29.80&amp;T1=2021-05-01&amp;T2=2021-05-05&amp;T_format=isot&amp;instrument=isgri&amp;osa_version=OSA11.0&amp;radius=10&amp;use_scws=no&amp;max_pointings=50&amp;integral_data_rights=all-private&amp;E1_keV=28&amp;E2_keV=40&amp;query_type=Real&amp;detection_threshold=5&amp;product_type=isgri_image&amp;query_status=new" target="_blank">this url</a>.</p><address><p>Go to the main <a href="mmoda">MMODA Help</a></p></address>
     summary: ''
     summary_processed: ''
 _content_sync:

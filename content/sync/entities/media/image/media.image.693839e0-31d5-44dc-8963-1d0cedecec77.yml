@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 693839e0-31d5-44dc-8963-1d0cedecec77
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T06:44:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: mmoda-my-account.png
+thumbnail:
+  -
+    target_id: 177
+    alt: 'MMODA My Account'
+    title: null
+    width: 1883
+    height: 393
+    target_type: file
+    target_uuid: f9ef61c4-3ac8-41d5-b34d-6d43c9b371fd
+    url: 'http://default/sites/default/files/2024-11/mmoda-my-account.png'
+created:
+  -
+    value: '2024-11-19T06:44:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:44:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 177
+    alt: 'MMODA My Account'
+    title: ''
+    width: 1883
+    height: 393
+    target_type: file
+    target_uuid: f9ef61c4-3ac8-41d5-b34d-6d43c9b371fd
+    url: 'http://default/sites/default/files/2024-11/mmoda-my-account.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

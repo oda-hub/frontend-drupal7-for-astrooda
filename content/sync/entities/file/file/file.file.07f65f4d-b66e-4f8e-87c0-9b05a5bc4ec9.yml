@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 07f65f4d-b66e-4f8e-87c0-9b05a5bc4ec9
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: photometryparam.png
+uri:
+  -
+    value: 'public://2024-11/photometryparam.png'
+    url: /sites/default/files/2024-11/photometryparam.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 30818
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-18T14:34:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:34:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

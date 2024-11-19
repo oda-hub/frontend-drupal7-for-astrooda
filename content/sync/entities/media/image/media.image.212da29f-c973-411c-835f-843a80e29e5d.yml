@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 212da29f-c973-411c-835f-843a80e29e5d
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T09:01:26+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: processingdone.png
+thumbnail:
+  -
+    target_id: 194
+    alt: 'Polar processing done'
+    title: null
+    width: 1361
+    height: 452
+    target_type: file
+    target_uuid: 7ff2dfb4-4aca-4129-a7df-bc170bf35cb2
+    url: 'http://default/sites/default/files/2024-11/processingdone.png'
+created:
+  -
+    value: '2024-11-19T09:01:26+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:01:26+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 194
+    alt: 'Polar processing done'
+    title: ''
+    width: 1361
+    height: 452
+    target_type: file
+    target_uuid: 7ff2dfb4-4aca-4129-a7df-bc170bf35cb2
+    url: 'http://default/sites/default/files/2024-11/processingdone.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

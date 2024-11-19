@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-09-26T14:12:41+00:00'
+    value: '2024-11-18T15:05:03+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,46 +49,416 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: "<h1>Overview</h1>\r\n\r\n<p>This interface uses&nbsp;ANTARES public data from https://antares.in2p3.fr/publicdata2017.html. This data contain the directions of arrival of events detected by the ANTARES neu- trino telescope and used for point source searches from 2007 to 2017 [see G.Illuminati, PoS(ICRC2019)920].&nbsp;</p>\r\n\r\n<p>The data declination distribution is extracted from the dataset and its cumulative distribution is fitted with a sixth-degree polynomial in order to have a declination dependent estimation of the background from a specific direction and for a defined region of interest around that direction. The usage of this polynomial function avoids re-reading each time the data file to extract the number of background events coming from that region.&nbsp;A schematic representation of this background estimation production is given in the figure below</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1537410.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"308\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1537410.png?itok=Mi5tRskk\" width=\"480\" /> </a></p>\r\n\r\n<p>&nbsp;Given a user-defined declination&nbsp;δ&nbsp;and a user-defined radius of the region of interest (RoI) for the source, the values of the polynomial for&nbsp;δ&nbsp;−&nbsp;RoI&nbsp;and&nbsp;δ&nbsp;+&nbsp;RoI&nbsp;are estimated, and the difference between these two value is taken as the number of background events from the declination band containing&nbsp;δ. This number is scaled by the solid angle encompassed by the band to obtain a number of events per&nbsp;sr, and then scaled to the RoI size in&nbsp;sr&nbsp;so that the expected number of events from background in the RoI is obtained.&nbsp;</p>\r\n\r\n<p>The number of background events estimated with this computation is compared to the number of events that are found in the RoI in the real data using Feldman-Cousins statistics to obtain upper limit (and also if it is the case a lower limit) at 90% confidence&nbsp;level in terms of ”signal” events. This number of signal events is transformed to limits in terms of neutrino flux using the acceptance of ANTARES.&nbsp;The Acceptance is defined as: F<sub>1f</sub>*Acceptance<sub>1f</sub>=<em>n<sub>s</sub>,&nbsp;</em>for a single flavour (1f) analysis, where F<sub>1f</sub>&nbsp;is the single flavour signal flux producing&nbsp;<em>n<sub>s</sub></em>&nbsp;events in the sample.</p>\r\n\r\n<p>The acceptance is obtained for different spectral indexes, ranging from 1.5 to 3.0 in steps of 0.1 assuming an unbroken power-law spectrum. Acceptances are computed from the ANTARES official Monte Carlo set and are reported in units of&nbsp;10<sup>−8</sup>&nbsp;GeV<sup>1−γ</sup>&nbsp;cm<sup>2</sup>&nbsp;s&nbsp;in a lookup table.</p>\r\n\r\n<p>To extract upper limit on the flux of specific source, enter the source name in the top \"general\" parameter panel and click on \"resolve\" button to find the source coordinates using one of the commonly used astronomical name resolvers. Otherwise, it is posssible to directly enter the coordinates in the \"RA\" and \"DEC\" fields. If both source name and coordinates are given, the results will be extracted for the direciton given by the coordinates.</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1630000.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"191\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1630000.png?itok=mMqznuXw\" width=\"480\" /> </a></p>\r\n\r\n<p>N.B. The general parameter panel provides a possibility to spcify time interval for the analysis. The&nbsp;time information is currently not used. Only time-integrated upper limits for the full time 2007-2017 time span are calculated.&nbsp;</p>\r\n\r\n<p>Once the sky coordinates are chosen, there is one more parameter to specify in the \"ANTARES\" specific parameter field: the size of the RoI. This radius should in principle be close to the point spread function of ANTARES. The \"optimimal\" RoI radius is however not known in advance, it can be different for different sky directions, depending on the level of background. The current version of the online analysis interface does not take in to account the full point spread function model of ANTARES telescope and the resulting upper limits on the source flux depend on the choice of the RoI radius. This explains slight discrepancy of the resullting upper limits on fluxes of specific sources and the limits published in&nbsp;G.Illuminati, PoS(ICRC2019)920. Next version of the online analysis will include the account of the point spread function.&nbsp;</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1638560.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"480\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1638560.png?itok=0XgIP3LB\" width=\"458\" /> </a></p>\r\n\r\n<p>To launch the analysis, press \"Submit\" button. The result will be shown in the form of a plot:</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1651460.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"323\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1651460.png?itok=bg_EClWa\" width=\"480\" /> </a></p>\r\n\r\n<p>The plot represents an envelope of the upper limits on powerlaw-type spectra, in the sense that any powerlaw spectrum consistent with ANTARES data can at most be tangent to the envelope curve (cannot intersect it). The data plotted in the figure can be downloaded by pressing the \"Download\" button.</p>\r\n\r\n<p>The downloaded file is in FITS format. The first extension of the file is a table with the flux upper limit as a funciton of energy:</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1656240.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"480\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1656240.png?itok=X62xUVV7\" width=\"316\" /> </a></p>\r\n\r\n<p>It is possible also to load the table directly as an array into Python code. The Application Programmin Integrace (API) code that can be copy-n-pasted into Python code can be obtained pressing the \"API code\" button. This will copy the piece of code like</p>\r\n\r\n<p><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1659250.png\"><img alt=\"\" class=\"same-gallery image-large\" height=\"165\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1659250.png?itok=VxRyNj48\" width=\"480\" /> </a></p>\r\n\r\n<p>to the clipboard. Otherwise, it is also possible to reproduce the result with the specified analysis parameters through the URL that can be obtained by pressing the \"Share\" button.</p>\r\n"
+    value: '<h1>Overview</h1><p>This interface uses&nbsp;ANTARES public data from https://antares.in2p3.fr/publicdata2017.html. This data contain the directions of arrival of events detected by the ANTARES neu- trino telescope and used for point source searches from 2007 to 2017 [see G.Illuminati, PoS(ICRC2019)920].&nbsp;</p><p>The data declination distribution is extracted from the dataset and its cumulative distribution is fitted with a sixth-degree polynomial in order to have a declination dependent estimation of the background from a specific direction and for a defined region of interest around that direction. The usage of this polynomial function avoids re-reading each time the data file to extract the number of background events coming from that region.&nbsp;A schematic representation of this background estimation production is given in the figure below</p><drupal-media data-entity-type="media" data-entity-uuid="462921b7-8dda-433c-a952-3d248e59ec76">&nbsp;</drupal-media><p>&nbsp;Given a user-defined declination&nbsp;δ&nbsp;and a user-defined radius of the region of interest (RoI) for the source, the values of the polynomial for&nbsp;δ&nbsp;−&nbsp;RoI&nbsp;and&nbsp;δ&nbsp;+&nbsp;RoI&nbsp;are estimated, and the difference between these two value is taken as the number of background events from the declination band containing&nbsp;δ. This number is scaled by the solid angle encompassed by the band to obtain a number of events per&nbsp;sr, and then scaled to the RoI size in&nbsp;sr&nbsp;so that the expected number of events from background in the RoI is obtained.&nbsp;</p><p>The number of background events estimated with this computation is compared to the number of events that are found in the RoI in the real data using Feldman-Cousins statistics to obtain upper limit (and also if it is the case a lower limit) at 90% confidence&nbsp;level in terms of ”signal” events. This number of signal events is transformed to limits in terms of neutrino flux using the acceptance of ANTARES.&nbsp;The Acceptance is defined as: F<sub>1f</sub>*Acceptance<sub>1f</sub>=<em>n<sub>s</sub>,&nbsp;</em>for a single flavour (1f) analysis, where F<sub>1f</sub>&nbsp;is the single flavour signal flux producing&nbsp;<em>n<sub>s</sub></em>&nbsp;events in the sample.</p><p>The acceptance is obtained for different spectral indexes, ranging from 1.5 to 3.0 in steps of 0.1 assuming an unbroken power-law spectrum. Acceptances are computed from the ANTARES official Monte Carlo set and are reported in units of&nbsp;10<sup>−8</sup>&nbsp;GeV<sup>1−γ</sup>&nbsp;cm<sup>2</sup>&nbsp;s&nbsp;in a lookup table.</p><p>To extract upper limit on the flux of specific source, enter the source name in the top "general" parameter panel and click on "resolve" button to find the source coordinates using one of the commonly used astronomical name resolvers. Otherwise, it is posssible to directly enter the coordinates in the "RA" and "DEC" fields. If both source name and coordinates are given, the results will be extracted for the direciton given by the coordinates.</p><drupal-media data-entity-type="media" data-entity-uuid="78f79799-01e1-4ffe-84e0-da67c292407b">&nbsp;</drupal-media><p>N.B. The general parameter panel provides a possibility to spcify time interval for the analysis. The&nbsp;time information is currently not used. Only time-integrated upper limits for the full time 2007-2017 time span are calculated.&nbsp;</p><p>Once the sky coordinates are chosen, there is one more parameter to specify in the "ANTARES" specific parameter field: the size of the RoI. This radius should in principle be close to the point spread function of ANTARES. The "optimimal" RoI radius is however not known in advance, it can be different for different sky directions, depending on the level of background. The current version of the online analysis interface does not take in to account the full point spread function model of ANTARES telescope and the resulting upper limits on the source flux depend on the choice of the RoI radius. This explains slight discrepancy of the resullting upper limits on fluxes of specific sources and the limits published in&nbsp;G.Illuminati, PoS(ICRC2019)920. Next version of the online analysis will include the account of the point spread function.&nbsp;</p><drupal-media data-entity-type="media" data-entity-uuid="7c3d498d-47c2-4cd9-a408-f89a4d48e27e">&nbsp;</drupal-media><p>To launch the analysis, press "Submit" button. The result will be shown in the form of a plot:</p><drupal-media data-entity-type="media" data-entity-uuid="23caec2b-5e67-47d5-9734-f09f70aa5fc0">&nbsp;</drupal-media><p>The plot represents an envelope of the upper limits on powerlaw-type spectra, in the sense that any powerlaw spectrum consistent with ANTARES data can at most be tangent to the envelope curve (cannot intersect it). The data plotted in the figure can be downloaded by pressing the "Download" button.</p><p>The downloaded file is in FITS format. The first extension of the file is a table with the flux upper limit as a funciton of energy:</p><drupal-media data-entity-type="media" data-entity-uuid="558cf19c-13d2-4598-9c40-0931e102a940">&nbsp;</drupal-media><p>It is possible also to load the table directly as an array into Python code. The Application Programmin Integrace (API) code that can be copy-n-pasted into Python code can be obtained pressing the "API code" button. This will copy the piece of code like</p><drupal-media data-entity-type="media" data-entity-uuid="a596e73a-f5b3-46b6-9805-d8967eb61158">&nbsp;</drupal-media><p>to the clipboard. Otherwise, it is also possible to reproduce the result with the specified analysis parameters through the URL that can be obtained by pressing the "Share" button.</p>'
     format: full_html
-    processed: |
-      <h1>Overview</h1>
+    processed: |-
+      <h1>Overview</h1><p>This interface uses&nbsp;ANTARES public data from https://antares.in2p3.fr/publicdata2017.html. This data contain the directions of arrival of events detected by the ANTARES neu- trino telescope and used for point source searches from 2007 to 2017 [see G.Illuminati, PoS(ICRC2019)920].&nbsp;</p><p>The data declination distribution is extracted from the dataset and its cumulative distribution is fitted with a sixth-degree polynomial in order to have a declination dependent estimation of the background from a specific direction and for a defined region of interest around that direction. The usage of this polynomial function avoids re-reading each time the data file to extract the number of background events coming from that region.&nbsp;A schematic representation of this background estimation production is given in the figure below</p>
 
-      <p>This interface uses&nbsp;ANTARES public data from https://antares.in2p3.fr/publicdata2017.html. This data contain the directions of arrival of events detected by the ANTARES neu- trino telescope and used for point source searches from 2007 to 2017 [see G.Illuminati, PoS(ICRC2019)920].&nbsp;</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
 
-      <p>The data declination distribution is extracted from the dataset and its cumulative distribution is fitted with a sixth-degree polynomial in order to have a declination dependent estimation of the background from a specific direction and for a defined region of interest around that direction. The usage of this polynomial function avoids re-reading each time the data file to extract the number of background events coming from that region.&nbsp;A schematic representation of this background estimation production is given in the figure below</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1537410.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1537410.png?itok=Mi5tRskk" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="308" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1537410.png?itok=Mi5tRskk" width="480"></a> </a></p>
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
 
-      <p>&nbsp;Given a user-defined declination&nbsp;δ&nbsp;and a user-defined radius of the region of interest (RoI) for the source, the values of the polynomial for&nbsp;δ&nbsp;−&nbsp;RoI&nbsp;and&nbsp;δ&nbsp;+&nbsp;RoI&nbsp;are estimated, and the difference between these two value is taken as the number of background events from the declination band containing&nbsp;δ. This number is scaled by the solid angle encompassed by the band to obtain a number of events per&nbsp;sr, and then scaled to the RoI size in&nbsp;sr&nbsp;so that the expected number of events from background in the RoI is obtained.&nbsp;</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <p>The number of background events estimated with this computation is compared to the number of events that are found in the RoI in the real data using Feldman-Cousins statistics to obtain upper limit (and also if it is the case a lower limit) at 90% confidence&nbsp;level in terms of ”signal” events. This number of signal events is transformed to limits in terms of neutrino flux using the acceptance of ANTARES.&nbsp;The Acceptance is defined as: F<sub>1f</sub>*Acceptance<sub>1f</sub>=<em>n<sub>s</sub>,&nbsp;</em>for a single flavour (1f) analysis, where F<sub>1f</sub>&nbsp;is the single flavour signal flux producing&nbsp;<em>n<sub>s</sub></em>&nbsp;events in the sample.</p>
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1537410.png" aria-label="{&quot;alt&quot;:&quot;Antares 01&quot;}" role="button" title="Antares 01" data-colorbox-gallery="gallery-image-49-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-T_c8Gk7IDsU" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 01&quot;}">
 
-      <p>The acceptance is obtained for different spectral indexes, ranging from 1.5 to 3.0 in steps of 0.1 assuming an unbroken power-law spectrum. Acceptances are computed from the ANTARES official Monte Carlo set and are reported in units of&nbsp;10<sup>−8</sup>&nbsp;GeV<sup>1−γ</sup>&nbsp;cm<sup>2</sup>&nbsp;s&nbsp;in a lookup table.</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
-      <p>To extract upper limit on the flux of specific source, enter the source name in the top "general" parameter panel and click on "resolve" button to find the source coordinates using one of the commonly used astronomical name resolvers. Otherwise, it is posssible to directly enter the coordinates in the "RA" and "DEC" fields. If both source name and coordinates are given, the results will be extracted for the direciton given by the coordinates.</p>
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1630000.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1630000.png?itok=mMqznuXw" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="191" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1630000.png?itok=mMqznuXw" width="480"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-T_c8Gk7IDsU" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1537410.png?itok=oQc6kWV7" width="480" height="308" alt="Antares 01" loading="lazy" class="img-fluid image-style-large">
 
-      <p>N.B. The general parameter panel provides a possibility to spcify time interval for the analysis. The&nbsp;time information is currently not used. Only time-integrated upper limits for the full time 2007-2017 time span are calculated.&nbsp;</p>
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
-      <p>Once the sky coordinates are chosen, there is one more parameter to specify in the "ANTARES" specific parameter field: the size of the RoI. This radius should in principle be close to the point spread function of ANTARES. The "optimimal" RoI radius is however not known in advance, it can be different for different sky directions, depending on the level of background. The current version of the online analysis interface does not take in to account the full point spread function model of ANTARES telescope and the resulting upper limits on the source flux depend on the choice of the RoI radius. This explains slight discrepancy of the resullting upper limits on fluxes of specific sources and the limits published in&nbsp;G.Illuminati, PoS(ICRC2019)920. Next version of the online analysis will include the account of the point spread function.&nbsp;</p>
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1638560.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1638560.png?itok=0XgIP3LB" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="480" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1638560.png?itok=0XgIP3LB" width="458"></a> </a></p>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>&nbsp;Given a user-defined declination&nbsp;δ&nbsp;and a user-defined radius of the region of interest (RoI) for the source, the values of the polynomial for&nbsp;δ&nbsp;−&nbsp;RoI&nbsp;and&nbsp;δ&nbsp;+&nbsp;RoI&nbsp;are estimated, and the difference between these two value is taken as the number of background events from the declination band containing&nbsp;δ. This number is scaled by the solid angle encompassed by the band to obtain a number of events per&nbsp;sr, and then scaled to the RoI size in&nbsp;sr&nbsp;so that the expected number of events from background in the RoI is obtained.&nbsp;</p><p>The number of background events estimated with this computation is compared to the number of events that are found in the RoI in the real data using Feldman-Cousins statistics to obtain upper limit (and also if it is the case a lower limit) at 90% confidence&nbsp;level in terms of ”signal” events. This number of signal events is transformed to limits in terms of neutrino flux using the acceptance of ANTARES.&nbsp;The Acceptance is defined as: F<sub>1f</sub>*Acceptance<sub>1f</sub>=<em>n<sub>s</sub>,&nbsp;</em>for a single flavour (1f) analysis, where F<sub>1f</sub>&nbsp;is the single flavour signal flux producing&nbsp;<em>n<sub>s</sub></em>&nbsp;events in the sample.</p><p>The acceptance is obtained for different spectral indexes, ranging from 1.5 to 3.0 in steps of 0.1 assuming an unbroken power-law spectrum. Acceptances are computed from the ANTARES official Monte Carlo set and are reported in units of&nbsp;10<sup>−8</sup>&nbsp;GeV<sup>1−γ</sup>&nbsp;cm<sup>2</sup>&nbsp;s&nbsp;in a lookup table.</p><p>To extract upper limit on the flux of specific source, enter the source name in the top "general" parameter panel and click on "resolve" button to find the source coordinates using one of the commonly used astronomical name resolvers. Otherwise, it is posssible to directly enter the coordinates in the "RA" and "DEC" fields. If both source name and coordinates are given, the results will be extracted for the direciton given by the coordinates.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1630000.png" aria-label="{&quot;alt&quot;:&quot;Antares 02&quot;}" role="button" title="Antares 02" data-colorbox-gallery="gallery-image-50-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-PiXaPDYFoBc" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 02&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-PiXaPDYFoBc" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1630000.png?itok=EuuVPrdF" width="480" height="191" alt="Antares 02" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>N.B. The general parameter panel provides a possibility to spcify time interval for the analysis. The&nbsp;time information is currently not used. Only time-integrated upper limits for the full time 2007-2017 time span are calculated.&nbsp;</p><p>Once the sky coordinates are chosen, there is one more parameter to specify in the "ANTARES" specific parameter field: the size of the RoI. This radius should in principle be close to the point spread function of ANTARES. The "optimimal" RoI radius is however not known in advance, it can be different for different sky directions, depending on the level of background. The current version of the online analysis interface does not take in to account the full point spread function model of ANTARES telescope and the resulting upper limits on the source flux depend on the choice of the RoI radius. This explains slight discrepancy of the resullting upper limits on fluxes of specific sources and the limits published in&nbsp;G.Illuminati, PoS(ICRC2019)920. Next version of the online analysis will include the account of the point spread function.&nbsp;</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1638560.png" aria-label="{&quot;alt&quot;:&quot;Antares 03&quot;}" role="button" title="Antares 03" data-colorbox-gallery="gallery-image-51-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-Oge4GIl4tPw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 03&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-Oge4GIl4tPw" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1638560.png?itok=-qWUvyYE" width="458" height="480" alt="Antares 03" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>To launch the analysis, press "Submit" button. The result will be shown in the form of a plot:</p>
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1651460.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1651460.png?itok=bg_EClWa" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="323" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1651460.png?itok=bg_EClWa" width="480"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
 
-      <p>The plot represents an envelope of the upper limits on powerlaw-type spectra, in the sense that any powerlaw spectrum consistent with ANTARES data can at most be tangent to the envelope curve (cannot intersect it). The data plotted in the figure can be downloaded by pressing the "Download" button.</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
 
-      <p>The downloaded file is in FITS format. The first extension of the file is a table with the flux upper limit as a funciton of energy:</p>
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1656240.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1656240.png?itok=X62xUVV7" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="480" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1656240.png?itok=X62xUVV7" width="316"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1651460.png" aria-label="{&quot;alt&quot;:&quot;Antares 04&quot;}" role="button" title="Antares 04" data-colorbox-gallery="gallery-image-52-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-v2jK9FVLfsk" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 04&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-v2jK9FVLfsk" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1651460.png?itok=glXUbRLA" width="480" height="323" alt="Antares 04" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>The plot represents an envelope of the upper limits on powerlaw-type spectra, in the sense that any powerlaw spectrum consistent with ANTARES data can at most be tangent to the envelope curve (cannot intersect it). The data plotted in the figure can be downloaded by pressing the "Download" button.</p><p>The downloaded file is in FITS format. The first extension of the file is a table with the flux upper limit as a funciton of energy:</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1656240.png" aria-label="{&quot;alt&quot;:&quot;Antares 05&quot;}" role="button" title="Antares 05" data-colorbox-gallery="gallery-image-53-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-29IElE9f8ME" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 05&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-29IElE9f8ME" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1656240.png?itok=arzu1JTq" width="316" height="480" alt="Antares 05" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>It is possible also to load the table directly as an array into Python code. The Application Programmin Integrace (API) code that can be copy-n-pasted into Python code can be obtained pressing the "API code" button. This will copy the piece of code like</p>
 
-      <p><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/antares/screenshot2021-06-22at1659250.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1659250.png?itok=VxRyNj48" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" height="165" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/antares/screenshot2021-06-22at1659250.png?itok=VxRyNj48" width="480"></a> </a></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1659250.png" aria-label="{&quot;alt&quot;:&quot;Antares 06&quot;}" role="button" title="Antares 06" data-colorbox-gallery="gallery-image-54-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-SfbkISCtueo" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 06&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-SfbkISCtueo" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1659250.png?itok=I9dtT8Yx" width="480" height="165" alt="Antares 06" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
       <p>to the clipboard. Otherwise, it is also possible to reproduce the result with the specified analysis parameters through the URL that can be obtained by pressing the "Share" button.</p>
     summary: "<p>This page provides a short tutorial for the online analysis interface of ANTARES data.</p>\r\n"

@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: de849f22-695c-49cd-a0a9-491007e17c05
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T06:51:22+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: ibis-isgri-image-01.png
+thumbnail:
+  -
+    target_id: 183
+    alt: 'IBIS ISGRI Image 01'
+    title: null
+    width: 939
+    height: 811
+    target_type: file
+    target_uuid: 0ed74865-224e-469b-b355-108987fc88d6
+    url: 'http://default/sites/default/files/2024-11/ibis-isgri-image-01.png'
+created:
+  -
+    value: '2024-11-19T06:51:22+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:51:22+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 183
+    alt: 'IBIS ISGRI Image 01'
+    title: ''
+    width: 939
+    height: 811
+    target_type: file
+    target_uuid: 0ed74865-224e-469b-b355-108987fc88d6
+    url: 'http://default/sites/default/files/2024-11/ibis-isgri-image-01.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

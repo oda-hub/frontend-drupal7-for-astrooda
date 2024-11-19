@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: fde3510a-0da7-4243-98a5-a4406f213599
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-19T09:03:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: lightcurve0.png
+thumbnail:
+  -
+    target_id: 196
+    alt: 'Polar LC 01'
+    title: null
+    width: 523
+    height: 604
+    target_type: file
+    target_uuid: 22c81a6c-85bf-4027-8d86-1b90ada81e9d
+    url: 'http://default/sites/default/files/2024-11/lightcurve0.png'
+created:
+  -
+    value: '2024-11-19T09:03:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:03:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 196
+    alt: 'Polar LC 01'
+    title: ''
+    width: 523
+    height: 604
+    target_type: file
+    target_uuid: 22c81a6c-85bf-4027-8d86-1b90ada81e9d
+    url: 'http://default/sites/default/files/2024-11/lightcurve0.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

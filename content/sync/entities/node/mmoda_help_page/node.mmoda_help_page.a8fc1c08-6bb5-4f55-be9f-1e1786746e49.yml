@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-09-26T14:12:41+00:00'
+    value: '2024-11-18T15:33:57+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,18 +49,9 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: "<p>It is possible to extract a spectrum without passing from a catalog. The system will take care of making a mosaic image and extract sources from a catalog.</p>\r\n\r\n<p>However, this is not recommended, as there could be NEW fake sources that appear and slow down or even degrade the spectral quality.</p>\r\n\r\n<p>We give this example:</p>\r\n\r\n<p>We look for the Crab nebula and pulsar, so we type \"Crab\" and click on \"resolve\". Then, we select a date in which we know there are Crab observations (here we limit ourselves to one hour). Then, we select \"Spectrum\", put a minimum detection significance of 7 to reduce the number of fake detected sources in the field of a bright object and use an energy range from 30 to 50 that we know is less noisy. Finally, we click on \"submit\".</p>\r\n\r\n<p>&nbsp;</p>\r\n"
-    format: filtered_html
-    processed: |-
-      <p>It is possible to extract a spectrum without passing from a catalog. The system will take care of making a mosaic image and extract sources from a catalog.</p>
-
-      <p>However, this is not recommended, as there could be NEW fake sources that appear and slow down or even degrade the spectral quality.</p>
-
-      <p>We give this example:</p>
-
-      <p>We look for the Crab nebula and pulsar, so we type "Crab" and click on "resolve". Then, we select a date in which we know there are Crab observations (here we limit ourselves to one hour). Then, we select "Spectrum", put a minimum detection significance of 7 to reduce the number of fake detected sources in the field of a bright object and use an energy range from 30 to 50 that we know is less noisy. Finally, we click on "submit".</p>
-
-      <p>&nbsp;</p>
+    value: '<p>It is possible to extract a spectrum without passing from a catalog. The system will take care of making a mosaic image and extract sources from a catalog.</p><p>However, this is not recommended, as there could be NEW fake sources that appear and slow down or even degrade the spectral quality.</p><p>We give this example:</p><p>We look for the Crab nebula and pulsar, so we type "Crab" and click on "resolve". Then, we select a date in which we know there are Crab observations (here we limit ourselves to one hour). Then, we select "Spectrum", put a minimum detection significance of 7 to reduce the number of fake detected sources in the field of a bright object and use an energy range from 30 to 50 that we know is less noisy. Finally, we click on "submit".</p><p>&nbsp;</p>'
+    format: full_html
+    processed: '<p>It is possible to extract a spectrum without passing from a catalog. The system will take care of making a mosaic image and extract sources from a catalog.</p><p>However, this is not recommended, as there could be NEW fake sources that appear and slow down or even degrade the spectral quality.</p><p>We give this example:</p><p>We look for the Crab nebula and pulsar, so we type "Crab" and click on "resolve". Then, we select a date in which we know there are Crab observations (here we limit ourselves to one hour). Then, we select "Spectrum", put a minimum detection significance of 7 to reduce the number of fake detected sources in the field of a bright object and use an energy range from 30 to 50 that we know is less noisy. Finally, we click on "submit".</p><p>&nbsp;</p>'
     summary: ''
     summary_processed: ''
 _content_sync:

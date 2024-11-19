@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: bdb589d6-19f3-4027-9590-434ca734b629
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-18T14:33:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+name:
+  -
+    value: apicode.png
+thumbnail:
+  -
+    target_id: 150
+    alt: 'API code'
+    title: null
+    width: 691
+    height: 573
+    target_type: file
+    target_uuid: 6fd91b0e-7d2d-4400-90ff-ab0825da37d5
+    url: 'http://default/sites/default/files/2024-11/apicode.png'
+created:
+  -
+    value: '2024-11-18T14:33:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:33:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 150
+    alt: 'API code'
+    title: ''
+    width: 691
+    height: 573
+    target_type: file
+    target_uuid: 6fd91b0e-7d2d-4400-90ff-ab0825da37d5
+    url: 'http://default/sites/default/files/2024-11/apicode.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-10-01T10:19:59+00:00'
+    value: '2024-11-18T14:41:44+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,7 +49,7 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: '<h2>Scope</h2><p>This interface provides the analysis of publicly available gravitational wave data of LIGO and VIRGO detectors available from https://gw-openscience.org. The data analysis workflows implemented as online services follow the methods of the tutorial analysis notebooks of https://www.gw-openscience.org/tutorials/ . The services provides a possibility to execute the tutorial notebooks for an arbitrary time interval&nbsp;<br>(with or without known gravitational wave events) and detector.&nbsp;</p><h2>Source query panel</h2><p>The general MMODA interface for all instruments has a top-level selection panel that allows to specify sky position of an astronomical source and/or time interval for the analysis. For the gravitational wave events, it is the time interval that is most important. It provides unique identification of known events. The top common parameter panel of the MMODA interface allows to directly enter the time interval in the dedicated parameter windows. &nbsp;</p><drupal-media data-entity-type="media" data-entity-uuid="070ccddf-93eb-4de5-985e-226ae6a1997a">&nbsp;</drupal-media><p><br>Alternatively, the time intervals for the known gravitational wave events can be found using the name resolver. The user can enter the name of the event (e.g. GW170817) and click "resolve" button. If the event is known to the resolver, the time interval of the event will appear in the time selection parameter windows. By default, the sky direction will not be resolved (because of the limited sky localisation capability of the gravitational wave detectors). The GW170817 event for which the direction is known is an exception.&nbsp;</p><h2>Skymap and catalog</h2><p>The interface allows to find known gravitational wave events within a specified time interval and visualise their sky localisations. This can be done by selecting the "skymap and catalog" in the side parameter panel. It is also possible to perform a cone search for events around a selected sky direction by selecting the "cone search" and specifying the angular width of the search cone. The event is treated as "in cone" if the contour of "Level threshold" level intersects with the given circle on the sky. Otherwise, an all-sky search can be performed: &nbsp;</p><drupal-media data-entity-type="media" data-entity-uuid="1bfef4b9-df6a-4bab-8a8c-43e21028da6f">&nbsp;</drupal-media><p><br>The analysis uses the skymaps from https://dcc.ligo.org/LIGO-P1800381/public for the first Gravitational Wave Transient Catalog (GWTC1) events (converted using (https://lscsoft.docs.ligo.org/ligo.skymap/tool/ligo_skymap_unflatten.html)) as well as "PublicationSamples" skymaps from https://dcc.ligo.org/LIGO-P2000223/public/ for GWTC2 events and "mixed-model" skymaps from https://zenodo.org/record/5546663 for GWTC3. The original skymap data are fits files with the probability density function (PDF) for event localisation in the (https://www.ivoa.net/documents/MOC/20190215/WD-MOC-1.1-20190215.pdf) format with the additional HEALPix layers representing the conditional mean and standard deviation of distance as a function of sky location. The online data analysis service presents the 2-d PDF in the form of a contour plot:</p><drupal-media data-entity-type="media" data-entity-uuid="2c6b5271-b406-4c49-a9fd-5dc1812b6db8">&nbsp;</drupal-media><p>The probability levels for the contour plot can be specified in the side parameter panel. The result display window has a number of buttons that allow to manipulate the skymap data products. The "Download" button provides a possibility to download the original skymap PDF for all the displayed events. The MMODA interface can be accessed from Python notebooks, using a an API. The API code for the skymap can be retreived by pressing the "API code" button. The result will be a piece of a Python code like this:</p><drupal-media data-entity-type="media" data-entity-uuid="ee1460b8-5cdb-46f0-839e-2ba2f43d6492">&nbsp;</drupal-media><p>It is possibly to directly deploy a Jupyter notebook with the API code to retreive the data product at one of the online notebook servers. The MMODA interface currently provides a possibility to run notebooks on Renku platform provided by Swiss Data Science Centre https://renkulab.io/. This can be done by pressing the "Publish on Renku" button.</p><p>The list of events displayed in the image can be retreived by pressing the "Catalog" button</p><drupal-media data-entity-type="media" data-entity-uuid="50af9d12-3222-47aa-856e-04d67ad79079">&nbsp;</drupal-media><p>The catalog table lists the event name, its GPS time as well as the masses of the merging bodies in the coalescing binary system.</p><h2>Time series data</h2><p>Apart from sky maps, it is possible to obtain strain time-series for different gravitational wave detectors. This can be done by selecting "Strain time series" button in the side parameter panel:<br>&nbsp;</p><drupal-media data-entity-type="media" data-entity-uuid="5f3ee866-5b1d-4c65-8ada-5f173fee1ac0">&nbsp;</drupal-media><p><br>This will display additional option for whitening of the time series data. It is possible to select the bandpass filter by specifying minimal and maximal frequency.&nbsp;<br>Pressing the "Submit" button will launch the online analysis and produce the result that will look like this:</p><drupal-media data-entity-type="media" data-entity-uuid="e32ab776-b8f6-4171-b823-a68cf0d9451f">&nbsp;</drupal-media><p>The result display includes two panels, with the upper plot showing the raw data and the bottom one showing the filtered and whitened data.&nbsp;</p><p>Similarly to the skymap display, the time series data can be downloaded by clicking on "Download" button.&nbsp;</p><h2>Spectrogram</h2><p>It is also possible to obtain the spectrogram: the time evolution of the frequency, obtained via Constant-Q transform of the data. To generate the spectrogram, select the "Spectrogram" in the side parameter panel and specify the lower and upper Q values:</p><drupal-media data-entity-type="media" data-entity-uuid="0d8e642d-1a2b-483d-b858-bd2f419d7308">&nbsp;</drupal-media><p>Press "Submit" button to generate the data product:</p><drupal-media data-entity-type="media" data-entity-uuid="09e4d5fc-acce-46ff-a8c5-1247fe9aaf8b">&nbsp;</drupal-media><p>Similarly to the sky map and time series, the spectrogram can be downloaded by pressing the "Download" button. It can be also retrieved using a Python API code that can be found by pressing the "API code" button. The API code can be also executed online by pressing the "Publish on Renku" button.</p>'
+    value: '<h2>Scope</h2><p>This interface provides the analysis of publicly available gravitational wave data of LIGO and VIRGO detectors available from https://gw-openscience.org. The data analysis workflows implemented as online services follow the methods of the tutorial analysis notebooks of https://www.gw-openscience.org/tutorials/ . The services provides a possibility to execute the tutorial notebooks for an arbitrary time interval&nbsp;<br>(with or without known gravitational wave events) and detector.&nbsp;</p><h2>Source query panel</h2><p>The general MMODA interface for all instruments has a top-level selection panel that allows to specify sky position of an astronomical source and/or time interval for the analysis. For the gravitational wave events, it is the time interval that is most important. It provides unique identification of known events. The top common parameter panel of the MMODA interface allows to directly enter the time interval in the dedicated parameter windows. &nbsp;</p><drupal-media data-entity-type="media" data-entity-uuid="cd581ec5-7e1e-408d-8f76-e50dcf10e4d3">&nbsp;</drupal-media><p><br>Alternatively, the time intervals for the known gravitational wave events can be found using the name resolver. The user can enter the name of the event (e.g. GW170817) and click "resolve" button. If the event is known to the resolver, the time interval of the event will appear in the time selection parameter windows. By default, the sky direction will not be resolved (because of the limited sky localisation capability of the gravitational wave detectors). The GW170817 event for which the direction is known is an exception.&nbsp;</p><h2>Skymap and catalog</h2><p>The interface allows to find known gravitational wave events within a specified time interval and visualise their sky localisations. This can be done by selecting the "skymap and catalog" in the side parameter panel. It is also possible to perform a cone search for events around a selected sky direction by selecting the "cone search" and specifying the angular width of the search cone. The event is treated as "in cone" if the contour of "Level threshold" level intersects with the given circle on the sky. Otherwise, an all-sky search can be performed: &nbsp;</p><drupal-media data-entity-type="media" data-entity-uuid="1bfef4b9-df6a-4bab-8a8c-43e21028da6f">&nbsp;</drupal-media><p><br>The analysis uses the skymaps from https://dcc.ligo.org/LIGO-P1800381/public for the first Gravitational Wave Transient Catalog (GWTC1) events (converted using (https://lscsoft.docs.ligo.org/ligo.skymap/tool/ligo_skymap_unflatten.html)) as well as "PublicationSamples" skymaps from https://dcc.ligo.org/LIGO-P2000223/public/ for GWTC2 events and "mixed-model" skymaps from https://zenodo.org/record/5546663 for GWTC3. The original skymap data are fits files with the probability density function (PDF) for event localisation in the (https://www.ivoa.net/documents/MOC/20190215/WD-MOC-1.1-20190215.pdf) format with the additional HEALPix layers representing the conditional mean and standard deviation of distance as a function of sky location. The online data analysis service presents the 2-d PDF in the form of a contour plot:</p><drupal-media data-entity-type="media" data-entity-uuid="2c6b5271-b406-4c49-a9fd-5dc1812b6db8">&nbsp;</drupal-media><p>The probability levels for the contour plot can be specified in the side parameter panel. The result display window has a number of buttons that allow to manipulate the skymap data products. The "Download" button provides a possibility to download the original skymap PDF for all the displayed events. The MMODA interface can be accessed from Python notebooks, using a an API. The API code for the skymap can be retreived by pressing the "API code" button. The result will be a piece of a Python code like this:</p><drupal-media data-entity-type="media" data-entity-uuid="ee1460b8-5cdb-46f0-839e-2ba2f43d6492">&nbsp;</drupal-media><p>It is possibly to directly deploy a Jupyter notebook with the API code to retreive the data product at one of the online notebook servers. The MMODA interface currently provides a possibility to run notebooks on Renku platform provided by Swiss Data Science Centre https://renkulab.io/. This can be done by pressing the "Publish on Renku" button.</p><p>The list of events displayed in the image can be retreived by pressing the "Catalog" button</p><drupal-media data-entity-type="media" data-entity-uuid="50af9d12-3222-47aa-856e-04d67ad79079">&nbsp;</drupal-media><p>The catalog table lists the event name, its GPS time as well as the masses of the merging bodies in the coalescing binary system.</p><h2>Time series data</h2><p>Apart from sky maps, it is possible to obtain strain time-series for different gravitational wave detectors. This can be done by selecting "Strain time series" button in the side parameter panel:<br>&nbsp;</p><drupal-media data-entity-type="media" data-entity-uuid="5f3ee866-5b1d-4c65-8ada-5f173fee1ac0">&nbsp;</drupal-media><p><br>This will display additional option for whitening of the time series data. It is possible to select the bandpass filter by specifying minimal and maximal frequency.&nbsp;<br>Pressing the "Submit" button will launch the online analysis and produce the result that will look like this:</p><drupal-media data-entity-type="media" data-entity-uuid="e32ab776-b8f6-4171-b823-a68cf0d9451f">&nbsp;</drupal-media><p>The result display includes two panels, with the upper plot showing the raw data and the bottom one showing the filtered and whitened data.&nbsp;</p><p>Similarly to the skymap display, the time series data can be downloaded by clicking on "Download" button.&nbsp;</p><h2>Spectrogram</h2><p>It is also possible to obtain the spectrogram: the time evolution of the frequency, obtained via Constant-Q transform of the data. To generate the spectrogram, select the "Spectrogram" in the side parameter panel and specify the lower and upper Q values:</p><drupal-media data-entity-type="media" data-entity-uuid="0d8e642d-1a2b-483d-b858-bd2f419d7308">&nbsp;</drupal-media><p>Press "Submit" button to generate the data product:</p><drupal-media data-entity-type="media" data-entity-uuid="09e4d5fc-acce-46ff-a8c5-1247fe9aaf8b">&nbsp;</drupal-media><p>Similarly to the sky map and time series, the spectrogram can be downloaded by pressing the "Download" button. It can be also retrieved using a Python API code that can be found by pressing the "API code" button. The API code can be also executed online by pressing the "Publish on Renku" button.</p>'
     format: full_html
     processed: |-
       <h2>Scope</h2><p>This interface provides the analysis of publicly available gravitational wave data of LIGO and VIRGO detectors available from https://gw-openscience.org. The data analysis workflows implemented as online services follow the methods of the tutorial analysis notebooks of https://www.gw-openscience.org/tutorials/ . The services provides a possibility to execute the tutorial notebooks for an arbitrary time interval&nbsp;<br>(with or without known gravitational wave events) and detector.&nbsp;</p><h2>Source query panel</h2><p>The general MMODA interface for all instruments has a top-level selection panel that allows to specify sky position of an astronomical source and/or time interval for the analysis. For the gravitational wave events, it is the time interval that is most important. It provides unique identification of known events. The top common parameter panel of the MMODA interface allows to directly enter the time interval in the dedicated parameter windows. &nbsp;</p>
@@ -58,13 +58,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -85,9 +85,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/frontendtoppanegw.png" aria-label="{&quot;alt&quot;:&quot;MMODA common parameters&quot;}" role="button" title="MMODA common parameters" data-colorbox-gallery="gallery-image-47-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-fbgzjee0_Cg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA common parameters&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +98,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/frontendtoppanegw.png?itok=R6UeCyn0" width="480" height="190" alt="frontendtoppanegw" class="img-fluid image-style-large">
+      <img id="colorbox-fbgzjee0_Cg" src="/sites/default/files/styles/large/public/2024-11/frontendtoppanegw.png?itok=I3VzizfU" width="480" height="190" alt="MMODA common parameters" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -105,9 +106,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -125,13 +126,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -152,9 +153,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/conesearchparam.png" aria-label="{&quot;alt&quot;:&quot;conesearchparam&quot;}" role="button" title="conesearchparam" data-colorbox-gallery="gallery-image-6-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-uA-owoI-1MA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;conesearchparam&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -164,7 +166,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/conesearchparam.png?itok=LUfJxIuU" width="448" height="480" alt="conesearchparam" class="img-fluid image-style-large">
+      <img id="colorbox-uA-owoI-1MA" src="/sites/default/files/styles/large/public/2024-10/conesearchparam.png?itok=LUfJxIuU" width="448" height="480" alt="conesearchparam" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -172,9 +174,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -192,13 +194,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -219,9 +221,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/skymap.png" aria-label="{&quot;alt&quot;:&quot;skymap&quot;}" role="button" title="skymap" data-colorbox-gallery="gallery-image-9-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-k3cLM6irz38" data-cbox-img-attrs="{&quot;alt&quot;:&quot;skymap&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -231,7 +234,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/skymap.png?itok=ufNl6VdT" width="480" height="266" alt="skymap" class="img-fluid image-style-large">
+      <img id="colorbox-k3cLM6irz38" src="/sites/default/files/styles/large/public/2024-10/skymap.png?itok=ufNl6VdT" width="480" height="266" alt="skymap" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -239,9 +242,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -259,13 +262,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -286,9 +289,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/apiskymap.png" aria-label="{&quot;alt&quot;:&quot;apiskymap&quot;}" role="button" title="apiskymap" data-colorbox-gallery="gallery-image-31-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-B3NyJ2USSC4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;apiskymap&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -298,7 +302,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/apiskymap.png?itok=GcU_gh4a" width="261" height="480" alt="apiskymap" class="img-fluid image-style-large">
+      <img id="colorbox-B3NyJ2USSC4" src="/sites/default/files/styles/large/public/2024-10/apiskymap.png?itok=GcU_gh4a" width="261" height="480" alt="apiskymap" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -306,9 +310,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -326,13 +330,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -353,9 +357,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/catalogview.png" aria-label="{&quot;alt&quot;:&quot;catalogview&quot;}" role="button" title="catalogview" data-colorbox-gallery="gallery-image-13-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-lChS-ykcuo0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;catalogview&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -365,7 +370,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/catalogview.png?itok=4e78xIXH" width="480" height="244" alt="catalogview" class="img-fluid image-style-large">
+      <img id="colorbox-lChS-ykcuo0" src="/sites/default/files/styles/large/public/2024-10/catalogview.png?itok=4e78xIXH" width="480" height="244" alt="catalogview" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -373,9 +378,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -393,13 +398,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -420,9 +425,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/strainparam.png" aria-label="{&quot;alt&quot;:&quot;strainparam&quot;}" role="button" title="strainparam" data-colorbox-gallery="gallery-image-14-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-j9wwjVlZ7e0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;strainparam&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -432,7 +438,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/strainparam.png?itok=qUoMWSyz" width="410" height="480" alt="strainparam" class="img-fluid image-style-large">
+      <img id="colorbox-j9wwjVlZ7e0" src="/sites/default/files/styles/large/public/2024-10/strainparam.png?itok=qUoMWSyz" width="410" height="480" alt="strainparam" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -440,9 +446,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -460,13 +466,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -487,9 +493,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/strain.png" aria-label="{&quot;alt&quot;:&quot;strain&quot;}" role="button" title="strain" data-colorbox-gallery="gallery-image-30-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-HGTd0ij9SSg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;strain&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -499,7 +506,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/strain.png?itok=iY2xtLds" width="480" height="474" alt="strain" class="img-fluid image-style-large">
+      <img id="colorbox-HGTd0ij9SSg" src="/sites/default/files/styles/large/public/2024-10/strain.png?itok=iY2xtLds" width="480" height="474" alt="strain" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -507,9 +514,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -527,13 +534,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -554,9 +561,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/spectrogrampanel.png" aria-label="{&quot;alt&quot;:&quot;spectrogrampanel&quot;}" role="button" title="spectrogrampanel" data-colorbox-gallery="gallery-image-3-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-LK4JT51X40Y" data-cbox-img-attrs="{&quot;alt&quot;:&quot;spectrogrampanel&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -566,7 +574,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/spectrogrampanel.png?itok=WGFEuAwB" width="316" height="480" alt="spectrogrampanel" class="img-fluid image-style-large">
+      <img id="colorbox-LK4JT51X40Y" src="/sites/default/files/styles/large/public/2024-10/spectrogrampanel.png?itok=WGFEuAwB" width="316" height="480" alt="spectrogrampanel" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -574,9 +582,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>
@@ -594,13 +602,13 @@ body:
       <!-- THEME HOOK: 'media' -->
       <!-- FILE NAME SUGGESTIONS:
          ▪️ media--source-image.html.twig
-         ▪️ media--image--full.html.twig
+         ▪️ media--image--colorbox.html.twig
          ▪️ media--image.html.twig
-         ▪️ media--full.html.twig
+         ▪️ media--colorbox.html.twig
          ✅ media.html.twig
       -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
-      <div class="media media--type-image media--view-mode-full">
+      <div class="media media--type-image media--view-mode-colorbox">
         
             
 
@@ -621,9 +629,10 @@ body:
                     <div class="field__item">
 
       <!-- THEME DEBUG -->
-      <!-- THEME HOOK: 'image_formatter' -->
-      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
-        
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-10/sgram.png" aria-label="{&quot;alt&quot;:&quot;sgram&quot;}" role="button" title="sgram" data-colorbox-gallery="gallery-image-2-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-c0cgTaPaLcI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;sgram&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -633,7 +642,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img loading="lazy" src="/sites/default/files/styles/large/public/2024-10/sgram.png?itok=4bOy8deY" width="480" height="383" alt="sgram" class="img-fluid image-style-large">
+      <img id="colorbox-c0cgTaPaLcI" src="/sites/default/files/styles/large/public/2024-10/sgram.png?itok=4bOy8deY" width="480" height="383" alt="sgram" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -641,9 +650,9 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
+      </a>
 
-
-      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-formatter.html.twig' -->
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
       </div>
                 </div>

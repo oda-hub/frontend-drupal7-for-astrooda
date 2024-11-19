@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-09-26T14:12:41+00:00'
+    value: '2024-11-19T06:44:51+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,28 +49,146 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: "<p>You can connect your MMODA account to GitHub by editing your account:</p>\r\n\r\n<p>Click on the button \"My Account\":</p>\r\n\r\n<p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/mmoda/mmoda-my-account.png\"><img alt=\"\" class=\"same-gallery image-large\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/mmoda/mmoda-my-account.png?itok=2mK1N6rd\" style=\"width: 480px; height: 100px;\" /> </a> <!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>\r\n\r\n<p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>\r\n\r\n<p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>\r\n\r\n<p>A new tab/window opens showing a tab \"Connected Accounts\": mmoda-github-connect_0.p</p>\r\n\r\n<p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class=\"colorbox colorbox-insert-image\" data-colorbox-gallery=\"gallery-all\" href=\"/mmoda/sites/default/files/mmoda/help/mmoda/mmoda-github-connect.png\"><img alt=\"\" class=\"same-gallery image-large\" src=\"/mmoda/sites/default/files/styles/large/public/mmoda/help/mmoda/mmoda-github-connect.png?itok=2mK1N6rd\" style=\"width: 480px; height: 383px;\" /> </a> <!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>\r\n\r\n<p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>\r\n\r\n<p>There you can connect your account by clicking on the button \"Connect with GitHub\"</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+    value: "<p>You can connect your MMODA account to GitHub by editing your account:</p><p>Click on the button \"My Account\":</p><drupal-media data-entity-type=\"media\" data-entity-uuid=\"693839e0-31d5-44dc-8963-1d0cedecec77\">&nbsp;</drupal-media><p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class=\"colorbox colorbox-insert-image\" href=\"/mmoda/sites/default/files/mmoda/help/mmoda/mmoda-my-account.png\" data-colorbox-gallery=\"gallery-all\">&nbsp;</a><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p><p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' -->&nbsp;</p><p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' -->&nbsp;</p><p>A new tab/window opens showing a tab \"Connected Accounts\": mmoda-github-connect_0.p</p><drupal-media data-entity-type=\"media\" data-entity-uuid=\"22c0161f-d4cd-499d-9813-6e95968d6db6\">&nbsp;</drupal-media><p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class=\"colorbox colorbox-insert-image\" href=\"/mmoda/sites/default/files/mmoda/help/mmoda/mmoda-github-connect.png\" data-colorbox-gallery=\"gallery-all\">&nbsp;</a><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p><p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' -->&nbsp;</p><p>There you can connect your account by clicking on the button \"Connect with GitHub\"</p><p>&nbsp;</p>"
     format: full_html
-    processed: |
-      <p>You can connect your MMODA account to GitHub by editing your account:</p>
+    processed: |-
+      <p>You can connect your MMODA account to GitHub by editing your account:</p><p>Click on the button "My Account":</p>
 
-      <p>Click on the button "My Account":</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
 
-      <p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/mmoda/mmoda-my-account.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/mmoda/mmoda-my-account.png?itok=2mK1N6rd" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/mmoda/mmoda-my-account.png?itok=2mK1N6rd" style="width: 480px; height: 100px;"></a> </a> <!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
 
-      <p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
 
-      <p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <p>A new tab/window opens showing a tab "Connected Accounts": mmoda-github-connect_0.p</p>
+      <a href="http://default/sites/default/files/2024-11/mmoda-my-account.png" aria-label="{&quot;alt&quot;:&quot;MMODA My Account&quot;}" role="button" title="MMODA My Account" data-colorbox-gallery="gallery-image-69-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-zIBCLzrBY0Q" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA My Account&quot;}">
 
-      <p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class="colorbox colorbox-insert-image" data-colorbox-gallery="gallery-all" href="/mmoda/sites/default/files/mmoda/help/mmoda/mmoda-github-connect.png"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/mmoda/mmoda-github-connect.png?itok=2mK1N6rd" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt class="same-gallery image-large" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/mmoda/mmoda-github-connect.png?itok=2mK1N6rd" style="width: 480px; height: 383px;"></a> </a> <!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
 
-      <p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p>
 
-      <p>There you can connect your account by clicking on the button "Connect with GitHub"</p>
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-zIBCLzrBY0Q" src="/sites/default/files/styles/large/public/2024-11/mmoda-my-account.png?itok=m9gG_2x-" width="480" height="100" alt="MMODA My Account" loading="lazy" class="img-fluid image-style-large">
 
-      <p>&nbsp;</p>
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/mmoda/mmoda-my-account.png" data-colorbox-gallery="gallery-all">&nbsp;</a><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p><p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' -->&nbsp;</p><p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' -->&nbsp;</p><p>A new tab/window opens showing a tab "Connected Accounts": mmoda-github-connect_0.p</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/mmoda-github-connect.png" aria-label="{&quot;alt&quot;:&quot;MMODA GitHub Connect&quot;}" role="button" title="MMODA GitHub Connect" data-colorbox-gallery="gallery-image-70-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-6EzZfx5N79o" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA GitHub Connect&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-6EzZfx5N79o" src="/sites/default/files/styles/large/public/2024-11/mmoda-github-connect.png?itok=tftSfT7A" width="480" height="383" alt="MMODA GitHub Connect" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/mmoda/mmoda-github-connect.png" data-colorbox-gallery="gallery-all">&nbsp;</a><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --></p><p><!-- THEME DEBUG --><!-- CALL: theme('colorbox_insert_image') --><!-- BEGIN OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' --><!-- END OUTPUT from 'sites/all/modules/mmoda/templates/colorbox-insert-image.tpl.php' -->&nbsp;</p><p>There you can connect your account by clicking on the button "Connect with GitHub"</p><p>&nbsp;</p>
     summary: ''
     summary_processed: ''
 _content_sync:
