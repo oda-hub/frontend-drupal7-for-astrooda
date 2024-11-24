@@ -54,9 +54,14 @@ module:
   migrate_drupal_ui: 0
   mimemail: 0
   mmoda: 0
+  mmoda_antares: 0
+  mmoda_crbeam: 0
+  mmoda_gw: 0
   mmoda_integral: 0
   mmoda_isgri: 0
   mmoda_jemx: 0
+  mmoda_legacysurvey: 0
+  mmoda_spi_acs: 0
   mysql: 0
   node: 0
   openid_connect: 0
