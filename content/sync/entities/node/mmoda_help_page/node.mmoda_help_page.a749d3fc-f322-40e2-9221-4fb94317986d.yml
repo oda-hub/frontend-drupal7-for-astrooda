@@ -33,7 +33,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-19T09:03:36+00:00'
+    value: '2024-11-25T15:56:41+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,7 +49,7 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: '<h1>Overview</h1><h4><strong>POLAR</strong> : a compact detector for Gamma Ray Bursts photon polarization measurements.</h4><p>Polar was launched in space September 15 2016 at 14:04 UTC and successfully ran until April 4 2017 at 00:46:36 UTC.</p><p>This page provides a short tutorial for the online analysis interface of POLAR data.</p><h2>Source query panel</h2><p>The top panel of the interface allows to define the parameters common to all instruments.</p><drupal-media data-entity-type="media" data-entity-uuid="877d2552-2570-4612-ac4b-4c59ac420b82">&nbsp;</drupal-media><h2>Instrument query panel</h2><p>Click on the "POLAR" button in the virtual desktop field to display POLAR specific parameters.</p><drupal-media data-entity-type="media" data-entity-uuid="cfa7a950-3941-402f-8b1b-d093dc94cdc2">&nbsp;</drupal-media><h1>Analysis Flow</h1><p>The analysis steps are described below:</p><h2>Query Data</h2><ol><li>Start analysis by entering the source name of interest in the field "Object name" of the top panel.</li><li>click on the "Resolve" button to trigger the resolver. If the object of interest is found, time range fields are filled. You may also wish to fill them manually. The RA and Dec fields are for now dummy. For GRB objects, select only the <em>Local</em> resolver. As Sesame does not know anything about GRB, it will just run for quite a long time without resulting anything.</li><li>Adapt / fill time interval for the data.<br>&nbsp;</li></ol><h2>Timing Analysis</h2><ol><li>Select "POLAR" on the instrument query panel.</li><li>Check the "Lightcurve" checkbox.</li><li>Set a possible energy range for the data selection. The default [0,2000] keV covers the full POLAR energy range.</li><li>Set the time bin width and unit for the lightcurve. Remind that the start and end time of the lightcurve are determined by the time limits set in the top multi-instrument panel.</li><li>The "Query Type" field must be set to <em>Real</em>.</li><li>Launch the lightcurve extraction by pressing the "Submit" button.</li></ol><p>A window pops up showing the status of the processing request. Note that according to the request, the processing time can be quite long. Click on "close" when done to close the window.</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/polar/processingdone.png" data-colorbox-gallery="gallery-all"><img class="same-gallery image-large" alt="" height="159" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/polar/processingdone.png?itok=UDZYG0Tw" width="480"></a></p><p>Once the request is processed, it is displayed in the workspace, together with other previous results.</p><drupal-media data-entity-type="media" data-entity-uuid="a45259a2-1650-41c4-968e-1aab29f9c088">&nbsp;</drupal-media><p>Click on the "View" button on the right of the source object to display the lightcurve.</p><drupal-media data-entity-type="media" data-entity-uuid="fde3510a-0da7-4243-98a5-a4406f213599">&nbsp;</drupal-media><p>By clicking on the "Download" button, you have a possibility to download the lightcurve in FITS and ROOT format for further analysis.</p><h2>Caveats / Known Issues</h2><p>A) if the given time range is inverted, the server issues no specific warning. It just says that there is no data for the given time range.</p>'
+    value: '<h1>Overview</h1><h4><strong>POLAR</strong> : a compact detector for Gamma Ray Bursts photon polarization measurements.</h4><p>Polar was launched in space September 15 2016 at 14:04 UTC and successfully ran until April 4 2017 at 00:46:36 UTC.</p><p>This page provides a short tutorial for the online analysis interface of POLAR data.</p><h2>Source query panel</h2><p>The top panel of the interface allows to define the parameters common to all instruments.</p><drupal-media data-entity-type="media" data-entity-uuid="877d2552-2570-4612-ac4b-4c59ac420b82">&nbsp;</drupal-media><h2>Instrument query panel</h2><p>Click on the "POLAR" button in the virtual desktop field to display POLAR specific parameters.</p><drupal-media data-entity-type="media" data-entity-uuid="cfa7a950-3941-402f-8b1b-d093dc94cdc2">&nbsp;</drupal-media><h1>Analysis Flow</h1><p>The analysis steps are described below:</p><h2>Query Data</h2><ol><li>Start analysis by entering the source name of interest in the field "Object name" of the top panel.</li><li>click on the "Resolve" button to trigger the resolver. If the object of interest is found, time range fields are filled. You may also wish to fill them manually. The RA and Dec fields are for now dummy. For GRB objects, select only the <em>Local</em> resolver. As Sesame does not know anything about GRB, it will just run for quite a long time without resulting anything.</li><li>Adapt / fill time interval for the data.<br>&nbsp;</li></ol><h2>Timing Analysis</h2><ol><li>Select "POLAR" on the instrument query panel.</li><li>Check the "Lightcurve" checkbox.</li><li>Set a possible energy range for the data selection. The default [0,2000] keV covers the full POLAR energy range.</li><li>Set the time bin width and unit for the lightcurve. Remind that the start and end time of the lightcurve are determined by the time limits set in the top multi-instrument panel.</li><li>The "Query Type" field must be set to <em>Real</em>.</li><li>Launch the lightcurve extraction by pressing the "Submit" button.</li></ol><p>A window pops up showing the status of the processing request. Note that according to the request, the processing time can be quite long. Click on "close" when done to close the window.</p><drupal-media data-entity-type="media" data-entity-uuid="212da29f-c973-411c-835f-843a80e29e5d">&nbsp;</drupal-media><p>Once the request is processed, it is displayed in the workspace, together with other previous results.</p><drupal-media data-entity-type="media" data-entity-uuid="a45259a2-1650-41c4-968e-1aab29f9c088">&nbsp;</drupal-media><p>Click on the "View" button on the right of the source object to display the lightcurve.</p><drupal-media data-entity-type="media" data-entity-uuid="fde3510a-0da7-4243-98a5-a4406f213599">&nbsp;</drupal-media><p>By clicking on the "Download" button, you have a possibility to download the lightcurve in FITS and ROOT format for further analysis.</p><h2>Caveats / Known Issues</h2><p>A) if the given time range is inverted, the server issues no specific warning. It just says that there is no data for the given time range.</p>'
     format: full_html
     processed: |-
       <h1>Overview</h1><h4><strong>POLAR</strong> : a compact detector for Gamma Ray Bursts photon polarization measurements.</h4><p>Polar was launched in space September 15 2016 at 14:04 UTC and successfully ran until April 4 2017 at 00:46:36 UTC.</p><p>This page provides a short tutorial for the online analysis interface of POLAR data.</p><h2>Source query panel</h2><p>The top panel of the interface allows to define the parameters common to all instruments.</p>
@@ -88,7 +88,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/grb-selection.png" aria-label="{&quot;alt&quot;:&quot;Polar GRB selection&quot;}" role="button" title="Polar GRB selection" data-colorbox-gallery="gallery-image-84-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-DJ1QB42ckg4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar GRB selection&quot;}">
+      <a href="http://default/sites/default/files/2024-11/grb-selection.png" aria-label="{&quot;alt&quot;:&quot;Polar GRB selection&quot;}" role="button" title="Polar GRB selection" data-colorbox-gallery="gallery-image-84-axlCgKXQqOo" class="colorbox" aria-controls="colorbox-mbdoqBsPz94" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar GRB selection&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -98,7 +98,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-DJ1QB42ckg4" src="/sites/default/files/styles/large/public/2024-11/grb-selection.png?itok=BLvTc1J3" width="480" height="163" alt="Polar GRB selection" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-mbdoqBsPz94" src="/sites/default/files/styles/large/public/2024-11/grb-selection.png?itok=BLvTc1J3" width="480" height="163" alt="Polar GRB selection" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -156,7 +156,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/polar-query.png" aria-label="{&quot;alt&quot;:&quot;Polar Query&quot;}" role="button" title="Polar Query" data-colorbox-gallery="gallery-image-85-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-NWChRD2KvQU" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar Query&quot;}">
+      <a href="http://default/sites/default/files/2024-11/polar-query.png" aria-label="{&quot;alt&quot;:&quot;Polar Query&quot;}" role="button" title="Polar Query" data-colorbox-gallery="gallery-image-85-axlCgKXQqOo" class="colorbox" aria-controls="colorbox-TsoZv43vJYw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar Query&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -166,7 +166,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-NWChRD2KvQU" src="/sites/default/files/styles/large/public/2024-11/polar-query.png?itok=UaDuDAum" width="394" height="480" alt="Polar Query" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-TsoZv43vJYw" src="/sites/default/files/styles/large/public/2024-11/polar-query.png?itok=UaDuDAum" width="394" height="480" alt="Polar Query" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -188,7 +188,7 @@ body:
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
 
-      <h1>Analysis Flow</h1><p>The analysis steps are described below:</p><h2>Query Data</h2><ol><li>Start analysis by entering the source name of interest in the field "Object name" of the top panel.</li><li>click on the "Resolve" button to trigger the resolver. If the object of interest is found, time range fields are filled. You may also wish to fill them manually. The RA and Dec fields are for now dummy. For GRB objects, select only the <em>Local</em> resolver. As Sesame does not know anything about GRB, it will just run for quite a long time without resulting anything.</li><li>Adapt / fill time interval for the data.<br>&nbsp;</li></ol><h2>Timing Analysis</h2><ol><li>Select "POLAR" on the instrument query panel.</li><li>Check the "Lightcurve" checkbox.</li><li>Set a possible energy range for the data selection. The default [0,2000] keV covers the full POLAR energy range.</li><li>Set the time bin width and unit for the lightcurve. Remind that the start and end time of the lightcurve are determined by the time limits set in the top multi-instrument panel.</li><li>The "Query Type" field must be set to <em>Real</em>.</li><li>Launch the lightcurve extraction by pressing the "Submit" button.</li></ol><p>A window pops up showing the status of the processing request. Note that according to the request, the processing time can be quite long. Click on "close" when done to close the window.</p><p><a class="colorbox colorbox-insert-image" href="/mmoda/sites/default/files/mmoda/help/polar/processingdone.png" data-colorbox-gallery="gallery-all"><a href="/mmoda/sites/default/files/styles/large/public/mmoda/help/polar/processingdone.png?itok=UDZYG0Tw" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img class="same-gallery image-large" alt height="159" src="/mmoda/sites/default/files/styles/large/public/mmoda/help/polar/processingdone.png?itok=UDZYG0Tw" width="480"></a></a></p><p>Once the request is processed, it is displayed in the workspace, together with other previous results.</p>
+      <h1>Analysis Flow</h1><p>The analysis steps are described below:</p><h2>Query Data</h2><ol><li>Start analysis by entering the source name of interest in the field "Object name" of the top panel.</li><li>click on the "Resolve" button to trigger the resolver. If the object of interest is found, time range fields are filled. You may also wish to fill them manually. The RA and Dec fields are for now dummy. For GRB objects, select only the <em>Local</em> resolver. As Sesame does not know anything about GRB, it will just run for quite a long time without resulting anything.</li><li>Adapt / fill time interval for the data.<br>&nbsp;</li></ol><h2>Timing Analysis</h2><ol><li>Select "POLAR" on the instrument query panel.</li><li>Check the "Lightcurve" checkbox.</li><li>Set a possible energy range for the data selection. The default [0,2000] keV covers the full POLAR energy range.</li><li>Set the time bin width and unit for the lightcurve. Remind that the start and end time of the lightcurve are determined by the time limits set in the top multi-instrument panel.</li><li>The "Query Type" field must be set to <em>Real</em>.</li><li>Launch the lightcurve extraction by pressing the "Submit" button.</li></ol><p>A window pops up showing the status of the processing request. Note that according to the request, the processing time can be quite long. Click on "close" when done to close the window.</p>
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'media' -->
@@ -224,7 +224,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/requestslist.png" aria-label="{&quot;alt&quot;:&quot;Polar request list&quot;}" role="button" title="Polar request list" data-colorbox-gallery="gallery-image-87-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-wAAF8yHUs_8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar request list&quot;}">
+      <a href="http://default/sites/default/files/2024-11/processingdone.png" aria-label="{&quot;alt&quot;:&quot;Polar processing done&quot;}" role="button" title="Polar processing done" data-colorbox-gallery="gallery-image-86-axlCgKXQqOo" class="colorbox" aria-controls="colorbox-2kazxArlhBk" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar processing done&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -234,7 +234,75 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-wAAF8yHUs_8" src="/sites/default/files/styles/large/public/2024-11/requestslist.png?itok=ya49scTa" width="461" height="338" alt="Polar request list" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-2kazxArlhBk" src="/sites/default/files/styles/large/public/2024-11/processingdone.png?itok=1_p071-n" width="480" height="159" alt="Polar processing done" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>Once the request is processed, it is displayed in the workspace, together with other previous results.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/requestslist.png" aria-label="{&quot;alt&quot;:&quot;Polar request list&quot;}" role="button" title="Polar request list" data-colorbox-gallery="gallery-image-87-axlCgKXQqOo" class="colorbox" aria-controls="colorbox-QEFzZMkTQhA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar request list&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-QEFzZMkTQhA" src="/sites/default/files/styles/large/public/2024-11/requestslist.png?itok=ya49scTa" width="461" height="338" alt="Polar request list" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -292,7 +360,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/lightcurve0.png" aria-label="{&quot;alt&quot;:&quot;Polar LC 01&quot;}" role="button" title="Polar LC 01" data-colorbox-gallery="gallery-image-88-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-vxF8sCpVlGI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar LC 01&quot;}">
+      <a href="http://default/sites/default/files/2024-11/lightcurve0.png" aria-label="{&quot;alt&quot;:&quot;Polar LC 01&quot;}" role="button" title="Polar LC 01" data-colorbox-gallery="gallery-image-88-axlCgKXQqOo" class="colorbox" aria-controls="colorbox-2Ksp7OL5G00" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar LC 01&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -302,7 +370,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-vxF8sCpVlGI" src="/sites/default/files/styles/large/public/2024-11/lightcurve0.png?itok=HVDZ0pqv" width="416" height="480" alt="Polar LC 01" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-2Ksp7OL5G00" src="/sites/default/files/styles/large/public/2024-11/lightcurve0.png?itok=HVDZ0pqv" width="416" height="480" alt="Polar LC 01" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

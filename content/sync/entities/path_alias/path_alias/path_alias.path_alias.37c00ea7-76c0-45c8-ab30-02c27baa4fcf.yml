@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 37c00ea7-76c0-45c8-ab30-02c27baa4fcf
+langcode:
+  -
+    value: en
+path:
+  target_type: user
+  target_uuid: bc0dbd14-ebb8-427d-a654-2e95550134bf
+alias:
+  -
+    value: /users/mmeharga
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    user:
+      - user.user.bc0dbd14-ebb8-427d-a654-2e95550134bf

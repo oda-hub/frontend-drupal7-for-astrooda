@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 7153d178-59f3-4969-bc7a-f163b3dff5bc
+langcode:
+  -
+    value: en
+path:
+  target_type: user
+  target_uuid: 53125b84-05af-4dfe-b378-c6b0466770d3
+alias:
+  -
+    value: /users/volodymyrss
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    user:
+      - user.user.53125b84-05af-4dfe-b378-c6b0466770d3

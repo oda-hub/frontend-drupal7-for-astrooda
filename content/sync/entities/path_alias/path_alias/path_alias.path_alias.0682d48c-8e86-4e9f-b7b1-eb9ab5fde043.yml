@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 0682d48c-8e86-4e9f-b7b1-eb9ab5fde043
+langcode:
+  -
+    value: en
+path:
+  target_type: user
+  target_uuid: 6de78aeb-ed11-4856-bd85-d2a65a5df8aa
+alias:
+  -
+    value: /users/aneronov
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    user:
+      - user.user.6de78aeb-ed11-4856-bd85-d2a65a5df8aa

@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 8632c428-57f8-43b3-afdf-b4fbec3c1cfe
+langcode:
+  -
+    value: en
+path:
+  target_type: user
+  target_uuid: cae8ea86-947c-4b98-b207-dea495c60cdf
+alias:
+  -
+    value: /users/cferrigno
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    user:
+      - user.user.cae8ea86-947c-4b98-b207-dea495c60cdf
