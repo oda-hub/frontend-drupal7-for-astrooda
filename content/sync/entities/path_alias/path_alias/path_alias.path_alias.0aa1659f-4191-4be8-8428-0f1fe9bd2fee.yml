@@ -9,7 +9,7 @@ path:
   target_uuid: 522aad64-6c80-4395-8b79-427abb7c3efa
 alias:
   -
-    value: /form/feedback-bug-report
+    value: /content/feedback-bug-report
 status:
   -
     value: true

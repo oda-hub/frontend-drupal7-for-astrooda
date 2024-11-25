@@ -21,9 +21,8 @@ status:
     value: true
 uid:
   -
-    target_id: 0
     target_type: user
-    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
 title:
   -
     value: 'Extract an ISGRI spectrum without a catalog'
@@ -33,7 +32,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-18T15:33:57+00:00'
+    value: '2024-11-25T20:14:55+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -59,3 +58,4 @@ _content_sync:
   entity_dependencies:
     user:
       - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

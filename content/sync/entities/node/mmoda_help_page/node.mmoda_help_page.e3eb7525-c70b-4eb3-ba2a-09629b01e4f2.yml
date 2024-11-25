@@ -21,9 +21,8 @@ status:
     value: true
 uid:
   -
-    target_id: 0
     target_type: user
-    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
 title:
   -
     value: MMODA
@@ -33,7 +32,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-18T14:21:14+00:00'
+    value: '2024-11-25T20:16:58+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,7 +48,7 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: '<h2>What is MMODA</h2><p>The Multi-Messenger Online analysis is a platform to derive high-level scientific products for several instruments. The underlying services run complex pipelines in a computer cluster based at the University of Geneva and the web-based interface makes them available in a straightforward way. It is possible to exploit most capability of the platform without a login, but for extensive runs, it is necessary to login, present the project, and acknowledge the platform usage. Pipelines have been developed by experts in the data analysis and exploit proximity to the data, state-of-the-art calibration and software. In these help pages, the user will find instructions to exploit the platform from the web interface, but services can also be accessed through a <a href="http://oda-api.readthedocs.io/en/latest/" target="_blank">python-based API</a>.</p><h2>Supported facilities</h2><p><a href="mmoda/integral-mission">The INTEGRAL mission</a></p><p><a href="mmoda/polar">Light curves from Polar</a></p><p><a href="mmoda/antares">ANTARES</a></p><p><a href="mmoda/gravitational-wave-analysis">LIGO and VIRGO</a></p><p><a href="mmoda/legacy-survey">DESI Legacy Survey</a></p><h2>Usage with and without login</h2><p><span style="font-size:110%;">The user is free to use our service without login, but to access the full functionality, we require the user to login to the system. An account should&nbsp;be requested by clicking on "Sign -in" and then new user.&nbsp;It needs to be approved by the administrators. Special rights can be assigned to access private data and additional computation resources.</span></p><p>Logging-in will allow you to receive emails, use up to 500 science windows instead of 50, receive email notifications for jobs that are submitted and completed, receive python API code to reproduce the query and direct simplified contact for feedback.</p><p>It is also possible to <a href="connect-my-mmoda-account-github">connect your github</a> account to MMODA.</p><drupal-media data-entity-type="media" data-entity-uuid="e0a80642-ce30-4665-bb9b-fd32c696210e" data-view-mode="colorbox">&nbsp;</drupal-media><h2><a href="https://oda-api.readthedocs.io/en/latest/" target="_blank">Python API</a></h2><p>If you are familiar with python, you can check the API usage at <a href="https://oda-api.readthedocs.io/en/latest/" target="_blank">this url.</a></p><h2>Known Issues</h2><p>It is not possible to change the Xspec model in the Fit of spectra. However, spectra can be downloaded and fit with another package.</p><p>INTEGRAL: a source named "NEW SOURCE" will not be used in extracting JEM-X spectrua and light curves. It is necessary to name it differently.</p><p>If you submit a job and the error "Forbidden" appears, it means that you should logout and login again from the web interface.</p>'
+    value: '<h2>What is MMODA</h2><p>The Multi-Messenger Online analysis is a platform to derive high-level scientific products for several instruments. The underlying services run complex pipelines in a computer cluster based at the University of Geneva and the web-based interface makes them available in a straightforward way. It is possible to exploit most capability of the platform without a login, but for extensive runs, it is necessary to login, present the project, and acknowledge the platform usage. Pipelines have been developed by experts in the data analysis and exploit proximity to the data, state-of-the-art calibration and software. In these help pages, the user will find instructions to exploit the platform from the web interface, but services can also be accessed through a <a href="http://oda-api.readthedocs.io/en/latest/" target="_blank">python-based API</a>.</p><h2>Supported facilities</h2><p><a href="mmoda/integral-mission">The INTEGRAL mission</a></p><p><a href="mmoda/polar">Light curves from Polar</a></p><p><a href="mmoda/antares">ANTARES</a></p><p><a href="mmoda/gravitational-wave-analysis">LIGO and VIRGO</a></p><p><a href="mmoda/legacy-survey">DESI Legacy Survey</a></p><h2>Usage with and without login</h2><p><span style="font-size:110%;">The user is free to use our service without login, but to access the full functionality, we require the user to login to the system. An account should&nbsp;be requested by clicking on "Sign -in" and then new user.&nbsp;It needs to be approved by the administrators. Special rights can be assigned to access private data and additional computation resources.</span></p><p>Logging-in will allow you to receive emails, use up to 500 science windows instead of 50, receive email notifications for jobs that are submitted and completed, receive python API code to reproduce the query and direct simplified contact for feedback.</p><p>It is also possible to <a href="connect-my-mmoda-account-github">connect your github</a> account to MMODA.</p><drupal-media data-entity-type="media" data-entity-uuid="e0a80642-ce30-4665-bb9b-fd32c696210e">&nbsp;</drupal-media><h2><a href="https://oda-api.readthedocs.io/en/latest/" target="_blank">Python API</a></h2><p>If you are familiar with python, you can check the API usage at <a href="https://oda-api.readthedocs.io/en/latest/" target="_blank">this url.</a></p><h2>Known Issues</h2><p>It is not possible to change the Xspec model in the Fit of spectra. However, spectra can be downloaded and fit with another package.</p><p>INTEGRAL: a source named "NEW SOURCE" will not be used in extracting JEM-X spectrua and light curves. It is necessary to name it differently.</p><p>If you submit a job and the error "Forbidden" appears, it means that you should logout and login again from the web interface.</p>'
     format: full_html
     processed: |-
       <h2>What is MMODA</h2><p>The Multi-Messenger Online analysis is a platform to derive high-level scientific products for several instruments. The underlying services run complex pipelines in a computer cluster based at the University of Geneva and the web-based interface makes them available in a straightforward way. It is possible to exploit most capability of the platform without a login, but for extensive runs, it is necessary to login, present the project, and acknowledge the platform usage. Pipelines have been developed by experts in the data analysis and exploit proximity to the data, state-of-the-art calibration and software. In these help pages, the user will find instructions to exploit the platform from the web interface, but services can also be accessed through a <a href="http://oda-api.readthedocs.io/en/latest/" target="_blank">python-based API</a>.</p><h2>Supported facilities</h2><p><a href="mmoda/integral-mission">The INTEGRAL mission</a></p><p><a href="mmoda/polar">Light curves from Polar</a></p><p><a href="mmoda/antares">ANTARES</a></p><p><a href="mmoda/gravitational-wave-analysis">LIGO and VIRGO</a></p><p><a href="mmoda/legacy-survey">DESI Legacy Survey</a></p><h2>Usage with and without login</h2><p><span style="font-size:110%;">The user is free to use our service without login, but to access the full functionality, we require the user to login to the system. An account should&nbsp;be requested by clicking on "Sign -in" and then new user.&nbsp;It needs to be approved by the administrators. Special rights can be assigned to access private data and additional computation resources.</span></p><p>Logging-in will allow you to receive emails, use up to 500 science windows instead of 50, receive email notifications for jobs that are submitted and completed, receive python API code to reproduce the query and direct simplified contact for feedback.</p><p>It is also possible to <a href="connect-my-mmoda-account-github">connect your github</a> account to MMODA.</p>
@@ -88,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/sign.png" aria-label="{&quot;alt&quot;:&quot;MMODA Sign&quot;}" role="button" title="MMODA Sign" data-colorbox-gallery="gallery-image-38-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-nbUG1yC82M0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA Sign&quot;}">
+      <a href="http://default/sites/default/files/2024-11/sign.png" aria-label="{&quot;alt&quot;:&quot;MMODA Sign&quot;}" role="button" title="MMODA Sign" data-colorbox-gallery="gallery-image-38-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-jFrT4gkae_Y" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA Sign&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -98,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-nbUG1yC82M0" src="/sites/default/files/styles/large/public/2024-11/sign.png?itok=RQjp2cdc" width="480" height="81" alt="MMODA Sign" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-jFrT4gkae_Y" src="/sites/default/files/styles/large/public/2024-11/sign.png?itok=RQjp2cdc" width="480" height="81" alt="MMODA Sign" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -128,3 +127,4 @@ _content_sync:
   entity_dependencies:
     user:
       - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

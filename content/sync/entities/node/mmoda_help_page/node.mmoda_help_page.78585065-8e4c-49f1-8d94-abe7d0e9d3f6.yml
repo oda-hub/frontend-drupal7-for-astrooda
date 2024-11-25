@@ -21,9 +21,8 @@ status:
     value: true
 uid:
   -
-    target_id: 0
     target_type: user
-    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
 title:
   -
     value: 'ISGRI light curve'
@@ -33,7 +32,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-18T14:09:55+00:00'
+    value: '2024-11-25T20:17:11+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -49,7 +48,7 @@ revision_translation_affected:
     value: true
 body:
   -
-    value: '<h2>The role of a catalog</h2><p>It is important to understand that the INTEGRAL instruments are equipped with coded mask. It is tus necessary to specify a sky model to extract spectra or light curve. If you do not supply a catalog, the infrastructure will first produce an image and take all the source, with possible contamination from spurious detections. See the <a href="https://www.isdc.unige.ch/integral/download/osa/doc/11.1/osa_um_ibis/man.html" target="_blank">IBIS user manual</a> for details.</p><p>It is thus strongly encouraged to prepare explicitely a <a href="ibis-isgri-image-new-source">catalog through an image</a>, edit the catalog and then submit the spectral extraction. A common practice is to make an image from a subset of science windows by adjusting the "Maximum number of ScWs" parameter and then extract a spectrum from all science windows. In the platform, a defaul binning is applied to the spectrum.</p><p>Note that all this can be done also using the python API, see <a href="https://gitlab.astro.unige.ch/integral/qla/maxij1803" target="_blank">this notebook</a>.</p><h2>Light-curve extraction from a catalog</h2><p>Suppose that you have <a href="ibis-isgr-image-new-source">succesfully extracted an image</a> and get to the point</p><drupal-media data-entity-type="media" data-entity-uuid="fb1025c2-6613-43cd-a608-b14220301222" data-view-mode="colorbox">&nbsp;</drupal-media><p>You should delete the source and the select Light curve with the relative time bins (see the red-shaded region below).</p><drupal-media data-entity-type="media" data-entity-uuid="b6ff40f9-150f-4ec1-90fb-d60fdbcd96a4" data-view-mode="colorbox">&nbsp;</drupal-media><p>Once the light curve is ready, you will receive an email as</p><drupal-media data-entity-type="media" data-entity-uuid="dc3a57c9-ef2a-4c4a-899a-b26424aa7cc0" data-view-mode="colorbox">&nbsp;</drupal-media><p>You can then click on the URL and then click on "Close".</p><drupal-media data-entity-type="media" data-entity-uuid="52f82e4a-8acf-41c6-8952-5b6a1869fff6" data-view-mode="colorbox">&nbsp;</drupal-media><p>to obtain</p><drupal-media data-entity-type="media" data-entity-uuid="7cd92bed-d93c-4d36-98e9-0c81f6486865" data-view-mode="colorbox">&nbsp;</drupal-media><p>you click on "view" the lightcurve you prefer and this can be visualized and then downloaded clicking the "Download" button.</p><drupal-media data-entity-type="media" data-entity-uuid="74e0f863-fc69-46cc-84af-b69357f9b768" data-view-mode="colorbox">&nbsp;</drupal-media><p>Go to the main&nbsp;<a href="http://cdcidev.mtmco.net/cdci/mmoda/help/mmoda">MMODA Help</a></p>'
+    value: '<h2>The role of a catalog</h2><p>It is important to understand that the INTEGRAL instruments are equipped with coded mask. It is tus necessary to specify a sky model to extract spectra or light curve. If you do not supply a catalog, the infrastructure will first produce an image and take all the source, with possible contamination from spurious detections. See the <a href="https://www.isdc.unige.ch/integral/download/osa/doc/11.1/osa_um_ibis/man.html" target="_blank">IBIS user manual</a> for details.</p><p>It is thus strongly encouraged to prepare explicitely a <a href="ibis-isgri-image-new-source">catalog through an image</a>, edit the catalog and then submit the spectral extraction. A common practice is to make an image from a subset of science windows by adjusting the "Maximum number of ScWs" parameter and then extract a spectrum from all science windows. In the platform, a defaul binning is applied to the spectrum.</p><p>Note that all this can be done also using the python API, see <a href="https://gitlab.astro.unige.ch/integral/qla/maxij1803" target="_blank">this notebook</a>.</p><h2>Light-curve extraction from a catalog</h2><p>Suppose that you have <a href="ibis-isgr-image-new-source">succesfully extracted an image</a> and get to the point</p><drupal-media data-entity-type="media" data-entity-uuid="fb1025c2-6613-43cd-a608-b14220301222">&nbsp;</drupal-media><p>You should delete the source and the select Light curve with the relative time bins (see the red-shaded region below).</p><drupal-media data-entity-type="media" data-entity-uuid="b6ff40f9-150f-4ec1-90fb-d60fdbcd96a4">&nbsp;</drupal-media><p>Once the light curve is ready, you will receive an email as</p><drupal-media data-entity-type="media" data-entity-uuid="dc3a57c9-ef2a-4c4a-899a-b26424aa7cc0">&nbsp;</drupal-media><p>You can then click on the URL and then click on "Close".</p><drupal-media data-entity-type="media" data-entity-uuid="52f82e4a-8acf-41c6-8952-5b6a1869fff6">&nbsp;</drupal-media><p>to obtain</p><drupal-media data-entity-type="media" data-entity-uuid="7cd92bed-d93c-4d36-98e9-0c81f6486865">&nbsp;</drupal-media><p>you click on "view" the lightcurve you prefer and this can be visualized and then downloaded clicking the "Download" button.</p><drupal-media data-entity-type="media" data-entity-uuid="74e0f863-fc69-46cc-84af-b69357f9b768">&nbsp;</drupal-media><p>Go to the main&nbsp;<a href="http://cdcidev.mtmco.net/cdci/mmoda/help/mmoda">MMODA Help</a></p>'
     format: full_html
     processed: |-
       <h2>The role of a catalog</h2><p>It is important to understand that the INTEGRAL instruments are equipped with coded mask. It is tus necessary to specify a sky model to extract spectra or light curve. If you do not supply a catalog, the infrastructure will first produce an image and take all the source, with possible contamination from spurious detections. See the <a href="https://www.isdc.unige.ch/integral/download/osa/doc/11.1/osa_um_ibis/man.html" target="_blank">IBIS user manual</a> for details.</p><p>It is thus strongly encouraged to prepare explicitely a <a href="ibis-isgri-image-new-source">catalog through an image</a>, edit the catalog and then submit the spectral extraction. A common practice is to make an image from a subset of science windows by adjusting the "Maximum number of ScWs" parameter and then extract a spectrum from all science windows. In the platform, a defaul binning is applied to the spectrum.</p><p>Note that all this can be done also using the python API, see <a href="https://gitlab.astro.unige.ch/integral/qla/maxij1803" target="_blank">this notebook</a>.</p><h2>Light-curve extraction from a catalog</h2><p>Suppose that you have <a href="ibis-isgr-image-new-source">succesfully extracted an image</a> and get to the point</p>
@@ -88,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png" aria-label="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}" role="button" title="ISGRI light curve" data-colorbox-gallery="gallery-image-32-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-hsUw1pQ_fpw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}">
+      <a href="http://default/sites/default/files/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png" aria-label="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}" role="button" title="ISGRI light curve" data-colorbox-gallery="gallery-image-32-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-kLAY_daQOlA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -98,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-hsUw1pQ_fpw" src="/sites/default/files/styles/large/public/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png?itok=oCcG-Wsb" width="480" height="446" alt="ISGRI light curve" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-kLAY_daQOlA" src="/sites/default/files/styles/large/public/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png?itok=oCcG-Wsb" width="480" height="446" alt="ISGRI light curve" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -156,7 +155,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/lc-extract.png" aria-label="{&quot;alt&quot;:&quot;LC extract&quot;}" role="button" title="LC extract" data-colorbox-gallery="gallery-image-33-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-RpmE7GgAREI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC extract&quot;}">
+      <a href="http://default/sites/default/files/2024-11/lc-extract.png" aria-label="{&quot;alt&quot;:&quot;LC extract&quot;}" role="button" title="LC extract" data-colorbox-gallery="gallery-image-33-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-tc9cbGp_i6c" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC extract&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -166,7 +165,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-RpmE7GgAREI" src="/sites/default/files/styles/large/public/2024-11/lc-extract.png?itok=yYeNs9Qs" width="480" height="406" alt="LC extract" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-tc9cbGp_i6c" src="/sites/default/files/styles/large/public/2024-11/lc-extract.png?itok=yYeNs9Qs" width="480" height="406" alt="LC extract" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -224,7 +223,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/email-lc0.png" aria-label="{&quot;alt&quot;:&quot;LC Email&quot;}" role="button" title="LC Email" data-colorbox-gallery="gallery-image-34-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-Ug4Np4ZqmOo" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC Email&quot;}">
+      <a href="http://default/sites/default/files/2024-11/email-lc0.png" aria-label="{&quot;alt&quot;:&quot;LC Email&quot;}" role="button" title="LC Email" data-colorbox-gallery="gallery-image-34-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-oxU8tv_MiIU" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC Email&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -234,7 +233,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-Ug4Np4ZqmOo" src="/sites/default/files/styles/large/public/2024-11/email-lc0.png?itok=FTv8KJ7d" width="480" height="223" alt="LC Email" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-oxU8tv_MiIU" src="/sites/default/files/styles/large/public/2024-11/email-lc0.png?itok=FTv8KJ7d" width="480" height="223" alt="LC Email" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -292,7 +291,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/ready-lc0.png" aria-label="{&quot;alt&quot;:&quot;LC ready&quot;}" role="button" title="LC ready" data-colorbox-gallery="gallery-image-35-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-s8tiL-fV91A" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC ready&quot;}">
+      <a href="http://default/sites/default/files/2024-11/ready-lc0.png" aria-label="{&quot;alt&quot;:&quot;LC ready&quot;}" role="button" title="LC ready" data-colorbox-gallery="gallery-image-35-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-N-7UxK9bT6w" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC ready&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -302,7 +301,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-s8tiL-fV91A" src="/sites/default/files/styles/large/public/2024-11/ready-lc0.png?itok=kpWU4L_V" width="480" height="225" alt="LC ready" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-N-7UxK9bT6w" src="/sites/default/files/styles/large/public/2024-11/ready-lc0.png?itok=kpWU4L_V" width="480" height="225" alt="LC ready" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -360,7 +359,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/lc-view0.png" aria-label="{&quot;alt&quot;:&quot;LC view&quot;}" role="button" title="LC view" data-colorbox-gallery="gallery-image-36-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-clarTT84V-Q" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC view&quot;}">
+      <a href="http://default/sites/default/files/2024-11/lc-view0.png" aria-label="{&quot;alt&quot;:&quot;LC view&quot;}" role="button" title="LC view" data-colorbox-gallery="gallery-image-36-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-IvcLmpAKzYw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC view&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -370,7 +369,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-clarTT84V-Q" src="/sites/default/files/styles/large/public/2024-11/lc-view0.png?itok=1WWm_d6n" width="480" height="359" alt="LC view" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-IvcLmpAKzYw" src="/sites/default/files/styles/large/public/2024-11/lc-view0.png?itok=1WWm_d6n" width="480" height="359" alt="LC view" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -428,7 +427,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/lc-isgri.png" aria-label="{&quot;alt&quot;:&quot;LC ISGRI&quot;}" role="button" title="LC ISGRI" data-colorbox-gallery="gallery-image-37-oqoGhAJLQqE" class="colorbox" aria-controls="colorbox-MdEUloRnUBs" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC ISGRI&quot;}">
+      <a href="http://default/sites/default/files/2024-11/lc-isgri.png" aria-label="{&quot;alt&quot;:&quot;LC ISGRI&quot;}" role="button" title="LC ISGRI" data-colorbox-gallery="gallery-image-37-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-EVPGcDh_So8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC ISGRI&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -438,7 +437,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-MdEUloRnUBs" src="/sites/default/files/styles/large/public/2024-11/lc-isgri.png?itok=0JROFPw2" width="480" height="396" alt="LC ISGRI" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-EVPGcDh_So8" src="/sites/default/files/styles/large/public/2024-11/lc-isgri.png?itok=0JROFPw2" width="480" height="396" alt="LC ISGRI" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -468,3 +467,4 @@ _content_sync:
   entity_dependencies:
     user:
       - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357
