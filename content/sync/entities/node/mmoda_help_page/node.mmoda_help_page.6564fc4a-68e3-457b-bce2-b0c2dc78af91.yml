@@ -87,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/mmoda-my-account.png" aria-label="{&quot;alt&quot;:&quot;MMODA My Account&quot;}" role="button" title="MMODA My Account" data-colorbox-gallery="gallery-image-69-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-Az9kV_g8jJM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA My Account&quot;}">
+      <a href="http://default/sites/default/files/2024-11/mmoda-my-account.png" aria-label="{&quot;alt&quot;:&quot;MMODA My Account&quot;}" role="button" title="MMODA My Account" data-colorbox-gallery="gallery-image-69-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-_sQ757lwelM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA My Account&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-Az9kV_g8jJM" src="/sites/default/files/styles/large/public/2024-11/mmoda-my-account.png?itok=m9gG_2x-" width="480" height="100" alt="MMODA My Account" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-_sQ757lwelM" src="/sites/default/files/styles/large/public/2024-11/mmoda-my-account.png?itok=m9gG_2x-" width="480" height="100" alt="MMODA My Account" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -155,7 +155,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/mmoda-github-connect.png" aria-label="{&quot;alt&quot;:&quot;MMODA GitHub Connect&quot;}" role="button" title="MMODA GitHub Connect" data-colorbox-gallery="gallery-image-70-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-0X9baSi6V9c" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA GitHub Connect&quot;}">
+      <a href="http://default/sites/default/files/2024-11/mmoda-github-connect.png" aria-label="{&quot;alt&quot;:&quot;MMODA GitHub Connect&quot;}" role="button" title="MMODA GitHub Connect" data-colorbox-gallery="gallery-image-70-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-4v3StEnPzl8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA GitHub Connect&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -165,7 +165,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-0X9baSi6V9c" src="/sites/default/files/styles/large/public/2024-11/mmoda-github-connect.png?itok=tftSfT7A" width="480" height="383" alt="MMODA GitHub Connect" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-4v3StEnPzl8" src="/sites/default/files/styles/large/public/2024-11/mmoda-github-connect.png?itok=tftSfT7A" width="480" height="383" alt="MMODA GitHub Connect" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

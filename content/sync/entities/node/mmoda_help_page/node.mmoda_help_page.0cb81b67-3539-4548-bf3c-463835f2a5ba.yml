@@ -87,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/upload-catalog.png" aria-label="{&quot;alt&quot;:&quot;Upload catalog&quot;}" role="button" title="Upload catalog" data-colorbox-gallery="gallery-image-48-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-MtDWwJaC9xE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Upload catalog&quot;}">
+      <a href="http://default/sites/default/files/2024-11/upload-catalog.png" aria-label="{&quot;alt&quot;:&quot;Upload catalog&quot;}" role="button" title="Upload catalog" data-colorbox-gallery="gallery-image-48-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-fnK7MZn4lGw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Upload catalog&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-MtDWwJaC9xE" src="/sites/default/files/styles/large/public/2024-11/upload-catalog.png?itok=CEkks1T-" width="480" height="215" alt="Upload catalog" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-fnK7MZn4lGw" src="/sites/default/files/styles/large/public/2024-11/upload-catalog.png?itok=CEkks1T-" width="480" height="215" alt="Upload catalog" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

@@ -87,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/sign.png" aria-label="{&quot;alt&quot;:&quot;MMODA Sign&quot;}" role="button" title="MMODA Sign" data-colorbox-gallery="gallery-image-38-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-jFrT4gkae_Y" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA Sign&quot;}">
+      <a href="http://default/sites/default/files/2024-11/sign.png" aria-label="{&quot;alt&quot;:&quot;MMODA Sign&quot;}" role="button" title="MMODA Sign" data-colorbox-gallery="gallery-image-38-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-dIJUwzwKfDA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA Sign&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-jFrT4gkae_Y" src="/sites/default/files/styles/large/public/2024-11/sign.png?itok=RQjp2cdc" width="480" height="81" alt="MMODA Sign" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-dIJUwzwKfDA" src="/sites/default/files/styles/large/public/2024-11/sign.png?itok=RQjp2cdc" width="480" height="81" alt="MMODA Sign" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

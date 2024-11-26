@@ -87,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/grb-selection.png" aria-label="{&quot;alt&quot;:&quot;Polar GRB selection&quot;}" role="button" title="Polar GRB selection" data-colorbox-gallery="gallery-image-84-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox--WSILmAMX94" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar GRB selection&quot;}">
+      <a href="http://default/sites/default/files/2024-11/grb-selection.png" aria-label="{&quot;alt&quot;:&quot;Polar GRB selection&quot;}" role="button" title="Polar GRB selection" data-colorbox-gallery="gallery-image-84-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-CUulnYzFu0I" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar GRB selection&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox--WSILmAMX94" src="/sites/default/files/styles/large/public/2024-11/grb-selection.png?itok=BLvTc1J3" width="480" height="163" alt="Polar GRB selection" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-CUulnYzFu0I" src="/sites/default/files/styles/large/public/2024-11/grb-selection.png?itok=BLvTc1J3" width="480" height="163" alt="Polar GRB selection" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -155,7 +155,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/polar-query.png" aria-label="{&quot;alt&quot;:&quot;Polar Query&quot;}" role="button" title="Polar Query" data-colorbox-gallery="gallery-image-85-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-ppdhURd1lO8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar Query&quot;}">
+      <a href="http://default/sites/default/files/2024-11/polar-query.png" aria-label="{&quot;alt&quot;:&quot;Polar Query&quot;}" role="button" title="Polar Query" data-colorbox-gallery="gallery-image-85-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-trBYifnpX6Q" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar Query&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -165,7 +165,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-ppdhURd1lO8" src="/sites/default/files/styles/large/public/2024-11/polar-query.png?itok=UaDuDAum" width="394" height="480" alt="Polar Query" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-trBYifnpX6Q" src="/sites/default/files/styles/large/public/2024-11/polar-query.png?itok=UaDuDAum" width="394" height="480" alt="Polar Query" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -223,7 +223,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/processingdone.png" aria-label="{&quot;alt&quot;:&quot;Polar processing done&quot;}" role="button" title="Polar processing done" data-colorbox-gallery="gallery-image-86-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-ueyfXtfEmrw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar processing done&quot;}">
+      <a href="http://default/sites/default/files/2024-11/processingdone.png" aria-label="{&quot;alt&quot;:&quot;Polar processing done&quot;}" role="button" title="Polar processing done" data-colorbox-gallery="gallery-image-86-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-JFcKxqv_wPs" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar processing done&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -233,7 +233,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-ueyfXtfEmrw" src="/sites/default/files/styles/large/public/2024-11/processingdone.png?itok=1_p071-n" width="480" height="159" alt="Polar processing done" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-JFcKxqv_wPs" src="/sites/default/files/styles/large/public/2024-11/processingdone.png?itok=1_p071-n" width="480" height="159" alt="Polar processing done" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -291,7 +291,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/requestslist.png" aria-label="{&quot;alt&quot;:&quot;Polar request list&quot;}" role="button" title="Polar request list" data-colorbox-gallery="gallery-image-87-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-9IYNRJdJNII" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar request list&quot;}">
+      <a href="http://default/sites/default/files/2024-11/requestslist.png" aria-label="{&quot;alt&quot;:&quot;Polar request list&quot;}" role="button" title="Polar request list" data-colorbox-gallery="gallery-image-87-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-N6qJtct4d3M" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar request list&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -301,7 +301,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-9IYNRJdJNII" src="/sites/default/files/styles/large/public/2024-11/requestslist.png?itok=ya49scTa" width="461" height="338" alt="Polar request list" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-N6qJtct4d3M" src="/sites/default/files/styles/large/public/2024-11/requestslist.png?itok=ya49scTa" width="461" height="338" alt="Polar request list" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -359,7 +359,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/lightcurve0.png" aria-label="{&quot;alt&quot;:&quot;Polar LC 01&quot;}" role="button" title="Polar LC 01" data-colorbox-gallery="gallery-image-88-NH7QEzAIknQ" class="colorbox" aria-controls="colorbox-KSAnYJUJIgY" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar LC 01&quot;}">
+      <a href="http://default/sites/default/files/2024-11/lightcurve0.png" aria-label="{&quot;alt&quot;:&quot;Polar LC 01&quot;}" role="button" title="Polar LC 01" data-colorbox-gallery="gallery-image-88-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-mr7aR_vIBWg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Polar LC 01&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -369,7 +369,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-KSAnYJUJIgY" src="/sites/default/files/styles/large/public/2024-11/lightcurve0.png?itok=HVDZ0pqv" width="416" height="480" alt="Polar LC 01" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-mr7aR_vIBWg" src="/sites/default/files/styles/large/public/2024-11/lightcurve0.png?itok=HVDZ0pqv" width="416" height="480" alt="Polar LC 01" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
