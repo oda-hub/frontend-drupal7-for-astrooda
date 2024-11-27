@@ -10,7 +10,7 @@
 /web/sites/default/settings.local.php
 
 /content/sync/entities/user
-!content/sync/entities/user/user/user.user.31a50ae4-3565-4f78-a833-c58e43b0df75.yml
+!/content/sync/entities/user/user/user.user.31a50ae4-3565-4f78-a833-c58e43b0df75.yml
 
 .gitlab*
 .settings
