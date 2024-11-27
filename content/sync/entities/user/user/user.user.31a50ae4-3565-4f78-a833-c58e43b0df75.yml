@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 31a50ae4-3565-4f78-a833-c58e43b0df75
+langcode:
+  -
+    value: en
+name:
+  -
+    value: content-owner
+created:
+  -
+    value: '2024-11-26T13:51:39+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T08:36:03+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+field_description_use_case:
+  -
+    value: 'Not applicable'
+field_matrix_room_id: {  }
+user_picture: {  }
+_content_sync:
+  entity_type: user
+pass:
+  -
+    value: $2y$10$X8DtlwNw/6s0gE14fNEDpub5f/PpRh0e68/MkYupTlR9Xsqvb4I1i
+    pre_hashed: true
+mail:
+  value: dar@mtmco.net
+status:
+  value: '1'
+roles:
+  - authenticated
+  - content_editor
+  - content_manager
