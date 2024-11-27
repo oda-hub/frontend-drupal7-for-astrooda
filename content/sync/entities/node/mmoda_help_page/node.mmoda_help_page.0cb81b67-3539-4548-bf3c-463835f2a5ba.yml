@@ -22,7 +22,7 @@ status:
 uid:
   -
     target_type: user
-    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 title:
   -
     value: 'Upload a custom catalog for INTEGRAL analysis'
@@ -32,7 +32,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-25T20:15:53+00:00'
+    value: '2024-11-26T13:52:01+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -87,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/upload-catalog.png" aria-label="{&quot;alt&quot;:&quot;Upload catalog&quot;}" role="button" title="Upload catalog" data-colorbox-gallery="gallery-image-48-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-fnK7MZn4lGw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Upload catalog&quot;}">
+      <a href="http://default/sites/default/files/2024-11/upload-catalog.png" aria-label="{&quot;alt&quot;:&quot;Upload catalog&quot;}" role="button" title="Upload catalog" data-colorbox-gallery="gallery-image-48-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-J-uf-ndj-ms" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Upload catalog&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-fnK7MZn4lGw" src="/sites/default/files/styles/large/public/2024-11/upload-catalog.png?itok=CEkks1T-" width="480" height="215" alt="Upload catalog" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-J-uf-ndj-ms" src="/sites/default/files/styles/large/public/2024-11/upload-catalog.png?itok=CEkks1T-" width="480" height="215" alt="Upload catalog" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -126,4 +126,4 @@ _content_sync:
   entity_dependencies:
     user:
       - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
-      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

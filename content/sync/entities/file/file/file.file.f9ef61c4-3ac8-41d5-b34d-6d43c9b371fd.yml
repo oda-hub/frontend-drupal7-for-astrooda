@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: f9ef61c4-3ac8-41d5-b34d-6d43c9b371fd
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: mmoda-my-account.png
+uri:
+  -
+    value: 'public://2024-11/mmoda-my-account.png'
+    url: /sites/default/files/2024-11/mmoda-my-account.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 61990
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-19T06:44:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:44:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

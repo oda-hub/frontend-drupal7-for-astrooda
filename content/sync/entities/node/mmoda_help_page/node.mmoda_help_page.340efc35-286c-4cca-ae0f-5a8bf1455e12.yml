@@ -22,7 +22,7 @@ status:
 uid:
   -
     target_type: user
-    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 title:
   -
     value: 'INTEGRAL SPI-ACS'
@@ -32,7 +32,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-25T20:16:12+00:00'
+    value: '2024-11-26T13:52:01+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -87,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-10/grb-selection.png" aria-label="{&quot;alt&quot;:&quot;grb-selection&quot;}" role="button" title="grb-selection" data-colorbox-gallery="gallery-image-23-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-i11fsaT2efQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;grb-selection&quot;}">
+      <a href="http://default/sites/default/files/2024-10/grb-selection.png" aria-label="{&quot;alt&quot;:&quot;grb-selection&quot;}" role="button" title="grb-selection" data-colorbox-gallery="gallery-image-23-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-TwCxwZ5AjII" data-cbox-img-attrs="{&quot;alt&quot;:&quot;grb-selection&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-i11fsaT2efQ" src="/sites/default/files/styles/large/public/2024-10/grb-selection.png?itok=a78wA-WT" width="480" height="163" alt="grb-selection" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-TwCxwZ5AjII" src="/sites/default/files/styles/large/public/2024-10/grb-selection.png?itok=a78wA-WT" width="480" height="163" alt="grb-selection" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -155,7 +155,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-10/toppanel0.png" aria-label="{&quot;alt&quot;:&quot;toppanel&quot;}" role="button" title="toppanel" data-colorbox-gallery="gallery-image-5-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-vaMfbXXevTw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;toppanel&quot;}">
+      <a href="http://default/sites/default/files/2024-10/toppanel0.png" aria-label="{&quot;alt&quot;:&quot;toppanel&quot;}" role="button" title="toppanel" data-colorbox-gallery="gallery-image-5-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-uZN4aeHGmBg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;toppanel&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -165,7 +165,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-vaMfbXXevTw" src="/sites/default/files/styles/large/public/2024-10/toppanel0.png?itok=xaATUe-J" width="480" height="145" alt="toppanel" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-uZN4aeHGmBg" src="/sites/default/files/styles/large/public/2024-10/toppanel0.png?itok=xaATUe-J" width="480" height="145" alt="toppanel" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -223,7 +223,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-10/processingdone.png" aria-label="{&quot;alt&quot;:&quot;processingdone&quot;}" role="button" title="processingdone" data-colorbox-gallery="gallery-image-25-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-FlBC1PuBrko" data-cbox-img-attrs="{&quot;alt&quot;:&quot;processingdone&quot;}">
+      <a href="http://default/sites/default/files/2024-10/processingdone.png" aria-label="{&quot;alt&quot;:&quot;processingdone&quot;}" role="button" title="processingdone" data-colorbox-gallery="gallery-image-25-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-QRVt3gieiZo" data-cbox-img-attrs="{&quot;alt&quot;:&quot;processingdone&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -233,7 +233,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-FlBC1PuBrko" src="/sites/default/files/styles/large/public/2024-10/processingdone.png?itok=cs9FIo9T" width="480" height="159" alt="processingdone" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-QRVt3gieiZo" src="/sites/default/files/styles/large/public/2024-10/processingdone.png?itok=cs9FIo9T" width="480" height="159" alt="processingdone" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -291,7 +291,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-10/spi-acs.png" aria-label="{&quot;alt&quot;:&quot;spi-acs&quot;}" role="button" title="spi-acs" data-colorbox-gallery="gallery-image-12-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-VMrrWYr68jo" data-cbox-img-attrs="{&quot;alt&quot;:&quot;spi-acs&quot;}">
+      <a href="http://default/sites/default/files/2024-10/spi-acs.png" aria-label="{&quot;alt&quot;:&quot;spi-acs&quot;}" role="button" title="spi-acs" data-colorbox-gallery="gallery-image-12-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-8vMeK3NT2_Y" data-cbox-img-attrs="{&quot;alt&quot;:&quot;spi-acs&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -301,7 +301,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-VMrrWYr68jo" src="/sites/default/files/styles/large/public/2024-10/spi-acs.png?itok=hw-dJKwG" width="433" height="480" alt="spi-acs" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-8vMeK3NT2_Y" src="/sites/default/files/styles/large/public/2024-10/spi-acs.png?itok=hw-dJKwG" width="433" height="480" alt="spi-acs" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -359,7 +359,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-10/spi-acs-viewlc.png" aria-label="{&quot;alt&quot;:&quot;lc&quot;}" role="button" title="lc" data-colorbox-gallery="gallery-image-11-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-2oly8iJnyq4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;lc&quot;}">
+      <a href="http://default/sites/default/files/2024-10/spi-acs-viewlc.png" aria-label="{&quot;alt&quot;:&quot;lc&quot;}" role="button" title="lc" data-colorbox-gallery="gallery-image-11-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-rh3QpdGjCxQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;lc&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -369,7 +369,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-2oly8iJnyq4" src="/sites/default/files/styles/large/public/2024-10/spi-acs-viewlc.png?itok=q1xV4byw" width="480" height="273" alt="lc" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-rh3QpdGjCxQ" src="/sites/default/files/styles/large/public/2024-10/spi-acs-viewlc.png?itok=q1xV4byw" width="480" height="273" alt="lc" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -427,7 +427,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-10/spi-acs-lc.png" aria-label="{&quot;alt&quot;:&quot;lc&quot;}" role="button" title="lc" data-colorbox-gallery="gallery-image-29-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-eUPvwgDzVeA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;lc&quot;}">
+      <a href="http://default/sites/default/files/2024-10/spi-acs-lc.png" aria-label="{&quot;alt&quot;:&quot;lc&quot;}" role="button" title="lc" data-colorbox-gallery="gallery-image-29-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-RvwLddnwGtY" data-cbox-img-attrs="{&quot;alt&quot;:&quot;lc&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -437,7 +437,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-eUPvwgDzVeA" src="/sites/default/files/styles/large/public/2024-10/spi-acs-lc.png?itok=6gy8VnjK" width="422" height="480" alt="lc" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-RvwLddnwGtY" src="/sites/default/files/styles/large/public/2024-10/spi-acs-lc.png?itok=6gy8VnjK" width="422" height="480" alt="lc" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -468,4 +468,4 @@ _content_sync:
   entity_dependencies:
     user:
       - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
-      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

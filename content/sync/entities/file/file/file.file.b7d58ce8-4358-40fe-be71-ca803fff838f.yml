@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: b7d58ce8-4358-40fe-be71-ca803fff838f
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: frontendtoppanegw.png
+uri:
+  -
+    value: 'public://2024-11/frontendtoppanegw.png'
+    url: /sites/default/files/2024-11/frontendtoppanegw.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 69333
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-18T14:39:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:39:49+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

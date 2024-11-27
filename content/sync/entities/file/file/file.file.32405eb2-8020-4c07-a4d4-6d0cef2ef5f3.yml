@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 32405eb2-8020-4c07-a4d4-6d0cef2ef5f3
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: lc-view0.png
+uri:
+  -
+    value: 'public://2024-11/lc-view0.png'
+    url: /sites/default/files/2024-11/lc-view0.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 84085
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-18T14:08:45+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:08:50+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

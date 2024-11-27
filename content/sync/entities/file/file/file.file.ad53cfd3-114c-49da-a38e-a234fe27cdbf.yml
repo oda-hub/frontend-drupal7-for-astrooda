@@ -1,0 +1,33 @@
+uuid:
+  -
+    value: ad53cfd3-114c-49da-a38e-a234fe27cdbf
+langcode:
+  -
+    value: en
+uid: {  }
+filename:
+  -
+    value: strain.png
+uri:
+  -
+    value: 'public://2024-10/strain.png'
+    url: /sites/default/files/2024-10/strain.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 123913
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T10:10:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:10:52+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file

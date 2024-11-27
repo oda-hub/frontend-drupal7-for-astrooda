@@ -1,0 +1,23 @@
+uuid:
+  -
+    value: 19c9d732-7c75-4f9c-92af-154457cb8295
+langcode:
+  -
+    value: en
+shortcut_set:
+  -
+    target_id: default
+title:
+  -
+    value: 'Text formats and editors'
+weight: {  }
+link:
+  -
+    uri: 'internal:/admin/config/content/formats'
+    title: null
+    options: {  }
+default_langcode:
+  -
+    value: true
+_content_sync:
+  entity_type: shortcut

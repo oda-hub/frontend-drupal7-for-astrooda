@@ -1,0 +1,33 @@
+uuid:
+  -
+    value: 42c4d870-039c-4067-8c7c-cebcac184e3d
+langcode:
+  -
+    value: en
+uid: {  }
+filename:
+  -
+    value: strainparam.png
+uri:
+  -
+    value: 'public://2024-10/strainparam.png'
+    url: /sites/default/files/2024-10/strainparam.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 41223
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T10:11:04+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:11:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file

@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 6a173bce-3d8d-46ab-9631-55b3525f3460
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: maxi-source-jem-x.png
+uri:
+  -
+    value: 'public://2024-11/maxi-source-jem-x.png'
+    url: /sites/default/files/2024-11/maxi-source-jem-x.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 54916
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-19T06:39:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:40:04+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

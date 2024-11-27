@@ -1,0 +1,33 @@
+uuid:
+  -
+    value: 4e861c56-c2d5-4ccc-a208-cbbb3cb7ed59
+langcode:
+  -
+    value: en
+uid: {  }
+filename:
+  -
+    value: odacatalog.png
+uri:
+  -
+    value: 'public://2023-11/odacatalog.png'
+    url: /sites/default/files/2023-11/odacatalog.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 75391
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-09-26T14:12:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file

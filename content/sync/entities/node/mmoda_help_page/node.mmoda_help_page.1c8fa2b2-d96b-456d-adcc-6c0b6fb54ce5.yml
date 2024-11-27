@@ -22,7 +22,7 @@ status:
 uid:
   -
     target_type: user
-    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 title:
   -
     value: 'INTEGRAL JEM-X'
@@ -32,7 +32,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-25T20:14:41+00:00'
+    value: '2024-11-26T13:52:01+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -87,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/topoda1.png" aria-label="{&quot;alt&quot;:&quot;Top ODA 1&quot;}" role="button" title="Top ODA 1" data-colorbox-gallery="gallery-image-55-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-uTCSfsuzPqk" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Top ODA 1&quot;}">
+      <a href="http://default/sites/default/files/2024-11/topoda1.png" aria-label="{&quot;alt&quot;:&quot;Top ODA 1&quot;}" role="button" title="Top ODA 1" data-colorbox-gallery="gallery-image-55-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-ueUeGixiqVA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Top ODA 1&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-uTCSfsuzPqk" src="/sites/default/files/styles/large/public/2024-11/topoda1.png?itok=Xlc3Z3kw" width="480" height="210" alt="Top ODA 1" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-ueUeGixiqVA" src="/sites/default/files/styles/large/public/2024-11/topoda1.png?itok=Xlc3Z3kw" width="480" height="210" alt="Top ODA 1" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -155,7 +155,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/jem-x-query.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Query&quot;}" role="button" title="JEM-X Query" data-colorbox-gallery="gallery-image-56-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-PiA57kks4u0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Query&quot;}">
+      <a href="http://default/sites/default/files/2024-11/jem-x-query.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Query&quot;}" role="button" title="JEM-X Query" data-colorbox-gallery="gallery-image-56-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-f4Ic4PXVdZ0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Query&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -165,7 +165,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-PiA57kks4u0" src="/sites/default/files/styles/large/public/2024-11/jem-x-query.png?itok=kg3YesQO" width="199" height="480" alt="JEM-X Query" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-f4Ic4PXVdZ0" src="/sites/default/files/styles/large/public/2024-11/jem-x-query.png?itok=kg3YesQO" width="199" height="480" alt="JEM-X Query" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -223,7 +223,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/science-wndow-list-jemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X ScW list&quot;}" role="button" title="JEM-X ScW list" data-colorbox-gallery="gallery-image-57-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-ftrm9xfKQas" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X ScW list&quot;}">
+      <a href="http://default/sites/default/files/2024-11/science-wndow-list-jemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X ScW list&quot;}" role="button" title="JEM-X ScW list" data-colorbox-gallery="gallery-image-57-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-HTcDmPZAAl4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X ScW list&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -233,7 +233,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-ftrm9xfKQas" src="/sites/default/files/styles/large/public/2024-11/science-wndow-list-jemx.png?itok=yMTwuaQo" width="397" height="480" alt="JEM-X ScW list" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-HTcDmPZAAl4" src="/sites/default/files/styles/large/public/2024-11/science-wndow-list-jemx.png?itok=yMTwuaQo" width="397" height="480" alt="JEM-X ScW list" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -291,7 +291,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/topoda2.png" aria-label="{&quot;alt&quot;:&quot;ODA Top 2&quot;}" role="button" title="ODA Top 2" data-colorbox-gallery="gallery-image-58-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-pGrIyVkRsH0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ODA Top 2&quot;}">
+      <a href="http://default/sites/default/files/2024-11/topoda2.png" aria-label="{&quot;alt&quot;:&quot;ODA Top 2&quot;}" role="button" title="ODA Top 2" data-colorbox-gallery="gallery-image-58-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-gRU6e_5jyyI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ODA Top 2&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -301,7 +301,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-pGrIyVkRsH0" src="/sites/default/files/styles/large/public/2024-11/topoda2.png?itok=Tc-m27Hj" width="480" height="210" alt="ODA Top 2" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-gRU6e_5jyyI" src="/sites/default/files/styles/large/public/2024-11/topoda2.png?itok=Tc-m27Hj" width="480" height="210" alt="ODA Top 2" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -359,7 +359,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/imagejemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X image&quot;}" role="button" title="JEM-X image" data-colorbox-gallery="gallery-image-59-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-sIY7SsnBOV0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X image&quot;}">
+      <a href="http://default/sites/default/files/2024-11/imagejemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X image&quot;}" role="button" title="JEM-X image" data-colorbox-gallery="gallery-image-59-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-S59WUBEVroQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X image&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -369,7 +369,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-sIY7SsnBOV0" src="/sites/default/files/styles/large/public/2024-11/imagejemx.png?itok=DOSE0OK5" width="480" height="398" alt="JEM-X image" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-S59WUBEVroQ" src="/sites/default/files/styles/large/public/2024-11/imagejemx.png?itok=DOSE0OK5" width="480" height="398" alt="JEM-X image" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -427,7 +427,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/catalogjemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Catalog&quot;}" role="button" title="JEM-X Catalog" data-colorbox-gallery="gallery-image-60-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-meNhfrHpT-4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Catalog&quot;}">
+      <a href="http://default/sites/default/files/2024-11/catalogjemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Catalog&quot;}" role="button" title="JEM-X Catalog" data-colorbox-gallery="gallery-image-60-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-URWeDr6zw9Q" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Catalog&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -437,7 +437,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-meNhfrHpT-4" src="/sites/default/files/styles/large/public/2024-11/catalogjemx.png?itok=2uCQTMHj" width="480" height="373" alt="JEM-X Catalog" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-URWeDr6zw9Q" src="/sites/default/files/styles/large/public/2024-11/catalogjemx.png?itok=2uCQTMHj" width="480" height="373" alt="JEM-X Catalog" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -495,7 +495,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/catalogbox.png" aria-label="{&quot;alt&quot;:&quot;JEM-X catalog box&quot;}" role="button" title="JEM-X catalog box" data-colorbox-gallery="gallery-image-61-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-ysJ-wrCZN0I" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X catalog box&quot;}">
+      <a href="http://default/sites/default/files/2024-11/catalogbox.png" aria-label="{&quot;alt&quot;:&quot;JEM-X catalog box&quot;}" role="button" title="JEM-X catalog box" data-colorbox-gallery="gallery-image-61-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-kDsE3zDM3sw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X catalog box&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -505,7 +505,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-ysJ-wrCZN0I" src="/sites/default/files/styles/large/public/2024-11/catalogbox.png?itok=eSYd63Ht" width="313" height="480" alt="JEM-X catalog box" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-kDsE3zDM3sw" src="/sites/default/files/styles/large/public/2024-11/catalogbox.png?itok=eSYd63Ht" width="313" height="480" alt="JEM-X catalog box" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -563,7 +563,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/fitjemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Fit&quot;}" role="button" title="JEM-X Fit" data-colorbox-gallery="gallery-image-62-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-2cXLtSQBQks" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Fit&quot;}">
+      <a href="http://default/sites/default/files/2024-11/fitjemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Fit&quot;}" role="button" title="JEM-X Fit" data-colorbox-gallery="gallery-image-62-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-agEBbk0IhV0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Fit&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -573,7 +573,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-2cXLtSQBQks" src="/sites/default/files/styles/large/public/2024-11/fitjemx.png?itok=MQLTkQKH" width="461" height="480" alt="JEM-X Fit" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-agEBbk0IhV0" src="/sites/default/files/styles/large/public/2024-11/fitjemx.png?itok=MQLTkQKH" width="461" height="480" alt="JEM-X Fit" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -631,7 +631,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/spectrumresultsjemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Spectrum&quot;}" role="button" title="JEM-X Spectrum" data-colorbox-gallery="gallery-image-63-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-b95kLkV27-w" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Spectrum&quot;}">
+      <a href="http://default/sites/default/files/2024-11/spectrumresultsjemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X Spectrum&quot;}" role="button" title="JEM-X Spectrum" data-colorbox-gallery="gallery-image-63-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-9J-LlX289Wk" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X Spectrum&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -641,7 +641,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-b95kLkV27-w" src="/sites/default/files/styles/large/public/2024-11/spectrumresultsjemx.png?itok=ZFVBWTiK" width="311" height="480" alt="JEM-X Spectrum" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-9J-LlX289Wk" src="/sites/default/files/styles/large/public/2024-11/spectrumresultsjemx.png?itok=ZFVBWTiK" width="311" height="480" alt="JEM-X Spectrum" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -699,7 +699,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/lcjemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X LC 1&quot;}" role="button" title="JEM-X LC 1" data-colorbox-gallery="gallery-image-64-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-LRIVRVF2pMw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X LC 1&quot;}">
+      <a href="http://default/sites/default/files/2024-11/lcjemx.png" aria-label="{&quot;alt&quot;:&quot;JEM-X LC 1&quot;}" role="button" title="JEM-X LC 1" data-colorbox-gallery="gallery-image-64-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-0P0Rg15kxyM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;JEM-X LC 1&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -709,7 +709,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-LRIVRVF2pMw" src="/sites/default/files/styles/large/public/2024-11/lcjemx.png?itok=E6iUpohe" width="480" height="360" alt="JEM-X LC 1" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-0P0Rg15kxyM" src="/sites/default/files/styles/large/public/2024-11/lcjemx.png?itok=E6iUpohe" width="480" height="360" alt="JEM-X LC 1" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -741,4 +741,4 @@ _content_sync:
   entity_dependencies:
     user:
       - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
-      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

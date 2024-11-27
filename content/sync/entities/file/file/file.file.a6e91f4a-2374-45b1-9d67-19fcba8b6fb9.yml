@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: a6e91f4a-2374-45b1-9d67-19fcba8b6fb9
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: mmoda-github-connect.png
+uri:
+  -
+    value: 'public://2024-11/mmoda-github-connect.png'
+    url: /sites/default/files/2024-11/mmoda-github-connect.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 29726
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-19T06:44:33+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:44:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

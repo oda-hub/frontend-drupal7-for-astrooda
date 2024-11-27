@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: d0f69441-6e35-47fd-97d0-098a94bbb3bd
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: query.png
+uri:
+  -
+    value: 'public://2024-11/query.png'
+    url: /sites/default/files/2024-11/query.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 22248
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-19T09:05:04+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:05:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

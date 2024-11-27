@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: e47d8ac3-8777-4486-9f61-330b39a6f631
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: lc-extract.png
+uri:
+  -
+    value: 'public://2024-11/lc-extract.png'
+    url: /sites/default/files/2024-11/lc-extract.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 172514
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-18T14:06:49+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-18T14:06:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

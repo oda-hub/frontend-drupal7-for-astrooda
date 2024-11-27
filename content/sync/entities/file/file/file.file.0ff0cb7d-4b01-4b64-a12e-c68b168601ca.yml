@@ -1,0 +1,33 @@
+uuid:
+  -
+    value: 0ff0cb7d-4b01-4b64-a12e-c68b168601ca
+langcode:
+  -
+    value: en
+uid: {  }
+filename:
+  -
+    value: catalogview.png
+uri:
+  -
+    value: 'public://2024-10/catalogview.png'
+    url: /sites/default/files/2024-10/catalogview.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 59149
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T10:11:24+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:11:29+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file

@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: b2dbac2e-c0d9-473f-9af8-c81af86561a7
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: catalogbox.png
+uri:
+  -
+    value: 'public://2024-11/catalogbox.png'
+    url: /sites/default/files/2024-11/catalogbox.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 49744
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-19T06:27:33+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:27:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

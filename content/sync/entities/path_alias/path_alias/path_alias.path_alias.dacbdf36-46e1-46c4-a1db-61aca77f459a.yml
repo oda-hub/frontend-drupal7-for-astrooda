@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: dacbdf36-46e1-46c4-a1db-61aca77f459a
+langcode:
+  -
+    value: en
+path:
+  target_type: user
+  target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
+alias:
+  -
+    value: /users/content-owner
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    user:
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

@@ -1,0 +1,33 @@
+uuid:
+  -
+    value: 0864fd51-b587-4ce4-a90d-c9a5fb8aa0a7
+langcode:
+  -
+    value: en
+uid: {  }
+filename:
+  -
+    value: toppanel0.png
+uri:
+  -
+    value: 'public://2024-10/toppanel0.png'
+    url: /sites/default/files/2024-10/toppanel0.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 15791
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T09:03:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T09:03:37+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file

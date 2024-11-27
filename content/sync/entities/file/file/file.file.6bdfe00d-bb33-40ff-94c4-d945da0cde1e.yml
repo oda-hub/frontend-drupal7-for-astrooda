@@ -1,0 +1,33 @@
+uuid:
+  -
+    value: 6bdfe00d-bb33-40ff-94c4-d945da0cde1e
+langcode:
+  -
+    value: en
+uid: {  }
+filename:
+  -
+    value: imageparam.png
+uri:
+  -
+    value: 'public://2024-10/imageparam.png'
+    url: /sites/default/files/2024-10/imageparam.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 28034
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T10:33:17+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:33:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file

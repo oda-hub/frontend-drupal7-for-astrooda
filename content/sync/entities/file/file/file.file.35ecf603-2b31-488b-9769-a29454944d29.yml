@@ -1,0 +1,33 @@
+uuid:
+  -
+    value: 35ecf603-2b31-488b-9769-a29454944d29
+langcode:
+  -
+    value: en
+uid: {  }
+filename:
+  -
+    value: conesearchparam.png
+uri:
+  -
+    value: 'public://2024-10/conesearchparam.png'
+    url: /sites/default/files/2024-10/conesearchparam.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 38311
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T10:12:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:12:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file

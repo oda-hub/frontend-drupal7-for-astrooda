@@ -1,0 +1,33 @@
+uuid:
+  -
+    value: f758abf1-7e58-48d2-b826-92e8fe629fbe
+langcode:
+  -
+    value: en
+uid: {  }
+filename:
+  -
+    value: ngc.png
+uri:
+  -
+    value: 'public://2024-10/ngc.png'
+    url: /sites/default/files/2024-10/ngc.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 13887
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T10:35:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T10:35:17+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file

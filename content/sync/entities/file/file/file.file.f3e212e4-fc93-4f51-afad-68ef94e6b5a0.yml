@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: f3e212e4-fc93-4f51-afad-68ef94e6b5a0
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: done-lemx.png
+uri:
+  -
+    value: 'public://2024-11/done-lemx.png'
+    url: /sites/default/files/2024-11/done-lemx.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 18584
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-19T09:06:45+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T09:06:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357

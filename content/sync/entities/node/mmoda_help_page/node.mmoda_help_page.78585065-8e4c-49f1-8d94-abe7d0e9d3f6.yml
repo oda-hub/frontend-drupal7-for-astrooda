@@ -22,7 +22,7 @@ status:
 uid:
   -
     target_type: user
-    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 title:
   -
     value: 'ISGRI light curve'
@@ -32,7 +32,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-25T20:17:11+00:00'
+    value: '2024-11-26T13:52:00+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -87,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png" aria-label="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}" role="button" title="ISGRI light curve" data-colorbox-gallery="gallery-image-32-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-IOki2qOc_HU" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}">
+      <a href="http://default/sites/default/files/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png" aria-label="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}" role="button" title="ISGRI light curve" data-colorbox-gallery="gallery-image-32-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-GOfYtpcJmSw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-IOki2qOc_HU" src="/sites/default/files/styles/large/public/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png?itok=oCcG-Wsb" width="480" height="446" alt="ISGRI light curve" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-GOfYtpcJmSw" src="/sites/default/files/styles/large/public/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png?itok=oCcG-Wsb" width="480" height="446" alt="ISGRI light curve" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -155,7 +155,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/lc-extract.png" aria-label="{&quot;alt&quot;:&quot;LC extract&quot;}" role="button" title="LC extract" data-colorbox-gallery="gallery-image-33-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-mh9rLX38ZqA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC extract&quot;}">
+      <a href="http://default/sites/default/files/2024-11/lc-extract.png" aria-label="{&quot;alt&quot;:&quot;LC extract&quot;}" role="button" title="LC extract" data-colorbox-gallery="gallery-image-33-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-4xsD_A8EYVg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC extract&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -165,7 +165,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-mh9rLX38ZqA" src="/sites/default/files/styles/large/public/2024-11/lc-extract.png?itok=yYeNs9Qs" width="480" height="406" alt="LC extract" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-4xsD_A8EYVg" src="/sites/default/files/styles/large/public/2024-11/lc-extract.png?itok=yYeNs9Qs" width="480" height="406" alt="LC extract" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -223,7 +223,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/email-lc0.png" aria-label="{&quot;alt&quot;:&quot;LC Email&quot;}" role="button" title="LC Email" data-colorbox-gallery="gallery-image-34-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-RQB1H3EI-hc" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC Email&quot;}">
+      <a href="http://default/sites/default/files/2024-11/email-lc0.png" aria-label="{&quot;alt&quot;:&quot;LC Email&quot;}" role="button" title="LC Email" data-colorbox-gallery="gallery-image-34-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-LimwYJ8aJKw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC Email&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -233,7 +233,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-RQB1H3EI-hc" src="/sites/default/files/styles/large/public/2024-11/email-lc0.png?itok=FTv8KJ7d" width="480" height="223" alt="LC Email" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-LimwYJ8aJKw" src="/sites/default/files/styles/large/public/2024-11/email-lc0.png?itok=FTv8KJ7d" width="480" height="223" alt="LC Email" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -291,7 +291,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/ready-lc0.png" aria-label="{&quot;alt&quot;:&quot;LC ready&quot;}" role="button" title="LC ready" data-colorbox-gallery="gallery-image-35-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-5FAxRTv_I7k" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC ready&quot;}">
+      <a href="http://default/sites/default/files/2024-11/ready-lc0.png" aria-label="{&quot;alt&quot;:&quot;LC ready&quot;}" role="button" title="LC ready" data-colorbox-gallery="gallery-image-35-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-GbATd28_GuY" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC ready&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -301,7 +301,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-5FAxRTv_I7k" src="/sites/default/files/styles/large/public/2024-11/ready-lc0.png?itok=kpWU4L_V" width="480" height="225" alt="LC ready" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-GbATd28_GuY" src="/sites/default/files/styles/large/public/2024-11/ready-lc0.png?itok=kpWU4L_V" width="480" height="225" alt="LC ready" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -359,7 +359,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/lc-view0.png" aria-label="{&quot;alt&quot;:&quot;LC view&quot;}" role="button" title="LC view" data-colorbox-gallery="gallery-image-36-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-iKVZeCfEII4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC view&quot;}">
+      <a href="http://default/sites/default/files/2024-11/lc-view0.png" aria-label="{&quot;alt&quot;:&quot;LC view&quot;}" role="button" title="LC view" data-colorbox-gallery="gallery-image-36-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-bdsEgIN7vfE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC view&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -369,7 +369,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-iKVZeCfEII4" src="/sites/default/files/styles/large/public/2024-11/lc-view0.png?itok=1WWm_d6n" width="480" height="359" alt="LC view" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-bdsEgIN7vfE" src="/sites/default/files/styles/large/public/2024-11/lc-view0.png?itok=1WWm_d6n" width="480" height="359" alt="LC view" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -427,7 +427,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/lc-isgri.png" aria-label="{&quot;alt&quot;:&quot;LC ISGRI&quot;}" role="button" title="LC ISGRI" data-colorbox-gallery="gallery-image-37-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-Cnw3vdlUfaY" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC ISGRI&quot;}">
+      <a href="http://default/sites/default/files/2024-11/lc-isgri.png" aria-label="{&quot;alt&quot;:&quot;LC ISGRI&quot;}" role="button" title="LC ISGRI" data-colorbox-gallery="gallery-image-37-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-i0F1HOCu_yU" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC ISGRI&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -437,7 +437,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-Cnw3vdlUfaY" src="/sites/default/files/styles/large/public/2024-11/lc-isgri.png?itok=0JROFPw2" width="480" height="396" alt="LC ISGRI" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-i0F1HOCu_yU" src="/sites/default/files/styles/large/public/2024-11/lc-isgri.png?itok=0JROFPw2" width="480" height="396" alt="LC ISGRI" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -467,4 +467,4 @@ _content_sync:
   entity_dependencies:
     user:
       - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
-      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

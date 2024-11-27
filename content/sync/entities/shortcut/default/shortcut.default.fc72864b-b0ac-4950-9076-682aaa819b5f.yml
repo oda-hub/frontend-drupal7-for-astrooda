@@ -1,0 +1,23 @@
+uuid:
+  -
+    value: fc72864b-b0ac-4950-9076-682aaa819b5f
+langcode:
+  -
+    value: en
+shortcut_set:
+  -
+    target_id: default
+title:
+  -
+    value: 'View modes'
+weight: {  }
+link:
+  -
+    uri: 'internal:/admin/structure/display-modes/view'
+    title: null
+    options: {  }
+default_langcode:
+  -
+    value: true
+_content_sync:
+  entity_type: shortcut

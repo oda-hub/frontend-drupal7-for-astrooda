@@ -1,0 +1,33 @@
+uuid:
+  -
+    value: 1707ef17-59d5-474d-9d85-499099bd4183
+langcode:
+  -
+    value: en
+uid: {  }
+filename:
+  -
+    value: spi-acs.png
+uri:
+  -
+    value: 'public://2024-10/spi-acs.png'
+    url: /sites/default/files/2024-10/spi-acs.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 27571
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-10-01T09:15:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-10-01T09:15:27+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file

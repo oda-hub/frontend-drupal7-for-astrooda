@@ -22,7 +22,7 @@ status:
 uid:
   -
     target_type: user
-    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 title:
   -
     value: MMODA
@@ -32,7 +32,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-25T20:16:58+00:00'
+    value: '2024-11-26T13:52:00+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -87,7 +87,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/sign.png" aria-label="{&quot;alt&quot;:&quot;MMODA Sign&quot;}" role="button" title="MMODA Sign" data-colorbox-gallery="gallery-image-38-WjiEt2i6g88" class="colorbox" aria-controls="colorbox-dIJUwzwKfDA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA Sign&quot;}">
+      <a href="http://default/sites/default/files/2024-11/sign.png" aria-label="{&quot;alt&quot;:&quot;MMODA Sign&quot;}" role="button" title="MMODA Sign" data-colorbox-gallery="gallery-image-38-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-Qe9TYFiwoUE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA Sign&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +97,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-dIJUwzwKfDA" src="/sites/default/files/styles/large/public/2024-11/sign.png?itok=RQjp2cdc" width="480" height="81" alt="MMODA Sign" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-Qe9TYFiwoUE" src="/sites/default/files/styles/large/public/2024-11/sign.png?itok=RQjp2cdc" width="480" height="81" alt="MMODA Sign" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -127,4 +127,4 @@ _content_sync:
   entity_dependencies:
     user:
       - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
-      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

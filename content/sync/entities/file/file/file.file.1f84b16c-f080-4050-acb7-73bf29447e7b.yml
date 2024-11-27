@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 1f84b16c-f080-4050-acb7-73bf29447e7b
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+filename:
+  -
+    value: ibis-isgri-js9-01.png
+uri:
+  -
+    value: 'public://2024-11/ibis-isgri-js9-01.png'
+    url: /sites/default/files/2024-11/ibis-isgri-js9-01.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 131634
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-19T06:52:34+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-19T06:52:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357
