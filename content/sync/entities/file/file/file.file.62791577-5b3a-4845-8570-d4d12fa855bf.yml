@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 62791577-5b3a-4845-8570-d4d12fa855bf
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+filename:
+  -
+    value: hess-params-01.png
+uri:
+  -
+    value: 'public://2024-11/hess-params-01.png'
+    url: /sites/default/files/2024-11/hess-params-01.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 69300
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-27T12:43:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T12:43:35+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

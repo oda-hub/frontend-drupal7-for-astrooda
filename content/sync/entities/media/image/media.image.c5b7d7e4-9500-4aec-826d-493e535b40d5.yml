@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: c5b7d7e4-9500-4aec-826d-493e535b40d5
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-27T12:23:07+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+name:
+  -
+    value: cta-common-aparams-01.png
+thumbnail:
+  -
+    target_id: 205
+    alt: 'CTA common params'
+    title: null
+    width: 596
+    height: 277
+    target_type: file
+    target_uuid: eaa43657-5617-4dd6-b71f-a9e6dc31c504
+    url: 'http://default/sites/default/files/2024-11/cta-common-aparams-01.png'
+created:
+  -
+    value: '2024-11-27T12:23:07+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T12:23:07+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 205
+    alt: 'CTA common params'
+    title: ''
+    width: 596
+    height: 277
+    target_type: file
+    target_uuid: eaa43657-5617-4dd6-b71f-a9e6dc31c504
+    url: 'http://default/sites/default/files/2024-11/cta-common-aparams-01.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

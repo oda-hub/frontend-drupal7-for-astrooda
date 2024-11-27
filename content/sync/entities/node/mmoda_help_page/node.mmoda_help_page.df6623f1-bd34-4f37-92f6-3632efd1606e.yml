@@ -1,0 +1,468 @@
+uuid:
+  -
+    value: df6623f1-bd34-4f37-92f6-3632efd1606e
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: mmoda_help_page
+revision_timestamp:
+  -
+    value: '2024-11-27T13:10:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
+title:
+  -
+    value: IceCube
+created:
+  -
+    value: '2024-11-27T13:10:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T13:15:01+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: '<h1>IceCube</h1><p>This service provides data analysis for puclicly available IceCube neutrino telescope based on <a href="https://github.com/icecube/skyllh">SkyLLH</a> data analysis tools (see <a href="https://icecube.github.io/skyllh/master/html/index.html">SkyLLH documentation</a> for description of the tools). The data are described by <a href="https://arxiv.org/abs/2101.09836">IceCube collaboration (2021)</a>.</p><p>The data analysis can be launched either using the MMODA fronend interface or through a Python API from e.g. a Jupyter notebook on a user laptop. The main parameter panel generic for all analysis services allows to select the source of interest, based on its name or coordinates:</p><drupal-media data-entity-type="media" data-entity-uuid="489e5b3c-d946-48e4-a316-5726d1c2baa4">&nbsp;</drupal-media><p>For the specific case of IceCube, it is not possible to set the start and stop times for the analysis. Instead, it is possible to choose a set of fixed-time observation periods onto which the IceCube data is divided: IC40, IC59, IC79, IC86-I, IC86-II-VII, the time spans of these periods are specified in the IceCube publicaiton <a href="https://arxiv.org/abs/2101.09836">(IceCube collaboration, 2021)</a>.</p><p>The instrument specific parameter panel allow to select one of the three available data product types: Image, Spectrum or Lightcurve.</p><drupal-media data-entity-type="media" data-entity-uuid="015f91bb-b45d-4498-a59f-e02d92579120">&nbsp;</drupal-media><p>Selecting one of the available data product types reveals additional parameters specific to this data product.</p><p>The image parameter panel allows to specify the energy range the image size (<em>Radius</em> parameter) and pixel size (<em>pixsize</em> parameter). The image that will be produced is a Test Statistic (TS) value map around the reference source position. The TS values will be computed for the powerlaw spectral model of a source placed at the center of each pixel. It is possible to either fix the slope of the spectrum or leave it free, using a <em>Fixed_slope</em> / <em>Free_slope</em> switch.</p><p>Upon each data analysis request, IceCube dataset and Instrument Response Functions are downloaded from the <a href="https://icecube.wisc.edu/data-releases/2021/01/all-sky-point-source-icecube-data-years-2008-2018/">IceCube website</a>.</p><p>The product display panel that appears upon the completion of data analysis shows the image together with a set of buttons that provide a possibility for further manipulations of the data product:</p><drupal-media data-entity-type="media" data-entity-uuid="7287b930-f123-4cff-9a78-ab952d8c645c">&nbsp;</drupal-media><p>The "Qeury parameters" button provides the metadata with the analysis parameters. The "API code" button displays the Python API code that can be copy-pasted into a python code (e.g. on the user laptop) to request the data product. The same API code can also be launched in an online Jupyter lab environment on a collaborative data science platform <a href="https://renkulab.io/">renkulab.io</a>, using the "View on Renku" button.</p><drupal-media data-entity-type="media" data-entity-uuid="6ceb6c8c-0e36-4ad1-9651-fb3c86af97b3">&nbsp;</drupal-media><p>Similar to the Image, the spectrum can be requested either for a fixed spectral slope, or leaving the slope free in the spectral fitting, using the <em>Fixed_slope</em> / <em>Free_slope</em> switch. For the "Fixed slope" choice, it is possible to set the spectral slope setting the <em>Slope</em> parameter. For the fixed spectral slope, the analysis builds a likelihood profile to find the best-fit number of counts from the source and the error intervals (defined as the boundaries of the interval in which the TS value decreases by 1 with respect to the maximum, the 90% upper bound is defined at the upper boundary of the interval at which the TS value decreases by 2.7). The counts are converted to the flux normalisation using the <em>calculate_fluxmodel_scaling_factor</em> funciton of <a href="https://github.com/icecube/skyllh">skyllh</a>. In the case of "free slope" choice, TS values are calculated as a function of the source counts and spectral slope and 68% confidence contours are defined as the level at which TS decreases by 2.3 with respect to the maximal value. If the maximal TS value exceeds 6, the best-fit spectrum is plotted together with the 68% confidence range "butterfly". Otherwise, an upper limit on the powerlaw type spectra is shown. This upper limit is shown as a curve that is a tangent to the maximal possible powerlaw spectrum (at 90% confidence level) for each spectral slope in the range between 1 and 5.</p><drupal-media data-entity-type="media" data-entity-uuid="a6c8de0f-5bf3-49d6-9e5c-41ce51890f77">&nbsp;</drupal-media><p>For the lightcurve, the entire ten-year time span of IceCube public data is divided into intevals corresponding to the IceCube observational periods (from IC40 to IC86-VII). For each period, the source flux is extracted assuming fixed spectral slope.</p><drupal-media data-entity-type="media" data-entity-uuid="a46377aa-6ebc-45b7-9bcc-634035c7d9cd">&nbsp;</drupal-media><p>Python notebooks for image, spectrum and lightcurves can be found at <a href="https://renkulab.io/projects/astronomy/mmoda/icecube/">renkulab.io</a> and in a related <a href="https://gitlab.renkulab.io/astronomy/mmoda/icecube/">GitLab repository</a>.</p>'
+    format: full_html
+    processed: |-
+      <h1>IceCube</h1><p>This service provides data analysis for puclicly available IceCube neutrino telescope based on <a href="https://github.com/icecube/skyllh">SkyLLH</a> data analysis tools (see <a href="https://icecube.github.io/skyllh/master/html/index.html">SkyLLH documentation</a> for description of the tools). The data are described by <a href="https://arxiv.org/abs/2101.09836">IceCube collaboration (2021)</a>.</p><p>The data analysis can be launched either using the MMODA fronend interface or through a Python API from e.g. a Jupyter notebook on a user laptop. The main parameter panel generic for all analysis services allows to select the source of interest, based on its name or coordinates:</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/icecube-common-params-01.png" aria-label="{&quot;alt&quot;:&quot;Icecube common params 01&quot;}" role="button" title="Icecube common params 01" data-colorbox-gallery="gallery-image-108-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-GKFy7PRb2Ws" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube common params 01&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-GKFy7PRb2Ws" src="/sites/default/files/styles/large/public/2024-11/icecube-common-params-01.png?itok=I_no0RrD" width="480" height="190" alt="Icecube common params 01" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>For the specific case of IceCube, it is not possible to set the start and stop times for the analysis. Instead, it is possible to choose a set of fixed-time observation periods onto which the IceCube data is divided: IC40, IC59, IC79, IC86-I, IC86-II-VII, the time spans of these periods are specified in the IceCube publicaiton <a href="https://arxiv.org/abs/2101.09836">(IceCube collaboration, 2021)</a>.</p><p>The instrument specific parameter panel allow to select one of the three available data product types: Image, Spectrum or Lightcurve.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/Icecube-params-01.png" aria-label="{&quot;alt&quot;:&quot;Icecube Params 01&quot;}" role="button" title="Icecube Params 01" data-colorbox-gallery="gallery-image-109-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-hsxUhwScyVg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube Params 01&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-hsxUhwScyVg" src="/sites/default/files/styles/large/public/2024-11/Icecube-params-01.png?itok=TbvmHtPC" width="336" height="480" alt="Icecube Params 01" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>Selecting one of the available data product types reveals additional parameters specific to this data product.</p><p>The image parameter panel allows to specify the energy range the image size (<em>Radius</em> parameter) and pixel size (<em>pixsize</em> parameter). The image that will be produced is a Test Statistic (TS) value map around the reference source position. The TS values will be computed for the powerlaw spectral model of a source placed at the center of each pixel. It is possible to either fix the slope of the spectrum or leave it free, using a <em>Fixed_slope</em> / <em>Free_slope</em> switch.</p><p>Upon each data analysis request, IceCube dataset and Instrument Response Functions are downloaded from the <a href="https://icecube.wisc.edu/data-releases/2021/01/all-sky-point-source-icecube-data-years-2008-2018/">IceCube website</a>.</p><p>The product display panel that appears upon the completion of data analysis shows the image together with a set of buttons that provide a possibility for further manipulations of the data product:</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/icecube_Image_product.png" aria-label="{&quot;alt&quot;:&quot;Icecube params 01&quot;}" role="button" title="Icecube params 01" data-colorbox-gallery="gallery-image-110-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-u_c-lMm0oNE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube params 01&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-u_c-lMm0oNE" src="/sites/default/files/styles/large/public/2024-11/icecube_Image_product.png?itok=HDf57ANT" width="480" height="401" alt="Icecube params 01" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>The "Qeury parameters" button provides the metadata with the analysis parameters. The "API code" button displays the Python API code that can be copy-pasted into a python code (e.g. on the user laptop) to request the data product. The same API code can also be launched in an online Jupyter lab environment on a collaborative data science platform <a href="https://renkulab.io/">renkulab.io</a>, using the "View on Renku" button.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/icecube_API_code.png" aria-label="{&quot;alt&quot;:&quot;Icecube API code&quot;}" role="button" title="Icecube API code" data-colorbox-gallery="gallery-image-111-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-8TZB68-Ez8U" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube API code&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-8TZB68-Ez8U" src="/sites/default/files/styles/large/public/2024-11/icecube_API_code.png?itok=XDj7cQ6z" width="474" height="480" alt="Icecube API code" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>Similar to the Image, the spectrum can be requested either for a fixed spectral slope, or leaving the slope free in the spectral fitting, using the <em>Fixed_slope</em> / <em>Free_slope</em> switch. For the "Fixed slope" choice, it is possible to set the spectral slope setting the <em>Slope</em> parameter. For the fixed spectral slope, the analysis builds a likelihood profile to find the best-fit number of counts from the source and the error intervals (defined as the boundaries of the interval in which the TS value decreases by 1 with respect to the maximum, the 90% upper bound is defined at the upper boundary of the interval at which the TS value decreases by 2.7). The counts are converted to the flux normalisation using the <em>calculate_fluxmodel_scaling_factor</em> funciton of <a href="https://github.com/icecube/skyllh">skyllh</a>. In the case of "free slope" choice, TS values are calculated as a function of the source counts and spectral slope and 68% confidence contours are defined as the level at which TS decreases by 2.3 with respect to the maximal value. If the maximal TS value exceeds 6, the best-fit spectrum is plotted together with the 68% confidence range "butterfly". Otherwise, an upper limit on the powerlaw type spectra is shown. This upper limit is shown as a curve that is a tangent to the maximal possible powerlaw spectrum (at 90% confidence level) for each spectral slope in the range between 1 and 5.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/icecube_spectrum-01.png" aria-label="{&quot;alt&quot;:&quot;Icecube spectrum 01&quot;}" role="button" title="Icecube spectrum 01" data-colorbox-gallery="gallery-image-112-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-u3mBYyce47M" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube spectrum 01&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-u3mBYyce47M" src="/sites/default/files/styles/large/public/2024-11/icecube_spectrum-01.png?itok=kQPbsFh5" width="480" height="480" alt="Icecube spectrum 01" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>For the lightcurve, the entire ten-year time span of IceCube public data is divided into intevals corresponding to the IceCube observational periods (from IC40 to IC86-VII). For each period, the source flux is extracted assuming fixed spectral slope.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/icecube_Lightcurve_product.png" aria-label="{&quot;alt&quot;:&quot;Icecube LC 01&quot;}" role="button" title="Icecube LC 01" data-colorbox-gallery="gallery-image-113-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-dNv2ZqNhUF4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube LC 01&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-dNv2ZqNhUF4" src="/sites/default/files/styles/large/public/2024-11/icecube_Lightcurve_product.png?itok=uVQIVgQ_" width="480" height="453" alt="Icecube LC 01" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>Python notebooks for image, spectrum and lightcurves can be found at <a href="https://renkulab.io/projects/astronomy/mmoda/icecube/">renkulab.io</a> and in a related <a href="https://gitlab.renkulab.io/astronomy/mmoda/icecube/">GitLab repository</a>.</p>
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

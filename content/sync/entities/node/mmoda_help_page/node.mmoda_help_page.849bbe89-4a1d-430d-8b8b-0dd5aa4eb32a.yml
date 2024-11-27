@@ -1,0 +1,468 @@
+uuid:
+  -
+    value: 849bbe89-4a1d-430d-8b8b-0dd5aa4eb32a
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: mmoda_help_page
+revision_timestamp:
+  -
+    value: '2024-11-27T12:55:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
+title:
+  -
+    value: HESS
+created:
+  -
+    value: '2024-11-27T12:42:13+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T13:02:15+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: '<h1>HESS</h1><p>This service provides data analysis for puclicly available HESS telescope data, <a href="https://arxiv.org/abs/1810.04516">HESS collaboration (2018)</a>.</p><p>The data analysis can be launched either using the MMODA fronend interface or through a Python API from e.g. a Jupyter notebook on a user laptop. The main parameter panel generic for all analysis services allows to select the source of interest, based on its name or coordinates:</p><drupal-media data-entity-type="media" data-entity-uuid="d8968b85-4cbe-4454-8067-0512697875fc">&nbsp;</drupal-media><p>The HESS public data sample covers a selection of sources, with relatively short exposures, specified in the HESS collaboration paper. Choosing time intervals outside the dataset time coverage would result in "no data found" error.</p><p>The instrument specific parameter panel allow to select one of the three available data product types: Image, Spectrum or Lightcurve.</p><drupal-media data-entity-type="media" data-entity-uuid="baf81dca-756f-4fda-a5cf-1bd72485b62f">&nbsp;</drupal-media><p>Selecting one of the available data product types reveals additional parameters specific to this data product.</p><p>The image parameter panel allows to specify the energy range the image size (<em>Radius</em> parameter) and pixel size (<em>pixsize</em> parameter). The image that will be produced is a Count Map around the reference source position.</p><p>The product display panel that appears upon the completion of data analysis shows the image together with a set of buttons that provide a possibility for further manipulations of the data product:</p><drupal-media data-entity-type="media" data-entity-uuid="880597cc-f569-4350-ad45-8926dac08ba5">&nbsp;</drupal-media><p>The "Qeury parameters" button provides the metadata with the analysis parameters. The "API code" button displays the Python API code that can be copy-pasted into a python code (e.g. on the user laptop) to request the data product. The same API code can also be launched in an online Jupyter lab environment on a collaborative data science platform <a href="https://renkulab.io/">renkulab.io</a>, using the "View on Renku" button.</p><drupal-media data-entity-type="media" data-entity-uuid="e0c9fb63-2396-4a32-b0f2-c6a1f13fd810">&nbsp;</drupal-media><p>For the spectra, the analysis performs histogramming of events in energy, in the number <code>NEbins</code> of energy bins homogeneously spaces in logarithm of energy, between <code>Emin</code> and <code>Emax</code>. The source signal is extracted from a circular region of the radius <code>R_s</code> centered at the source <code>RA</code>, <code>Dec</code>. The backgorund is estimated using the "wobble" method, from a region opposite to the source count estimate region with respect to the camera center. Conversion of the counts to the physical flux units is done by dividing by the exposure time and effective area that is extracted from the Instrument Response Funcitons (IRF). The result is shown with black data points. This simple estimate of flux in energy bins does not take into account the event energy estimation errors. To the contrary, a powerlaw fit to the spectrum is done using forward folding method, properly taking into account the error of energy estimation. The energy range of the fit can be adjusted with the <code>Efit_min</code>, <code>Efit_max</code> parameters.</p><drupal-media data-entity-type="media" data-entity-uuid="bd33ebc5-6d94-4ee9-a6ef-873a406cfa3f">&nbsp;</drupal-media><p>For the lightcurve, the same method of source and backgorund counts extraction is used as for the spectral analysis. The counts are binned in a number <code>Ntbins</code> of homogeneously spaced time bins between <code>Start time</code> and <code>End time</code> specified in the main parameter panel. Events in the energy range between <code>Emin</code> and <code>Emax</code> are considered. Conversion to the physical flux is done using the exposure estimate with an effective area at the lower energy bound <code>Emin</code>. The result</p><drupal-media data-entity-type="media" data-entity-uuid="017852ed-670b-4ab1-ae2f-243590a2b262">&nbsp;</drupal-media><p>typically has limited time coverage corresponding to the sample datasets chosen for the Data Level 3 (DL3) demonstrator pulic release by the HESS collaboration.</p><p>Python notebooks for image, spectrum and lightcurves can be found at <a href="https://renkulab.io/projects/astronomy/mmoda/hess/">renkulab.io</a> and in a related <a href="https://gitlab.renkulab.io/astronomy/mmoda/hess/">GitLab repository</a>.</p>'
+    format: full_html
+    processed: |-
+      <h1>HESS</h1><p>This service provides data analysis for puclicly available HESS telescope data, <a href="https://arxiv.org/abs/1810.04516">HESS collaboration (2018)</a>.</p><p>The data analysis can be launched either using the MMODA fronend interface or through a Python API from e.g. a Jupyter notebook on a user laptop. The main parameter panel generic for all analysis services allows to select the source of interest, based on its name or coordinates:</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/hess-common-params-01.png" aria-label="{&quot;alt&quot;:&quot;HESS common params&quot;}" role="button" title="HESS common params" data-colorbox-gallery="gallery-image-101-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-rncX32MD4PU" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS common params&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-rncX32MD4PU" src="/sites/default/files/styles/large/public/2024-11/hess-common-params-01.png?itok=MsCtS8V0" width="480" height="206" alt="HESS common params" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>The HESS public data sample covers a selection of sources, with relatively short exposures, specified in the HESS collaboration paper. Choosing time intervals outside the dataset time coverage would result in "no data found" error.</p><p>The instrument specific parameter panel allow to select one of the three available data product types: Image, Spectrum or Lightcurve.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/hess-params-01.png" aria-label="{&quot;alt&quot;:&quot;HESS params&quot;}" role="button" title="HESS params" data-colorbox-gallery="gallery-image-102-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-9aO2NUNEvjI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS params&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-9aO2NUNEvjI" src="/sites/default/files/styles/large/public/2024-11/hess-params-01.png?itok=JejICGck" width="306" height="480" alt="HESS params" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>Selecting one of the available data product types reveals additional parameters specific to this data product.</p><p>The image parameter panel allows to specify the energy range the image size (<em>Radius</em> parameter) and pixel size (<em>pixsize</em> parameter). The image that will be produced is a Count Map around the reference source position.</p><p>The product display panel that appears upon the completion of data analysis shows the image together with a set of buttons that provide a possibility for further manipulations of the data product:</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/hess-result-01.png" aria-label="{&quot;alt&quot;:&quot;HESS Result&quot;}" role="button" title="HESS Result" data-colorbox-gallery="gallery-image-103-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-OQzGV3AaxYQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS Result&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-OQzGV3AaxYQ" src="/sites/default/files/styles/large/public/2024-11/hess-result-01.png?itok=zXOViKMW" width="473" height="480" alt="HESS Result" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>The "Qeury parameters" button provides the metadata with the analysis parameters. The "API code" button displays the Python API code that can be copy-pasted into a python code (e.g. on the user laptop) to request the data product. The same API code can also be launched in an online Jupyter lab environment on a collaborative data science platform <a href="https://renkulab.io/">renkulab.io</a>, using the "View on Renku" button.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/HESS-api-code.png" aria-label="{&quot;alt&quot;:&quot;HESS API code&quot;}" role="button" title="HESS API code" data-colorbox-gallery="gallery-image-104-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-hywZ-VYn-Ew" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS API code&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-hywZ-VYn-Ew" src="/sites/default/files/styles/large/public/2024-11/HESS-api-code.png?itok=XJ-i_a1l" width="422" height="480" alt="HESS API code" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>For the spectra, the analysis performs histogramming of events in energy, in the number <code>NEbins</code> of energy bins homogeneously spaces in logarithm of energy, between <code>Emin</code> and <code>Emax</code>. The source signal is extracted from a circular region of the radius <code>R_s</code> centered at the source <code>RA</code>, <code>Dec</code>. The backgorund is estimated using the "wobble" method, from a region opposite to the source count estimate region with respect to the camera center. Conversion of the counts to the physical flux units is done by dividing by the exposure time and effective area that is extracted from the Instrument Response Funcitons (IRF). The result is shown with black data points. This simple estimate of flux in energy bins does not take into account the event energy estimation errors. To the contrary, a powerlaw fit to the spectrum is done using forward folding method, properly taking into account the error of energy estimation. The energy range of the fit can be adjusted with the <code>Efit_min</code>, <code>Efit_max</code> parameters.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/HESS-resul-02.png" aria-label="{&quot;alt&quot;:&quot;HESS Result 02&quot;}" role="button" title="HESS Result 02" data-colorbox-gallery="gallery-image-105-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-F9xqUV093L0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS Result 02&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-F9xqUV093L0" src="/sites/default/files/styles/large/public/2024-11/HESS-resul-02.png?itok=O2h9_f6_" width="480" height="464" alt="HESS Result 02" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>For the lightcurve, the same method of source and backgorund counts extraction is used as for the spectral analysis. The counts are binned in a number <code>Ntbins</code> of homogeneously spaced time bins between <code>Start time</code> and <code>End time</code> specified in the main parameter panel. Events in the energy range between <code>Emin</code> and <code>Emax</code> are considered. Conversion to the physical flux is done using the exposure estimate with an effective area at the lower energy bound <code>Emin</code>. The result</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/HESS-resul-03.png" aria-label="{&quot;alt&quot;:&quot;HESS Result 03&quot;}" role="button" title="HESS Result 03" data-colorbox-gallery="gallery-image-106-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-EP30rDbn0mA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS Result 03&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-EP30rDbn0mA" src="/sites/default/files/styles/large/public/2024-11/HESS-resul-03.png?itok=tQpPLeNX" width="480" height="464" alt="HESS Result 03" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>typically has limited time coverage corresponding to the sample datasets chosen for the Data Level 3 (DL3) demonstrator pulic release by the HESS collaboration.</p><p>Python notebooks for image, spectrum and lightcurves can be found at <a href="https://renkulab.io/projects/astronomy/mmoda/hess/">renkulab.io</a> and in a related <a href="https://gitlab.renkulab.io/astronomy/mmoda/hess/">GitLab repository</a>.</p>
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: ee588771-6e0c-4f18-917c-086cc8f57a7b
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 44491d24-19cd-4e92-b854-08441e86655c
+alias:
+  -
+    value: /help/mmoda/cta
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.44491d24-19cd-4e92-b854-08441e86655c

@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: a6c8de0f-5bf3-49d6-9e5c-41ce51890f77
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-27T13:14:18+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+name:
+  -
+    value: icecube_spectrum-01.png
+thumbnail:
+  -
+    target_id: 221
+    alt: 'Icecube spectrum 01'
+    title: null
+    width: 1462
+    height: 1462
+    target_type: file
+    target_uuid: 7fe6baca-fe5f-47ef-92d1-a172cd3fd640
+    url: 'http://default/sites/default/files/2024-11/icecube_spectrum-01.png'
+created:
+  -
+    value: '2024-11-27T13:14:18+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T13:14:18+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 221
+    alt: 'Icecube spectrum 01'
+    title: ''
+    width: 1462
+    height: 1462
+    target_type: file
+    target_uuid: 7fe6baca-fe5f-47ef-92d1-a172cd3fd640
+    url: 'http://default/sites/default/files/2024-11/icecube_spectrum-01.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

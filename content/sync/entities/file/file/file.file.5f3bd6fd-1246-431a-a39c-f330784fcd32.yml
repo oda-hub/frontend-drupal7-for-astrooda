@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 5f3bd6fd-1246-431a-a39c-f330784fcd32
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+filename:
+  -
+    value: zenodo.5499840.png
+uri:
+  -
+    value: 'public://2024-11/zenodo.5499840.png'
+    url: /sites/default/files/2024-11/zenodo.5499840.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 3009
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-27T12:57:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T12:57:52+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

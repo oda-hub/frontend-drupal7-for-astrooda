@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: l8O9FIZ4G2_LXmjbVxJWHMJ5jTCuerbn3qFj9PZDZqY
+  default_config_hash: kXYWGFHjDzZKjL_3Qu26hVQ2SVctXuMCP0KXJEO6gbI
 name: legacysurvey
 messenger: IR/Visible
 title: 'DESI LegacySurvey'
@@ -11,8 +11,8 @@ image_band: g
 image_size: 3.0
 pixel_size: 1
 query_type: Real
-weight: 100
+weight: 30
 data_server_url: dispatch-data/run_analysis
-help_page_url: help/mmoda/legacy-survey
+help_page_url: help/mmoda/desi-legacy-survey
 acknowledgement: |
   If this result is used for publicaiton, please cite <a href="https://doi.org/10.5281/zenodo.6376844" target="_blank">https://doi.org/10.5281/zenodo.6376844</a> and include an acknowledgement of the Legacy Survey: <a href="https://www.legacysurvey.org/acknowledgment/" target="_blank">https://www.legacysurvey.org/acknowledgment/</a>

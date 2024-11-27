@@ -1,0 +1,264 @@
+uuid:
+  -
+    value: 44491d24-19cd-4e92-b854-08441e86655c
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: mmoda_help_page
+revision_timestamp:
+  -
+    value: '2024-11-27T12:21:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+title:
+  -
+    value: CTA
+created:
+  -
+    value: '2024-11-27T12:20:13+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T13:05:07+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: '<h1>CTA simulaitons</h1><p>This service provides simulaiton of observations with <a href="https://www.cta-observatory.org/">Cherenkov Telescope Array (CTA)</a> observatory (now in construction), based on the Instrument Response Funcitons (IRF) from Monte-Carlo Production 5: <a href="https://doi.org/10.5281/zenodo.5499840"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.5499840.svg"></a>. The simulation is done using <a href="https://gammapy.org/">Gammapy</a> package.</p><p>The data analysis can be launched either using the MMODA fronend interface or through a Python API from e.g. a Jupyter notebook on a user laptop. The main parameter panel generic for all analysis services allows to select the source of interest, based on its name or coordinates:</p><drupal-media data-entity-type="media" data-entity-uuid="c5b7d7e4-9500-4aec-826d-493e535b40d5">&nbsp;</drupal-media><p>The time interval informaton is not used, since CTA is not yet operaitonal. The sky coordinates are used to estimate zenith angle at which the source may be observable with CTA in the North or South hemispheres.</p><p>The instrument specific parameter panel allow to select parameters of the simulation</p><drupal-media data-entity-type="media" data-entity-uuid="41ad3698-c29b-4b89-8b0d-819422ede93a">&nbsp;</drupal-media><p>Parameters that can be adjusted are the off-axis angle in the telescope field-of-view, <code>OffAxis angle</code>, Radius of the sky image around the source position, <code>Radius sky image</code> (used in the image preview), the exposure time in hours, <code>Texp</code>, source redshift <code>z</code>, the powerlaw flux normalisation <code>F0</code> and the reference energy of normalisation <code>E0</code> (in TeV), the slope of the powerlaw spectrum <code>Gamma</code>, radius of the spectral extraction region <code>Radius spectral extraction</code> used in the count-spectrum preview.</p><p>Two possibilities for defining the sky model are available: <code>pre-defined model</code> and <code>model cube file</code>. The "pre-defined model" option provides a possibility to simulate a source with a power-law spectrum, <code>dN/dE=F0 (E/E0)^{-Gamma}</code>, considering also the effect of absorption on the Extragalactic Backgorund Light (EBL, based on <a href="https://arxiv.org/abs/1705.10256">Franceschini et al. (2017)</a> model. In the "model cube file" approach, the sky model is loaded from a datacube file (to be uploaded from an URL to be given in the parameter box). The model cube describes source counts as a function of <code>RA</code>, <code>DEC</code> and energy <code>E</code>. Hence, both the source position on the sky and the model source spectrum are encoded directly in the data cube, the parameters from the dedicated <code>RA</code>, <code>DEC</code>, <code>F0</code>, <code>E0</code>, <code>Gamma</code> fields are not used.</p><p>For the sources visible from both South and North CTA sites, it is possible to choose between <code>South</code> and <code>North</code> sites. It is also possible to simulate observations with different CTA sub-arrays: Large Size Telescopes (<code>LST</code>), Medium Size Telescopes (<code>MST</code>), Small Size Telescopes (<code>SST</code>). Note that in the "Production 5" Monte-Carlo simulations of the telescope responses it was assumed that the Northern site will host only LST and MST sub-arrays (no SST available), while the Southern site will have MST and SST sub-arrays (no LST available).</p><p>Pushing the "Submit" button launches the simulation. Upon completion of the simulaiton, the product display panel appears. It shows a list of the data products available for inspection and download:</p><p>Four data products are generated: event list (a FITS file), a sky image, a "theta-square plot" showsing distribution of gamma-like events around the the source position, and the count-spectrum showing the excess counts as a funciton of energy. The image, spectrum and theta-square plot are for "preview" of the event set, further analysis of the simulated events can be done with deticated imaging and spectral analysis tools.</p><drupal-media data-entity-type="media" data-entity-uuid="0d19d37a-ae83-4fd1-a602-f1752aa7d54a">&nbsp;</drupal-media><p>The "Query parameters" button provides the metadata with the analysis parameters. The "API code" button displays the Python API code that can be copy-pasted into a python code (e.g. on the user laptop) to request the data product. The same API code can also be launched in an online Jupyter lab environment on a collaborative data science platform <a href="https://renkulab.io/">renkulab.io</a>, using the "View on Renku" button.</p>'
+    format: full_html
+    processed: |-
+      <h1>CTA simulaitons</h1><p>This service provides simulaiton of observations with <a href="https://www.cta-observatory.org/">Cherenkov Telescope Array (CTA)</a> observatory (now in construction), based on the Instrument Response Funcitons (IRF) from Monte-Carlo Production 5: <a href="https://doi.org/10.5281/zenodo.5499840"><a href="https://zenodo.org/badge/DOI/10.5281/zenodo.5499840.svg" class="colorbox" data-colorbox-gallery="ckeditor-colorbox-inline"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.5499840.svg"></a></a>. The simulation is done using <a href="https://gammapy.org/">Gammapy</a> package.</p><p>The data analysis can be launched either using the MMODA fronend interface or through a Python API from e.g. a Jupyter notebook on a user laptop. The main parameter panel generic for all analysis services allows to select the source of interest, based on its name or coordinates:</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/cta-common-aparams-01.png" aria-label="{&quot;alt&quot;:&quot;CTA common params&quot;}" role="button" title="CTA common params" data-colorbox-gallery="gallery-image-97-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-q4Rg4MwufoE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA common params&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-q4Rg4MwufoE" src="/sites/default/files/styles/large/public/2024-11/cta-common-aparams-01.png?itok=EceuTQ0D" width="480" height="223" alt="CTA common params" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>The time interval informaton is not used, since CTA is not yet operaitonal. The sky coordinates are used to estimate zenith angle at which the source may be observable with CTA in the North or South hemispheres.</p><p>The instrument specific parameter panel allow to select parameters of the simulation</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/cta-aparams-01.png" aria-label="{&quot;alt&quot;:&quot;CTA params&quot;}" role="button" title="CTA params" data-colorbox-gallery="gallery-image-98-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-Fhi2pJCuyR4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA params&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-Fhi2pJCuyR4" src="/sites/default/files/styles/large/public/2024-11/cta-aparams-01.png?itok=-uogvEgd" width="258" height="480" alt="CTA params" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>Parameters that can be adjusted are the off-axis angle in the telescope field-of-view, <code>OffAxis angle</code>, Radius of the sky image around the source position, <code>Radius sky image</code> (used in the image preview), the exposure time in hours, <code>Texp</code>, source redshift <code>z</code>, the powerlaw flux normalisation <code>F0</code> and the reference energy of normalisation <code>E0</code> (in TeV), the slope of the powerlaw spectrum <code>Gamma</code>, radius of the spectral extraction region <code>Radius spectral extraction</code> used in the count-spectrum preview.</p><p>Two possibilities for defining the sky model are available: <code>pre-defined model</code> and <code>model cube file</code>. The "pre-defined model" option provides a possibility to simulate a source with a power-law spectrum, <code>dN/dE=F0 (E/E0)^{-Gamma}</code>, considering also the effect of absorption on the Extragalactic Backgorund Light (EBL, based on <a href="https://arxiv.org/abs/1705.10256">Franceschini et al. (2017)</a> model. In the "model cube file" approach, the sky model is loaded from a datacube file (to be uploaded from an URL to be given in the parameter box). The model cube describes source counts as a function of <code>RA</code>, <code>DEC</code> and energy <code>E</code>. Hence, both the source position on the sky and the model source spectrum are encoded directly in the data cube, the parameters from the dedicated <code>RA</code>, <code>DEC</code>, <code>F0</code>, <code>E0</code>, <code>Gamma</code> fields are not used.</p><p>For the sources visible from both South and North CTA sites, it is possible to choose between <code>South</code> and <code>North</code> sites. It is also possible to simulate observations with different CTA sub-arrays: Large Size Telescopes (<code>LST</code>), Medium Size Telescopes (<code>MST</code>), Small Size Telescopes (<code>SST</code>). Note that in the "Production 5" Monte-Carlo simulations of the telescope responses it was assumed that the Northern site will host only LST and MST sub-arrays (no SST available), while the Southern site will have MST and SST sub-arrays (no LST available).</p><p>Pushing the "Submit" button launches the simulation. Upon completion of the simulaiton, the product display panel appears. It shows a list of the data products available for inspection and download:</p><p>Four data products are generated: event list (a FITS file), a sky image, a "theta-square plot" showsing distribution of gamma-like events around the the source position, and the count-spectrum showing the excess counts as a funciton of energy. The image, spectrum and theta-square plot are for "preview" of the event set, further analysis of the simulated events can be done with deticated imaging and spectral analysis tools.</p>
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ media--source-image.html.twig
+         ▪️ media--image--colorbox.html.twig
+         ▪️ media--image.html.twig
+         ▪️ media--colorbox.html.twig
+         ✅ media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+      <div class="media media--type-image media--view-mode-colorbox">
+        
+            
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         ▪️ field--media--field-media-image--image.html.twig
+         ▪️ field--media--field-media-image.html.twig
+         ▪️ field--media--image.html.twig
+         ▪️ field--field-media-image.html.twig
+         ▪️ field--image.html.twig
+         ✅ field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'colorbox_formatter' -->
+      <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      <a href="http://default/sites/default/files/2024-11/cta-result-01.png" aria-label="{&quot;alt&quot;:&quot;CTA result&quot;}" role="button" title="CTA result" data-colorbox-gallery="gallery-image-99-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-TndOGGKVpiw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA result&quot;}">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+      <img id="colorbox-TndOGGKVpiw" src="/sites/default/files/styles/large/public/2024-11/cta-result-01.png?itok=ubSHnFH_" width="480" height="404" alt="CTA result" loading="lazy" class="img-fluid image-style-large">
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image-style.html.twig' -->
+
+      </a>
+
+      <!-- END OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/field.html.twig' -->
+
+
+        </div>
+
+      <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/content/media.html.twig' -->
+
+      <p>The "Query parameters" button provides the metadata with the analysis parameters. The "API code" button displays the Python API code that can be copy-pasted into a python code (e.g. on the user laptop) to request the data product. The same API code can also be launched in an online Jupyter lab environment on a collaborative data science platform <a href="https://renkulab.io/">renkulab.io</a>, using the "View on Renku" button.</p>
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

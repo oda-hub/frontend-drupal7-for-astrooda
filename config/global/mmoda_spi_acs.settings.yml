@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: hDWgvJTCpin8-Vgjvpk47c6ER8Os8Y7qcvJG1oD95KU
+  default_config_hash: N0eULfLfLAu8f9dsqh0UlE7hSsq2iZGSgirnB_5cMGk
 name: spi_acs
 messenger: Gamma-rays
 title: 'INTEGRAL SPI-ACS'
@@ -7,7 +7,7 @@ enabled: true
 product_type: spi_acs_lc
 query_type: Real
 time_bin: 2
-weight: 30
+weight: 50
 data_server_url: dispatch-data/run_analysis
 help_page_url: help/mmoda/integral-spi-acs
 acknowledgement: |

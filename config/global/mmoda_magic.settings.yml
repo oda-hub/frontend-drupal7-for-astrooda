@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: pKl-k9tq0XEc6AoyooDIv9Ia30OBITXoYvodMJ_HwRA
+name: magic
+messenger: Gamma-rays
+title: Magic
+enabled: true
+E1_keV: 20.0
+E2_keV: 100.0
+radius: 15
+product_type: magic_table
+time_bin: '2'
+time_bin_format: sec
+query_type: Real
+weight: 100
+data_server_url: dispatch-data/run_analysis
+help_page_url: help/mmoda/magic

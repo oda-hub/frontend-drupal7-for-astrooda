@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: d71fd18f-36fa-45ff-80f3-4f98f6ed1ac9
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+filename:
+  -
+    value: hess-result-01.png
+uri:
+  -
+    value: 'public://2024-11/hess-result-01.png'
+    url: /sites/default/files/2024-11/hess-result-01.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 227484
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-27T12:44:07+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T12:44:15+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

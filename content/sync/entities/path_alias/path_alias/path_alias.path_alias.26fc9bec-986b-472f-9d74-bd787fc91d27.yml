@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 26fc9bec-986b-472f-9d74-bd787fc91d27
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: df6623f1-bd34-4f37-92f6-3632efd1606e
+alias:
+  -
+    value: /help/mmoda/icecube
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.df6623f1-bd34-4f37-92f6-3632efd1606e

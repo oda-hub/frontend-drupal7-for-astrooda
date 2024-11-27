@@ -56,11 +56,17 @@ module:
   mmoda: 0
   mmoda_antares: 0
   mmoda_crbeam: 0
+  mmoda_cta: 0
+  mmoda_desi: 0
   mmoda_gw: 0
+  mmoda_hess: 0
+  mmoda_icecube: 0
   mmoda_integral: 0
   mmoda_isgri: 0
   mmoda_jemx: 0
   mmoda_legacysurvey: 0
+  mmoda_magic: 0
+  mmoda_sgwb: 0
   mmoda_spi_acs: 0
   mysql: 0
   node: 0

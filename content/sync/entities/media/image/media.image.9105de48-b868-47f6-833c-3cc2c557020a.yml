@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 9105de48-b868-47f6-833c-3cc2c557020a
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-27T12:40:59+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+name:
+  -
+    value: grb-detect-01.png
+thumbnail:
+  -
+    target_id: 208
+    alt: 'GRB detect pic'
+    title: null
+    width: 800
+    height: 353
+    target_type: file
+    target_uuid: 20b81c0e-3320-48f3-8cce-8da58f5792d4
+    url: 'http://default/sites/default/files/2024-11/grb-detect-01.png'
+created:
+  -
+    value: '2024-11-27T12:40:59+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T12:40:59+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 208
+    alt: 'GRB detect pic'
+    title: ''
+    width: 800
+    height: 353
+    target_type: file
+    target_uuid: 20b81c0e-3320-48f3-8cce-8da58f5792d4
+    url: 'http://default/sites/default/files/2024-11/grb-detect-01.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

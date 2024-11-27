@@ -9,7 +9,7 @@ path:
   target_uuid: 33d679f5-96a0-4aca-8c3f-02756b4552ac
 alias:
   -
-    value: /help/mmoda/legacy-survey
+    value: /help/mmoda/desi-legacy-survey
 status:
   -
     value: true

@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: d8968b85-4cbe-4454-8067-0512697875fc
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-27T12:42:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+name:
+  -
+    value: hess-common-params-01.png
+thumbnail:
+  -
+    target_id: 209
+    alt: 'HESS common params'
+    title: null
+    width: 658
+    height: 282
+    target_type: file
+    target_uuid: 195a475f-2334-4aa5-b298-8d5a0dfe00ec
+    url: 'http://default/sites/default/files/2024-11/hess-common-params-01.png'
+created:
+  -
+    value: '2024-11-27T12:42:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T12:42:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 209
+    alt: 'HESS common params'
+    title: ''
+    width: 658
+    height: 282
+    target_type: file
+    target_uuid: 195a475f-2334-4aa5-b298-8d5a0dfe00ec
+    url: 'http://default/sites/default/files/2024-11/hess-common-params-01.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

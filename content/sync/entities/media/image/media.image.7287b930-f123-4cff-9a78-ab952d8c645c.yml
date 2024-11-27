@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 7287b930-f123-4cff-9a78-ab952d8c645c
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-27T13:13:13+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+name:
+  -
+    value: icecube_Image_product.png
+thumbnail:
+  -
+    target_id: 219
+    alt: 'Icecube params 01'
+    title: null
+    width: 1792
+    height: 1496
+    target_type: file
+    target_uuid: eec1b6fa-97ce-4cb3-8abf-5a6afe538ace
+    url: 'http://default/sites/default/files/2024-11/icecube_Image_product.png'
+created:
+  -
+    value: '2024-11-27T13:13:13+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T13:13:13+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 219
+    alt: 'Icecube params 01'
+    title: ''
+    width: 1792
+    height: 1496
+    target_type: file
+    target_uuid: eec1b6fa-97ce-4cb3-8abf-5a6afe538ace
+    url: 'http://default/sites/default/files/2024-11/icecube_Image_product.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

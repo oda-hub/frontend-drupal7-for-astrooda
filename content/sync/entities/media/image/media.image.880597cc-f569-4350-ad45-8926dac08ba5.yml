@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 880597cc-f569-4350-ad45-8926dac08ba5
+langcode:
+  -
+    value: en
+bundle:
+  -
+    target_id: image
+revision_created:
+  -
+    value: '2024-11-27T12:44:07+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+name:
+  -
+    value: hess-result-01.png
+thumbnail:
+  -
+    target_id: 211
+    alt: 'HESS Result'
+    title: null
+    width: 1600
+    height: 1622
+    target_type: file
+    target_uuid: d71fd18f-36fa-45ff-80f3-4f98f6ed1ac9
+    url: 'http://default/sites/default/files/2024-11/hess-result-01.png'
+created:
+  -
+    value: '2024-11-27T12:44:07+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T12:44:07+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    target_id: 211
+    alt: 'HESS Result'
+    title: ''
+    width: 1600
+    height: 1622
+    target_type: file
+    target_uuid: d71fd18f-36fa-45ff-80f3-4f98f6ed1ac9
+    url: 'http://default/sites/default/files/2024-11/hess-result-01.png'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

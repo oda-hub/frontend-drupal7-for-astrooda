@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 777de25e-90dd-441d-a691-466a32a5c150
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+filename:
+  -
+    value: icecube-common-params-01.png
+uri:
+  -
+    value: 'public://2024-11/icecube-common-params-01.png'
+    url: /sites/default/files/2024-11/icecube-common-params-01.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 59529
+status:
+  -
+    value: true
+created:
+  -
+    value: '2024-11-27T13:11:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-11-27T13:12:03+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

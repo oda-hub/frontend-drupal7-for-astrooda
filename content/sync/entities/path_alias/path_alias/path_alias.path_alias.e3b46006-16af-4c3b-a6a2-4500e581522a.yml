@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: e3b46006-16af-4c3b-a6a2-4500e581522a
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 72b68eeb-c205-424d-b012-58d6a713e517
+alias:
+  -
+    value: /help/mmoda/sgwb
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.72b68eeb-c205-424d-b012-58d6a713e517
