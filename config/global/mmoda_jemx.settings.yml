@@ -1,8 +1,9 @@
 _core:
-  default_config_hash: J3BA3yK4dldj89y4cep5K1QN_W9jI_fWfmJFXciPM7U
+  default_config_hash: 49UDck47UOw_9rJOGnGsGlU_K6Lx4MmX_PqxSNkr8QI
 name: jemx
 messenger: X-rays
 title: 'INTEGRAL JEM-X'
+enabled: true
 osa_version: OSA11.2
 radius: 4
 scw_list: '005100410010.001,005100420010.001'

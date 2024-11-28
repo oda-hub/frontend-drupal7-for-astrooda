@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: paYwXJHPoLD2QtMYsEDon_2fO3sNBIfN3Yuf55Oxpfg
+  default_config_hash: mkF5MGo9Kqsmmm-55u0-TrzZwp077dS4l5ScX_p9fuM
 name: antares
 messenger: Neutrino
 title: Antares
@@ -7,7 +7,7 @@ enabled: true
 product_type: antares_spectrum
 query_type: Real
 radius: 2
-weight: 80
+weight: 70
 data_server_url: dispatch-data/run_analysis
 help_page_url: help/mmoda/antares
 acknowledgement: |

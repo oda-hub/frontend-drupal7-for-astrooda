@@ -27,6 +27,8 @@ role_copy_access:
   developer: 0
 languages:
   c: c
+  cpp: cpp
+  cmake: cmake
   css: css
   java: java
   javascript: javascript
@@ -35,6 +37,8 @@ languages:
   python: python
   profile: profile
   python-repl: python-repl
+  twig: twig
+  yml: yml
   1c: 0
   4d: 0
   'sap-abap, abap': 0
@@ -66,12 +70,10 @@ languages:
   bqn: 0
   brainfuck: 0
   csharp: 0
-  cpp: 0
   cal: 0
   c3: 0
   cos: 0
   candid: 0
-  cmake: 0
   cobol: 0
   codeowners: 0
   coq: 0
@@ -248,7 +250,6 @@ languages:
   toit: 0
   tp: 0
   tsql: 0
-  twig: 0
   typescript: 0
   unicorn-rails-log: 0
   vbnet: 0
@@ -264,7 +265,6 @@ languages:
   x86asmatt: 0
   xl: 0
   xquery: 0
-  yml: 0
   zenscript: 0
   zephir: 0
   zig: 0
