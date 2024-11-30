@@ -1,0 +1,23 @@
+uuid: 56f09210-a1a2-4012-819c-3fd3a9eb4bd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mmoda_module
+    - node.type.mmoda_help_page
+  module:
+    - options
+id: node.mmoda_help_page.field_mmoda_module
+field_name: field_mmoda_module
+entity_type: node
+bundle: mmoda_help_page
+label: 'MMODA Module'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: mmoda
+default_value_callback: ''
+settings: {  }
+field_type: list_string

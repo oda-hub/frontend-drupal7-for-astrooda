@@ -13,9 +13,8 @@ revision_timestamp:
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
-    target_id: 0
     target_type: user
-    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 status:
   -
     value: true
@@ -32,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-26T13:52:00+00:00'
+    value: '2024-11-30T22:50:15+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -87,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/mmoda-my-account.png" aria-label="{&quot;alt&quot;:&quot;MMODA My Account&quot;}" role="button" title="MMODA My Account" data-colorbox-gallery="gallery-image-69-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-ZyhW2tVsioY" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA My Account&quot;}">
+      <a href="http://default/sites/default/files/2024-11/mmoda-my-account.png" aria-label="{&quot;alt&quot;:&quot;MMODA My Account&quot;}" role="button" title="MMODA My Account" data-colorbox-gallery="gallery-image-69-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-SW21cT4jlG4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA My Account&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-ZyhW2tVsioY" src="/sites/default/files/styles/large/public/2024-11/mmoda-my-account.png?itok=m9gG_2x-" width="480" height="100" alt="MMODA My Account" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-SW21cT4jlG4" src="/sites/default/files/styles/large/public/2024-11/mmoda-my-account.png?itok=m9gG_2x-" width="480" height="100" alt="MMODA My Account" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -155,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/mmoda-github-connect.png" aria-label="{&quot;alt&quot;:&quot;MMODA GitHub Connect&quot;}" role="button" title="MMODA GitHub Connect" data-colorbox-gallery="gallery-image-70-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-dIF5DKnB9cU" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA GitHub Connect&quot;}">
+      <a href="http://default/sites/default/files/2024-11/mmoda-github-connect.png" aria-label="{&quot;alt&quot;:&quot;MMODA GitHub Connect&quot;}" role="button" title="MMODA GitHub Connect" data-colorbox-gallery="gallery-image-70-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-taGkwxTxAzo" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA GitHub Connect&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -165,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-dIF5DKnB9cU" src="/sites/default/files/styles/large/public/2024-11/mmoda-github-connect.png?itok=tftSfT7A" width="480" height="383" alt="MMODA GitHub Connect" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-taGkwxTxAzo" src="/sites/default/files/styles/large/public/2024-11/mmoda-github-connect.png?itok=tftSfT7A" width="480" height="383" alt="MMODA GitHub Connect" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -190,9 +189,11 @@ body:
       <p>There you can connect your account by clicking on the button "Connect with GitHub"</p>
     summary: ''
     summary_processed: ''
+field_mmoda_module:
+  -
+    value: mmoda
 _content_sync:
   entity_type: node
   entity_dependencies:
     user:
-      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
       - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

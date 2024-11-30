@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.mmoda_help_page.body
+    - field.field.node.mmoda_help_page.field_mmoda_module
     - node.type.mmoda_help_page
   module:
+    - options
     - text
     - user
 id: node.mmoda_help_page.default
@@ -19,6 +21,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_mmoda_module:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }

@@ -27,17 +27,41 @@ settings:
       value: mmoda_jemx
       label: 'INTEGRAL JEM-X'
     -
+      value: mmoda_spi_acs
+      label: 'INTEGRAL SPI-ACS'
+    -
       value: mmoda_legacysurvey
-      label: 'DESI LegacySurvey'
+      label: 'DESI Legacy Survey'
     -
       value: mmoda_polar
       label: Polar
     -
-      value: mmoda_spi_acs
-      label: 'INTEGRAL SPI-ACS'
-    -
       value: mmoda_gw
       label: Ligo/VIRGO
+    -
+      value: mmoda_icecube
+      label: IceCube
+    -
+      value: mmoda_crbeam
+      label: CRbeam
+    -
+      value: mmoda_hess
+      label: HESS
+    -
+      value: mmoda_cta
+      label: CTA
+    -
+      value: mmoda_magic
+      label: Magic
+    -
+      value: mmoda_desi
+      label: Desi
+    -
+      value: mmoda_grb_detection
+      label: 'GRB Detection'
+    -
+      value: mmoda_sgwb
+      label: SGWB
   allowed_values_function: ''
 module: options
 locked: false

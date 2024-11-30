@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-27T13:09:43+00:00'
+    value: '2024-11-30T22:50:15+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -52,6 +52,9 @@ body:
     processed: '<p>This service provides a calculaiton of the power spectrum of Stochastic Gravitational Wave Backgorund (SGWB) from a first-order cosmological phase transition based on the parameterisations of <a href="https://arxiv.org/abs/2307.10744">Roper Pol et al. (2023)</a>. The power spectrum includes two components: from the sound waves excited by collisions of bubbles of the new phase and from the turbulence that is induced by these collisions.</p><p>The cosmological epoch of the phase transition is described by the temperature, <code>T_star</code> and by the number(s) of relativistic degrees of freedom, <code>g_star</code> that should be specified as parameters.</p><p>The phase transition itself is characterised by phenomenological parameters, <code>alpha</code>, <code>beta_H</code> and <code>epsilon_turb</code>, the latent heat, the ratio of the Hubble radius to the bubble size at percolation and the fraction of the energy otuput of the phase transition that goes into turbulence.</p><p>The tool <code>Model spectrum</code> outputs the power spectrum for fixed values of these parameters. The tool <code>Phase transition parameters</code> reproduces the constraints on the phase transition parameters from the Pulsar Timing Array gravitational wave detectors, reported by Boyer &amp; Neronov (2024), including the estimate of the cosmological magnetic field induced by turbulence.</p>'
     summary: ''
     summary_processed: ''
+field_mmoda_module:
+  -
+    value: mmoda_sgwb
 _content_sync:
   entity_type: node
   entity_dependencies:

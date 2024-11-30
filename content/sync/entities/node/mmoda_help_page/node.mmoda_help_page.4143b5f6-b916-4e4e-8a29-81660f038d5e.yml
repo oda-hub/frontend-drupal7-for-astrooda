@@ -14,7 +14,7 @@ revision_timestamp:
 revision_uid:
   -
     target_type: user
-    target_uuid: 7cef419d-d300-42d9-ba31-c68b1e651357
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 status:
   -
     value: true
@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-26T13:52:00+00:00'
+    value: '2024-11-30T22:50:52+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -52,9 +52,11 @@ body:
     processed: '<h1>CRbeam</h1><p>This service provides simulation [1] of electron-photon cascade propagation in the intergalactic space. The simulation accounts for the interactions of photons and electrons with extragalactic background light (EBL) and magnetic field. As a first step and main part of simulation the code traces trajectories of every particle and records it''s position and momentum at <em>z=0</em> assuming that initially particles were emitted at fixed redshift <em>z_start</em> with given power law spectrum in the direction of <em>z</em>-axis. The source jet geometry is then taken into account in the second step by rotating the source image obtained during the first stage within the jet openning angle. This allows to reuse the simulation results for different jet geometries.</p><p>Below is the list of the program parameters:</p><p><em>src_name</em> e.g. ''GRB221009A'' - optional source name from Simbad database (ignored if <em>z_start</em> is given)</p><p><em>z_start</em> e.g. 0.1 - source redshift or 0 if src_name should be used</p><p><em>Npart</em> e.g. 100000 - number of particles to simulate</p><p><em>particle_type</em> - initial particle type, one of "gamma","electron" or "proton"</p><p><em>Emax</em> - maximal energy of particles emitted by the source in TeV</p><p><em>Emin</em> - minimal energy in TeV of secondary particles to trace in the simulation</p><p><em>EminSource</em> - minimal energy of particles emitted by the source in TeV. If <em>EminSourceTeV=EmaxTeV</em> fixed energy injection is assumed</p><p><em>Gamma</em> - injection spectrum power low index: dN/dE = E^{-gamma}</p><p><em>EGMF_fG</em> - amplitude of the intergalactic magnetic field in femtogauss. The Kolmogorov turbulence model is assumed for the magnetic field</p><p><em>lmaxEGMF_Mpc</em> - maximal scale of the magnetic field turbulence in Mpc</p><p><em>jet_half_size</em> - jet half size in degrees</p><p><em>jet_direction</em> - angle in degrees between the jet axis and the direction to the observer</p><p><em>psf</em> - observer instrument psf in degrees</p><p><em>EBL</em> - extragalactic background light model to use. Below is the list of models supported:</p><ul><li><em>Franceschini 2017</em>, see Ref. [2]</li><li><em>Stecker 2016 lower limit</em> : lower limit model from Ref. [3]</li><li><em>Stecker 2016 upper limit</em> : upper limit model from Ref. [3]</li><li><em>Inoue 2012 Baseline</em> : baseline model from Ref. [4]</li><li><em>Inoue 2012 lower limit</em> : lower limit model from Ref. [4]</li><li><em>Inoue 2012 upper limit</em> : upper limit model from Ref. [4]</li><li><em>zero</em> : CMB only</li></ul><h2>References</h2><p>[1] O. Kalashev, A. Korochkin, A. Neronov, D. Semikoz, <em>Astron.Astrophys.</em> 675 (2023) A132</p><p>[2] Alberto Franceschini, Giulia Rodighiero, <em>Astron.Astrophys.</em> 603 (2017) A34</p><p>[3] Floyd W. Stecker, Sean T. Scully, Matthew A. Malkan, <em>Astrophys.J.</em> 827 (2016)</p><p>[4] Yoshiyuki Inoue et al., <em>Astrophys.J.</em> 768 (2013) 197</p>'
     summary: ''
     summary_processed: ''
+field_mmoda_module:
+  -
+    value: mmoda_crbeam
 _content_sync:
   entity_type: node
   entity_dependencies:
     user:
-      - user.user.7cef419d-d300-42d9-ba31-c68b1e651357
       - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

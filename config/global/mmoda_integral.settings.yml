@@ -1,7 +1,8 @@
 _core:
-  default_config_hash: NNyFMXPE-uJ3x2qYtLxkQoQZyiSPZnRL_vJXAtDO0w0
+  default_config_hash: jnI8bnWY6JpO7sZXacaSx5qSmNj2dudRAXMEUV0zRoU
 name: integral
 messenger: 'Hard X-rays'
 title: INTEGRAL
+help_page_url: help/mmoda/integral-mission
 virtual: true
 weight: 10

@@ -1,0 +1,23 @@
+uuid:
+  -
+    value: df16c606-01e7-48fc-bc1b-dd74d2e786e3
+langcode:
+  -
+    value: en
+shortcut_set:
+  -
+    target_id: default
+title:
+  -
+    value: Token
+weight: {  }
+link:
+  -
+    uri: 'internal:/admin/help/token'
+    title: null
+    options: {  }
+default_langcode:
+  -
+    value: true
+_content_sync:
+  entity_type: shortcut

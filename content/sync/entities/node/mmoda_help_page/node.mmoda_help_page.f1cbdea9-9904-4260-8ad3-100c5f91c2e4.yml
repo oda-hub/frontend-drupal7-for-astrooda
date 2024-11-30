@@ -13,9 +13,8 @@ revision_timestamp:
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
-    target_id: 0
     target_type: user
-    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 status:
   -
     value: true
@@ -32,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-26T13:52:00+00:00'
+    value: '2024-11-30T22:50:52+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -87,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2023-11/topoda1.png" aria-label="{&quot;alt&quot;:&quot;ISGRI ODA top1&quot;}" role="button" title="ISGRI ODA top1" data-colorbox-gallery="gallery-image-24-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-FNAG96zGcdM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI ODA top1&quot;}">
+      <a href="http://default/sites/default/files/2023-11/topoda1.png" aria-label="{&quot;alt&quot;:&quot;ISGRI ODA top1&quot;}" role="button" title="ISGRI ODA top1" data-colorbox-gallery="gallery-image-24-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox--jNtNid-QNA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI ODA top1&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-FNAG96zGcdM" src="/sites/default/files/styles/large/public/2023-11/topoda1.png?itok=FNwUkkjO" width="480" height="210" alt="ISGRI ODA top1" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox--jNtNid-QNA" src="/sites/default/files/styles/large/public/2023-11/topoda1.png?itok=FNwUkkjO" width="480" height="210" alt="ISGRI ODA top1" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -155,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2023-11/isgri-query.png" aria-label="{&quot;alt&quot;:&quot;ISGRI Query&quot;}" role="button" title="ISGRI Query" data-colorbox-gallery="gallery-image-19-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-RCM5wmzipGg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI Query&quot;}">
+      <a href="http://default/sites/default/files/2023-11/isgri-query.png" aria-label="{&quot;alt&quot;:&quot;ISGRI Query&quot;}" role="button" title="ISGRI Query" data-colorbox-gallery="gallery-image-19-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-nAKt8nj_tZY" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI Query&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -165,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-RCM5wmzipGg" src="/sites/default/files/styles/large/public/2023-11/isgri-query.png?itok=Nj7b3Boy" width="256" height="480" alt="ISGRI Query" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-nAKt8nj_tZY" src="/sites/default/files/styles/large/public/2023-11/isgri-query.png?itok=Nj7b3Boy" width="256" height="480" alt="ISGRI Query" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -223,7 +222,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2023-11/topoda1.png" aria-label="{&quot;alt&quot;:&quot;ISGRI ODA top1&quot;}" role="button" title="ISGRI ODA top1" data-colorbox-gallery="gallery-image-24-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-LxGJrsjDQSU" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI ODA top1&quot;}">
+      <a href="http://default/sites/default/files/2023-11/topoda1.png" aria-label="{&quot;alt&quot;:&quot;ISGRI ODA top1&quot;}" role="button" title="ISGRI ODA top1" data-colorbox-gallery="gallery-image-24-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-CvrioQ5s8Dc" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI ODA top1&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -233,7 +232,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-LxGJrsjDQSU" src="/sites/default/files/styles/large/public/2023-11/topoda1.png?itok=FNwUkkjO" width="480" height="210" alt="ISGRI ODA top1" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-CvrioQ5s8Dc" src="/sites/default/files/styles/large/public/2023-11/topoda1.png?itok=FNwUkkjO" width="480" height="210" alt="ISGRI ODA top1" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -291,7 +290,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2023-11/topoda2.png" aria-label="{&quot;alt&quot;:&quot;Top ODA 2&quot;}" role="button" title="Top ODA 2" data-colorbox-gallery="gallery-image-28-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-CxkGz8yeQrs" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Top ODA 2&quot;}">
+      <a href="http://default/sites/default/files/2023-11/topoda2.png" aria-label="{&quot;alt&quot;:&quot;Top ODA 2&quot;}" role="button" title="Top ODA 2" data-colorbox-gallery="gallery-image-28-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-J7h-2UFRkQQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Top ODA 2&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -301,7 +300,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-CxkGz8yeQrs" src="/sites/default/files/styles/large/public/2023-11/topoda2.png?itok=sC-kK1nL" width="480" height="210" alt="Top ODA 2" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-J7h-2UFRkQQ" src="/sites/default/files/styles/large/public/2023-11/topoda2.png?itok=sC-kK1nL" width="480" height="210" alt="Top ODA 2" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -359,7 +358,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2023-11/imaoda.png" aria-label="{&quot;alt&quot;:&quot;ISGRI Image&quot;}" role="button" title="ISGRI Image" data-colorbox-gallery="gallery-image-21-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-8t7m0bqo2eI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI Image&quot;}">
+      <a href="http://default/sites/default/files/2023-11/imaoda.png" aria-label="{&quot;alt&quot;:&quot;ISGRI Image&quot;}" role="button" title="ISGRI Image" data-colorbox-gallery="gallery-image-21-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-_2G_xUEOykQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI Image&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -369,7 +368,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-8t7m0bqo2eI" src="/sites/default/files/styles/large/public/2023-11/imaoda.png?itok=LcnlCBQE" width="480" height="399" alt="ISGRI Image" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-_2G_xUEOykQ" src="/sites/default/files/styles/large/public/2023-11/imaoda.png?itok=LcnlCBQE" width="480" height="399" alt="ISGRI Image" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -427,7 +426,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2023-11/odacatalog.png" aria-label="{&quot;alt&quot;:&quot;ODA catalog&quot;}" role="button" title="ODA catalog" data-colorbox-gallery="gallery-image-7-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-R99SPi1LcSg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ODA catalog&quot;}">
+      <a href="http://default/sites/default/files/2023-11/odacatalog.png" aria-label="{&quot;alt&quot;:&quot;ODA catalog&quot;}" role="button" title="ODA catalog" data-colorbox-gallery="gallery-image-7-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-jPmAZYGocxc" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ODA catalog&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -437,7 +436,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-R99SPi1LcSg" src="/sites/default/files/styles/large/public/2023-11/odacatalog.png?itok=TyF1gGwa" width="480" height="222" alt="ODA catalog" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-jPmAZYGocxc" src="/sites/default/files/styles/large/public/2023-11/odacatalog.png?itok=TyF1gGwa" width="480" height="222" alt="ODA catalog" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -495,7 +494,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2023-11/spectrumoda.png" aria-label="{&quot;alt&quot;:&quot;Spectrum ODA&quot;}" role="button" title="Spectrum ODA" data-colorbox-gallery="gallery-image-27-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-2TJqJGuf_fA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Spectrum ODA&quot;}">
+      <a href="http://default/sites/default/files/2023-11/spectrumoda.png" aria-label="{&quot;alt&quot;:&quot;Spectrum ODA&quot;}" role="button" title="Spectrum ODA" data-colorbox-gallery="gallery-image-27-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox--79DvlS2j68" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Spectrum ODA&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -505,7 +504,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-2TJqJGuf_fA" src="/sites/default/files/styles/large/public/2023-11/spectrumoda.png?itok=DaGeNeKE" width="480" height="297" alt="Spectrum ODA" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox--79DvlS2j68" src="/sites/default/files/styles/large/public/2023-11/spectrumoda.png?itok=DaGeNeKE" width="480" height="297" alt="Spectrum ODA" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -563,7 +562,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2023-11/lcoda.png" aria-label="{&quot;alt&quot;:&quot;LC ODA&quot;}" role="button" title="LC ODA" data-colorbox-gallery="gallery-image-10-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-tYdmJtUO6D4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC ODA&quot;}">
+      <a href="http://default/sites/default/files/2023-11/lcoda.png" aria-label="{&quot;alt&quot;:&quot;LC ODA&quot;}" role="button" title="LC ODA" data-colorbox-gallery="gallery-image-10-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-iSGMKwu8ohk" data-cbox-img-attrs="{&quot;alt&quot;:&quot;LC ODA&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -573,7 +572,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-tYdmJtUO6D4" src="/sites/default/files/styles/large/public/2023-11/lcoda.png?itok=T6bl9_IY" width="480" height="477" alt="LC ODA" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-iSGMKwu8ohk" src="/sites/default/files/styles/large/public/2023-11/lcoda.png?itok=T6bl9_IY" width="480" height="477" alt="LC ODA" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -631,7 +630,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2023-11/lightcurve.png" aria-label="{&quot;alt&quot;:&quot;ISGRI Light Curve&quot;}" role="button" title="ISGRI Light Curve" data-colorbox-gallery="gallery-image-20-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-ZM3DC_n4g5c" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI Light Curve&quot;}">
+      <a href="http://default/sites/default/files/2023-11/lightcurve.png" aria-label="{&quot;alt&quot;:&quot;ISGRI Light Curve&quot;}" role="button" title="ISGRI Light Curve" data-colorbox-gallery="gallery-image-20-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-UeHfGpdZ45U" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI Light Curve&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -641,7 +640,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-ZM3DC_n4g5c" src="/sites/default/files/styles/large/public/2023-11/lightcurve.png?itok=pH_7lQpe" width="391" height="480" alt="ISGRI Light Curve" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-UeHfGpdZ45U" src="/sites/default/files/styles/large/public/2023-11/lightcurve.png?itok=pH_7lQpe" width="391" height="480" alt="ISGRI Light Curve" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -666,9 +665,11 @@ body:
       </li></ol><h2>CAVEATS / KNOWN ISSUES</h2><ol><li>If the source is not detected on single SCW level no empty lightcurve file is produced.</li><li>Maximal width of the lightcurve time bin is now one SCW. Enetring longer time bin width would result in generation of SCW-by-SCW lightcurve.</li><li>Entering width of the time bin shorter than 10 seconds for the timing extraction would lead to exceedingly long processing time and finally to the timeout of the session because of the specific of currently used spectral extraction tool, <em>ii_lc_extract</em>. Possibility to choose between&nbsp; <em>ii_lc_extract</em> and an alternative tool, <em>ii_light</em> , is foreseen for further development.</li><li>if sources are selected when clicking on "use catalog", only these ones will be passed.</li><li>It is not possible to remove a catalog, once "use catalog" is clicked. It is possible to substitute it, though.</li></ol>
     summary: ''
     summary_processed: ''
+field_mmoda_module:
+  -
+    value: mmoda_isgri
 _content_sync:
   entity_type: node
   entity_dependencies:
     user:
-      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
       - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

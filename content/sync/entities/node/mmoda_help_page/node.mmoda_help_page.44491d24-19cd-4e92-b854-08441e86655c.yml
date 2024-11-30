@@ -21,7 +21,7 @@ status:
 uid:
   -
     target_type: user
-    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 title:
   -
     value: CTA
@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-27T13:05:07+00:00'
+    value: '2024-11-30T22:50:52+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/cta-common-aparams-01.png" aria-label="{&quot;alt&quot;:&quot;CTA common params&quot;}" role="button" title="CTA common params" data-colorbox-gallery="gallery-image-97-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-q4Rg4MwufoE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA common params&quot;}">
+      <a href="http://default/sites/default/files/2024-11/cta-common-aparams-01.png" aria-label="{&quot;alt&quot;:&quot;CTA common params&quot;}" role="button" title="CTA common params" data-colorbox-gallery="gallery-image-97-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox--HjSRv-4uJQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA common params&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-q4Rg4MwufoE" src="/sites/default/files/styles/large/public/2024-11/cta-common-aparams-01.png?itok=EceuTQ0D" width="480" height="223" alt="CTA common params" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox--HjSRv-4uJQ" src="/sites/default/files/styles/large/public/2024-11/cta-common-aparams-01.png?itok=EceuTQ0D" width="480" height="223" alt="CTA common params" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -154,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/cta-aparams-01.png" aria-label="{&quot;alt&quot;:&quot;CTA params&quot;}" role="button" title="CTA params" data-colorbox-gallery="gallery-image-98-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-Fhi2pJCuyR4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA params&quot;}">
+      <a href="http://default/sites/default/files/2024-11/cta-aparams-01.png" aria-label="{&quot;alt&quot;:&quot;CTA params&quot;}" role="button" title="CTA params" data-colorbox-gallery="gallery-image-98-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-grSNEzXTc28" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA params&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -164,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-Fhi2pJCuyR4" src="/sites/default/files/styles/large/public/2024-11/cta-aparams-01.png?itok=-uogvEgd" width="258" height="480" alt="CTA params" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-grSNEzXTc28" src="/sites/default/files/styles/large/public/2024-11/cta-aparams-01.png?itok=-uogvEgd" width="258" height="480" alt="CTA params" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -222,7 +222,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/cta-result-01.png" aria-label="{&quot;alt&quot;:&quot;CTA result&quot;}" role="button" title="CTA result" data-colorbox-gallery="gallery-image-99-AsGwjZa91GI" class="colorbox" aria-controls="colorbox-TndOGGKVpiw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA result&quot;}">
+      <a href="http://default/sites/default/files/2024-11/cta-result-01.png" aria-label="{&quot;alt&quot;:&quot;CTA result&quot;}" role="button" title="CTA result" data-colorbox-gallery="gallery-image-99-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-Eod8nwsB320" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA result&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -232,7 +232,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-TndOGGKVpiw" src="/sites/default/files/styles/large/public/2024-11/cta-result-01.png?itok=ubSHnFH_" width="480" height="404" alt="CTA result" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-Eod8nwsB320" src="/sites/default/files/styles/large/public/2024-11/cta-result-01.png?itok=ubSHnFH_" width="480" height="404" alt="CTA result" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -257,8 +257,12 @@ body:
       <p>The "Query parameters" button provides the metadata with the analysis parameters. The "API code" button displays the Python API code that can be copy-pasted into a python code (e.g. on the user laptop) to request the data product. The same API code can also be launched in an online Jupyter lab environment on a collaborative data science platform <a href="https://renkulab.io/">renkulab.io</a>, using the "View on Renku" button.</p>
     summary: ''
     summary_processed: ''
+field_mmoda_module:
+  -
+    value: mmoda_cta
 _content_sync:
   entity_type: node
   entity_dependencies:
     user:
       - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

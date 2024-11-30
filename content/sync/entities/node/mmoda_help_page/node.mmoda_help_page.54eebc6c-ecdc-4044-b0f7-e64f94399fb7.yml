@@ -13,9 +13,8 @@ revision_timestamp:
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
-    target_id: 0
     target_type: user
-    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 status:
   -
     value: true
@@ -32,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-26T13:52:01+00:00'
+    value: '2024-11-30T22:50:15+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -112,9 +111,11 @@ body:
       </ul>
     summary: ''
     summary_processed: ''
+field_mmoda_module:
+  -
+    value: mmoda_integral
 _content_sync:
   entity_type: node
   entity_dependencies:
     user:
-      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
       - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

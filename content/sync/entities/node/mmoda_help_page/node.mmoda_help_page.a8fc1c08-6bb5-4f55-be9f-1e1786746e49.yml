@@ -13,9 +13,8 @@ revision_timestamp:
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
-    target_id: 0
     target_type: user
-    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 status:
   -
     value: true
@@ -32,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-26T13:52:01+00:00'
+    value: '2024-11-30T22:50:52+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -53,9 +52,11 @@ body:
     processed: '<p>It is possible to extract a spectrum without passing from a catalog. The system will take care of making a mosaic image and extract sources from a catalog.</p><p>However, this is not recommended, as there could be NEW fake sources that appear and slow down or even degrade the spectral quality.</p><p>We give this example:</p><p>We look for the Crab nebula and pulsar, so we type "Crab" and click on "resolve". Then, we select a date in which we know there are Crab observations (here we limit ourselves to one hour). Then, we select "Spectrum", put a minimum detection significance of 7 to reduce the number of fake detected sources in the field of a bright object and use an energy range from 30 to 50 that we know is less noisy. Finally, we click on "submit".</p><p>&nbsp;</p>'
     summary: ''
     summary_processed: ''
+field_mmoda_module:
+  -
+    value: mmoda_isgri
 _content_sync:
   entity_type: node
   entity_dependencies:
     user:
-      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
       - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

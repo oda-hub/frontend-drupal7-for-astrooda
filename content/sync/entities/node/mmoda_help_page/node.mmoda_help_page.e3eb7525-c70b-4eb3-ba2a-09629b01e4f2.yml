@@ -13,9 +13,8 @@ revision_timestamp:
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
-    target_id: 0
     target_type: user
-    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 status:
   -
     value: true
@@ -32,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-26T13:52:00+00:00'
+    value: '2024-11-30T22:50:15+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -87,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/sign.png" aria-label="{&quot;alt&quot;:&quot;MMODA Sign&quot;}" role="button" title="MMODA Sign" data-colorbox-gallery="gallery-image-38-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-Qe9TYFiwoUE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA Sign&quot;}">
+      <a href="http://default/sites/default/files/2024-11/sign.png" aria-label="{&quot;alt&quot;:&quot;MMODA Sign&quot;}" role="button" title="MMODA Sign" data-colorbox-gallery="gallery-image-38-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-0ug3y4kFIG0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA Sign&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-Qe9TYFiwoUE" src="/sites/default/files/styles/large/public/2024-11/sign.png?itok=RQjp2cdc" width="480" height="81" alt="MMODA Sign" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-0ug3y4kFIG0" src="/sites/default/files/styles/large/public/2024-11/sign.png?itok=RQjp2cdc" width="480" height="81" alt="MMODA Sign" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -122,9 +121,11 @@ body:
       <h2><a href="https://oda-api.readthedocs.io/en/latest/" target="_blank">Python API</a></h2><p>If you are familiar with python, you can check the API usage at <a href="https://oda-api.readthedocs.io/en/latest/" target="_blank">this url.</a></p><h2>Known Issues</h2><p>It is not possible to change the Xspec model in the Fit of spectra. However, spectra can be downloaded and fit with another package.</p><p>INTEGRAL: a source named "NEW SOURCE" will not be used in extracting JEM-X spectrua and light curves. It is necessary to name it differently.</p><p>If you submit a job and the error "Forbidden" appears, it means that you should logout and login again from the web interface.</p>
     summary: ''
     summary_processed: ''
+field_mmoda_module:
+  -
+    value: mmoda
 _content_sync:
   entity_type: node
   entity_dependencies:
     user:
-      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
       - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

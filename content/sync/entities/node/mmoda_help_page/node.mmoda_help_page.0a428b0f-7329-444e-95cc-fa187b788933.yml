@@ -13,9 +13,8 @@ revision_timestamp:
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
-    target_id: 0
     target_type: user
-    target_uuid: 20c338ef-ce1d-4f57-a79f-aea9b11727b8
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
 status:
   -
     value: true
@@ -32,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-26T13:52:03+00:00'
+    value: '2024-11-30T22:50:52+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -87,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png" aria-label="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}" role="button" title="ISGRI light curve" data-colorbox-gallery="gallery-image-32-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-KVtqtUlYBds" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}">
+      <a href="http://default/sites/default/files/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png" aria-label="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}" role="button" title="ISGRI light curve" data-colorbox-gallery="gallery-image-32-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-nVN31cgcDcw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI light curve&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -97,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-KVtqtUlYBds" src="/sites/default/files/styles/large/public/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png?itok=oCcG-Wsb" width="480" height="446" alt="ISGRI light curve" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-nVN31cgcDcw" src="/sites/default/files/styles/large/public/2024-11/screenshot-frontendstagingodahubio-20210602-110838.png?itok=oCcG-Wsb" width="480" height="446" alt="ISGRI light curve" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -155,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/ibis-isgri-catalog-01.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}" role="button" title="IBIS ISGRI catalog" data-colorbox-gallery="gallery-image-76-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-z2Z7vvwU-P8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}">
+      <a href="http://default/sites/default/files/2024-11/ibis-isgri-catalog-01.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}" role="button" title="IBIS ISGRI catalog" data-colorbox-gallery="gallery-image-76-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-TulRfODXnrQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -165,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-z2Z7vvwU-P8" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-catalog-01.png?itok=b78TxZaw" width="480" height="342" alt="IBIS ISGRI catalog" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-TulRfODXnrQ" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-catalog-01.png?itok=b78TxZaw" width="480" height="342" alt="IBIS ISGRI catalog" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -223,7 +222,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/submit-spec.png" aria-label="{&quot;alt&quot;:&quot;ISGRI spec submit&quot;}" role="button" title="ISGRI spec submit" data-colorbox-gallery="gallery-image-94-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-9OErScSxX-o" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI spec submit&quot;}">
+      <a href="http://default/sites/default/files/2024-11/submit-spec.png" aria-label="{&quot;alt&quot;:&quot;ISGRI spec submit&quot;}" role="button" title="ISGRI spec submit" data-colorbox-gallery="gallery-image-94-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-iGHRi8ZfbQ0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI spec submit&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -233,7 +232,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-9OErScSxX-o" src="/sites/default/files/styles/large/public/2024-11/submit-spec.png?itok=Gl6Xfj7I" width="214" height="480" alt="ISGRI spec submit" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-iGHRi8ZfbQ0" src="/sites/default/files/styles/large/public/2024-11/submit-spec.png?itok=Gl6Xfj7I" width="214" height="480" alt="ISGRI spec submit" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -291,7 +290,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/spectrum-email.png" aria-label="{&quot;alt&quot;:&quot;ISGRI spectrum email&quot;}" role="button" title="ISGRI spectrum email" data-colorbox-gallery="gallery-image-95-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-XidHHCGF6CA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI spectrum email&quot;}">
+      <a href="http://default/sites/default/files/2024-11/spectrum-email.png" aria-label="{&quot;alt&quot;:&quot;ISGRI spectrum email&quot;}" role="button" title="ISGRI spectrum email" data-colorbox-gallery="gallery-image-95-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-TT-IZ1-BKoc" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI spectrum email&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -301,7 +300,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-XidHHCGF6CA" src="/sites/default/files/styles/large/public/2024-11/spectrum-email.png?itok=G_SZyRnR" width="480" height="233" alt="ISGRI spectrum email" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-TT-IZ1-BKoc" src="/sites/default/files/styles/large/public/2024-11/spectrum-email.png?itok=G_SZyRnR" width="480" height="233" alt="ISGRI spectrum email" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -359,7 +358,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/spectrum-ready.png" aria-label="{&quot;alt&quot;:&quot;ISGRI spectrum ready&quot;}" role="button" title="ISGRI spectrum ready" data-colorbox-gallery="gallery-image-96-P1enR2dCKt0" class="colorbox" aria-controls="colorbox-T3gFXdy7WLc" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI spectrum ready&quot;}">
+      <a href="http://default/sites/default/files/2024-11/spectrum-ready.png" aria-label="{&quot;alt&quot;:&quot;ISGRI spectrum ready&quot;}" role="button" title="ISGRI spectrum ready" data-colorbox-gallery="gallery-image-96-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-kRBfk2JngS0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI spectrum ready&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -369,7 +368,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-T3gFXdy7WLc" src="/sites/default/files/styles/large/public/2024-11/spectrum-ready.png?itok=-Au7CwRV" width="480" height="464" alt="ISGRI spectrum ready" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-kRBfk2JngS0" src="/sites/default/files/styles/large/public/2024-11/spectrum-ready.png?itok=-Au7CwRV" width="480" height="464" alt="ISGRI spectrum ready" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -394,9 +393,11 @@ body:
       <p>You can make an online fit for any source with a powerlaw (a known issue prevents to use other models) and download the spectrum to make your own local fit.</p><p>The downloaded file is a tar.gz archive, for example, for the source GX 5-1 it will be called "spectra-GX_5-1.tar.gz".</p><p>You will need to unpack the archive with the command</p><p>tar xfz spectra-GX_5-1.tar.gz</p><p>then navigate into the folder that is created and load the spectra with xspec.</p><p>Go to the main&nbsp;<a href="mmoda">MMODA Help</a></p>
     summary: ''
     summary_processed: ''
+field_mmoda_module:
+  -
+    value: mmoda_isgri
 _content_sync:
   entity_type: node
   entity_dependencies:
     user:
-      - user.user.20c338ef-ce1d-4f57-a79f-aea9b11727b8
       - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

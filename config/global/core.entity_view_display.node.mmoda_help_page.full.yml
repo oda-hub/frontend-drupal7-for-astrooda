@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.mmoda_help_page.body
+    - field.field.node.mmoda_help_page.field_mmoda_module
     - node.type.mmoda_help_page
   module:
     - text
@@ -26,4 +27,5 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  field_mmoda_module: true
