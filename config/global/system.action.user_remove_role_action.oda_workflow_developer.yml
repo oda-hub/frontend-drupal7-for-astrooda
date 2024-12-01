@@ -1,0 +1,14 @@
+uuid: 60ae3c61-35f2-4310-9886-d7feed9ad922
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oda_workflow_developer
+  module:
+    - user
+id: user_remove_role_action.oda_workflow_developer
+label: 'Remove the oda workflow developer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: oda_workflow_developer

@@ -1,0 +1,14 @@
+uuid: 3b6e4cf9-e2a6-44c6-8b43-b823f18f62bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oda_workflow_developer
+  module:
+    - user
+id: user_add_role_action.oda_workflow_developer
+label: 'Add the oda workflow developer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: oda_workflow_developer

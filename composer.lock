@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0173d23cd705696462dfca78b052935",
+    "content-hash": "22291b61dff2dec497b722ce104fde97",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5181,12 +5181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/oda-hub/mmoda-frontend-theme.git",
-                "reference": "bc989d418f86789c7f6b129ac466d9f0602d521e"
+                "reference": "09ea8e40d1c14cb638bda5c7c63d8ca5cfef059f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oda-hub/mmoda-frontend-theme/zipball/bc989d418f86789c7f6b129ac466d9f0602d521e",
-                "reference": "bc989d418f86789c7f6b129ac466d9f0602d521e",
+                "url": "https://api.github.com/repos/oda-hub/mmoda-frontend-theme/zipball/09ea8e40d1c14cb638bda5c7c63d8ca5cfef059f",
+                "reference": "09ea8e40d1c14cb638bda5c7c63d8ca5cfef059f",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -5213,7 +5213,7 @@
                 "source": "https://github.com/oda-hub/mmoda-frontend-theme/tree/d10-main",
                 "issues": "https://github.com/oda-hub/mmoda-frontend-theme/issues"
             },
-            "time": "2024-11-24T12:18:58+00:00"
+            "time": "2024-11-28T14:07:53+00:00"
         },
         {
             "name": "oda/datatables-editor",
@@ -5234,6 +5234,47 @@
                 "reference": "main"
             },
             "type": "drupal-library"
+        },
+        {
+            "name": "oda/mmoda",
+            "version": "dev-d10-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oda-hub/mmoda-frontend-module.git",
+                "reference": "e8de611ff57fd4dc172956f3327ef12b788fb3f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oda-hub/mmoda-frontend-module/zipball/e8de611ff57fd4dc172956f3327ef12b788fb3f1",
+                "reference": "e8de611ff57fd4dc172956f3327ef12b788fb3f1",
+                "shasum": ""
+            },
+            "type": "drupal-custom-module",
+            "authors": [
+                {
+                    "name": "Mohamed Meharga",
+                    "email": "mtm@mtmco.net"
+                },
+                {
+                    "name": "Gabriele Barni",
+                    "email": "Gabriele.Barni@unige.ch"
+                },
+                {
+                    "name": "Denys Savchenko",
+                    "email": "savchenko@apc.in2p3.fr"
+                },
+                {
+                    "name": "Volodymyr Savchenko",
+                    "email": "Volodymyr.Savchenko@unige.ch"
+                }
+            ],
+            "description": "Multi-Messenger Online Data Analysis",
+            "homepage": "https://www.astro.unige.ch/mmoda",
+            "support": {
+                "source": "https://github.com/oda-hub/mmoda-frontend-module/tree/d10-main",
+                "issues": "https://github.com/oda-hub/mmoda-frontend-module/issues"
+            },
+            "time": "2024-11-30T22:48:09+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -8947,49 +8988,7 @@
             "time": "2024-06-28T13:45:36+00:00"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "oda/mmoda",
-            "version": "dev-d10-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oda-hub/mmoda-frontend-module.git",
-                "reference": "63244cd1ac543bb6c847ce91a4012f692bca53c6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oda-hub/mmoda-frontend-module/zipball/63244cd1ac543bb6c847ce91a4012f692bca53c6",
-                "reference": "63244cd1ac543bb6c847ce91a4012f692bca53c6",
-                "shasum": ""
-            },
-            "type": "drupal-custom-module",
-            "authors": [
-                {
-                    "name": "Mohamed Meharga",
-                    "email": "mtm@mtmco.net"
-                },
-                {
-                    "name": "Gabriele Barni",
-                    "email": "Gabriele.Barni@unige.ch"
-                },
-                {
-                    "name": "Denys Savchenko",
-                    "email": "savchenko@apc.in2p3.fr"
-                },
-                {
-                    "name": "Volodymyr Savchenko",
-                    "email": "Volodymyr.Savchenko@unige.ch"
-                }
-            ],
-            "description": "Multi-Messenger Online Data Analysis",
-            "homepage": "https://www.astro.unige.ch/mmoda",
-            "support": {
-                "source": "https://github.com/oda-hub/mmoda-frontend-module/tree/d10-main",
-                "issues": "https://github.com/oda-hub/mmoda-frontend-module/issues"
-            },
-            "time": "2024-11-28T13:15:58+00:00"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {

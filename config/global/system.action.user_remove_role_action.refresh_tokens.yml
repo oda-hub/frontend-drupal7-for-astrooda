@@ -1,0 +1,14 @@
+uuid: 38177b6e-8c9b-4eeb-92a0-56f48c13f0ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.refresh_tokens
+  module:
+    - user
+id: user_remove_role_action.refresh_tokens
+label: 'Remove the refresh-tokens role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: refresh_tokens

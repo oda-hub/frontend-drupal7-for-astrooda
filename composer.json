@@ -191,7 +191,8 @@
 		"marioizquierdo/jquery.serialize-json": "^3.2",
 		"oda/bootstrap_mmoda": "dev-d10-main",
 		"oda/datatables-editor": "^2.4",
-		"oda/form-validation": "^2.4"
+		"oda/form-validation": "^2.4",
+		"oda/mmoda": "dev-d10-main"
 	},
 	"conflict" : {
 		"drupal/drupal" : "*"
@@ -275,8 +276,5 @@
 				"      composer remove drupal/core-project-message"
 			]
 		}
-	},
-	"require-dev": {
-		"oda/mmoda": "dev-d10-main"
 	}
 }
