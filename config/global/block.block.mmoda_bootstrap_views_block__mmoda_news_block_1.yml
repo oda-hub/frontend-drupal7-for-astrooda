@@ -1,0 +1,29 @@
+uuid: 8e84c65b-fd71-48af-a5f4-7d5203ca7603
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mmoda_news
+  module:
+    - system
+    - views
+  theme:
+    - mmoda_bootstrap
+id: mmoda_bootstrap_views_block__mmoda_news_block_1
+theme: mmoda_bootstrap
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:mmoda_news-block_1'
+settings:
+  id: 'views_block:mmoda_news-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

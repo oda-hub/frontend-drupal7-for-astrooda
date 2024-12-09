@@ -1,0 +1,78 @@
+uuid:
+  -
+    value: 528d13e8-f96e-45b5-945a-a7596f0f882e
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: mmoda_event
+revision_timestamp:
+  -
+    value: '2024-12-02T14:11:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
+title:
+  -
+    value: 'Problem with underlying infrastructure: some services unavailable'
+created:
+  -
+    value: '2024-12-02T14:11:08+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-12-09T17:44:10+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: '<p>Unfortunately we have problem with underlying infrastructure: some services are unavailable.</p>'
+    format: full_html
+    processed: '<p>Unfortunately we have problem with underlying infrastructure: some services are unavailable.</p>'
+    summary: ''
+    summary_processed: ''
+comment_node_mmoda_event:
+  -
+    status: 1
+    cid: 0
+    last_comment_timestamp: 1733148708
+    last_comment_name: null
+    last_comment_uid: 11
+    comment_count: 0
+field_banner_date:
+  -
+    value: '2024-12-02T15:11:08+01:00'
+    end_value: '2024-12-26T15:11:08+01:00'
+field_category:
+  -
+    value: primary
+field_show_in_banner:
+  -
+    value: true
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

@@ -1,0 +1,72 @@
+uuid:
+  -
+    value: 2565952d-0e50-4f5c-966d-f86659124db2
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: mmoda_event
+revision_timestamp:
+  -
+    value: '2024-12-02T13:59:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
+title:
+  -
+    value: 'CRBeam module currently disabled, we are working to recover it'
+created:
+  -
+    value: '2024-12-02T13:58:25+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-12-09T17:40:32+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body: {  }
+comment_node_mmoda_event:
+  -
+    status: 1
+    cid: 0
+    last_comment_timestamp: 1733147971
+    last_comment_name: null
+    last_comment_uid: 11
+    comment_count: 0
+field_banner_date:
+  -
+    value: '2024-12-02T00:00:00+01:00'
+    end_value: '2024-12-03T12:00:00+01:00'
+field_category:
+  -
+    value: danger
+field_show_in_banner:
+  -
+    value: true
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

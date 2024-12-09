@@ -1,0 +1,26 @@
+uuid: 4dd6155d-83c5-46d7-b920-33c6ea24c372
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_date
+    - node.type.mmoda_event
+  module:
+    - datetime_range
+id: node.mmoda_event.field_banner_date
+field_name: field_banner_date
+entity_type: node
+bundle: mmoda_event
+label: 'Banner date'
+description: 'Period of the appearance of the event in the homepage top banner'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+1 days'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

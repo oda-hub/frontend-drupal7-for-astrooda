@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: fccccda6-f044-4b46-ac48-4d3d4235127b
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+revision_timestamp:
+  -
+    value: '2024-12-02T10:10:19+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
+title:
+  -
+    value: 'test page'
+created:
+  -
+    value: '2024-12-02T10:10:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-12-02T10:10:19+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body: {  }
+comment_node_page:
+  -
+    status: 0
+    cid: 0
+    last_comment_timestamp: 1733134219
+    last_comment_name: null
+    last_comment_uid: 11
+    comment_count: 0
+field_documents: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75

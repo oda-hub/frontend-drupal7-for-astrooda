@@ -1,0 +1,78 @@
+uuid:
+  -
+    value: 3d4173a5-5993-45e0-9536-f3527b15ab03
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: mmoda_event
+revision_timestamp:
+  -
+    value: '2024-12-02T14:12:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 31a50ae4-3565-4f78-a833-c58e43b0df75
+title:
+  -
+    value: 'New frontend version news'
+created:
+  -
+    value: '2024-12-02T14:12:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2024-12-09T17:44:10+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: '<p>You are now seeing the new frontend version which is in testing phase, please report possible issues.</p><p>Test the new <a href="http://www.astro.unige.ch/mmoda/content/integral-product-gallery" data-cke-saved-href="http://www.astro.unige.ch/mmoda/content/integral-product-gallery">"Explore"</a> button, that allows you to see <span class="scayt-misspell-word" data-scayt-word="pre-computed" data-wsc-lang="en_US" data-wsc-id="m47407u6rdyye23jn">pre-computed</span> products for various X-ray sources.</p><p>Some instability is to be expected April 11-12 during the maintenance.</p><div style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);float:left;font-family:&quot;Open Sans&quot;, Arial, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 14.3906px 0px 28.7969px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;width:436.797px;word-spacing:0px;"><h2 style="font-family:DauphinPlain;font-size:24px;font-weight:400;line-height:24px;margin:0px 0px 10px;padding:0px;text-align:left;">What is Lorem Ipsum?</h2><p class="text-align-justify" style="margin:0px 0px 15px;padding:0px;"><strong style="margin:0px;padding:0px;">Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div><div style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);float:right;font-family:&quot;Open Sans&quot;, Arial, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 28.7969px 0px 14.3906px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;width:436.797px;word-spacing:0px;"><h2 style="font-family:DauphinPlain;font-size:24px;font-weight:400;line-height:24px;margin:0px 0px 10px;padding:0px;text-align:left;">Why do we use it?</h2><p class="text-align-justify" style="margin:0px 0px 15px;padding:0px;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>'
+    format: full_html
+    processed: '<p>You are now seeing the new frontend version which is in testing phase, please report possible issues.</p><p>Test the new <a href="http://www.astro.unige.ch/mmoda/content/integral-product-gallery" data-cke-saved-href="http://www.astro.unige.ch/mmoda/content/integral-product-gallery">"Explore"</a> button, that allows you to see <span class="scayt-misspell-word" data-scayt-word="pre-computed" data-wsc-lang="en_US" data-wsc-id="m47407u6rdyye23jn">pre-computed</span> products for various X-ray sources.</p><p>Some instability is to be expected April 11-12 during the maintenance.</p><div style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);float:left;font-family:&quot;Open Sans&quot;, Arial, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 14.3906px 0px 28.7969px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;width:436.797px;word-spacing:0px;"><h2 style="font-family:DauphinPlain;font-size:24px;font-weight:400;line-height:24px;margin:0px 0px 10px;padding:0px;text-align:left;">What is Lorem Ipsum?</h2><p class="text-align-justify" style="margin:0px 0px 15px;padding:0px;"><strong style="margin:0px;padding:0px;">Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div><div style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);float:right;font-family:&quot;Open Sans&quot;, Arial, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px 28.7969px 0px 14.3906px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;width:436.797px;word-spacing:0px;"><h2 style="font-family:DauphinPlain;font-size:24px;font-weight:400;line-height:24px;margin:0px 0px 10px;padding:0px;text-align:left;">Why do we use it?</h2><p class="text-align-justify" style="margin:0px 0px 15px;padding:0px;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>'
+    summary: ''
+    summary_processed: ''
+comment_node_mmoda_event:
+  -
+    status: 1
+    cid: 0
+    last_comment_timestamp: 1733148767
+    last_comment_name: null
+    last_comment_uid: 11
+    comment_count: 0
+field_banner_date:
+  -
+    value: '2024-12-02T15:12:20+01:00'
+    end_value: '2024-12-09T15:12:20+01:00'
+field_category:
+  -
+    value: danger
+field_show_in_banner:
+  -
+    value: true
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a
+      - user.user.31a50ae4-3565-4f78-a833-c58e43b0df75
