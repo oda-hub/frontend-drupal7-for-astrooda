@@ -9,7 +9,7 @@ _core:
 id: mmoda_bootstrap_local_actions
 theme: mmoda_bootstrap
 region: content
-weight: -2
+weight: -1
 provider: null
 plugin: local_actions_block
 settings:

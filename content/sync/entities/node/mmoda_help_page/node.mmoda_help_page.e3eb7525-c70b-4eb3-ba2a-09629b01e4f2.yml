@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-30T22:50:15+00:00'
+    value: '2024-12-07T22:50:45+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/sign.png" aria-label="{&quot;alt&quot;:&quot;MMODA Sign&quot;}" role="button" title="MMODA Sign" data-colorbox-gallery="gallery-image-38-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-0ug3y4kFIG0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA Sign&quot;}">
+      <a href="http://default/sites/default/files/2024-11/sign.png" aria-label="{&quot;alt&quot;:&quot;MMODA Sign&quot;}" role="button" title="MMODA Sign" data-colorbox-gallery="gallery-image-38-kgERXRttXNM" class="colorbox" aria-controls="colorbox-WKkgujj72pM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;MMODA Sign&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-0ug3y4kFIG0" src="/sites/default/files/styles/large/public/2024-11/sign.png?itok=RQjp2cdc" width="480" height="81" alt="MMODA Sign" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-WKkgujj72pM" src="/sites/default/files/styles/large/public/2024-11/sign.png?itok=RQjp2cdc" width="480" height="81" alt="MMODA Sign" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

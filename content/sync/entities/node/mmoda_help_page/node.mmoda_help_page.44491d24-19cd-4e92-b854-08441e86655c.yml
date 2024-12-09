@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-30T22:50:52+00:00'
+    value: '2024-12-09T17:29:51+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/cta-common-aparams-01.png" aria-label="{&quot;alt&quot;:&quot;CTA common params&quot;}" role="button" title="CTA common params" data-colorbox-gallery="gallery-image-97-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox--HjSRv-4uJQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA common params&quot;}">
+      <a href="http://default/sites/default/files/2024-11/cta-common-aparams-01.png" aria-label="{&quot;alt&quot;:&quot;CTA common params&quot;}" role="button" title="CTA common params" data-colorbox-gallery="gallery-image-97-kgERXRttXNM" class="colorbox" aria-controls="colorbox-pvJFzDZLz54" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA common params&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox--HjSRv-4uJQ" src="/sites/default/files/styles/large/public/2024-11/cta-common-aparams-01.png?itok=EceuTQ0D" width="480" height="223" alt="CTA common params" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-pvJFzDZLz54" src="/sites/default/files/styles/large/public/2024-11/cta-common-aparams-01.png?itok=EceuTQ0D" width="480" height="223" alt="CTA common params" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -154,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/cta-aparams-01.png" aria-label="{&quot;alt&quot;:&quot;CTA params&quot;}" role="button" title="CTA params" data-colorbox-gallery="gallery-image-98-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-grSNEzXTc28" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA params&quot;}">
+      <a href="http://default/sites/default/files/2024-11/cta-aparams-01.png" aria-label="{&quot;alt&quot;:&quot;CTA params&quot;}" role="button" title="CTA params" data-colorbox-gallery="gallery-image-98-kgERXRttXNM" class="colorbox" aria-controls="colorbox-lm-2Mxp331c" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA params&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -164,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-grSNEzXTc28" src="/sites/default/files/styles/large/public/2024-11/cta-aparams-01.png?itok=-uogvEgd" width="258" height="480" alt="CTA params" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-lm-2Mxp331c" src="/sites/default/files/styles/large/public/2024-11/cta-aparams-01.png?itok=-uogvEgd" width="258" height="480" alt="CTA params" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -222,7 +222,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/cta-result-01.png" aria-label="{&quot;alt&quot;:&quot;CTA result&quot;}" role="button" title="CTA result" data-colorbox-gallery="gallery-image-99-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-Eod8nwsB320" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA result&quot;}">
+      <a href="http://default/sites/default/files/2024-11/cta-result-01.png" aria-label="{&quot;alt&quot;:&quot;CTA result&quot;}" role="button" title="CTA result" data-colorbox-gallery="gallery-image-99-kgERXRttXNM" class="colorbox" aria-controls="colorbox-dqBMuyImRcA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;CTA result&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -232,7 +232,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-Eod8nwsB320" src="/sites/default/files/styles/large/public/2024-11/cta-result-01.png?itok=ubSHnFH_" width="480" height="404" alt="CTA result" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-dqBMuyImRcA" src="/sites/default/files/styles/large/public/2024-11/cta-result-01.png?itok=ubSHnFH_" width="480" height="404" alt="CTA result" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

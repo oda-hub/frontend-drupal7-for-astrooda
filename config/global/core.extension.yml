@@ -21,6 +21,7 @@ module:
   content_sync: 0
   contextual: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
   devel: 0
   dynamic_page_cache: 0
@@ -93,6 +94,8 @@ module:
   update: 0
   user: 0
   views_bulk_operations: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
   views_ui: 0
   webform: 0
   webform_attachment: 0

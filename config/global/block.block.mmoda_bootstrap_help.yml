@@ -11,7 +11,7 @@ _core:
 id: mmoda_bootstrap_help
 theme: mmoda_bootstrap
 region: content
-weight: -3
+weight: -2
 provider: null
 plugin: help_block
 settings:

@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: bPmngUS8cqXQ5vnAeg_GhRucj7AcVGvWyJ34r_sN7d0
+  default_config_hash: PdXs2NKNZRFyX5pI9nsrMvjIyF4saCjCJGt4opa3YaU
 name: crbeam
 messenger: null
 title: Crbeam
@@ -34,7 +34,7 @@ psf: 1.0
 window_size_DEC: 1.0
 livetime: 0.1
 EBL: 'Franceschini 2017'
-instrument_version: '<a target="_blank" href="test">1.0.0</a>'
+instrument_version: '<a target="_blank" class="text-decoration-none" href="https://gitlab.renkulab.io/astronomy/mmoda/crbeam/-/commit/7e706f92004d0e78fca205a9f039d06856c35497">7e706f92</a>'
 weight: 90
 data_server_url: dispatch-data/run_analysis
 help_page_url: help/mmoda/crbeam

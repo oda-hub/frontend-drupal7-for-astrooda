@@ -3,14 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment_node_mmoda_event.default
     - field.field.node.mmoda_event.body
     - field.field.node.mmoda_event.comment_node_mmoda_event
+    - field.field.node.mmoda_event.field_banner_date
     - field.field.node.mmoda_event.field_category
     - field.field.node.mmoda_event.field_show_in_banner
     - node.type.mmoda_event
   module:
-    - comment
     - text
     - user
 id: node.mmoda_event.default
@@ -23,22 +22,15 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
-    region: content
-  comment_node_mmoda_event:
-    type: comment_default
-    label: hidden
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    weight: 20
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  comment_node_mmoda_event: true
+  field_banner_date: true
   field_category: true
   field_show_in_banner: true

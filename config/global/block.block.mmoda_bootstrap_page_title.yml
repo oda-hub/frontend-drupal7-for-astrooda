@@ -9,7 +9,7 @@ _core:
 id: mmoda_bootstrap_page_title
 theme: mmoda_bootstrap
 region: content
-weight: -6
+weight: -4
 provider: null
 plugin: page_title_block
 settings:

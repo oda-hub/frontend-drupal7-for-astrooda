@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-30T22:50:52+00:00'
+    value: '2024-12-09T17:24:49+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1537410.png" aria-label="{&quot;alt&quot;:&quot;Antares 01&quot;}" role="button" title="Antares 01" data-colorbox-gallery="gallery-image-49-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-sk8iLyyiOsc" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 01&quot;}">
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1537410.png" aria-label="{&quot;alt&quot;:&quot;Antares 01&quot;}" role="button" title="Antares 01" data-colorbox-gallery="gallery-image-49-kgERXRttXNM" class="colorbox" aria-controls="colorbox-qU3mHTweiI8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 01&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-sk8iLyyiOsc" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1537410.png?itok=oQc6kWV7" width="480" height="308" alt="Antares 01" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-qU3mHTweiI8" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1537410.png?itok=oQc6kWV7" width="480" height="308" alt="Antares 01" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -154,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1630000.png" aria-label="{&quot;alt&quot;:&quot;Antares 02&quot;}" role="button" title="Antares 02" data-colorbox-gallery="gallery-image-50-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-FEjFjsaGiQw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 02&quot;}">
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1630000.png" aria-label="{&quot;alt&quot;:&quot;Antares 02&quot;}" role="button" title="Antares 02" data-colorbox-gallery="gallery-image-50-kgERXRttXNM" class="colorbox" aria-controls="colorbox-_EJGk3lvFKo" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 02&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -164,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-FEjFjsaGiQw" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1630000.png?itok=EuuVPrdF" width="480" height="191" alt="Antares 02" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-_EJGk3lvFKo" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1630000.png?itok=EuuVPrdF" width="480" height="191" alt="Antares 02" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -222,7 +222,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1638560.png" aria-label="{&quot;alt&quot;:&quot;Antares 03&quot;}" role="button" title="Antares 03" data-colorbox-gallery="gallery-image-51-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-B_qFRHtxFyw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 03&quot;}">
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1638560.png" aria-label="{&quot;alt&quot;:&quot;Antares 03&quot;}" role="button" title="Antares 03" data-colorbox-gallery="gallery-image-51-kgERXRttXNM" class="colorbox" aria-controls="colorbox-O75YZ70P17Q" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 03&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -232,7 +232,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-B_qFRHtxFyw" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1638560.png?itok=-qWUvyYE" width="458" height="480" alt="Antares 03" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-O75YZ70P17Q" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1638560.png?itok=-qWUvyYE" width="458" height="480" alt="Antares 03" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -290,7 +290,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1651460.png" aria-label="{&quot;alt&quot;:&quot;Antares 04&quot;}" role="button" title="Antares 04" data-colorbox-gallery="gallery-image-52-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-b1nqEwkiOvk" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 04&quot;}">
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1651460.png" aria-label="{&quot;alt&quot;:&quot;Antares 04&quot;}" role="button" title="Antares 04" data-colorbox-gallery="gallery-image-52-kgERXRttXNM" class="colorbox" aria-controls="colorbox-wiHe9MxoklQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 04&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -300,7 +300,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-b1nqEwkiOvk" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1651460.png?itok=glXUbRLA" width="480" height="323" alt="Antares 04" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-wiHe9MxoklQ" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1651460.png?itok=glXUbRLA" width="480" height="323" alt="Antares 04" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -358,7 +358,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1656240.png" aria-label="{&quot;alt&quot;:&quot;Antares 05&quot;}" role="button" title="Antares 05" data-colorbox-gallery="gallery-image-53-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-8aTmJe33MOw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 05&quot;}">
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1656240.png" aria-label="{&quot;alt&quot;:&quot;Antares 05&quot;}" role="button" title="Antares 05" data-colorbox-gallery="gallery-image-53-kgERXRttXNM" class="colorbox" aria-controls="colorbox-fhWAJbeLBhI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 05&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -368,7 +368,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-8aTmJe33MOw" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1656240.png?itok=arzu1JTq" width="316" height="480" alt="Antares 05" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-fhWAJbeLBhI" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1656240.png?itok=arzu1JTq" width="316" height="480" alt="Antares 05" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -426,7 +426,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1659250.png" aria-label="{&quot;alt&quot;:&quot;Antares 06&quot;}" role="button" title="Antares 06" data-colorbox-gallery="gallery-image-54-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox--rqxu785ofE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 06&quot;}">
+      <a href="http://default/sites/default/files/2024-11/screenshot2021-06-22at1659250.png" aria-label="{&quot;alt&quot;:&quot;Antares 06&quot;}" role="button" title="Antares 06" data-colorbox-gallery="gallery-image-54-kgERXRttXNM" class="colorbox" aria-controls="colorbox-D83FbXHZ9SI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Antares 06&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -436,7 +436,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox--rqxu785ofE" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1659250.png?itok=I9dtT8Yx" width="480" height="165" alt="Antares 06" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-D83FbXHZ9SI" src="/sites/default/files/styles/large/public/2024-11/screenshot2021-06-22at1659250.png?itok=I9dtT8Yx" width="480" height="165" alt="Antares 06" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

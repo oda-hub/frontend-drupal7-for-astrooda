@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-30T22:50:15+00:00'
+    value: '2024-12-09T17:24:49+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/hess-common-params-01.png" aria-label="{&quot;alt&quot;:&quot;HESS common params&quot;}" role="button" title="HESS common params" data-colorbox-gallery="gallery-image-101-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-fMsxV717vc8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS common params&quot;}">
+      <a href="http://default/sites/default/files/2024-11/hess-common-params-01.png" aria-label="{&quot;alt&quot;:&quot;HESS common params&quot;}" role="button" title="HESS common params" data-colorbox-gallery="gallery-image-101-kgERXRttXNM" class="colorbox" aria-controls="colorbox-8rnxzWpODb0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS common params&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-fMsxV717vc8" src="/sites/default/files/styles/large/public/2024-11/hess-common-params-01.png?itok=MsCtS8V0" width="480" height="206" alt="HESS common params" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-8rnxzWpODb0" src="/sites/default/files/styles/large/public/2024-11/hess-common-params-01.png?itok=MsCtS8V0" width="480" height="206" alt="HESS common params" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -154,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/hess-params-01.png" aria-label="{&quot;alt&quot;:&quot;HESS params&quot;}" role="button" title="HESS params" data-colorbox-gallery="gallery-image-102-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-s1Xw4CHkyDA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS params&quot;}">
+      <a href="http://default/sites/default/files/2024-11/hess-params-01.png" aria-label="{&quot;alt&quot;:&quot;HESS params&quot;}" role="button" title="HESS params" data-colorbox-gallery="gallery-image-102-kgERXRttXNM" class="colorbox" aria-controls="colorbox-BIL9hHf0AD4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS params&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -164,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-s1Xw4CHkyDA" src="/sites/default/files/styles/large/public/2024-11/hess-params-01.png?itok=JejICGck" width="306" height="480" alt="HESS params" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-BIL9hHf0AD4" src="/sites/default/files/styles/large/public/2024-11/hess-params-01.png?itok=JejICGck" width="306" height="480" alt="HESS params" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -222,7 +222,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/hess-result-01.png" aria-label="{&quot;alt&quot;:&quot;HESS Result&quot;}" role="button" title="HESS Result" data-colorbox-gallery="gallery-image-103-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-Ih1LPIDAuiM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS Result&quot;}">
+      <a href="http://default/sites/default/files/2024-11/hess-result-01.png" aria-label="{&quot;alt&quot;:&quot;HESS Result&quot;}" role="button" title="HESS Result" data-colorbox-gallery="gallery-image-103-kgERXRttXNM" class="colorbox" aria-controls="colorbox-Sx-aCw3xIUQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS Result&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -232,7 +232,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-Ih1LPIDAuiM" src="/sites/default/files/styles/large/public/2024-11/hess-result-01.png?itok=zXOViKMW" width="473" height="480" alt="HESS Result" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-Sx-aCw3xIUQ" src="/sites/default/files/styles/large/public/2024-11/hess-result-01.png?itok=zXOViKMW" width="473" height="480" alt="HESS Result" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -290,7 +290,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/HESS-api-code.png" aria-label="{&quot;alt&quot;:&quot;HESS API code&quot;}" role="button" title="HESS API code" data-colorbox-gallery="gallery-image-104-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-ksAH2u0YOKQ" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS API code&quot;}">
+      <a href="http://default/sites/default/files/2024-11/HESS-api-code.png" aria-label="{&quot;alt&quot;:&quot;HESS API code&quot;}" role="button" title="HESS API code" data-colorbox-gallery="gallery-image-104-kgERXRttXNM" class="colorbox" aria-controls="colorbox-6-3tbulSvnw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS API code&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -300,7 +300,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-ksAH2u0YOKQ" src="/sites/default/files/styles/large/public/2024-11/HESS-api-code.png?itok=XJ-i_a1l" width="422" height="480" alt="HESS API code" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-6-3tbulSvnw" src="/sites/default/files/styles/large/public/2024-11/HESS-api-code.png?itok=XJ-i_a1l" width="422" height="480" alt="HESS API code" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -358,7 +358,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/HESS-resul-02.png" aria-label="{&quot;alt&quot;:&quot;HESS Result 02&quot;}" role="button" title="HESS Result 02" data-colorbox-gallery="gallery-image-105-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-_CnxiZUQ9Iw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS Result 02&quot;}">
+      <a href="http://default/sites/default/files/2024-11/HESS-resul-02.png" aria-label="{&quot;alt&quot;:&quot;HESS Result 02&quot;}" role="button" title="HESS Result 02" data-colorbox-gallery="gallery-image-105-kgERXRttXNM" class="colorbox" aria-controls="colorbox-x2pWQ5SUA2c" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS Result 02&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -368,7 +368,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-_CnxiZUQ9Iw" src="/sites/default/files/styles/large/public/2024-11/HESS-resul-02.png?itok=O2h9_f6_" width="480" height="464" alt="HESS Result 02" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-x2pWQ5SUA2c" src="/sites/default/files/styles/large/public/2024-11/HESS-resul-02.png?itok=O2h9_f6_" width="480" height="464" alt="HESS Result 02" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -426,7 +426,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/HESS-resul-03.png" aria-label="{&quot;alt&quot;:&quot;HESS Result 03&quot;}" role="button" title="HESS Result 03" data-colorbox-gallery="gallery-image-106-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-fpJrDu7sRa4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS Result 03&quot;}">
+      <a href="http://default/sites/default/files/2024-11/HESS-resul-03.png" aria-label="{&quot;alt&quot;:&quot;HESS Result 03&quot;}" role="button" title="HESS Result 03" data-colorbox-gallery="gallery-image-106-kgERXRttXNM" class="colorbox" aria-controls="colorbox-6KNjlMPZ4wo" data-cbox-img-attrs="{&quot;alt&quot;:&quot;HESS Result 03&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -436,7 +436,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-fpJrDu7sRa4" src="/sites/default/files/styles/large/public/2024-11/HESS-resul-03.png?itok=tQpPLeNX" width="480" height="464" alt="HESS Result 03" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-6KNjlMPZ4wo" src="/sites/default/files/styles/large/public/2024-11/HESS-resul-03.png?itok=tQpPLeNX" width="480" height="464" alt="HESS Result 03" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

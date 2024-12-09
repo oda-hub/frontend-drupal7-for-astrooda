@@ -6,13 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
-name: 'MMODA event'
+    available_menus: {  }
+    parent: ''
+name: 'MMODA news'
 type: mmoda_event
 description: null
 help: null
 new_revision: false
 preview_mode: 1
-display_submitted: false
+display_submitted: true

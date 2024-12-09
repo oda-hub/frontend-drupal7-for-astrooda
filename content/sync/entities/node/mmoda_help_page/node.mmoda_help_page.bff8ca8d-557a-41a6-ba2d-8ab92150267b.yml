@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-11-30T22:50:15+00:00'
+    value: '2024-12-07T22:50:45+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/custom-lc.png" aria-label="{&quot;alt&quot;:&quot;Custom LC - ScWs&quot;}" role="button" title="Custom LC - ScWs" data-colorbox-gallery="gallery-image-82-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-eirBho6MzJI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Custom LC - ScWs&quot;}">
+      <a href="http://default/sites/default/files/2024-11/custom-lc.png" aria-label="{&quot;alt&quot;:&quot;Custom LC - ScWs&quot;}" role="button" title="Custom LC - ScWs" data-colorbox-gallery="gallery-image-82-kgERXRttXNM" class="colorbox" aria-controls="colorbox-a0NNMzLH1Xw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Custom LC - ScWs&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-eirBho6MzJI" src="/sites/default/files/styles/large/public/2024-11/custom-lc.png?itok=FoIlU_4J" width="480" height="462" alt="Custom LC - ScWs" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-a0NNMzLH1Xw" src="/sites/default/files/styles/large/public/2024-11/custom-lc.png?itok=FoIlU_4J" width="480" height="462" alt="Custom LC - ScWs" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -154,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/customscwfile.png" aria-label="{&quot;alt&quot;:&quot;Custom ScW File&quot;}" role="button" title="Custom ScW File" data-colorbox-gallery="gallery-image-83-KFuBD3A2q5w" class="colorbox" aria-controls="colorbox-f8w9wZ8IPcs" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Custom ScW File&quot;}">
+      <a href="http://default/sites/default/files/2024-11/customscwfile.png" aria-label="{&quot;alt&quot;:&quot;Custom ScW File&quot;}" role="button" title="Custom ScW File" data-colorbox-gallery="gallery-image-83-kgERXRttXNM" class="colorbox" aria-controls="colorbox-QLUSyDS_3wc" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Custom ScW File&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -164,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-f8w9wZ8IPcs" src="/sites/default/files/styles/large/public/2024-11/customscwfile.png?itok=vRs5ZAhr" width="366" height="480" alt="Custom ScW File" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-QLUSyDS_3wc" src="/sites/default/files/styles/large/public/2024-11/customscwfile.png?itok=vRs5ZAhr" width="366" height="480" alt="Custom ScW File" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
