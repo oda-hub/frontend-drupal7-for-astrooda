@@ -5238,12 +5238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/oda-hub/mmoda-frontend-theme.git",
-                "reference": "7acee0a0dc8d291191644c6c2c122b4c62f94dbe"
+                "reference": "977cbd0459f93e9ddd62a4ef3b135b9d62adf1fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oda-hub/mmoda-frontend-theme/zipball/7acee0a0dc8d291191644c6c2c122b4c62f94dbe",
-                "reference": "7acee0a0dc8d291191644c6c2c122b4c62f94dbe",
+                "url": "https://api.github.com/repos/oda-hub/mmoda-frontend-theme/zipball/977cbd0459f93e9ddd62a4ef3b135b9d62adf1fe",
+                "reference": "977cbd0459f93e9ddd62a4ef3b135b9d62adf1fe",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -5270,7 +5270,7 @@
                 "source": "https://github.com/oda-hub/mmoda-frontend-theme/tree/d10-main",
                 "issues": "https://github.com/oda-hub/mmoda-frontend-theme/issues"
             },
-            "time": "2024-12-09T17:23:42+00:00"
+            "time": "2024-12-10T08:36:11+00:00"
         },
         {
             "name": "oda/datatables-editor",
