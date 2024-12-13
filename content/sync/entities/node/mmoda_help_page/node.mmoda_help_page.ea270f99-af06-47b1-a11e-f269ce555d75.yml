@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-12-09T17:24:49+00:00'
+    value: '2024-12-13T15:28:42+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/grb-detect-01.png" aria-label="{&quot;alt&quot;:&quot;GRB detect pic&quot;}" role="button" title="GRB detect pic" data-colorbox-gallery="gallery-image-100-kgERXRttXNM" class="colorbox" aria-controls="colorbox-SYQrTZXdd7c" data-cbox-img-attrs="{&quot;alt&quot;:&quot;GRB detect pic&quot;}">
+      <a href="http://default/sites/default/files/2024-11/grb-detect-01.png" aria-label="{&quot;alt&quot;:&quot;GRB detect pic&quot;}" role="button" title="GRB detect pic" data-colorbox-gallery="gallery-image-100-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-e7wJyjKrX58" data-cbox-img-attrs="{&quot;alt&quot;:&quot;GRB detect pic&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-SYQrTZXdd7c" src="/sites/default/files/styles/large/public/2024-11/grb-detect-01.png?itok=LbS3OmeD" width="480" height="212" alt="GRB detect pic" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-e7wJyjKrX58" src="/sites/default/files/styles/large/public/2024-11/grb-detect-01.png?itok=LbS3OmeD" width="480" height="212" alt="GRB detect pic" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

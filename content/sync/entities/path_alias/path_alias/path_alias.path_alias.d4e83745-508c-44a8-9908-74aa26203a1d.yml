@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: d4e83745-508c-44a8-9908-74aa26203a1d
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 849bbe89-4a1d-430d-8b8b-0dd5aa4eb32a
+alias:
+  -
+    value: /help/mmoda/hess
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.849bbe89-4a1d-430d-8b8b-0dd5aa4eb32a

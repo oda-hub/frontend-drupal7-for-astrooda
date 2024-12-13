@@ -7,15 +7,16 @@ dependencies:
 id: node_mmoda_event
 label: 'Content - MMODA event'
 type: 'canonical_entities:node'
-pattern: 'events/[node:title]'
+pattern: 'news/[node:title]'
 selection_criteria:
-  -
+  31727a82-70a0-4479-aa8e-4517a7009f3f:
     id: 'entity_bundle:node'
     negate: false
+    uuid: 31727a82-70a0-4479-aa8e-4517a7009f3f
     context_mapping:
       node: node
     bundles:
       mmoda_event: mmoda_event
 selection_logic: and
-weight: -7
+weight: -8
 relationships: {  }

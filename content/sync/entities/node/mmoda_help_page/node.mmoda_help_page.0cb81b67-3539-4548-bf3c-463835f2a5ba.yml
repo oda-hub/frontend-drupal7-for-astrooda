@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-12-07T22:50:45+00:00'
+    value: '2024-12-13T14:05:27+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/upload-catalog.png" aria-label="{&quot;alt&quot;:&quot;Upload catalog&quot;}" role="button" title="Upload catalog" data-colorbox-gallery="gallery-image-48-kgERXRttXNM" class="colorbox" aria-controls="colorbox-YOdsWquCzi0" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Upload catalog&quot;}">
+      <a href="http://default/sites/default/files/2024-11/upload-catalog.png" aria-label="{&quot;alt&quot;:&quot;Upload catalog&quot;}" role="button" title="Upload catalog" data-colorbox-gallery="gallery-image-48-ur3On2A8zt4" class="colorbox" aria-controls="colorbox-1WNz7Jq-1u4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Upload catalog&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-YOdsWquCzi0" src="/sites/default/files/styles/large/public/2024-11/upload-catalog.png?itok=CEkks1T-" width="480" height="215" alt="Upload catalog" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-1WNz7Jq-1u4" src="/sites/default/files/styles/large/public/2024-11/upload-catalog.png?itok=CEkks1T-" width="480" height="215" alt="Upload catalog" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

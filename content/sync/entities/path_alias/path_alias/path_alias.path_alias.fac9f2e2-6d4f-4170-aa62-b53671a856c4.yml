@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: fac9f2e2-6d4f-4170-aa62-b53671a856c4
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 4feff7ba-f33a-4c70-bd11-59051627cb89
+alias:
+  -
+    value: /news/some-services-degraded-due-incident-mail-server-provider
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_event.4feff7ba-f33a-4c70-bd11-59051627cb89

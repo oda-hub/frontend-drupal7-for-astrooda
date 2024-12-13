@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 32496bfd-b9bd-420d-8044-df04139d9c5a
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: 6bf63b96-dc00-4987-af62-aaa80e1bc456
+alias:
+  -
+    value: /help/mmoda/jem-x-spectrum
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.6bf63b96-dc00-4987-af62-aaa80e1bc456

@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: f16296d8-e14c-4f24-8712-21c792bc74c5
+langcode:
+  -
+    value: en
+path:
+  target_type: user
+  target_uuid: a66eeed5-7446-4bb3-819c-18406fa1512a
+alias:
+  -
+    value: /users/d10sitamin
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    user:
+      - user.user.a66eeed5-7446-4bb3-819c-18406fa1512a

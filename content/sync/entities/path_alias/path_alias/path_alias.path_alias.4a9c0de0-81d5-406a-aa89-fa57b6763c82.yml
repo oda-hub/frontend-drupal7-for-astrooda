@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 4a9c0de0-81d5-406a-aa89-fa57b6763c82
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 528d13e8-f96e-45b5-945a-a7596f0f882e
+alias:
+  -
+    value: /news/problem-underlying-infrastructure-some-services-unavailable
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_event.528d13e8-f96e-45b5-945a-a7596f0f882e

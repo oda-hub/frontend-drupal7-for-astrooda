@@ -5,7 +5,7 @@ dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: 1
+uid: 11
 template: false
 archive: false
 id: your_api_token
@@ -37,9 +37,9 @@ elements: |-
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
-  ajax_progress_type: ''
+  ajax_progress_type: fullscreen
   ajax_effect: ''
   ajax_speed: null
   page: true

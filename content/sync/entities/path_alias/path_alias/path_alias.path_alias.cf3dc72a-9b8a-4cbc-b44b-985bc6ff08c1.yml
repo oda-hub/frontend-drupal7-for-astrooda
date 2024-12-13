@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: cf3dc72a-9b8a-4cbc-b44b-985bc6ff08c1
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: 78585065-8e4c-49f1-8d94-abe7d0e9d3f6
+alias:
+  -
+    value: /help/mmoda/isgri-light-curve
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.78585065-8e4c-49f1-8d94-abe7d0e9d3f6

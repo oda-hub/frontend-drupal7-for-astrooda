@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: tg_kL94haeI0W1FTTU9ch_nMYKFElL8UAQjcD-eO5KI
+  default_config_hash: A3TE0Mfx2JoTKOxbpy6ojnA_1tB7hX4BdkXiZew6CQI
 support_email:
   - no-reply@unige.ch
   - cdci-oda-feedback@listes.unige.ch
@@ -17,3 +17,4 @@ T_format: isot
 mmoda_debug: true
 help_page_url: help/mmoda/mmoda
 user_managers_role_name: 'user manager'
+version: 7.x-1.0

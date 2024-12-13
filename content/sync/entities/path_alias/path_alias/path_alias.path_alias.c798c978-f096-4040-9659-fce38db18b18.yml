@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: c798c978-f096-4040-9659-fce38db18b18
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /webform/contact
+alias:
+  -
+    value: /form/contact
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

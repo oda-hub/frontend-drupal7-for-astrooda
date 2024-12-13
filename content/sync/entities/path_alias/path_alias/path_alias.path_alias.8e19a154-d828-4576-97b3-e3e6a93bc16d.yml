@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 8e19a154-d828-4576-97b3-e3e6a93bc16d
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: f1cbdea9-9904-4260-8ad3-100c5f91c2e4
+alias:
+  -
+    value: /help/mmoda/integral-isgri
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.f1cbdea9-9904-4260-8ad3-100c5f91c2e4

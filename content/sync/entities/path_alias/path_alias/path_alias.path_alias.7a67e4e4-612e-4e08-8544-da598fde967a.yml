@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 7a67e4e4-612e-4e08-8544-da598fde967a
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 340efc35-286c-4cca-ae0f-5a8bf1455e12
+alias:
+  -
+    value: /help/mmoda/integral-spi-acs
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.340efc35-286c-4cca-ae0f-5a8bf1455e12

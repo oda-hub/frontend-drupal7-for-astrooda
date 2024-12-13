@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-12-09T17:24:49+00:00'
+    value: '2024-12-13T15:28:42+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/legacy-survey-ngc.png" aria-label="{&quot;alt&quot;:&quot;Legacy Survey NGC&quot;}" role="button" title="Legacy Survey NGC" data-colorbox-gallery="gallery-image-39-kgERXRttXNM" class="colorbox" aria-controls="colorbox-GrxhEW4ToGc" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Legacy Survey NGC&quot;}">
+      <a href="http://default/sites/default/files/2024-11/legacy-survey-ngc.png" aria-label="{&quot;alt&quot;:&quot;Legacy Survey NGC&quot;}" role="button" title="Legacy Survey NGC" data-colorbox-gallery="gallery-image-39-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-0iQLm4HvqEo" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Legacy Survey NGC&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-GrxhEW4ToGc" src="/sites/default/files/styles/large/public/2024-11/legacy-survey-ngc.png?itok=_o8VfEPX" width="480" height="120" alt="Legacy Survey NGC" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-0iQLm4HvqEo" src="/sites/default/files/styles/large/public/2024-11/legacy-survey-ngc.png?itok=_o8VfEPX" width="480" height="120" alt="Legacy Survey NGC" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -154,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/imageparam.png" aria-label="{&quot;alt&quot;:&quot;Legacy image params&quot;}" role="button" title="Legacy image params" data-colorbox-gallery="gallery-image-40-kgERXRttXNM" class="colorbox" aria-controls="colorbox-9n-gEAb4nsI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Legacy image params&quot;}">
+      <a href="http://default/sites/default/files/2024-11/imageparam.png" aria-label="{&quot;alt&quot;:&quot;Legacy image params&quot;}" role="button" title="Legacy image params" data-colorbox-gallery="gallery-image-40-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-sS2rp4LpobM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Legacy image params&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -164,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-9n-gEAb4nsI" src="/sites/default/files/styles/large/public/2024-11/imageparam.png?itok=lNjSdt3q" width="425" height="480" alt="Legacy image params" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-sS2rp4LpobM" src="/sites/default/files/styles/large/public/2024-11/imageparam.png?itok=lNjSdt3q" width="425" height="480" alt="Legacy image params" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -222,7 +222,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/ngcimage.png" aria-label="{&quot;alt&quot;:&quot;NCG image&quot;}" role="button" title="NCG image" data-colorbox-gallery="gallery-image-41-kgERXRttXNM" class="colorbox" aria-controls="colorbox-ptuqS0h8H4E" data-cbox-img-attrs="{&quot;alt&quot;:&quot;NCG image&quot;}">
+      <a href="http://default/sites/default/files/2024-11/ngcimage.png" aria-label="{&quot;alt&quot;:&quot;NCG image&quot;}" role="button" title="NCG image" data-colorbox-gallery="gallery-image-41-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-oTydj7_zmPg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;NCG image&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -232,7 +232,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-ptuqS0h8H4E" src="/sites/default/files/styles/large/public/2024-11/ngcimage.png?itok=r4cC0ghB" width="480" height="425" alt="NCG image" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-oTydj7_zmPg" src="/sites/default/files/styles/large/public/2024-11/ngcimage.png?itok=r4cC0ghB" width="480" height="425" alt="NCG image" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -290,7 +290,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/apicode.png" aria-label="{&quot;alt&quot;:&quot;API code&quot;}" role="button" title="API code" data-colorbox-gallery="gallery-image-42-kgERXRttXNM" class="colorbox" aria-controls="colorbox-oMzZEiNQOq4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;API code&quot;}">
+      <a href="http://default/sites/default/files/2024-11/apicode.png" aria-label="{&quot;alt&quot;:&quot;API code&quot;}" role="button" title="API code" data-colorbox-gallery="gallery-image-42-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-uTos2i4u0GM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;API code&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -300,7 +300,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-oMzZEiNQOq4" src="/sites/default/files/styles/large/public/2024-11/apicode.png?itok=nEpnnV_x" width="480" height="398" alt="API code" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-uTos2i4u0GM" src="/sites/default/files/styles/large/public/2024-11/apicode.png?itok=nEpnnV_x" width="480" height="398" alt="API code" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -358,7 +358,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/js9.png" aria-label="{&quot;alt&quot;:&quot;NGC JS9&quot;}" role="button" title="NGC JS9" data-colorbox-gallery="gallery-image-43-kgERXRttXNM" class="colorbox" aria-controls="colorbox--dVDkozPLDw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;NGC JS9&quot;}">
+      <a href="http://default/sites/default/files/2024-11/js9.png" aria-label="{&quot;alt&quot;:&quot;NGC JS9&quot;}" role="button" title="NGC JS9" data-colorbox-gallery="gallery-image-43-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-SdyAPb0Eptg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;NGC JS9&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -368,7 +368,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox--dVDkozPLDw" src="/sites/default/files/styles/large/public/2024-11/js9.png?itok=Fiz2aR6a" width="421" height="480" alt="NGC JS9" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-SdyAPb0Eptg" src="/sites/default/files/styles/large/public/2024-11/js9.png?itok=Fiz2aR6a" width="421" height="480" alt="NGC JS9" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -426,7 +426,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/catalog.png" aria-label="{&quot;alt&quot;:&quot;Catalog&quot;}" role="button" title="Catalog" data-colorbox-gallery="gallery-image-44-kgERXRttXNM" class="colorbox" aria-controls="colorbox-3ZXYnwIgjLI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Catalog&quot;}">
+      <a href="http://default/sites/default/files/2024-11/catalog.png" aria-label="{&quot;alt&quot;:&quot;Catalog&quot;}" role="button" title="Catalog" data-colorbox-gallery="gallery-image-44-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-uqZqwXBw0dg" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Catalog&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -436,7 +436,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-3ZXYnwIgjLI" src="/sites/default/files/styles/large/public/2024-11/catalog.png?itok=jve6Zs5r" width="480" height="314" alt="Catalog" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-uqZqwXBw0dg" src="/sites/default/files/styles/large/public/2024-11/catalog.png?itok=jve6Zs5r" width="480" height="314" alt="Catalog" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -494,7 +494,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/photometryparam.png" aria-label="{&quot;alt&quot;:&quot;Photometry params&quot;}" role="button" title="Photometry params" data-colorbox-gallery="gallery-image-45-kgERXRttXNM" class="colorbox" aria-controls="colorbox-YDg65ATdZuk" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Photometry params&quot;}">
+      <a href="http://default/sites/default/files/2024-11/photometryparam.png" aria-label="{&quot;alt&quot;:&quot;Photometry params&quot;}" role="button" title="Photometry params" data-colorbox-gallery="gallery-image-45-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-x3c67fUWmmE" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Photometry params&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -504,7 +504,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-YDg65ATdZuk" src="/sites/default/files/styles/large/public/2024-11/photometryparam.png?itok=s0D_1Fa3" width="480" height="451" alt="Photometry params" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-x3c67fUWmmE" src="/sites/default/files/styles/large/public/2024-11/photometryparam.png?itok=s0D_1Fa3" width="480" height="451" alt="Photometry params" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -562,7 +562,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/photometry.png" aria-label="{&quot;alt&quot;:&quot;Photometry&quot;}" role="button" title="Photometry" data-colorbox-gallery="gallery-image-46-kgERXRttXNM" class="colorbox" aria-controls="colorbox-H49s9X3HYIM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Photometry&quot;}">
+      <a href="http://default/sites/default/files/2024-11/photometry.png" aria-label="{&quot;alt&quot;:&quot;Photometry&quot;}" role="button" title="Photometry" data-colorbox-gallery="gallery-image-46-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-F8eg_9a8ZXM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Photometry&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -572,7 +572,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-H49s9X3HYIM" src="/sites/default/files/styles/large/public/2024-11/photometry.png?itok=kuy4Cdmr" width="480" height="335" alt="Photometry" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-F8eg_9a8ZXM" src="/sites/default/files/styles/large/public/2024-11/photometry.png?itok=kuy4Cdmr" width="480" height="335" alt="Photometry" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

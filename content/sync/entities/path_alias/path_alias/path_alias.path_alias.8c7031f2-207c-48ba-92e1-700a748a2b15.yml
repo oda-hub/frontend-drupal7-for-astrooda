@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 8c7031f2-207c-48ba-92e1-700a748a2b15
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 937ffd6d-93a6-4d1f-9532-838afa498f0d
+alias:
+  -
+    value: /news/emails-mmoda-currently-not-sent
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_event.937ffd6d-93a6-4d1f-9532-838afa498f0d

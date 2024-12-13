@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 0c5dc5d3-a55a-4c99-9c88-8df5321decaa
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 4143b5f6-b916-4e4e-8a29-81660f038d5e
+alias:
+  -
+    value: /help/mmoda/crbeam
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.4143b5f6-b916-4e4e-8a29-81660f038d5e

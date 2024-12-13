@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 3c2974ac-eaaf-49a0-b32c-e5955cbbf487
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: 0a428b0f-7329-444e-95cc-fa187b788933
+alias:
+  -
+    value: /help/mmoda/isgri-spectrum
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.0a428b0f-7329-444e-95cc-fa187b788933

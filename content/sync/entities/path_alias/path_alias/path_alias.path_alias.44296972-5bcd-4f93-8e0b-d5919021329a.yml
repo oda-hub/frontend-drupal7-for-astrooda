@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 44296972-5bcd-4f93-8e0b-d5919021329a
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: 70a7380f-196c-4854-9d82-997fa1594f0d
+alias:
+  -
+    value: /aup
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.page.70a7380f-196c-4854-9d82-997fa1594f0d

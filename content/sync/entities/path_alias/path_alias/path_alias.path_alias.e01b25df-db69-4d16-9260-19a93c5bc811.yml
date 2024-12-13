@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: e01b25df-db69-4d16-9260-19a93c5bc811
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /webform/contact/submissions
+alias:
+  -
+    value: /form/contact/submissions
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: d258b957-0921-4fc8-96ad-d5b3ee494dc5
+langcode:
+  -
+    value: en
+path:
+  target_type: user
+  target_uuid: 90004106-f379-491a-b73a-ae9934a6d304
+alias:
+  -
+    value: /users/dsavchenko
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    user:
+      - user.user.90004106-f379-491a-b73a-ae9934a6d304

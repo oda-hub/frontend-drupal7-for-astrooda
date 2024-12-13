@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-12-09T17:24:49+00:00'
+    value: '2024-12-13T15:28:42+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/icecube-common-params-01.png" aria-label="{&quot;alt&quot;:&quot;Icecube common params 01&quot;}" role="button" title="Icecube common params 01" data-colorbox-gallery="gallery-image-108-kgERXRttXNM" class="colorbox" aria-controls="colorbox-Vev8DVWNZDs" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube common params 01&quot;}">
+      <a href="http://default/sites/default/files/2024-11/icecube-common-params-01.png" aria-label="{&quot;alt&quot;:&quot;Icecube common params 01&quot;}" role="button" title="Icecube common params 01" data-colorbox-gallery="gallery-image-108-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-ffZIKkJ446Q" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube common params 01&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-Vev8DVWNZDs" src="/sites/default/files/styles/large/public/2024-11/icecube-common-params-01.png?itok=I_no0RrD" width="480" height="190" alt="Icecube common params 01" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-ffZIKkJ446Q" src="/sites/default/files/styles/large/public/2024-11/icecube-common-params-01.png?itok=I_no0RrD" width="480" height="190" alt="Icecube common params 01" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -154,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/Icecube-params-01.png" aria-label="{&quot;alt&quot;:&quot;Icecube Params 01&quot;}" role="button" title="Icecube Params 01" data-colorbox-gallery="gallery-image-109-kgERXRttXNM" class="colorbox" aria-controls="colorbox-hivY6I6C1tI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube Params 01&quot;}">
+      <a href="http://default/sites/default/files/2024-11/Icecube-params-01.png" aria-label="{&quot;alt&quot;:&quot;Icecube Params 01&quot;}" role="button" title="Icecube Params 01" data-colorbox-gallery="gallery-image-109-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-w_3LN1o_Ieo" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube Params 01&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -164,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-hivY6I6C1tI" src="/sites/default/files/styles/large/public/2024-11/Icecube-params-01.png?itok=TbvmHtPC" width="336" height="480" alt="Icecube Params 01" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-w_3LN1o_Ieo" src="/sites/default/files/styles/large/public/2024-11/Icecube-params-01.png?itok=TbvmHtPC" width="336" height="480" alt="Icecube Params 01" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -222,7 +222,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/icecube_Image_product.png" aria-label="{&quot;alt&quot;:&quot;Icecube params 01&quot;}" role="button" title="Icecube params 01" data-colorbox-gallery="gallery-image-110-kgERXRttXNM" class="colorbox" aria-controls="colorbox-1B5BU1PlQXY" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube params 01&quot;}">
+      <a href="http://default/sites/default/files/2024-11/icecube_Image_product.png" aria-label="{&quot;alt&quot;:&quot;Icecube params 01&quot;}" role="button" title="Icecube params 01" data-colorbox-gallery="gallery-image-110-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-qHr4T5DN8a8" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube params 01&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -232,7 +232,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-1B5BU1PlQXY" src="/sites/default/files/styles/large/public/2024-11/icecube_Image_product.png?itok=HDf57ANT" width="480" height="401" alt="Icecube params 01" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-qHr4T5DN8a8" src="/sites/default/files/styles/large/public/2024-11/icecube_Image_product.png?itok=HDf57ANT" width="480" height="401" alt="Icecube params 01" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -290,7 +290,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/icecube_API_code.png" aria-label="{&quot;alt&quot;:&quot;Icecube API code&quot;}" role="button" title="Icecube API code" data-colorbox-gallery="gallery-image-111-kgERXRttXNM" class="colorbox" aria-controls="colorbox-SEzSsFyNWBA" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube API code&quot;}">
+      <a href="http://default/sites/default/files/2024-11/icecube_API_code.png" aria-label="{&quot;alt&quot;:&quot;Icecube API code&quot;}" role="button" title="Icecube API code" data-colorbox-gallery="gallery-image-111-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-f_RLkotE5CM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube API code&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -300,7 +300,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-SEzSsFyNWBA" src="/sites/default/files/styles/large/public/2024-11/icecube_API_code.png?itok=XDj7cQ6z" width="474" height="480" alt="Icecube API code" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-f_RLkotE5CM" src="/sites/default/files/styles/large/public/2024-11/icecube_API_code.png?itok=XDj7cQ6z" width="474" height="480" alt="Icecube API code" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -358,7 +358,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/icecube_spectrum-01.png" aria-label="{&quot;alt&quot;:&quot;Icecube spectrum 01&quot;}" role="button" title="Icecube spectrum 01" data-colorbox-gallery="gallery-image-112-kgERXRttXNM" class="colorbox" aria-controls="colorbox-bBq2DLwfK24" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube spectrum 01&quot;}">
+      <a href="http://default/sites/default/files/2024-11/icecube_spectrum-01.png" aria-label="{&quot;alt&quot;:&quot;Icecube spectrum 01&quot;}" role="button" title="Icecube spectrum 01" data-colorbox-gallery="gallery-image-112-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-Go9Idfn800Y" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube spectrum 01&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -368,7 +368,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-bBq2DLwfK24" src="/sites/default/files/styles/large/public/2024-11/icecube_spectrum-01.png?itok=kQPbsFh5" width="480" height="480" alt="Icecube spectrum 01" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-Go9Idfn800Y" src="/sites/default/files/styles/large/public/2024-11/icecube_spectrum-01.png?itok=kQPbsFh5" width="480" height="480" alt="Icecube spectrum 01" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -426,7 +426,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/icecube_Lightcurve_product.png" aria-label="{&quot;alt&quot;:&quot;Icecube LC 01&quot;}" role="button" title="Icecube LC 01" data-colorbox-gallery="gallery-image-113-kgERXRttXNM" class="colorbox" aria-controls="colorbox-xuljDJDos3A" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube LC 01&quot;}">
+      <a href="http://default/sites/default/files/2024-11/icecube_Lightcurve_product.png" aria-label="{&quot;alt&quot;:&quot;Icecube LC 01&quot;}" role="button" title="Icecube LC 01" data-colorbox-gallery="gallery-image-113-SXLs-giXSJc" class="colorbox" aria-controls="colorbox-FBEz2aPi6DM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Icecube LC 01&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -436,7 +436,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-xuljDJDos3A" src="/sites/default/files/styles/large/public/2024-11/icecube_Lightcurve_product.png?itok=uVQIVgQ_" width="480" height="453" alt="Icecube LC 01" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-FBEz2aPi6DM" src="/sites/default/files/styles/large/public/2024-11/icecube_Lightcurve_product.png?itok=uVQIVgQ_" width="480" height="453" alt="Icecube LC 01" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

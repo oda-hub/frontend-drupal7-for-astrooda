@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: f5314c5e-10bd-4f3d-8ce3-52d95fc036bc
+langcode:
+  -
+    value: en
+path:
+  target_type: user
+  target_uuid: 5c48a0fb-9068-4cbf-980b-961e9b16116f
+alias:
+  -
+    value: /users/gbarni
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    user:
+      - user.user.5c48a0fb-9068-4cbf-980b-961e9b16116f

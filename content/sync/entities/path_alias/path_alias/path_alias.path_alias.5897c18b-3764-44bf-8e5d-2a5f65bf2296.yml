@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 5897c18b-3764-44bf-8e5d-2a5f65bf2296
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: 6564fc4a-68e3-457b-bce2-b0c2dc78af91
+alias:
+  -
+    value: /help/mmoda/connect-my-mmoda-account-github
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.6564fc4a-68e3-457b-bce2-b0c2dc78af91

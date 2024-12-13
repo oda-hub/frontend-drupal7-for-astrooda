@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 9e7875ce-7278-4f4b-997e-b0e62ef99463
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 9c92f5a5-d22a-412b-80a6-c70ae23270cf
+alias:
+  -
+    value: /news/polar-instrument-backend-currently-not-operational
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_event.9c92f5a5-d22a-412b-80a6-c70ae23270cf

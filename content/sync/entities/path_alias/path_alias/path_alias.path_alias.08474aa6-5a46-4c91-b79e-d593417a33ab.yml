@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 08474aa6-5a46-4c91-b79e-d593417a33ab
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 8d075f47-f18a-44b9-8f5e-752d010f0443
+alias:
+  -
+    value: /news/integral-services-limited-availability
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_event.8d075f47-f18a-44b9-8f5e-752d010f0443

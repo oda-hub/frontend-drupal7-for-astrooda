@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 686733a4-7a19-4fb7-b28d-70e5e157902f
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 3d4173a5-5993-45e0-9536-f3527b15ab03
+alias:
+  -
+    value: /news/new-frontend-version-news
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_event.3d4173a5-5993-45e0-9536-f3527b15ab03

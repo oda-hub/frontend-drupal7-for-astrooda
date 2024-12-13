@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 8abb2958-c76c-47f5-b9fe-837e01acd1ef
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: a8fc1c08-6bb5-4f55-be9f-1e1786746e49
+alias:
+  -
+    value: /help/mmoda/extract-isgri-spectrum-without-catalog
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.a8fc1c08-6bb5-4f55-be9f-1e1786746e49

@@ -31,7 +31,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2024-12-07T22:50:45+00:00'
+    value: '2024-12-13T14:05:27+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -86,7 +86,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/query1.png" aria-label="{&quot;alt&quot;:&quot;Query 1&quot;}" role="button" title="Query 1" data-colorbox-gallery="gallery-image-71-kgERXRttXNM" class="colorbox" aria-controls="colorbox-KnS0WfYh1sY" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Query 1&quot;}">
+      <a href="http://default/sites/default/files/2024-11/query1.png" aria-label="{&quot;alt&quot;:&quot;Query 1&quot;}" role="button" title="Query 1" data-colorbox-gallery="gallery-image-71-ur3On2A8zt4" class="colorbox" aria-controls="colorbox-xyt844fMzQI" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Query 1&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -96,7 +96,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-KnS0WfYh1sY" src="/sites/default/files/styles/large/public/2024-11/query1.png?itok=YhaElxSa" width="480" height="157" alt="Query 1" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-xyt844fMzQI" src="/sites/default/files/styles/large/public/2024-11/query1.png?itok=YhaElxSa" width="480" height="157" alt="Query 1" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -154,7 +154,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/isgri-query1.png" aria-label="{&quot;alt&quot;:&quot;ISGRI query 1&quot;}" role="button" title="ISGRI query 1" data-colorbox-gallery="gallery-image-72-kgERXRttXNM" class="colorbox" aria-controls="colorbox-GXPRFLUGy-Y" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI query 1&quot;}">
+      <a href="http://default/sites/default/files/2024-11/isgri-query1.png" aria-label="{&quot;alt&quot;:&quot;ISGRI query 1&quot;}" role="button" title="ISGRI query 1" data-colorbox-gallery="gallery-image-72-ur3On2A8zt4" class="colorbox" aria-controls="colorbox-PWE-B0C4F4U" data-cbox-img-attrs="{&quot;alt&quot;:&quot;ISGRI query 1&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -164,7 +164,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-GXPRFLUGy-Y" src="/sites/default/files/styles/large/public/2024-11/isgri-query1.png?itok=U-bhCOzX" width="256" height="480" alt="ISGRI query 1" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-PWE-B0C4F4U" src="/sites/default/files/styles/large/public/2024-11/isgri-query1.png?itok=U-bhCOzX" width="256" height="480" alt="ISGRI query 1" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -222,7 +222,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/rprogress-image.png" aria-label="{&quot;alt&quot;:&quot;Progress image&quot;}" role="button" title="Progress image" data-colorbox-gallery="gallery-image-73-kgERXRttXNM" class="colorbox" aria-controls="colorbox-oDhunG0k0HY" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Progress image&quot;}">
+      <a href="http://default/sites/default/files/2024-11/rprogress-image.png" aria-label="{&quot;alt&quot;:&quot;Progress image&quot;}" role="button" title="Progress image" data-colorbox-gallery="gallery-image-73-ur3On2A8zt4" class="colorbox" aria-controls="colorbox-RL61GDAL--g" data-cbox-img-attrs="{&quot;alt&quot;:&quot;Progress image&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -232,7 +232,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-oDhunG0k0HY" src="/sites/default/files/styles/large/public/2024-11/rprogress-image.png?itok=qt1TT-Gk" width="480" height="356" alt="Progress image" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-RL61GDAL--g" src="/sites/default/files/styles/large/public/2024-11/rprogress-image.png?itok=qt1TT-Gk" width="480" height="356" alt="Progress image" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -290,7 +290,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/email.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI Image Email&quot;}" role="button" title="IBIS ISGRI Image Email" data-colorbox-gallery="gallery-image-74-kgERXRttXNM" class="colorbox" aria-controls="colorbox-VbbnVoFIXMM" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI Image Email&quot;}">
+      <a href="http://default/sites/default/files/2024-11/email.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI Image Email&quot;}" role="button" title="IBIS ISGRI Image Email" data-colorbox-gallery="gallery-image-74-ur3On2A8zt4" class="colorbox" aria-controls="colorbox-E0OaXuICdoU" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI Image Email&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -300,7 +300,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-VbbnVoFIXMM" src="/sites/default/files/styles/large/public/2024-11/email.png?itok=uiCvij0O" width="480" height="256" alt="IBIS ISGRI Image Email" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-E0OaXuICdoU" src="/sites/default/files/styles/large/public/2024-11/email.png?itok=uiCvij0O" width="480" height="256" alt="IBIS ISGRI Image Email" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -358,7 +358,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/ibis-isgri-image-01.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI Image 01&quot;}" role="button" title="IBIS ISGRI Image 01" data-colorbox-gallery="gallery-image-75-kgERXRttXNM" class="colorbox" aria-controls="colorbox-qMEx70gvqF4" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI Image 01&quot;}">
+      <a href="http://default/sites/default/files/2024-11/ibis-isgri-image-01.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI Image 01&quot;}" role="button" title="IBIS ISGRI Image 01" data-colorbox-gallery="gallery-image-75-ur3On2A8zt4" class="colorbox" aria-controls="colorbox-fDx4FLKWv4I" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI Image 01&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -368,7 +368,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-qMEx70gvqF4" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-image-01.png?itok=w_gmU9jk" width="480" height="415" alt="IBIS ISGRI Image 01" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-fDx4FLKWv4I" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-image-01.png?itok=w_gmU9jk" width="480" height="415" alt="IBIS ISGRI Image 01" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -426,7 +426,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/ibis-isgri-catalog-01.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}" role="button" title="IBIS ISGRI catalog" data-colorbox-gallery="gallery-image-76-kgERXRttXNM" class="colorbox" aria-controls="colorbox-yvIM5VlmA1g" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}">
+      <a href="http://default/sites/default/files/2024-11/ibis-isgri-catalog-01.png" aria-label="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}" role="button" title="IBIS ISGRI catalog" data-colorbox-gallery="gallery-image-76-ur3On2A8zt4" class="colorbox" aria-controls="colorbox-UsQgxAWYNDU" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBIS ISGRI catalog&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -436,7 +436,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-yvIM5VlmA1g" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-catalog-01.png?itok=b78TxZaw" width="480" height="342" alt="IBIS ISGRI catalog" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-UsQgxAWYNDU" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-catalog-01.png?itok=b78TxZaw" width="480" height="342" alt="IBIS ISGRI catalog" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 
@@ -494,7 +494,7 @@ body:
       <!-- THEME HOOK: 'colorbox_formatter' -->
       <!-- BEGIN OUTPUT from 'modules/contrib/colorbox/templates/colorbox-formatter.html.twig' -->
 
-      <a href="http://default/sites/default/files/2024-11/ibis-isgri-js9-01.png" aria-label="{&quot;alt&quot;:&quot;IBISI ISGRI JS9&quot;}" role="button" title="IBISI ISGRI JS9" data-colorbox-gallery="gallery-image-77-kgERXRttXNM" class="colorbox" aria-controls="colorbox-LvWDeaBWYuw" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBISI ISGRI JS9&quot;}">
+      <a href="http://default/sites/default/files/2024-11/ibis-isgri-js9-01.png" aria-label="{&quot;alt&quot;:&quot;IBISI ISGRI JS9&quot;}" role="button" title="IBISI ISGRI JS9" data-colorbox-gallery="gallery-image-77-ur3On2A8zt4" class="colorbox" aria-controls="colorbox-dOS_l7At_Vs" data-cbox-img-attrs="{&quot;alt&quot;:&quot;IBISI ISGRI JS9&quot;}">
 
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image_style' -->
@@ -504,7 +504,7 @@ body:
       <!-- THEME DEBUG -->
       <!-- THEME HOOK: 'image' -->
       <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
-      <img id="colorbox-LvWDeaBWYuw" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-js9-01.png?itok=u7RVM9UD" width="416" height="480" alt="IBISI ISGRI JS9" loading="lazy" class="img-fluid image-style-large">
+      <img id="colorbox-dOS_l7At_Vs" src="/sites/default/files/styles/large/public/2024-11/ibis-isgri-js9-01.png?itok=u7RVM9UD" width="416" height="480" alt="IBISI ISGRI JS9" loading="lazy" class="img-fluid image-style-large">
 
       <!-- END OUTPUT from 'themes/contrib/bootstrap5/templates/field/image.html.twig' -->
 

@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 5c831c3c-d277-4e24-a680-07b21ac767a0
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 2565952d-0e50-4f5c-966d-f86659124db2
+alias:
+  -
+    value: /news/crbeam-module-currently-disabled-we-are-working-recover-it
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_event.2565952d-0e50-4f5c-966d-f86659124db2

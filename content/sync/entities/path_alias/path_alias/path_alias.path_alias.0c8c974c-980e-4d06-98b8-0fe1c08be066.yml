@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 0c8c974c-980e-4d06-98b8-0fe1c08be066
+langcode:
+  -
+    value: en
+path:
+  target_type: node
+  target_uuid: 1c8fa2b2-d96b-456d-adcc-6c0b6fb54ce5
+alias:
+  -
+    value: /help/mmoda/integral-jem-x
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.1c8fa2b2-d96b-456d-adcc-6c0b6fb54ce5

@@ -1,0 +1,20 @@
+uuid:
+  -
+    value: 9c63393b-fa97-40cf-aa2c-777ea2448d9e
+langcode:
+  -
+    value: und
+path:
+  target_type: node
+  target_uuid: bff8ca8d-557a-41a6-ba2d-8ab92150267b
+alias:
+  -
+    value: /help/mmoda/integral-nrt-data-access
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias
+  entity_dependencies:
+    node:
+      - node.mmoda_help_page.bff8ca8d-557a-41a6-ba2d-8ab92150267b
